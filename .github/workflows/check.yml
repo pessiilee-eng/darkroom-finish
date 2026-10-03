@@ -1,0 +1,19 @@
+name: Package checks
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  contracts:
+    runs-on: macos-latest
+    strategy:
+      matrix:
+        python: ['3.11', '3.13']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - run: python -m pip install -r requirements-preview.txt
+      - run: python -B -m unittest discover -s tests -v
+      - run: python -B scripts/release_check.py
+      # Hosted runners do not verify Photoshop, camera RAWs, or image quality.

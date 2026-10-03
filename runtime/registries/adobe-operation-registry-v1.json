@@ -1,0 +1,3896 @@
+{
+  "$schema": "https://darkroom-finish.local/schemas/adobe-operation-registry-v1.schema.json",
+  "schema_version": "adobe-operation-registry/v1",
+  "registry_id": "adobe.operations",
+  "version": "0.1.0",
+  "target_environment": {
+    "photoshop": "25.2.0",
+    "camera_raw": "16.5 (1954)",
+    "process_version": "15.4"
+  },
+  "promotion_requirements": [
+    "documented",
+    "schema_representable",
+    "executor_write",
+    "executor_readback",
+    "fixture_probe",
+    "replay"
+  ],
+  "enum_domains": [
+    {
+      "schema_version": "adobe-operation-enum-domain/v1",
+      "registry_id": "adobe.white_balance",
+      "version": "1.0.0",
+      "values": [
+        "AS_SHOT",
+        "AUTO",
+        "CLOUDY",
+        "CUSTOM",
+        "DAYLIGHT",
+        "FLASH",
+        "FLUORESCENT",
+        "SHADE",
+        "TUNGSTEN"
+      ],
+      "native_values": {
+        "AS_SHOT": "As Shot",
+        "AUTO": "Auto",
+        "CLOUDY": "Cloudy",
+        "CUSTOM": "Custom",
+        "DAYLIGHT": "Daylight",
+        "FLASH": "Flash",
+        "FLUORESCENT": "Fluorescent",
+        "SHADE": "Shade",
+        "TUNGSTEN": "Tungsten"
+      },
+      "registry_sha256": "9237e5b15500e567aa92a0e93d87860d2343841c5c72837336f555ff08798d40"
+    },
+    {
+      "schema_version": "adobe-operation-enum-domain/v1",
+      "registry_id": "adobe.crop_enabled",
+      "version": "1.0.0",
+      "values": [
+        "FALSE",
+        "TRUE"
+      ],
+      "native_values": {
+        "FALSE": "False",
+        "TRUE": "True"
+      },
+      "registry_sha256": "df19a9680361082e15ca4f5665d0b1ac098bb766ea2ecb14f083715d35c236e7"
+    }
+  ],
+  "operations": [
+    {
+      "operation_id": "acr.blacks2012",
+      "field": "blacks2012",
+      "product": "camera_raw",
+      "family": "basic_tone",
+      "value_type": "scalar",
+      "native_unit": "adobe:percent",
+      "native_range": {
+        "lower": "-100",
+        "upper": "100",
+        "inclusivity": "closed"
+      },
+      "scope": "global",
+      "charter_class": "allowed",
+      "transport": {
+        "kind": "xmp_attribute",
+        "key": "Blacks2012"
+      },
+      "evidence": {
+        "documented": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "schema_representable": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_write": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_readback": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "fixture_probe": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "replay": {
+          "status": "unverified",
+          "evidence_ref": null
+        }
+      },
+      "enum_domain_ref": null
+    },
+    {
+      "operation_id": "acr.brush_mask",
+      "field": null,
+      "product": "camera_raw",
+      "family": "local_masks",
+      "value_type": "mask_graph",
+      "native_unit": null,
+      "native_range": null,
+      "scope": "local",
+      "charter_class": "conditional",
+      "transport": {
+        "kind": "xmp_mask_graph",
+        "key": "MaskGroupBasedCorrections"
+      },
+      "evidence": {
+        "documented": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "schema_representable": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_write": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_readback": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "fixture_probe": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "replay": {
+          "status": "unverified",
+          "evidence_ref": null
+        }
+      },
+      "enum_domain_ref": null
+    },
+    {
+      "operation_id": "acr.calibration_blue_primary_hue",
+      "field": "calibration_blue_primary_hue",
+      "product": "camera_raw",
+      "family": "calibration",
+      "value_type": "scalar",
+      "native_unit": "adobe:percent",
+      "native_range": {
+        "lower": "-100",
+        "upper": "100",
+        "inclusivity": "closed"
+      },
+      "scope": "global",
+      "charter_class": "allowed",
+      "transport": {
+        "kind": "xmp_attribute",
+        "key": "BlueHue"
+      },
+      "evidence": {
+        "documented": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "schema_representable": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_write": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_readback": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "fixture_probe": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "replay": {
+          "status": "unverified",
+          "evidence_ref": null
+        }
+      },
+      "enum_domain_ref": null
+    },
+    {
+      "operation_id": "acr.calibration_blue_primary_saturation",
+      "field": "calibration_blue_primary_saturation",
+      "product": "camera_raw",
+      "family": "calibration",
+      "value_type": "scalar",
+      "native_unit": "adobe:percent",
+      "native_range": {
+        "lower": "-100",
+        "upper": "100",
+        "inclusivity": "closed"
+      },
+      "scope": "global",
+      "charter_class": "allowed",
+      "transport": {
+        "kind": "xmp_attribute",
+        "key": "BlueSaturation"
+      },
+      "evidence": {
+        "documented": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "schema_representable": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_write": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_readback": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "fixture_probe": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "replay": {
+          "status": "unverified",
+          "evidence_ref": null
+        }
+      },
+      "enum_domain_ref": null
+    },
+    {
+      "operation_id": "acr.calibration_green_primary_hue",
+      "field": "calibration_green_primary_hue",
+      "product": "camera_raw",
+      "family": "calibration",
+      "value_type": "scalar",
+      "native_unit": "adobe:percent",
+      "native_range": {
+        "lower": "-100",
+        "upper": "100",
+        "inclusivity": "closed"
+      },
+      "scope": "global",
+      "charter_class": "allowed",
+      "transport": {
+        "kind": "xmp_attribute",
+        "key": "GreenHue"
+      },
+      "evidence": {
+        "documented": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "schema_representable": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_write": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_readback": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "fixture_probe": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "replay": {
+          "status": "unverified",
+          "evidence_ref": null
+        }
+      },
+      "enum_domain_ref": null
+    },
+    {
+      "operation_id": "acr.calibration_green_primary_saturation",
+      "field": "calibration_green_primary_saturation",
+      "product": "camera_raw",
+      "family": "calibration",
+      "value_type": "scalar",
+      "native_unit": "adobe:percent",
+      "native_range": {
+        "lower": "-100",
+        "upper": "100",
+        "inclusivity": "closed"
+      },
+      "scope": "global",
+      "charter_class": "allowed",
+      "transport": {
+        "kind": "xmp_attribute",
+        "key": "GreenSaturation"
+      },
+      "evidence": {
+        "documented": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "schema_representable": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_write": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_readback": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "fixture_probe": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "replay": {
+          "status": "unverified",
+          "evidence_ref": null
+        }
+      },
+      "enum_domain_ref": null
+    },
+    {
+      "operation_id": "acr.calibration_red_primary_hue",
+      "field": "calibration_red_primary_hue",
+      "product": "camera_raw",
+      "family": "calibration",
+      "value_type": "scalar",
+      "native_unit": "adobe:percent",
+      "native_range": {
+        "lower": "-100",
+        "upper": "100",
+        "inclusivity": "closed"
+      },
+      "scope": "global",
+      "charter_class": "allowed",
+      "transport": {
+        "kind": "xmp_attribute",
+        "key": "RedHue"
+      },
+      "evidence": {
+        "documented": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "schema_representable": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_write": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_readback": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "fixture_probe": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "replay": {
+          "status": "unverified",
+          "evidence_ref": null
+        }
+      },
+      "enum_domain_ref": null
+    },
+    {
+      "operation_id": "acr.calibration_red_primary_saturation",
+      "field": "calibration_red_primary_saturation",
+      "product": "camera_raw",
+      "family": "calibration",
+      "value_type": "scalar",
+      "native_unit": "adobe:percent",
+      "native_range": {
+        "lower": "-100",
+        "upper": "100",
+        "inclusivity": "closed"
+      },
+      "scope": "global",
+      "charter_class": "allowed",
+      "transport": {
+        "kind": "xmp_attribute",
+        "key": "RedSaturation"
+      },
+      "evidence": {
+        "documented": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "schema_representable": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_write": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_readback": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "fixture_probe": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "replay": {
+          "status": "unverified",
+          "evidence_ref": null
+        }
+      },
+      "enum_domain_ref": null
+    },
+    {
+      "operation_id": "acr.clarity2012",
+      "field": "clarity2012",
+      "product": "camera_raw",
+      "family": "presence",
+      "value_type": "scalar",
+      "native_unit": "adobe:percent",
+      "native_range": {
+        "lower": "-100",
+        "upper": "100",
+        "inclusivity": "closed"
+      },
+      "scope": "global",
+      "charter_class": "allowed",
+      "transport": {
+        "kind": "xmp_attribute",
+        "key": "Clarity2012"
+      },
+      "evidence": {
+        "documented": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "schema_representable": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_write": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_readback": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "fixture_probe": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "replay": {
+          "status": "unverified",
+          "evidence_ref": null
+        }
+      },
+      "enum_domain_ref": null
+    },
+    {
+      "operation_id": "acr.color_noise_reduction",
+      "field": "color_noise_reduction",
+      "product": "camera_raw",
+      "family": "detail",
+      "value_type": "scalar",
+      "native_unit": "adobe:percent",
+      "native_range": {
+        "lower": "0",
+        "upper": "100",
+        "inclusivity": "closed"
+      },
+      "scope": "global",
+      "charter_class": "allowed",
+      "transport": {
+        "kind": "xmp_attribute",
+        "key": "ColorNoiseReduction"
+      },
+      "evidence": {
+        "documented": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "schema_representable": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_write": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_readback": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "fixture_probe": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "replay": {
+          "status": "unverified",
+          "evidence_ref": null
+        }
+      },
+      "enum_domain_ref": null
+    },
+    {
+      "operation_id": "acr.color_range_mask",
+      "field": null,
+      "product": "camera_raw",
+      "family": "local_masks",
+      "value_type": "mask_graph",
+      "native_unit": null,
+      "native_range": null,
+      "scope": "local",
+      "charter_class": "conditional",
+      "transport": null,
+      "evidence": {
+        "documented": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "schema_representable": {
+          "status": "unsupported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_write": {
+          "status": "unsupported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_readback": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "fixture_probe": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "replay": {
+          "status": "unverified",
+          "evidence_ref": null
+        }
+      },
+      "enum_domain_ref": null
+    },
+    {
+      "operation_id": "acr.contrast2012",
+      "field": "contrast2012",
+      "product": "camera_raw",
+      "family": "basic_tone",
+      "value_type": "scalar",
+      "native_unit": "adobe:percent",
+      "native_range": {
+        "lower": "-100",
+        "upper": "100",
+        "inclusivity": "closed"
+      },
+      "scope": "global",
+      "charter_class": "allowed",
+      "transport": {
+        "kind": "xmp_attribute",
+        "key": "Contrast2012"
+      },
+      "evidence": {
+        "documented": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "schema_representable": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_write": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_readback": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "fixture_probe": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "replay": {
+          "status": "unverified",
+          "evidence_ref": null
+        }
+      },
+      "enum_domain_ref": null
+    },
+    {
+      "operation_id": "acr.cropangle",
+      "field": "cropangle",
+      "product": "camera_raw",
+      "family": "geometry",
+      "value_type": "scalar",
+      "native_unit": "unit:none",
+      "native_range": {
+        "lower": "-3",
+        "upper": "3",
+        "inclusivity": "closed"
+      },
+      "scope": "document",
+      "charter_class": "allowed",
+      "transport": {
+        "kind": "xmp_attribute",
+        "key": "CropAngle"
+      },
+      "evidence": {
+        "documented": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "schema_representable": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_write": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_readback": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "fixture_probe": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "replay": {
+          "status": "unverified",
+          "evidence_ref": null
+        }
+      },
+      "enum_domain_ref": null
+    },
+    {
+      "operation_id": "acr.cropbottom",
+      "field": "cropbottom",
+      "product": "camera_raw",
+      "family": "geometry",
+      "value_type": "scalar",
+      "native_unit": "unit:none",
+      "native_range": {
+        "lower": "0",
+        "upper": "1",
+        "inclusivity": "closed"
+      },
+      "scope": "document",
+      "charter_class": "allowed",
+      "transport": {
+        "kind": "xmp_attribute",
+        "key": "CropBottom"
+      },
+      "evidence": {
+        "documented": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "schema_representable": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_write": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_readback": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "fixture_probe": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "replay": {
+          "status": "unverified",
+          "evidence_ref": null
+        }
+      },
+      "enum_domain_ref": null
+    },
+    {
+      "operation_id": "acr.cropleft",
+      "field": "cropleft",
+      "product": "camera_raw",
+      "family": "geometry",
+      "value_type": "scalar",
+      "native_unit": "unit:none",
+      "native_range": {
+        "lower": "0",
+        "upper": "1",
+        "inclusivity": "closed"
+      },
+      "scope": "document",
+      "charter_class": "allowed",
+      "transport": {
+        "kind": "xmp_attribute",
+        "key": "CropLeft"
+      },
+      "evidence": {
+        "documented": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "schema_representable": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_write": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_readback": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "fixture_probe": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "replay": {
+          "status": "unverified",
+          "evidence_ref": null
+        }
+      },
+      "enum_domain_ref": null
+    },
+    {
+      "operation_id": "acr.cropright",
+      "field": "cropright",
+      "product": "camera_raw",
+      "family": "geometry",
+      "value_type": "scalar",
+      "native_unit": "unit:none",
+      "native_range": {
+        "lower": "0",
+        "upper": "1",
+        "inclusivity": "closed"
+      },
+      "scope": "document",
+      "charter_class": "allowed",
+      "transport": {
+        "kind": "xmp_attribute",
+        "key": "CropRight"
+      },
+      "evidence": {
+        "documented": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "schema_representable": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_write": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_readback": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "fixture_probe": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "replay": {
+          "status": "unverified",
+          "evidence_ref": null
+        }
+      },
+      "enum_domain_ref": null
+    },
+    {
+      "operation_id": "acr.croptop",
+      "field": "croptop",
+      "product": "camera_raw",
+      "family": "geometry",
+      "value_type": "scalar",
+      "native_unit": "unit:none",
+      "native_range": {
+        "lower": "0",
+        "upper": "1",
+        "inclusivity": "closed"
+      },
+      "scope": "document",
+      "charter_class": "allowed",
+      "transport": {
+        "kind": "xmp_attribute",
+        "key": "CropTop"
+      },
+      "evidence": {
+        "documented": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "schema_representable": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_write": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_readback": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "fixture_probe": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "replay": {
+          "status": "unverified",
+          "evidence_ref": null
+        }
+      },
+      "enum_domain_ref": null
+    },
+    {
+      "operation_id": "acr.dehaze",
+      "field": "dehaze",
+      "product": "camera_raw",
+      "family": "presence",
+      "value_type": "scalar",
+      "native_unit": "adobe:percent",
+      "native_range": {
+        "lower": "-100",
+        "upper": "100",
+        "inclusivity": "closed"
+      },
+      "scope": "global",
+      "charter_class": "allowed",
+      "transport": {
+        "kind": "xmp_attribute",
+        "key": "Dehaze"
+      },
+      "evidence": {
+        "documented": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "schema_representable": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_write": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_readback": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "fixture_probe": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "replay": {
+          "status": "unverified",
+          "evidence_ref": null
+        }
+      },
+      "enum_domain_ref": null
+    },
+    {
+      "operation_id": "acr.exposure2012",
+      "field": "exposure2012",
+      "product": "camera_raw",
+      "family": "basic_tone",
+      "value_type": "scalar",
+      "native_unit": "adobe:exposure_ev",
+      "native_range": {
+        "lower": "-5",
+        "upper": "5",
+        "inclusivity": "closed"
+      },
+      "scope": "global",
+      "charter_class": "allowed",
+      "transport": {
+        "kind": "xmp_attribute",
+        "key": "Exposure2012"
+      },
+      "evidence": {
+        "documented": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "schema_representable": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_write": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_readback": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "fixture_probe": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "replay": {
+          "status": "unverified",
+          "evidence_ref": null
+        }
+      },
+      "enum_domain_ref": null
+    },
+    {
+      "operation_id": "acr.grain_amount",
+      "field": "grain_amount",
+      "product": "camera_raw",
+      "family": "effects",
+      "value_type": "scalar",
+      "native_unit": "adobe:percent",
+      "native_range": {
+        "lower": "0",
+        "upper": "100",
+        "inclusivity": "closed"
+      },
+      "scope": "global",
+      "charter_class": "allowed",
+      "transport": null,
+      "evidence": {
+        "documented": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "schema_representable": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_write": {
+          "status": "unsupported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_readback": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "fixture_probe": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "replay": {
+          "status": "unverified",
+          "evidence_ref": null
+        }
+      },
+      "enum_domain_ref": null
+    },
+    {
+      "operation_id": "acr.hascrop",
+      "field": "hascrop",
+      "product": "camera_raw",
+      "family": "geometry",
+      "value_type": "enum",
+      "native_unit": "unit:none",
+      "native_range": null,
+      "scope": "document",
+      "charter_class": "allowed",
+      "transport": {
+        "kind": "xmp_attribute",
+        "key": "HasCrop"
+      },
+      "evidence": {
+        "documented": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "schema_representable": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_write": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_readback": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "fixture_probe": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "replay": {
+          "status": "unverified",
+          "evidence_ref": null
+        }
+      },
+      "enum_domain_ref": {
+        "registry_id": "adobe.crop_enabled",
+        "version": "1.0.0",
+        "sha256": "df19a9680361082e15ca4f5665d0b1ac098bb766ea2ecb14f083715d35c236e7"
+      }
+    },
+    {
+      "operation_id": "acr.highlights2012",
+      "field": "highlights2012",
+      "product": "camera_raw",
+      "family": "basic_tone",
+      "value_type": "scalar",
+      "native_unit": "adobe:percent",
+      "native_range": {
+        "lower": "-100",
+        "upper": "100",
+        "inclusivity": "closed"
+      },
+      "scope": "global",
+      "charter_class": "allowed",
+      "transport": {
+        "kind": "xmp_attribute",
+        "key": "Highlights2012"
+      },
+      "evidence": {
+        "documented": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "schema_representable": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_write": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_readback": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "fixture_probe": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "replay": {
+          "status": "unverified",
+          "evidence_ref": null
+        }
+      },
+      "enum_domain_ref": null
+    },
+    {
+      "operation_id": "acr.hue_adjustment_aqua",
+      "field": "hue_adjustment_aqua",
+      "product": "camera_raw",
+      "family": "hsl",
+      "value_type": "scalar",
+      "native_unit": "adobe:percent",
+      "native_range": {
+        "lower": "-100",
+        "upper": "100",
+        "inclusivity": "closed"
+      },
+      "scope": "global",
+      "charter_class": "allowed",
+      "transport": {
+        "kind": "xmp_attribute",
+        "key": "HueAdjustmentAqua"
+      },
+      "evidence": {
+        "documented": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "schema_representable": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_write": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_readback": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "fixture_probe": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "replay": {
+          "status": "unverified",
+          "evidence_ref": null
+        }
+      },
+      "enum_domain_ref": null
+    },
+    {
+      "operation_id": "acr.hue_adjustment_blue",
+      "field": "hue_adjustment_blue",
+      "product": "camera_raw",
+      "family": "hsl",
+      "value_type": "scalar",
+      "native_unit": "adobe:percent",
+      "native_range": {
+        "lower": "-100",
+        "upper": "100",
+        "inclusivity": "closed"
+      },
+      "scope": "global",
+      "charter_class": "allowed",
+      "transport": {
+        "kind": "xmp_attribute",
+        "key": "HueAdjustmentBlue"
+      },
+      "evidence": {
+        "documented": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "schema_representable": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_write": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_readback": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "fixture_probe": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "replay": {
+          "status": "unverified",
+          "evidence_ref": null
+        }
+      },
+      "enum_domain_ref": null
+    },
+    {
+      "operation_id": "acr.hue_adjustment_green",
+      "field": "hue_adjustment_green",
+      "product": "camera_raw",
+      "family": "hsl",
+      "value_type": "scalar",
+      "native_unit": "adobe:percent",
+      "native_range": {
+        "lower": "-100",
+        "upper": "100",
+        "inclusivity": "closed"
+      },
+      "scope": "global",
+      "charter_class": "allowed",
+      "transport": {
+        "kind": "xmp_attribute",
+        "key": "HueAdjustmentGreen"
+      },
+      "evidence": {
+        "documented": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "schema_representable": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_write": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_readback": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "fixture_probe": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "replay": {
+          "status": "unverified",
+          "evidence_ref": null
+        }
+      },
+      "enum_domain_ref": null
+    },
+    {
+      "operation_id": "acr.hue_adjustment_magenta",
+      "field": "hue_adjustment_magenta",
+      "product": "camera_raw",
+      "family": "hsl",
+      "value_type": "scalar",
+      "native_unit": "adobe:percent",
+      "native_range": {
+        "lower": "-100",
+        "upper": "100",
+        "inclusivity": "closed"
+      },
+      "scope": "global",
+      "charter_class": "allowed",
+      "transport": {
+        "kind": "xmp_attribute",
+        "key": "HueAdjustmentMagenta"
+      },
+      "evidence": {
+        "documented": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "schema_representable": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_write": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_readback": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "fixture_probe": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "replay": {
+          "status": "unverified",
+          "evidence_ref": null
+        }
+      },
+      "enum_domain_ref": null
+    },
+    {
+      "operation_id": "acr.hue_adjustment_orange",
+      "field": "hue_adjustment_orange",
+      "product": "camera_raw",
+      "family": "hsl_color",
+      "value_type": "scalar",
+      "native_unit": "adobe:percent",
+      "native_range": {
+        "lower": "-100",
+        "upper": "100",
+        "inclusivity": "closed"
+      },
+      "scope": "global",
+      "charter_class": "allowed",
+      "transport": {
+        "kind": "xmp_attribute",
+        "key": "HueAdjustmentOrange"
+      },
+      "evidence": {
+        "documented": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "schema_representable": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_write": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_readback": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "fixture_probe": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "replay": {
+          "status": "unverified",
+          "evidence_ref": null
+        }
+      },
+      "enum_domain_ref": null
+    },
+    {
+      "operation_id": "acr.hue_adjustment_purple",
+      "field": "hue_adjustment_purple",
+      "product": "camera_raw",
+      "family": "hsl",
+      "value_type": "scalar",
+      "native_unit": "adobe:percent",
+      "native_range": {
+        "lower": "-100",
+        "upper": "100",
+        "inclusivity": "closed"
+      },
+      "scope": "global",
+      "charter_class": "allowed",
+      "transport": {
+        "kind": "xmp_attribute",
+        "key": "HueAdjustmentPurple"
+      },
+      "evidence": {
+        "documented": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "schema_representable": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_write": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_readback": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "fixture_probe": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "replay": {
+          "status": "unverified",
+          "evidence_ref": null
+        }
+      },
+      "enum_domain_ref": null
+    },
+    {
+      "operation_id": "acr.hue_adjustment_red",
+      "field": "hue_adjustment_red",
+      "product": "camera_raw",
+      "family": "hsl_color",
+      "value_type": "scalar",
+      "native_unit": "adobe:percent",
+      "native_range": {
+        "lower": "-100",
+        "upper": "100",
+        "inclusivity": "closed"
+      },
+      "scope": "global",
+      "charter_class": "allowed",
+      "transport": {
+        "kind": "xmp_attribute",
+        "key": "HueAdjustmentRed"
+      },
+      "evidence": {
+        "documented": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "schema_representable": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_write": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_readback": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "fixture_probe": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "replay": {
+          "status": "unverified",
+          "evidence_ref": null
+        }
+      },
+      "enum_domain_ref": null
+    },
+    {
+      "operation_id": "acr.hue_adjustment_yellow",
+      "field": "hue_adjustment_yellow",
+      "product": "camera_raw",
+      "family": "hsl",
+      "value_type": "scalar",
+      "native_unit": "adobe:percent",
+      "native_range": {
+        "lower": "-100",
+        "upper": "100",
+        "inclusivity": "closed"
+      },
+      "scope": "global",
+      "charter_class": "allowed",
+      "transport": {
+        "kind": "xmp_attribute",
+        "key": "HueAdjustmentYellow"
+      },
+      "evidence": {
+        "documented": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "schema_representable": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_write": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_readback": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "fixture_probe": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "replay": {
+          "status": "unverified",
+          "evidence_ref": null
+        }
+      },
+      "enum_domain_ref": null
+    },
+    {
+      "operation_id": "acr.linear_gradient_mask",
+      "field": null,
+      "product": "camera_raw",
+      "family": "local_masks",
+      "value_type": "mask_graph",
+      "native_unit": null,
+      "native_range": null,
+      "scope": "local",
+      "charter_class": "conditional",
+      "transport": {
+        "kind": "xmp_mask_graph",
+        "key": "MaskGroupBasedCorrections"
+      },
+      "evidence": {
+        "documented": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "schema_representable": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_write": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_readback": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "fixture_probe": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "replay": {
+          "status": "unverified",
+          "evidence_ref": null
+        }
+      },
+      "enum_domain_ref": null
+    },
+    {
+      "operation_id": "acr.luminance_adjustment_aqua",
+      "field": "luminance_adjustment_aqua",
+      "product": "camera_raw",
+      "family": "hsl",
+      "value_type": "scalar",
+      "native_unit": "adobe:percent",
+      "native_range": {
+        "lower": "-100",
+        "upper": "100",
+        "inclusivity": "closed"
+      },
+      "scope": "global",
+      "charter_class": "allowed",
+      "transport": {
+        "kind": "xmp_attribute",
+        "key": "LuminanceAdjustmentAqua"
+      },
+      "evidence": {
+        "documented": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "schema_representable": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_write": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_readback": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "fixture_probe": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "replay": {
+          "status": "unverified",
+          "evidence_ref": null
+        }
+      },
+      "enum_domain_ref": null
+    },
+    {
+      "operation_id": "acr.luminance_adjustment_blue",
+      "field": "luminance_adjustment_blue",
+      "product": "camera_raw",
+      "family": "hsl_color",
+      "value_type": "scalar",
+      "native_unit": "adobe:percent",
+      "native_range": {
+        "lower": "-100",
+        "upper": "100",
+        "inclusivity": "closed"
+      },
+      "scope": "global",
+      "charter_class": "allowed",
+      "transport": {
+        "kind": "xmp_attribute",
+        "key": "LuminanceAdjustmentBlue"
+      },
+      "evidence": {
+        "documented": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "schema_representable": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_write": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_readback": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "fixture_probe": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "replay": {
+          "status": "unverified",
+          "evidence_ref": null
+        }
+      },
+      "enum_domain_ref": null
+    },
+    {
+      "operation_id": "acr.luminance_adjustment_green",
+      "field": "luminance_adjustment_green",
+      "product": "camera_raw",
+      "family": "hsl",
+      "value_type": "scalar",
+      "native_unit": "adobe:percent",
+      "native_range": {
+        "lower": "-100",
+        "upper": "100",
+        "inclusivity": "closed"
+      },
+      "scope": "global",
+      "charter_class": "allowed",
+      "transport": {
+        "kind": "xmp_attribute",
+        "key": "LuminanceAdjustmentGreen"
+      },
+      "evidence": {
+        "documented": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "schema_representable": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_write": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_readback": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "fixture_probe": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "replay": {
+          "status": "unverified",
+          "evidence_ref": null
+        }
+      },
+      "enum_domain_ref": null
+    },
+    {
+      "operation_id": "acr.luminance_adjustment_magenta",
+      "field": "luminance_adjustment_magenta",
+      "product": "camera_raw",
+      "family": "hsl",
+      "value_type": "scalar",
+      "native_unit": "adobe:percent",
+      "native_range": {
+        "lower": "-100",
+        "upper": "100",
+        "inclusivity": "closed"
+      },
+      "scope": "global",
+      "charter_class": "allowed",
+      "transport": {
+        "kind": "xmp_attribute",
+        "key": "LuminanceAdjustmentMagenta"
+      },
+      "evidence": {
+        "documented": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "schema_representable": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_write": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_readback": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "fixture_probe": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "replay": {
+          "status": "unverified",
+          "evidence_ref": null
+        }
+      },
+      "enum_domain_ref": null
+    },
+    {
+      "operation_id": "acr.luminance_adjustment_orange",
+      "field": "luminance_adjustment_orange",
+      "product": "camera_raw",
+      "family": "hsl_color",
+      "value_type": "scalar",
+      "native_unit": "adobe:percent",
+      "native_range": {
+        "lower": "-100",
+        "upper": "100",
+        "inclusivity": "closed"
+      },
+      "scope": "global",
+      "charter_class": "allowed",
+      "transport": {
+        "kind": "xmp_attribute",
+        "key": "LuminanceAdjustmentOrange"
+      },
+      "evidence": {
+        "documented": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "schema_representable": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_write": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_readback": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "fixture_probe": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "replay": {
+          "status": "unverified",
+          "evidence_ref": null
+        }
+      },
+      "enum_domain_ref": null
+    },
+    {
+      "operation_id": "acr.luminance_adjustment_purple",
+      "field": "luminance_adjustment_purple",
+      "product": "camera_raw",
+      "family": "hsl",
+      "value_type": "scalar",
+      "native_unit": "adobe:percent",
+      "native_range": {
+        "lower": "-100",
+        "upper": "100",
+        "inclusivity": "closed"
+      },
+      "scope": "global",
+      "charter_class": "allowed",
+      "transport": {
+        "kind": "xmp_attribute",
+        "key": "LuminanceAdjustmentPurple"
+      },
+      "evidence": {
+        "documented": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "schema_representable": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_write": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_readback": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "fixture_probe": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "replay": {
+          "status": "unverified",
+          "evidence_ref": null
+        }
+      },
+      "enum_domain_ref": null
+    },
+    {
+      "operation_id": "acr.luminance_adjustment_red",
+      "field": "luminance_adjustment_red",
+      "product": "camera_raw",
+      "family": "hsl_color",
+      "value_type": "scalar",
+      "native_unit": "adobe:percent",
+      "native_range": {
+        "lower": "-100",
+        "upper": "100",
+        "inclusivity": "closed"
+      },
+      "scope": "global",
+      "charter_class": "allowed",
+      "transport": {
+        "kind": "xmp_attribute",
+        "key": "LuminanceAdjustmentRed"
+      },
+      "evidence": {
+        "documented": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "schema_representable": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_write": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_readback": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "fixture_probe": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "replay": {
+          "status": "unverified",
+          "evidence_ref": null
+        }
+      },
+      "enum_domain_ref": null
+    },
+    {
+      "operation_id": "acr.luminance_adjustment_yellow",
+      "field": "luminance_adjustment_yellow",
+      "product": "camera_raw",
+      "family": "hsl",
+      "value_type": "scalar",
+      "native_unit": "adobe:percent",
+      "native_range": {
+        "lower": "-100",
+        "upper": "100",
+        "inclusivity": "closed"
+      },
+      "scope": "global",
+      "charter_class": "allowed",
+      "transport": {
+        "kind": "xmp_attribute",
+        "key": "LuminanceAdjustmentYellow"
+      },
+      "evidence": {
+        "documented": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "schema_representable": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_write": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_readback": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "fixture_probe": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "replay": {
+          "status": "unverified",
+          "evidence_ref": null
+        }
+      },
+      "enum_domain_ref": null
+    },
+    {
+      "operation_id": "acr.luminance_range_mask",
+      "field": null,
+      "product": "camera_raw",
+      "family": "local_masks",
+      "value_type": "mask_graph",
+      "native_unit": null,
+      "native_range": null,
+      "scope": "local",
+      "charter_class": "conditional",
+      "transport": {
+        "kind": "xmp_mask_graph",
+        "key": "MaskGroupBasedCorrections"
+      },
+      "evidence": {
+        "documented": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "schema_representable": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_write": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_readback": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "fixture_probe": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "replay": {
+          "status": "unverified",
+          "evidence_ref": null
+        }
+      },
+      "enum_domain_ref": null
+    },
+    {
+      "operation_id": "acr.luminance_smoothing",
+      "field": "luminance_smoothing",
+      "product": "camera_raw",
+      "family": "detail",
+      "value_type": "scalar",
+      "native_unit": "adobe:percent",
+      "native_range": {
+        "lower": "0",
+        "upper": "100",
+        "inclusivity": "closed"
+      },
+      "scope": "global",
+      "charter_class": "allowed",
+      "transport": {
+        "kind": "xmp_attribute",
+        "key": "LuminanceSmoothing"
+      },
+      "evidence": {
+        "documented": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "schema_representable": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_write": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_readback": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "fixture_probe": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "replay": {
+          "status": "unverified",
+          "evidence_ref": null
+        }
+      },
+      "enum_domain_ref": null
+    },
+    {
+      "operation_id": "acr.parametric_darks",
+      "field": "parametric_darks",
+      "product": "camera_raw",
+      "family": "parametric_curve",
+      "value_type": "scalar",
+      "native_unit": "adobe:percent",
+      "native_range": {
+        "lower": "-100",
+        "upper": "100",
+        "inclusivity": "closed"
+      },
+      "scope": "global",
+      "charter_class": "allowed",
+      "transport": {
+        "kind": "xmp_attribute",
+        "key": "ParametricDarks"
+      },
+      "evidence": {
+        "documented": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "schema_representable": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_write": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_readback": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "fixture_probe": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "replay": {
+          "status": "unverified",
+          "evidence_ref": null
+        }
+      },
+      "enum_domain_ref": null
+    },
+    {
+      "operation_id": "acr.parametric_highlights",
+      "field": "parametric_highlights",
+      "product": "camera_raw",
+      "family": "parametric_curve",
+      "value_type": "scalar",
+      "native_unit": "adobe:percent",
+      "native_range": {
+        "lower": "-100",
+        "upper": "100",
+        "inclusivity": "closed"
+      },
+      "scope": "global",
+      "charter_class": "allowed",
+      "transport": {
+        "kind": "xmp_attribute",
+        "key": "ParametricHighlights"
+      },
+      "evidence": {
+        "documented": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "schema_representable": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_write": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_readback": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "fixture_probe": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "replay": {
+          "status": "unverified",
+          "evidence_ref": null
+        }
+      },
+      "enum_domain_ref": null
+    },
+    {
+      "operation_id": "acr.parametric_lights",
+      "field": "parametric_lights",
+      "product": "camera_raw",
+      "family": "parametric_curve",
+      "value_type": "scalar",
+      "native_unit": "adobe:percent",
+      "native_range": {
+        "lower": "-100",
+        "upper": "100",
+        "inclusivity": "closed"
+      },
+      "scope": "global",
+      "charter_class": "allowed",
+      "transport": {
+        "kind": "xmp_attribute",
+        "key": "ParametricLights"
+      },
+      "evidence": {
+        "documented": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "schema_representable": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_write": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_readback": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "fixture_probe": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "replay": {
+          "status": "unverified",
+          "evidence_ref": null
+        }
+      },
+      "enum_domain_ref": null
+    },
+    {
+      "operation_id": "acr.parametric_shadows",
+      "field": "parametric_shadows",
+      "product": "camera_raw",
+      "family": "parametric_curve",
+      "value_type": "scalar",
+      "native_unit": "adobe:percent",
+      "native_range": {
+        "lower": "-100",
+        "upper": "100",
+        "inclusivity": "closed"
+      },
+      "scope": "global",
+      "charter_class": "allowed",
+      "transport": {
+        "kind": "xmp_attribute",
+        "key": "ParametricShadows"
+      },
+      "evidence": {
+        "documented": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "schema_representable": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_write": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_readback": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "fixture_probe": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "replay": {
+          "status": "unverified",
+          "evidence_ref": null
+        }
+      },
+      "enum_domain_ref": null
+    },
+    {
+      "operation_id": "acr.point_curve_rgb",
+      "field": "point_curve_rgb",
+      "product": "camera_raw",
+      "family": "point_curve",
+      "value_type": "curve",
+      "native_unit": "unit:none",
+      "native_range": null,
+      "scope": "global",
+      "charter_class": "allowed",
+      "transport": {
+        "kind": "xmp_rdf_seq",
+        "key": "ToneCurvePV2012",
+        "companion_attributes": {
+          "ToneCurveName2012": "Custom"
+        }
+      },
+      "evidence": {
+        "documented": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "schema_representable": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_write": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_readback": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "fixture_probe": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "replay": {
+          "status": "unverified",
+          "evidence_ref": null
+        }
+      },
+      "enum_domain_ref": null
+    },
+    {
+      "operation_id": "acr.radial_gradient_mask",
+      "field": null,
+      "product": "camera_raw",
+      "family": "local_masks",
+      "value_type": "mask_graph",
+      "native_unit": null,
+      "native_range": null,
+      "scope": "local",
+      "charter_class": "conditional",
+      "transport": {
+        "kind": "xmp_mask_graph",
+        "key": "MaskGroupBasedCorrections"
+      },
+      "evidence": {
+        "documented": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "schema_representable": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_write": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_readback": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "fixture_probe": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "replay": {
+          "status": "unverified",
+          "evidence_ref": null
+        }
+      },
+      "enum_domain_ref": null
+    },
+    {
+      "operation_id": "acr.saturation",
+      "field": "saturation",
+      "product": "camera_raw",
+      "family": "basic_color",
+      "value_type": "scalar",
+      "native_unit": "adobe:percent",
+      "native_range": {
+        "lower": "-100",
+        "upper": "100",
+        "inclusivity": "closed"
+      },
+      "scope": "global",
+      "charter_class": "allowed",
+      "transport": {
+        "kind": "xmp_attribute",
+        "key": "Saturation"
+      },
+      "evidence": {
+        "documented": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "schema_representable": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_write": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_readback": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "fixture_probe": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "replay": {
+          "status": "unverified",
+          "evidence_ref": null
+        }
+      },
+      "enum_domain_ref": null
+    },
+    {
+      "operation_id": "acr.saturation_adjustment_aqua",
+      "field": "saturation_adjustment_aqua",
+      "product": "camera_raw",
+      "family": "hsl_color",
+      "value_type": "scalar",
+      "native_unit": "adobe:percent",
+      "native_range": {
+        "lower": "-100",
+        "upper": "100",
+        "inclusivity": "closed"
+      },
+      "scope": "global",
+      "charter_class": "allowed",
+      "transport": {
+        "kind": "xmp_attribute",
+        "key": "SaturationAdjustmentAqua"
+      },
+      "evidence": {
+        "documented": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "schema_representable": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_write": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_readback": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "fixture_probe": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "replay": {
+          "status": "unverified",
+          "evidence_ref": null
+        }
+      },
+      "enum_domain_ref": null
+    },
+    {
+      "operation_id": "acr.saturation_adjustment_blue",
+      "field": "saturation_adjustment_blue",
+      "product": "camera_raw",
+      "family": "hsl_color",
+      "value_type": "scalar",
+      "native_unit": "adobe:percent",
+      "native_range": {
+        "lower": "-100",
+        "upper": "100",
+        "inclusivity": "closed"
+      },
+      "scope": "global",
+      "charter_class": "allowed",
+      "transport": {
+        "kind": "xmp_attribute",
+        "key": "SaturationAdjustmentBlue"
+      },
+      "evidence": {
+        "documented": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "schema_representable": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_write": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_readback": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "fixture_probe": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "replay": {
+          "status": "unverified",
+          "evidence_ref": null
+        }
+      },
+      "enum_domain_ref": null
+    },
+    {
+      "operation_id": "acr.saturation_adjustment_green",
+      "field": "saturation_adjustment_green",
+      "product": "camera_raw",
+      "family": "hsl_color",
+      "value_type": "scalar",
+      "native_unit": "adobe:percent",
+      "native_range": {
+        "lower": "-100",
+        "upper": "100",
+        "inclusivity": "closed"
+      },
+      "scope": "global",
+      "charter_class": "allowed",
+      "transport": {
+        "kind": "xmp_attribute",
+        "key": "SaturationAdjustmentGreen"
+      },
+      "evidence": {
+        "documented": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "schema_representable": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_write": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_readback": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "fixture_probe": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "replay": {
+          "status": "unverified",
+          "evidence_ref": null
+        }
+      },
+      "enum_domain_ref": null
+    },
+    {
+      "operation_id": "acr.saturation_adjustment_magenta",
+      "field": "saturation_adjustment_magenta",
+      "product": "camera_raw",
+      "family": "hsl",
+      "value_type": "scalar",
+      "native_unit": "adobe:percent",
+      "native_range": {
+        "lower": "-100",
+        "upper": "100",
+        "inclusivity": "closed"
+      },
+      "scope": "global",
+      "charter_class": "allowed",
+      "transport": {
+        "kind": "xmp_attribute",
+        "key": "SaturationAdjustmentMagenta"
+      },
+      "evidence": {
+        "documented": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "schema_representable": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_write": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_readback": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "fixture_probe": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "replay": {
+          "status": "unverified",
+          "evidence_ref": null
+        }
+      },
+      "enum_domain_ref": null
+    },
+    {
+      "operation_id": "acr.saturation_adjustment_orange",
+      "field": "saturation_adjustment_orange",
+      "product": "camera_raw",
+      "family": "hsl_color",
+      "value_type": "scalar",
+      "native_unit": "adobe:percent",
+      "native_range": {
+        "lower": "-100",
+        "upper": "100",
+        "inclusivity": "closed"
+      },
+      "scope": "global",
+      "charter_class": "allowed",
+      "transport": {
+        "kind": "xmp_attribute",
+        "key": "SaturationAdjustmentOrange"
+      },
+      "evidence": {
+        "documented": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "schema_representable": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_write": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_readback": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "fixture_probe": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "replay": {
+          "status": "unverified",
+          "evidence_ref": null
+        }
+      },
+      "enum_domain_ref": null
+    },
+    {
+      "operation_id": "acr.saturation_adjustment_purple",
+      "field": "saturation_adjustment_purple",
+      "product": "camera_raw",
+      "family": "hsl",
+      "value_type": "scalar",
+      "native_unit": "adobe:percent",
+      "native_range": {
+        "lower": "-100",
+        "upper": "100",
+        "inclusivity": "closed"
+      },
+      "scope": "global",
+      "charter_class": "allowed",
+      "transport": {
+        "kind": "xmp_attribute",
+        "key": "SaturationAdjustmentPurple"
+      },
+      "evidence": {
+        "documented": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "schema_representable": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_write": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_readback": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "fixture_probe": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "replay": {
+          "status": "unverified",
+          "evidence_ref": null
+        }
+      },
+      "enum_domain_ref": null
+    },
+    {
+      "operation_id": "acr.saturation_adjustment_red",
+      "field": "saturation_adjustment_red",
+      "product": "camera_raw",
+      "family": "hsl_color",
+      "value_type": "scalar",
+      "native_unit": "adobe:percent",
+      "native_range": {
+        "lower": "-100",
+        "upper": "100",
+        "inclusivity": "closed"
+      },
+      "scope": "global",
+      "charter_class": "allowed",
+      "transport": {
+        "kind": "xmp_attribute",
+        "key": "SaturationAdjustmentRed"
+      },
+      "evidence": {
+        "documented": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "schema_representable": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_write": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_readback": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "fixture_probe": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "replay": {
+          "status": "unverified",
+          "evidence_ref": null
+        }
+      },
+      "enum_domain_ref": null
+    },
+    {
+      "operation_id": "acr.saturation_adjustment_yellow",
+      "field": "saturation_adjustment_yellow",
+      "product": "camera_raw",
+      "family": "hsl_color",
+      "value_type": "scalar",
+      "native_unit": "adobe:percent",
+      "native_range": {
+        "lower": "-100",
+        "upper": "100",
+        "inclusivity": "closed"
+      },
+      "scope": "global",
+      "charter_class": "allowed",
+      "transport": {
+        "kind": "xmp_attribute",
+        "key": "SaturationAdjustmentYellow"
+      },
+      "evidence": {
+        "documented": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "schema_representable": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_write": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_readback": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "fixture_probe": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "replay": {
+          "status": "unverified",
+          "evidence_ref": null
+        }
+      },
+      "enum_domain_ref": null
+    },
+    {
+      "operation_id": "acr.shadows2012",
+      "field": "shadows2012",
+      "product": "camera_raw",
+      "family": "basic_tone",
+      "value_type": "scalar",
+      "native_unit": "adobe:percent",
+      "native_range": {
+        "lower": "-100",
+        "upper": "100",
+        "inclusivity": "closed"
+      },
+      "scope": "global",
+      "charter_class": "allowed",
+      "transport": {
+        "kind": "xmp_attribute",
+        "key": "Shadows2012"
+      },
+      "evidence": {
+        "documented": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "schema_representable": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_write": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_readback": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "fixture_probe": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "replay": {
+          "status": "unverified",
+          "evidence_ref": null
+        }
+      },
+      "enum_domain_ref": null
+    },
+    {
+      "operation_id": "acr.split_toning_balance",
+      "field": "split_toning_balance",
+      "product": "camera_raw",
+      "family": "split_toning",
+      "value_type": "scalar",
+      "native_unit": "adobe:percent",
+      "native_range": {
+        "lower": "-100",
+        "upper": "100",
+        "inclusivity": "closed"
+      },
+      "scope": "global",
+      "charter_class": "allowed",
+      "transport": {
+        "kind": "xmp_attribute",
+        "key": "SplitToningBalance"
+      },
+      "evidence": {
+        "documented": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "schema_representable": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_write": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_readback": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "fixture_probe": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "replay": {
+          "status": "unverified",
+          "evidence_ref": null
+        }
+      },
+      "enum_domain_ref": null
+    },
+    {
+      "operation_id": "acr.split_toning_highlight_hue",
+      "field": "split_toning_highlight_hue",
+      "product": "camera_raw",
+      "family": "split_toning",
+      "value_type": "scalar",
+      "native_unit": "adobe:hue_degrees",
+      "native_range": {
+        "lower": "0",
+        "upper": "360",
+        "inclusivity": "closed"
+      },
+      "scope": "global",
+      "charter_class": "allowed",
+      "transport": {
+        "kind": "xmp_attribute",
+        "key": "SplitToningHighlightHue"
+      },
+      "evidence": {
+        "documented": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "schema_representable": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_write": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_readback": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "fixture_probe": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "replay": {
+          "status": "unverified",
+          "evidence_ref": null
+        }
+      },
+      "enum_domain_ref": null
+    },
+    {
+      "operation_id": "acr.split_toning_highlight_saturation",
+      "field": "split_toning_highlight_saturation",
+      "product": "camera_raw",
+      "family": "split_toning",
+      "value_type": "scalar",
+      "native_unit": "adobe:percent",
+      "native_range": {
+        "lower": "0",
+        "upper": "100",
+        "inclusivity": "closed"
+      },
+      "scope": "global",
+      "charter_class": "allowed",
+      "transport": {
+        "kind": "xmp_attribute",
+        "key": "SplitToningHighlightSaturation"
+      },
+      "evidence": {
+        "documented": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "schema_representable": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_write": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_readback": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "fixture_probe": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "replay": {
+          "status": "unverified",
+          "evidence_ref": null
+        }
+      },
+      "enum_domain_ref": null
+    },
+    {
+      "operation_id": "acr.split_toning_shadow_hue",
+      "field": "split_toning_shadow_hue",
+      "product": "camera_raw",
+      "family": "split_toning",
+      "value_type": "scalar",
+      "native_unit": "adobe:hue_degrees",
+      "native_range": {
+        "lower": "0",
+        "upper": "360",
+        "inclusivity": "closed"
+      },
+      "scope": "global",
+      "charter_class": "allowed",
+      "transport": {
+        "kind": "xmp_attribute",
+        "key": "SplitToningShadowHue"
+      },
+      "evidence": {
+        "documented": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "schema_representable": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_write": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_readback": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "fixture_probe": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "replay": {
+          "status": "unverified",
+          "evidence_ref": null
+        }
+      },
+      "enum_domain_ref": null
+    },
+    {
+      "operation_id": "acr.split_toning_shadow_saturation",
+      "field": "split_toning_shadow_saturation",
+      "product": "camera_raw",
+      "family": "split_toning",
+      "value_type": "scalar",
+      "native_unit": "adobe:percent",
+      "native_range": {
+        "lower": "0",
+        "upper": "100",
+        "inclusivity": "closed"
+      },
+      "scope": "global",
+      "charter_class": "allowed",
+      "transport": {
+        "kind": "xmp_attribute",
+        "key": "SplitToningShadowSaturation"
+      },
+      "evidence": {
+        "documented": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "schema_representable": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_write": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_readback": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "fixture_probe": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "replay": {
+          "status": "unverified",
+          "evidence_ref": null
+        }
+      },
+      "enum_domain_ref": null
+    },
+    {
+      "operation_id": "acr.temperature",
+      "field": "temperature",
+      "product": "camera_raw",
+      "family": "profile_white_balance",
+      "value_type": "scalar",
+      "native_unit": "adobe:kelvin",
+      "native_range": {
+        "lower": "2000",
+        "upper": "50000",
+        "inclusivity": "closed"
+      },
+      "scope": "global",
+      "charter_class": "allowed",
+      "transport": {
+        "kind": "xmp_attribute",
+        "key": "Temperature"
+      },
+      "evidence": {
+        "documented": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "schema_representable": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_write": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_readback": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "fixture_probe": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "replay": {
+          "status": "unverified",
+          "evidence_ref": null
+        }
+      },
+      "enum_domain_ref": null
+    },
+    {
+      "operation_id": "acr.texture",
+      "field": "texture",
+      "product": "camera_raw",
+      "family": "presence",
+      "value_type": "scalar",
+      "native_unit": "adobe:percent",
+      "native_range": {
+        "lower": "-100",
+        "upper": "100",
+        "inclusivity": "closed"
+      },
+      "scope": "global",
+      "charter_class": "allowed",
+      "transport": {
+        "kind": "xmp_attribute",
+        "key": "Texture"
+      },
+      "evidence": {
+        "documented": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "schema_representable": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_write": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_readback": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "fixture_probe": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "replay": {
+          "status": "unverified",
+          "evidence_ref": null
+        }
+      },
+      "enum_domain_ref": null
+    },
+    {
+      "operation_id": "acr.tint",
+      "field": "tint",
+      "product": "camera_raw",
+      "family": "profile_white_balance",
+      "value_type": "scalar",
+      "native_unit": "unit:none",
+      "native_range": {
+        "lower": "-150",
+        "upper": "150",
+        "inclusivity": "closed"
+      },
+      "scope": "global",
+      "charter_class": "allowed",
+      "transport": {
+        "kind": "xmp_attribute",
+        "key": "Tint"
+      },
+      "evidence": {
+        "documented": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "schema_representable": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_write": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_readback": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "fixture_probe": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "replay": {
+          "status": "unverified",
+          "evidence_ref": null
+        }
+      },
+      "enum_domain_ref": null
+    },
+    {
+      "operation_id": "acr.vibrance",
+      "field": "vibrance",
+      "product": "camera_raw",
+      "family": "basic_color",
+      "value_type": "scalar",
+      "native_unit": "adobe:percent",
+      "native_range": {
+        "lower": "-100",
+        "upper": "100",
+        "inclusivity": "closed"
+      },
+      "scope": "global",
+      "charter_class": "allowed",
+      "transport": {
+        "kind": "xmp_attribute",
+        "key": "Vibrance"
+      },
+      "evidence": {
+        "documented": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "schema_representable": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_write": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_readback": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "fixture_probe": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "replay": {
+          "status": "unverified",
+          "evidence_ref": null
+        }
+      },
+      "enum_domain_ref": null
+    },
+    {
+      "operation_id": "acr.white_balance",
+      "field": "white_balance",
+      "product": "camera_raw",
+      "family": "profile_white_balance",
+      "value_type": "enum",
+      "native_unit": "unit:none",
+      "native_range": null,
+      "scope": "global",
+      "charter_class": "allowed",
+      "transport": {
+        "kind": "xmp_attribute",
+        "key": "WhiteBalance"
+      },
+      "evidence": {
+        "documented": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "schema_representable": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_write": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_readback": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "fixture_probe": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "replay": {
+          "status": "unverified",
+          "evidence_ref": null
+        }
+      },
+      "enum_domain_ref": {
+        "registry_id": "adobe.white_balance",
+        "version": "1.0.0",
+        "sha256": "9237e5b15500e567aa92a0e93d87860d2343841c5c72837336f555ff08798d40"
+      }
+    },
+    {
+      "operation_id": "acr.whites2012",
+      "field": "whites2012",
+      "product": "camera_raw",
+      "family": "basic_tone",
+      "value_type": "scalar",
+      "native_unit": "adobe:percent",
+      "native_range": {
+        "lower": "-100",
+        "upper": "100",
+        "inclusivity": "closed"
+      },
+      "scope": "global",
+      "charter_class": "allowed",
+      "transport": {
+        "kind": "xmp_attribute",
+        "key": "Whites2012"
+      },
+      "evidence": {
+        "documented": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "schema_representable": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_write": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_readback": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "fixture_probe": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "replay": {
+          "status": "unverified",
+          "evidence_ref": null
+        }
+      },
+      "enum_domain_ref": null
+    },
+    {
+      "operation_id": "ai_denoise",
+      "field": "ai_denoise",
+      "product": "camera_raw",
+      "family": "model_dependent",
+      "value_type": "action",
+      "native_unit": null,
+      "native_range": null,
+      "scope": "global",
+      "charter_class": "prohibited",
+      "transport": null,
+      "evidence": {
+        "documented": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "schema_representable": {
+          "status": "unsupported",
+          "evidence_ref": null
+        },
+        "executor_write": {
+          "status": "unsupported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_readback": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "fixture_probe": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "replay": {
+          "status": "unverified",
+          "evidence_ref": null
+        }
+      },
+      "enum_domain_ref": null
+    },
+    {
+      "operation_id": "face_reshape",
+      "field": "face_reshape",
+      "product": "photoshop",
+      "family": "identity_body_change",
+      "value_type": "action",
+      "native_unit": null,
+      "native_range": null,
+      "scope": "local",
+      "charter_class": "prohibited",
+      "transport": null,
+      "evidence": {
+        "documented": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "schema_representable": {
+          "status": "unsupported",
+          "evidence_ref": null
+        },
+        "executor_write": {
+          "status": "unsupported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_readback": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "fixture_probe": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "replay": {
+          "status": "unverified",
+          "evidence_ref": null
+        }
+      },
+      "enum_domain_ref": null
+    },
+    {
+      "operation_id": "generative_fill",
+      "field": "generative_fill",
+      "product": "photoshop",
+      "family": "generative_edit",
+      "value_type": "action",
+      "native_unit": null,
+      "native_range": null,
+      "scope": "local",
+      "charter_class": "prohibited",
+      "transport": null,
+      "evidence": {
+        "documented": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "schema_representable": {
+          "status": "unsupported",
+          "evidence_ref": null
+        },
+        "executor_write": {
+          "status": "unsupported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_readback": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "fixture_probe": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "replay": {
+          "status": "unverified",
+          "evidence_ref": null
+        }
+      },
+      "enum_domain_ref": null
+    },
+    {
+      "operation_id": "liquify",
+      "field": "liquify",
+      "product": "photoshop",
+      "family": "identity_body_change",
+      "value_type": "action",
+      "native_unit": null,
+      "native_range": null,
+      "scope": "local",
+      "charter_class": "prohibited",
+      "transport": null,
+      "evidence": {
+        "documented": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "schema_representable": {
+          "status": "unsupported",
+          "evidence_ref": null
+        },
+        "executor_write": {
+          "status": "unsupported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_readback": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "fixture_probe": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "replay": {
+          "status": "unverified",
+          "evidence_ref": null
+        }
+      },
+      "enum_domain_ref": null
+    },
+    {
+      "operation_id": "local.harmonic_tone_balance",
+      "field": null,
+      "product": "local_raster",
+      "family": "local_tone",
+      "value_type": "action",
+      "native_unit": null,
+      "native_range": null,
+      "enum_domain_ref": null,
+      "scope": "local",
+      "charter_class": "conditional",
+      "transport": {
+        "kind": "local_raster_recipe",
+        "key": "HarmonicToneBalance"
+      },
+      "evidence": {
+        "documented": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "schema_representable": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_write": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "executor_readback": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "fixture_probe": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "replay": {
+          "status": "unverified",
+          "evidence_ref": null
+        }
+      }
+    },
+    {
+      "operation_id": "local.same_image_clone",
+      "field": null,
+      "product": "local_raster",
+      "family": "shadow_cleanup",
+      "value_type": "action",
+      "native_unit": null,
+      "native_range": null,
+      "enum_domain_ref": null,
+      "scope": "local",
+      "charter_class": "conditional",
+      "transport": {
+        "kind": "local_raster_recipe",
+        "key": "SameImageClone"
+      },
+      "evidence": {
+        "documented": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "schema_representable": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_write": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "executor_readback": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "fixture_probe": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "replay": {
+          "status": "unverified",
+          "evidence_ref": null
+        }
+      }
+    },
+    {
+      "operation_id": "local.same_source_restore",
+      "field": null,
+      "product": "local_raster",
+      "family": "local_skin",
+      "value_type": "action",
+      "native_unit": null,
+      "native_range": null,
+      "enum_domain_ref": null,
+      "scope": "local",
+      "charter_class": "conditional",
+      "transport": {
+        "kind": "local_raster_recipe",
+        "key": "SameSourceRestore"
+      },
+      "evidence": {
+        "documented": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "schema_representable": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_write": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "executor_readback": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "fixture_probe": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "replay": {
+          "status": "unverified",
+          "evidence_ref": null
+        }
+      }
+    },
+    {
+      "operation_id": "local.sampled_frequency_repair",
+      "field": null,
+      "product": "local_raster",
+      "family": "local_skin",
+      "value_type": "action",
+      "native_unit": null,
+      "native_range": null,
+      "enum_domain_ref": null,
+      "scope": "local",
+      "charter_class": "conditional",
+      "transport": {
+        "kind": "local_raster_recipe",
+        "key": "SampledFrequencyRepair"
+      },
+      "evidence": {
+        "documented": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "schema_representable": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_write": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "executor_readback": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "fixture_probe": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "replay": {
+          "status": "unverified",
+          "evidence_ref": null
+        }
+      }
+    },
+    {
+      "operation_id": "local.skin_control_field",
+      "field": null,
+      "product": "local_raster",
+      "family": "local_skin",
+      "value_type": "action",
+      "native_unit": null,
+      "native_range": null,
+      "enum_domain_ref": null,
+      "scope": "local",
+      "charter_class": "conditional",
+      "transport": {
+        "kind": "local_raster_recipe",
+        "key": "SkinControlField"
+      },
+      "evidence": {
+        "documented": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "schema_representable": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_write": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "executor_readback": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "fixture_probe": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "replay": {
+          "status": "unverified",
+          "evidence_ref": null
+        }
+      }
+    },
+    {
+      "operation_id": "local.skin_texture_smoothing",
+      "field": null,
+      "product": "local_raster",
+      "family": "local_skin",
+      "value_type": "action",
+      "native_unit": null,
+      "native_range": null,
+      "enum_domain_ref": null,
+      "scope": "local",
+      "charter_class": "conditional",
+      "transport": {
+        "kind": "local_raster_recipe",
+        "key": "SkinTextureSmoothing"
+      },
+      "evidence": {
+        "documented": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "schema_representable": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_write": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "executor_readback": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "fixture_probe": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "replay": {
+          "status": "unverified",
+          "evidence_ref": null
+        }
+      }
+    },
+    {
+      "operation_id": "local.spatial_light",
+      "field": null,
+      "product": "local_raster",
+      "family": "spatial_light",
+      "value_type": "action",
+      "native_unit": null,
+      "native_range": null,
+      "enum_domain_ref": null,
+      "scope": "local",
+      "charter_class": "conditional",
+      "transport": {
+        "kind": "local_raster_recipe",
+        "key": "SpatialLight"
+      },
+      "evidence": {
+        "documented": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "schema_representable": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_write": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "executor_readback": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "fixture_probe": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "replay": {
+          "status": "unverified",
+          "evidence_ref": null
+        }
+      }
+    },
+    {
+      "operation_id": "local.sun_glow",
+      "field": null,
+      "product": "local_raster",
+      "family": "sun_glow",
+      "value_type": "action",
+      "native_unit": null,
+      "native_range": null,
+      "enum_domain_ref": null,
+      "scope": "local",
+      "charter_class": "conditional",
+      "transport": {
+        "kind": "local_raster_recipe",
+        "key": "SunGlow"
+      },
+      "evidence": {
+        "documented": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "schema_representable": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_write": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "executor_readback": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "fixture_probe": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "replay": {
+          "status": "unverified",
+          "evidence_ref": null
+        }
+      }
+    },
+    {
+      "operation_id": "local.tonal_brush",
+      "field": null,
+      "product": "local_raster",
+      "family": "local_skin",
+      "value_type": "action",
+      "native_unit": null,
+      "native_range": null,
+      "enum_domain_ref": null,
+      "scope": "local",
+      "charter_class": "conditional",
+      "transport": {
+        "kind": "local_raster_recipe",
+        "key": "TonalBrush"
+      },
+      "evidence": {
+        "documented": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "schema_representable": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_write": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "executor_readback": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "fixture_probe": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "replay": {
+          "status": "unverified",
+          "evidence_ref": null
+        }
+      }
+    },
+    {
+      "operation_id": "ps.adjustment_layers",
+      "field": null,
+      "product": "photoshop",
+      "family": "adjustment_layers",
+      "value_type": "layer_graph",
+      "native_unit": null,
+      "native_range": null,
+      "scope": "document",
+      "charter_class": "conditional",
+      "transport": null,
+      "evidence": {
+        "documented": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "schema_representable": {
+          "status": "unsupported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_write": {
+          "status": "unsupported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_readback": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "fixture_probe": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "replay": {
+          "status": "unverified",
+          "evidence_ref": null
+        }
+      },
+      "enum_domain_ref": null
+    },
+    {
+      "operation_id": "ps.layer_masks",
+      "field": null,
+      "product": "photoshop",
+      "family": "layer_masks",
+      "value_type": "mask_graph",
+      "native_unit": null,
+      "native_range": null,
+      "scope": "document",
+      "charter_class": "conditional",
+      "transport": null,
+      "evidence": {
+        "documented": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "schema_representable": {
+          "status": "unsupported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_write": {
+          "status": "unsupported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_readback": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "fixture_probe": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "replay": {
+          "status": "unverified",
+          "evidence_ref": null
+        }
+      },
+      "enum_domain_ref": null
+    },
+    {
+      "operation_id": "select_sky",
+      "field": "select_sky",
+      "product": "camera_raw",
+      "family": "model_dependent",
+      "value_type": "action",
+      "native_unit": null,
+      "native_range": null,
+      "scope": "local",
+      "charter_class": "prohibited",
+      "transport": null,
+      "evidence": {
+        "documented": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "schema_representable": {
+          "status": "unsupported",
+          "evidence_ref": null
+        },
+        "executor_write": {
+          "status": "unsupported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_readback": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "fixture_probe": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "replay": {
+          "status": "unverified",
+          "evidence_ref": null
+        }
+      },
+      "enum_domain_ref": null
+    },
+    {
+      "operation_id": "select_subject",
+      "field": "select_subject",
+      "product": "camera_raw",
+      "family": "model_dependent",
+      "value_type": "action",
+      "native_unit": null,
+      "native_range": null,
+      "scope": "local",
+      "charter_class": "prohibited",
+      "transport": null,
+      "evidence": {
+        "documented": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "schema_representable": {
+          "status": "unsupported",
+          "evidence_ref": null
+        },
+        "executor_write": {
+          "status": "unsupported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_readback": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "fixture_probe": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "replay": {
+          "status": "unverified",
+          "evidence_ref": null
+        }
+      },
+      "enum_domain_ref": null
+    },
+    {
+      "operation_id": "skin_smoothing",
+      "field": "skin_smoothing",
+      "product": "photoshop",
+      "family": "identity_body_change",
+      "value_type": "action",
+      "native_unit": null,
+      "native_range": null,
+      "scope": "local",
+      "charter_class": "prohibited",
+      "transport": null,
+      "evidence": {
+        "documented": {
+          "status": "supported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "schema_representable": {
+          "status": "unsupported",
+          "evidence_ref": null
+        },
+        "executor_write": {
+          "status": "unsupported",
+          "evidence_ref": "references/operations.md#implementation"
+        },
+        "executor_readback": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "fixture_probe": {
+          "status": "unverified",
+          "evidence_ref": null
+        },
+        "replay": {
+          "status": "unverified",
+          "evidence_ref": null
+        }
+      },
+      "enum_domain_ref": null
+    }
+  ],
+  "registry_sha256": "c6830882b3351c747b1dd8d175417b54736e3c47dbc993f1c5640d9b1d2eb549"
+}

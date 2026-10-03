@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://darkroom-finish.local/schemas/formula-lookup-table-v1.schema.json",
+  "title": "darkroom-finish deterministic formula lookup table v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "table_id",
+    "version",
+    "input_type",
+    "input_unit",
+    "input_enum_domain_ref",
+    "output_unit",
+    "entries",
+    "table_sha256"
+  ],
+  "properties": {
+    "schema_version": {"const": "formula-lookup-table/v1"},
+    "table_id": {"$ref": "formula-dsl-v1.schema.json#/$defs/Identifier"},
+    "version": {"$ref": "formula-dsl-v1.schema.json#/$defs/Semver"},
+    "input_type": {"enum": ["decimal", "integer", "boolean", "enum"]},
+    "input_unit": {"$ref": "formula-dsl-v1.schema.json#/$defs/UnitId"},
+    "input_enum_domain_ref": {
+      "oneOf": [
+        {"type": "null"},
+        {"$ref": "formula-dsl-v1.schema.json#/$defs/EnumDomainRef"}
+      ]
+    },
+    "output_unit": {"$ref": "formula-dsl-v1.schema.json#/$defs/UnitId"},
+    "entries": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 1024,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["key", "value"],
+        "properties": {
+          "key": {"$ref": "formula-dsl-v1.schema.json#/$defs/CanonicalScalar"},
+          "value": {"$ref": "formula-dsl-v1.schema.json#/$defs/DecimalString"}
+        }
+      }
+    },
+    "table_sha256": {"$ref": "formula-dsl-v1.schema.json#/$defs/Sha256"}
+  },
+  "allOf": [
+    {
+      "if": {"properties": {"input_type": {"const": "enum"}}},
+      "then": {"properties": {"input_enum_domain_ref": {"$ref": "formula-dsl-v1.schema.json#/$defs/EnumDomainRef"}}},
+      "else": {"properties": {"input_enum_domain_ref": {"type": "null"}}}
+    }
+  ]
+}

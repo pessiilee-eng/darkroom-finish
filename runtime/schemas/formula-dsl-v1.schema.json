@@ -1,0 +1,343 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://darkroom-finish.local/schemas/formula-dsl-v1.schema.json",
+  "title": "darkroom-finish deterministic formula DSL v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "result_type", "result_unit", "ast", "rounding"],
+  "properties": {
+    "schema_version": {"const": "formula-dsl/v1"},
+    "result_type": {"const": "decimal"},
+    "result_unit": {"$ref": "#/$defs/UnitId"},
+    "ast": {"$ref": "#/$defs/Expr"},
+    "rounding": {"$ref": "#/$defs/Rounding"}
+  },
+  "$defs": {
+    "Sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "Semver": {
+      "type": "string",
+      "pattern": "^(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)(?:-[0-9A-Za-z.-]+)?$"
+    },
+    "Identifier": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_.-]{0,63}$"
+    },
+    "EnumToken": {
+      "type": "string",
+      "pattern": "^[A-Z][A-Z0-9_]{0,63}$"
+    },
+    "UnitId": {
+      "type": "string",
+      "enum": ["adobe:exposure_ev", "adobe:hue_degrees", "adobe:kelvin", "adobe:percent", "unit:none"]
+    },
+    "DecimalString": {
+      "type": "string",
+      "maxLength": 64,
+      "pattern": "^(0|[1-9][0-9]*|-[1-9][0-9]*|-?(0|[1-9][0-9]*)\\.[0-9]*[1-9])$"
+    },
+    "IntegerString": {
+      "type": "string",
+      "maxLength": 20,
+      "pattern": "^(0|[1-9][0-9]*|-[1-9][0-9]*)$"
+    },
+    "EnumDomainRef": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["registry_id", "version", "sha256"],
+      "properties": {
+        "registry_id": {"$ref": "#/$defs/Identifier"},
+        "version": {"$ref": "#/$defs/Semver"},
+        "sha256": {"$ref": "#/$defs/Sha256"}
+      }
+    },
+    "CanonicalScalar": {
+      "oneOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["type", "value"],
+          "properties": {
+            "type": {"const": "decimal"},
+            "value": {"$ref": "#/$defs/DecimalString"}
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["type", "value"],
+          "properties": {
+            "type": {"const": "integer"},
+            "value": {"$ref": "#/$defs/IntegerString"}
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["type", "value"],
+          "properties": {
+            "type": {"const": "boolean"},
+            "value": {"type": "boolean"}
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["type", "domain_ref", "value"],
+          "properties": {
+            "type": {"const": "enum"},
+            "domain_ref": {"$ref": "#/$defs/EnumDomainRef"},
+            "value": {"$ref": "#/$defs/EnumToken"}
+          }
+        }
+      ]
+    },
+    "CurvePoint": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["input", "output"],
+      "properties": {
+        "input": {"$ref": "#/$defs/IntegerString"},
+        "output": {"$ref": "#/$defs/IntegerString"}
+      }
+    },
+    "CanonicalCurve": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["type", "points"],
+      "properties": {
+        "type": {"const": "curve"},
+        "points": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 64,
+          "items": {"$ref": "#/$defs/CurvePoint"}
+        }
+      }
+    },
+    "CanonicalParameterValue": {
+      "oneOf": [
+        {"$ref": "#/$defs/CanonicalScalar"},
+        {"$ref": "#/$defs/CanonicalCurve"}
+      ]
+    },
+    "MeasurementRef": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["ref", "key", "value_type", "unit"],
+      "properties": {
+        "ref": {"const": "measurement"},
+        "key": {"$ref": "#/$defs/Identifier"},
+        "value_type": {"enum": ["decimal", "integer", "boolean", "enum"]},
+        "unit": {"$ref": "#/$defs/UnitId"},
+        "enum_domain_ref": {"$ref": "#/$defs/EnumDomainRef"}
+      },
+      "allOf": [
+        {
+          "if": {"properties": {"value_type": {"const": "enum"}}},
+          "then": {"required": ["enum_domain_ref"]},
+          "else": {"not": {"required": ["enum_domain_ref"]}}
+        }
+      ]
+    },
+    "MeasurementDefinition": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["key", "method_id", "value_type", "unit"],
+      "properties": {
+        "key": {"$ref": "#/$defs/Identifier"},
+        "method_id": {"$ref": "#/$defs/Identifier"},
+        "value_type": {"enum": ["decimal", "integer", "boolean", "enum"]},
+        "unit": {"$ref": "#/$defs/UnitId"},
+        "enum_domain_ref": {"$ref": "#/$defs/EnumDomainRef"}
+      },
+      "allOf": [
+        {
+          "if": {"properties": {"value_type": {"const": "enum"}}},
+          "then": {"required": ["enum_domain_ref"]},
+          "else": {"not": {"required": ["enum_domain_ref"]}}
+        }
+      ]
+    },
+    "MeasurementBinding": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["key", "value_type", "unit", "value"],
+      "properties": {
+        "key": {"$ref": "#/$defs/Identifier"},
+        "value_type": {"enum": ["decimal", "integer", "boolean", "enum"]},
+        "unit": {"$ref": "#/$defs/UnitId"},
+        "value": {"$ref": "#/$defs/CanonicalScalar"}
+      }
+    },
+    "MeasurementBindingSet": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["schema_version", "entries"],
+      "properties": {
+        "schema_version": {"const": "formula-measurement-bindings/v1"},
+        "entries": {
+          "type": "array",
+          "maxItems": 128,
+          "items": {"$ref": "#/$defs/MeasurementBinding"}
+        }
+      }
+    },
+    "TableRef": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["table_id", "version", "sha256"],
+      "properties": {
+        "table_id": {"$ref": "#/$defs/Identifier"},
+        "version": {"$ref": "#/$defs/Semver"},
+        "sha256": {"$ref": "#/$defs/Sha256"}
+      }
+    },
+    "Rounding": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["mode", "scale"],
+      "properties": {
+        "mode": {"enum": ["half_even", "half_away_from_zero", "floor", "ceil"]},
+        "scale": {"type": "integer", "minimum": 0, "maximum": 8}
+      }
+    },
+    "ConstExpr": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["op", "value", "unit"],
+      "properties": {
+        "op": {"const": "const"},
+        "value": {"$ref": "#/$defs/DecimalString"},
+        "unit": {"$ref": "#/$defs/UnitId"}
+      }
+    },
+    "LookupExpr": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["op", "input", "input_type", "input_unit", "table", "output_unit"],
+      "properties": {
+        "op": {"const": "lookup"},
+        "input": {"$ref": "#/$defs/MeasurementRef"},
+        "input_type": {"enum": ["decimal", "integer", "boolean", "enum"]},
+        "input_unit": {"$ref": "#/$defs/UnitId"},
+        "table": {"$ref": "#/$defs/TableRef"},
+        "output_unit": {"$ref": "#/$defs/UnitId"}
+      }
+    },
+    "LinearExpr": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["op", "input", "input_unit", "output_unit", "slope", "intercept"],
+      "properties": {
+        "op": {"const": "linear"},
+        "input": {"$ref": "#/$defs/Operand"},
+        "input_unit": {"$ref": "#/$defs/UnitId"},
+        "output_unit": {"$ref": "#/$defs/UnitId"},
+        "slope": {"$ref": "#/$defs/DecimalString"},
+        "intercept": {"$ref": "#/$defs/DecimalString"}
+      }
+    },
+    "Point": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["x", "y"],
+      "properties": {
+        "x": {"$ref": "#/$defs/DecimalString"},
+        "y": {"$ref": "#/$defs/DecimalString"}
+      }
+    },
+    "PiecewiseLinearExpr": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["op", "input", "input_unit", "output_unit", "points", "out_of_range"],
+      "properties": {
+        "op": {"const": "piecewise_linear"},
+        "input": {"$ref": "#/$defs/Operand"},
+        "input_unit": {"$ref": "#/$defs/UnitId"},
+        "output_unit": {"$ref": "#/$defs/UnitId"},
+        "points": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 64,
+          "items": {"$ref": "#/$defs/Point"}
+        },
+        "out_of_range": {"enum": ["error", "clamp_endpoints"]}
+      }
+    },
+    "MinExpr": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["op", "args", "unit"],
+      "properties": {
+        "op": {"const": "min"},
+        "args": {"type": "array", "minItems": 1, "maxItems": 128, "items": {"$ref": "#/$defs/Operand"}},
+        "unit": {"$ref": "#/$defs/UnitId"}
+      }
+    },
+    "MaxExpr": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["op", "args", "unit"],
+      "properties": {
+        "op": {"const": "max"},
+        "args": {"type": "array", "minItems": 1, "maxItems": 128, "items": {"$ref": "#/$defs/Operand"}},
+        "unit": {"$ref": "#/$defs/UnitId"}
+      }
+    },
+    "ClampExpr": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["op", "value", "lower", "upper", "unit"],
+      "properties": {
+        "op": {"const": "clamp"},
+        "value": {"$ref": "#/$defs/Operand"},
+        "lower": {"$ref": "#/$defs/Operand"},
+        "upper": {"$ref": "#/$defs/Operand"},
+        "unit": {"$ref": "#/$defs/UnitId"}
+      }
+    },
+    "Expr": {
+      "oneOf": [
+        {"$ref": "#/$defs/ConstExpr"},
+        {"$ref": "#/$defs/LookupExpr"},
+        {"$ref": "#/$defs/LinearExpr"},
+        {"$ref": "#/$defs/PiecewiseLinearExpr"},
+        {"$ref": "#/$defs/MinExpr"},
+        {"$ref": "#/$defs/MaxExpr"},
+        {"$ref": "#/$defs/ClampExpr"}
+      ]
+    },
+    "Operand": {
+      "oneOf": [
+        {"$ref": "#/$defs/MeasurementRef"},
+        {"$ref": "#/$defs/Expr"}
+      ]
+    },
+    "ValueSpec": {
+      "oneOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["kind", "unit", "value"],
+          "properties": {
+            "kind": {"const": "absolute"},
+            "unit": {"$ref": "#/$defs/UnitId"},
+            "value": {"$ref": "#/$defs/CanonicalParameterValue"}
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["kind", "formula"],
+          "properties": {
+            "kind": {"const": "formula"},
+            "formula": {"$ref": "#"}
+          }
+        }
+      ]
+    }
+  }
+}

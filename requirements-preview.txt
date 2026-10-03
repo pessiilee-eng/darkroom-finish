@@ -1,0 +1,2 @@
+# Optional metadata-free preview helper only; core RAW execution uses stdlib.
+Pillow==12.3.0

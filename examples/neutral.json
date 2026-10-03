@@ -1,0 +1,17 @@
+{
+  "white_balance": "AS_SHOT",
+  "exposure2012": "0",
+  "contrast2012": "0",
+  "highlights2012": "0",
+  "shadows2012": "0",
+  "whites2012": "0",
+  "blacks2012": "0",
+  "clarity2012": "0",
+  "dehaze": "0",
+  "vibrance": "0",
+  "saturation": "0",
+  "point_curve_rgb": [
+    {"input": "0", "output": "0"},
+    {"input": "255", "output": "255"}
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "schema_version": "adobe-unit-registry/v1",
+  "registry_id": "adobe.units",
+  "version": "1.1.0",
+  "units": [
+    "adobe:exposure_ev",
+    "adobe:hue_degrees",
+    "adobe:kelvin",
+    "adobe:percent",
+    "unit:none"
+  ],
+  "registry_sha256": "b7f355d76cffe777f9688e243b2c98c46f9ffd98e7e7a9e1e92743d4f7445f7a"
+}

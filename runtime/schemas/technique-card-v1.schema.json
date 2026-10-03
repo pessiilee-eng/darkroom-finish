@@ -1,0 +1,1774 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://darkroom-finish.local/schemas/technique-card-v1.schema.json",
+  "title": "darkroom-finish technique card v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "card_id",
+    "version",
+    "status",
+    "craft_scope",
+    "style_scope",
+    "evidence_refs",
+    "preconditions",
+    "measurements",
+    "parameter_rules",
+    "mask_recipe",
+    "order_before",
+    "order_after",
+    "stop_conditions",
+    "failure_modes",
+    "forbidden_operations",
+    "expected_effects",
+    "quality_checks",
+    "golden_cases"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "technique-card/v1"
+    },
+    "card_id": {
+      "type": "string",
+      "pattern": "^C[0-9]{2}_[A-Z0-9_]+$"
+    },
+    "version": {
+      "$ref": "formula-dsl-v1.schema.json#/$defs/Semver"
+    },
+    "status": {
+      "enum": [
+        "draft",
+        "candidate",
+        "frozen",
+        "retired"
+      ]
+    },
+    "craft_scope": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "style_scope": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "evidence_refs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "source",
+          "role",
+          "license_status",
+          "extracted_principle"
+        ],
+        "properties": {
+          "source": {
+            "type": "string",
+            "minLength": 1
+          },
+          "role": {
+            "type": "string",
+            "minLength": 1
+          },
+          "license_status": {
+            "type": "string",
+            "minLength": 1
+          },
+          "extracted_principle": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "preconditions": {
+      "type": "array",
+      "items": {
+        "$ref": "formula-dsl-v1.schema.json#/$defs/Identifier"
+      }
+    },
+    "measurements": {
+      "type": "array",
+      "maxItems": 128,
+      "items": {
+        "$ref": "formula-dsl-v1.schema.json#/$defs/MeasurementDefinition"
+      }
+    },
+    "parameter_rules": {
+      "type": "array",
+      "maxItems": 128,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "field",
+          "value_spec",
+          "allowed_range",
+          "rationale"
+        ],
+        "properties": {
+          "field": {
+            "$ref": "formula-dsl-v1.schema.json#/$defs/Identifier"
+          },
+          "value_spec": {
+            "$ref": "formula-dsl-v1.schema.json#/$defs/ValueSpec"
+          },
+          "allowed_range": {
+            "oneOf": [
+              {
+                "type": "null"
+              },
+              {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "lower",
+                  "upper",
+                  "inclusivity"
+                ],
+                "properties": {
+                  "lower": {
+                    "$ref": "formula-dsl-v1.schema.json#/$defs/DecimalString"
+                  },
+                  "upper": {
+                    "$ref": "formula-dsl-v1.schema.json#/$defs/DecimalString"
+                  },
+                  "inclusivity": {
+                    "enum": [
+                      "closed",
+                      "open",
+                      "left_closed",
+                      "right_closed"
+                    ]
+                  }
+                }
+              }
+            ]
+          },
+          "rationale": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "mask_recipe": {
+      "oneOf": [
+        {
+          "type": "null"
+        },
+        {
+          "$ref": "#/$defs/MaskGraph"
+        }
+      ]
+    },
+    "postprocess_recipe": {
+      "oneOf": [
+        {
+          "type": "null"
+        },
+        {
+          "$ref": "#/$defs/LocalToneBalanceRecipe"
+        },
+        {
+          "$ref": "#/$defs/LocalSkinFieldRecipe"
+        },
+        {
+          "$ref": "#/$defs/LocalSkinTextureRecipe"
+        },
+        {
+          "$ref": "#/$defs/LocalSunGlowRecipe"
+        },
+        {
+          "$ref": "#/$defs/sampledRepairRecipe"
+        },
+        {
+          "$ref": "#/$defs/SameSourceRestoreRecipe"
+        },
+        {
+          "$ref": "#/$defs/TonalBrushRecipe"
+        },
+        {
+          "$ref": "#/$defs/SpatialLightRecipe"
+        },
+        {
+          "$ref": "#/$defs/SameImageCloneRecipe"
+        }
+      ]
+    },
+    "order_before": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "order_after": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "stop_conditions": {
+      "type": "array",
+      "items": {
+        "$ref": "formula-dsl-v1.schema.json#/$defs/Identifier"
+      }
+    },
+    "failure_modes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "predicate",
+          "action"
+        ],
+        "properties": {
+          "predicate": {
+            "$ref": "formula-dsl-v1.schema.json#/$defs/Identifier"
+          },
+          "action": {
+            "$ref": "formula-dsl-v1.schema.json#/$defs/Identifier"
+          }
+        }
+      }
+    },
+    "forbidden_operations": {
+      "type": "array",
+      "items": {
+        "$ref": "formula-dsl-v1.schema.json#/$defs/Identifier"
+      },
+      "uniqueItems": true
+    },
+    "expected_effects": {
+      "type": "array",
+      "items": {
+        "$ref": "formula-dsl-v1.schema.json#/$defs/Identifier"
+      }
+    },
+    "quality_checks": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^G[0-5](?:[._-][A-Za-z0-9_-]+)?$"
+      },
+      "uniqueItems": true
+    },
+    "golden_cases": {
+      "type": "array",
+      "items": {
+        "$ref": "formula-dsl-v1.schema.json#/$defs/Identifier"
+      },
+      "uniqueItems": true
+    }
+  },
+  "$defs": {
+    "SunGlowRadius": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "rx",
+        "ry"
+      ],
+      "properties": {
+        "rx": {
+          "$ref": "formula-dsl-v1.schema.json#/$defs/DecimalString"
+        },
+        "ry": {
+          "$ref": "formula-dsl-v1.schema.json#/$defs/DecimalString"
+        }
+      }
+    },
+    "SunGlowLobe": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "radius_scale",
+        "opacity",
+        "color"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "formula-dsl-v1.schema.json#/$defs/Identifier"
+        },
+        "radius_scale": {
+          "$ref": "formula-dsl-v1.schema.json#/$defs/DecimalString"
+        },
+        "opacity": {
+          "$ref": "formula-dsl-v1.schema.json#/$defs/DecimalString"
+        },
+        "color": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "r",
+            "g",
+            "b"
+          ],
+          "properties": {
+            "r": {
+              "$ref": "formula-dsl-v1.schema.json#/$defs/DecimalString"
+            },
+            "g": {
+              "$ref": "formula-dsl-v1.schema.json#/$defs/DecimalString"
+            },
+            "b": {
+              "$ref": "formula-dsl-v1.schema.json#/$defs/DecimalString"
+            }
+          }
+        }
+      }
+    },
+    "SunGlowProtection": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "center",
+        "radius",
+        "strength",
+        "feather"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "formula-dsl-v1.schema.json#/$defs/Identifier"
+        },
+        "center": {
+          "$ref": "#/$defs/Point"
+        },
+        "radius": {
+          "$ref": "#/$defs/SunGlowRadius"
+        },
+        "strength": {
+          "$ref": "formula-dsl-v1.schema.json#/$defs/DecimalString"
+        },
+        "feather": {
+          "$ref": "formula-dsl-v1.schema.json#/$defs/DecimalString"
+        }
+      }
+    },
+    "SunGlowRegion": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "center",
+        "support",
+        "lobes",
+        "protections"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "formula-dsl-v1.schema.json#/$defs/Identifier"
+        },
+        "center": {
+          "$ref": "#/$defs/Point"
+        },
+        "support": {
+          "$ref": "#/$defs/SunGlowRadius"
+        },
+        "lobes": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 4,
+          "items": {
+            "$ref": "#/$defs/SunGlowLobe"
+          }
+        },
+        "protections": {
+          "type": "array",
+          "maxItems": 4,
+          "items": {
+            "$ref": "#/$defs/SunGlowProtection"
+          }
+        }
+      }
+    },
+    "LocalSunGlowRecipe": {
+      "description": "Candidate bounded warm sRGB screen lobes with C2 compact support and optional quintic protection ellipses. No geometry or generated content. Numeric ranges, warm channel order and unique ids require semantic validation.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "schema_version",
+        "coordinate_space",
+        "operation_id",
+        "regions",
+        "recipe_sha256"
+      ],
+      "properties": {
+        "schema_version": {
+          "const": "local-sun-glow/v1"
+        },
+        "coordinate_space": {
+          "const": "normalized_upright"
+        },
+        "operation_id": {
+          "const": "local.sun_glow"
+        },
+        "regions": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 2,
+          "items": {
+            "$ref": "#/$defs/SunGlowRegion"
+          }
+        },
+        "recipe_sha256": {
+          "$ref": "formula-dsl-v1.schema.json#/$defs/Sha256"
+        }
+      }
+    },
+    "SkinFieldControl": {
+      "description": "A manual additive Lab D65 control. The Gaussian weight is exp(-distance^2/(2*radius_pixels^2)), zero beyond 3 radii. Coordinates may lie outside the region polygon for protection controls.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "x",
+        "y",
+        "radius_pixels",
+        "delta_l",
+        "delta_a",
+        "delta_b"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "formula-dsl-v1.schema.json#/$defs/Identifier"
+        },
+        "x": {
+          "$ref": "formula-dsl-v1.schema.json#/$defs/DecimalString"
+        },
+        "y": {
+          "$ref": "formula-dsl-v1.schema.json#/$defs/DecimalString"
+        },
+        "radius_pixels": {
+          "$ref": "formula-dsl-v1.schema.json#/$defs/DecimalString"
+        },
+        "delta_l": {
+          "$ref": "formula-dsl-v1.schema.json#/$defs/DecimalString"
+        },
+        "delta_a": {
+          "$ref": "formula-dsl-v1.schema.json#/$defs/DecimalString"
+        },
+        "delta_b": {
+          "$ref": "formula-dsl-v1.schema.json#/$defs/DecimalString"
+        }
+      }
+    },
+    "LocalSkinFieldRegion": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "polygon",
+        "feather_pixels",
+        "controls"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "formula-dsl-v1.schema.json#/$defs/Identifier"
+        },
+        "polygon": {
+          "type": "array",
+          "minItems": 3,
+          "maxItems": 64,
+          "items": {
+            "$ref": "#/$defs/Point"
+          }
+        },
+        "feather_pixels": {
+          "$ref": "formula-dsl-v1.schema.json#/$defs/DecimalString"
+        },
+        "controls": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 32,
+          "items": {
+            "$ref": "#/$defs/SkinFieldControl"
+          }
+        }
+      }
+    },
+    "LocalSkinFieldRecipe": {
+      "description": "Independent local additive Lab D65 control field: sum(weight*delta)/max(1,sum(weight)), multiplied by inward polygon feather. Does not blur source pixels, harmonize a boundary, impose one target skin color, or generate content. Numeric bounds and polygon geometry require semantic validation.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "schema_version",
+        "coordinate_space",
+        "operation_id",
+        "regions",
+        "recipe_sha256"
+      ],
+      "properties": {
+        "schema_version": {
+          "const": "local-skin-field/v1"
+        },
+        "coordinate_space": {
+          "const": "normalized_upright"
+        },
+        "operation_id": {
+          "const": "local.skin_control_field"
+        },
+        "regions": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 4,
+          "items": {
+            "$ref": "#/$defs/LocalSkinFieldRegion"
+          }
+        },
+        "recipe_sha256": {
+          "$ref": "formula-dsl-v1.schema.json#/$defs/Sha256"
+        }
+      }
+    },
+    "LocalSkinTextureRegion": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "polygon",
+        "feather_pixels",
+        "radius_pixels",
+        "sigma_color",
+        "strength"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "formula-dsl-v1.schema.json#/$defs/Identifier"
+        },
+        "polygon": {
+          "type": "array",
+          "minItems": 3,
+          "maxItems": 64,
+          "items": {
+            "$ref": "#/$defs/Point"
+          }
+        },
+        "feather_pixels": {
+          "$ref": "formula-dsl-v1.schema.json#/$defs/DecimalString"
+        },
+        "radius_pixels": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 8
+        },
+        "sigma_color": {
+          "$ref": "formula-dsl-v1.schema.json#/$defs/DecimalString"
+        },
+        "strength": {
+          "$ref": "formula-dsl-v1.schema.json#/$defs/DecimalString"
+        }
+      }
+    },
+    "LocalSkinTextureRecipe": {
+      "description": "Candidate deterministic RGB bilateral smoothing inside small manually drawn skin polygons. Reduces actual texture; bounded color-distance weights protect strong edges. No generative content or geometry changes. Exterior pixels remain identical.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "schema_version",
+        "coordinate_space",
+        "operation_id",
+        "regions",
+        "recipe_sha256"
+      ],
+      "properties": {
+        "schema_version": {
+          "const": "local-skin-texture/v1"
+        },
+        "coordinate_space": {
+          "const": "normalized_upright"
+        },
+        "operation_id": {
+          "const": "local.skin_texture_smoothing"
+        },
+        "regions": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 4,
+          "items": {
+            "$ref": "#/$defs/LocalSkinTextureRegion"
+          }
+        },
+        "recipe_sha256": {
+          "$ref": "formula-dsl-v1.schema.json#/$defs/Sha256"
+        }
+      }
+    },
+    "LocalChromaBalance": {
+      "description": "Optional local color sub-operation: same-face skin samples specify target linear R/G and B/G ratios. Bounded interpolation in log-ratio space must preserve linear luminance. Omitting this object retains the original tone-only behavior; render invariants require executor verification.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "target_red_green_ratio",
+        "target_blue_green_ratio",
+        "strength",
+        "max_log_ratio_shift"
+      ],
+      "properties": {
+        "target_red_green_ratio": {
+          "$ref": "formula-dsl-v1.schema.json#/$defs/DecimalString",
+          "description": "Target linear R/G ratio, inclusive range 0.5..2; enforced by semantic validation."
+        },
+        "target_blue_green_ratio": {
+          "$ref": "formula-dsl-v1.schema.json#/$defs/DecimalString",
+          "description": "Target linear B/G ratio, inclusive range 0.5..2; enforced by semantic validation."
+        },
+        "strength": {
+          "$ref": "formula-dsl-v1.schema.json#/$defs/DecimalString",
+          "description": "Interpolation strength, inclusive range 0..1; enforced by semantic validation."
+        },
+        "max_log_ratio_shift": {
+          "$ref": "formula-dsl-v1.schema.json#/$defs/DecimalString",
+          "description": "Maximum absolute log-ratio shift, inclusive range 0..0.35; enforced by semantic validation."
+        }
+      }
+    },
+    "LocalToneBalanceRegion": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "polygon",
+        "blur_radius_pixels",
+        "feather_pixels",
+        "strength",
+        "max_gain_ev",
+        "iterations"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "formula-dsl-v1.schema.json#/$defs/Identifier"
+        },
+        "polygon": {
+          "type": "array",
+          "minItems": 3,
+          "maxItems": 64,
+          "items": {
+            "$ref": "#/$defs/Point"
+          }
+        },
+        "blur_radius_pixels": {
+          "$ref": "formula-dsl-v1.schema.json#/$defs/DecimalString"
+        },
+        "feather_pixels": {
+          "$ref": "formula-dsl-v1.schema.json#/$defs/DecimalString"
+        },
+        "strength": {
+          "$ref": "formula-dsl-v1.schema.json#/$defs/DecimalString"
+        },
+        "max_gain_ev": {
+          "$ref": "formula-dsl-v1.schema.json#/$defs/DecimalString"
+        },
+        "iterations": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 4000
+        },
+        "chroma_balance": {
+          "$ref": "#/$defs/LocalChromaBalance"
+        }
+      }
+    },
+    "LocalToneBalanceRecipe": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "schema_version",
+        "coordinate_space",
+        "operation_id",
+        "regions",
+        "recipe_sha256"
+      ],
+      "properties": {
+        "schema_version": {
+          "const": "local-tone-balance/v1"
+        },
+        "coordinate_space": {
+          "const": "normalized_upright"
+        },
+        "operation_id": {
+          "const": "local.harmonic_tone_balance"
+        },
+        "regions": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 4,
+          "items": {
+            "$ref": "#/$defs/LocalToneBalanceRegion"
+          }
+        },
+        "recipe_sha256": {
+          "$ref": "formula-dsl-v1.schema.json#/$defs/Sha256"
+        }
+      }
+    },
+    "Point": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "x",
+        "y"
+      ],
+      "properties": {
+        "x": {
+          "$ref": "formula-dsl-v1.schema.json#/$defs/DecimalString"
+        },
+        "y": {
+          "$ref": "formula-dsl-v1.schema.json#/$defs/DecimalString"
+        }
+      }
+    },
+    "LocalAdjustments": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "exposure2012": {
+          "$ref": "formula-dsl-v1.schema.json#/$defs/DecimalString"
+        },
+        "contrast2012": {
+          "$ref": "formula-dsl-v1.schema.json#/$defs/DecimalString"
+        },
+        "highlights2012": {
+          "$ref": "formula-dsl-v1.schema.json#/$defs/DecimalString"
+        },
+        "shadows2012": {
+          "$ref": "formula-dsl-v1.schema.json#/$defs/DecimalString"
+        },
+        "whites2012": {
+          "$ref": "formula-dsl-v1.schema.json#/$defs/DecimalString"
+        },
+        "blacks2012": {
+          "$ref": "formula-dsl-v1.schema.json#/$defs/DecimalString"
+        },
+        "clarity2012": {
+          "$ref": "formula-dsl-v1.schema.json#/$defs/DecimalString"
+        },
+        "dehaze": {
+          "$ref": "formula-dsl-v1.schema.json#/$defs/DecimalString"
+        },
+        "temperature": {
+          "$ref": "formula-dsl-v1.schema.json#/$defs/DecimalString"
+        },
+        "tint": {
+          "$ref": "formula-dsl-v1.schema.json#/$defs/DecimalString"
+        },
+        "texture": {
+          "$ref": "formula-dsl-v1.schema.json#/$defs/DecimalString"
+        },
+        "saturation": {
+          "$ref": "formula-dsl-v1.schema.json#/$defs/DecimalString"
+        },
+        "sharpness": {
+          "$ref": "formula-dsl-v1.schema.json#/$defs/DecimalString"
+        }
+      }
+    },
+    "BrushMask": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "type",
+        "composition",
+        "dabs"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "formula-dsl-v1.schema.json#/$defs/Identifier"
+        },
+        "type": {
+          "const": "brush"
+        },
+        "composition": {
+          "const": "add"
+        },
+        "dabs": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "x",
+              "y",
+              "radius",
+              "flow",
+              "feather"
+            ],
+            "properties": {
+              "x": {
+                "$ref": "formula-dsl-v1.schema.json#/$defs/DecimalString"
+              },
+              "y": {
+                "$ref": "formula-dsl-v1.schema.json#/$defs/DecimalString"
+              },
+              "radius": {
+                "$ref": "formula-dsl-v1.schema.json#/$defs/DecimalString"
+              },
+              "flow": {
+                "$ref": "formula-dsl-v1.schema.json#/$defs/DecimalString"
+              },
+              "feather": {
+                "$ref": "formula-dsl-v1.schema.json#/$defs/DecimalString"
+              }
+            }
+          }
+        }
+      }
+    },
+    "LinearMask": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "type",
+        "composition",
+        "start",
+        "end"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "formula-dsl-v1.schema.json#/$defs/Identifier"
+        },
+        "type": {
+          "const": "linear_gradient"
+        },
+        "composition": {
+          "const": "add"
+        },
+        "start": {
+          "$ref": "#/$defs/Point"
+        },
+        "end": {
+          "$ref": "#/$defs/Point"
+        }
+      }
+    },
+    "RadialMask": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "type",
+        "composition",
+        "center",
+        "radius_x",
+        "radius_y",
+        "angle_degrees",
+        "feather",
+        "inverted"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "formula-dsl-v1.schema.json#/$defs/Identifier"
+        },
+        "type": {
+          "const": "radial_gradient"
+        },
+        "composition": {
+          "const": "add"
+        },
+        "center": {
+          "$ref": "#/$defs/Point"
+        },
+        "radius_x": {
+          "$ref": "formula-dsl-v1.schema.json#/$defs/DecimalString"
+        },
+        "radius_y": {
+          "$ref": "formula-dsl-v1.schema.json#/$defs/DecimalString"
+        },
+        "angle_degrees": {
+          "$ref": "formula-dsl-v1.schema.json#/$defs/DecimalString"
+        },
+        "feather": {
+          "$ref": "formula-dsl-v1.schema.json#/$defs/DecimalString"
+        },
+        "inverted": {
+          "type": "boolean"
+        }
+      }
+    },
+    "LuminanceRangeMask": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "type",
+        "composition",
+        "minimum",
+        "maximum",
+        "feather"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "formula-dsl-v1.schema.json#/$defs/Identifier"
+        },
+        "type": {
+          "const": "luminance_range"
+        },
+        "composition": {
+          "const": "add"
+        },
+        "minimum": {
+          "$ref": "formula-dsl-v1.schema.json#/$defs/DecimalString"
+        },
+        "maximum": {
+          "$ref": "formula-dsl-v1.schema.json#/$defs/DecimalString"
+        },
+        "feather": {
+          "$ref": "formula-dsl-v1.schema.json#/$defs/DecimalString"
+        }
+      }
+    },
+    "MaskPrimitive": {
+      "oneOf": [
+        {
+          "$ref": "#/$defs/BrushMask"
+        },
+        {
+          "$ref": "#/$defs/LinearMask"
+        },
+        {
+          "$ref": "#/$defs/RadialMask"
+        },
+        {
+          "$ref": "#/$defs/LuminanceRangeMask"
+        }
+      ]
+    },
+    "CorrectionGroup": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "name",
+        "operation_order",
+        "local_adjustments",
+        "masks"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "formula-dsl-v1.schema.json#/$defs/Identifier"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 80
+        },
+        "operation_order": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "local_adjustments": {
+          "$ref": "#/$defs/LocalAdjustments"
+        },
+        "masks": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 32,
+          "items": {
+            "$ref": "#/$defs/MaskPrimitive"
+          }
+        }
+      }
+    },
+    "MaskGraph": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "schema_version",
+        "coordinate_space",
+        "groups",
+        "graph_sha256"
+      ],
+      "properties": {
+        "schema_version": {
+          "const": "mask_graph/v1"
+        },
+        "coordinate_space": {
+          "const": "normalized_upright"
+        },
+        "groups": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 32,
+          "items": {
+            "$ref": "#/$defs/CorrectionGroup"
+          }
+        },
+        "graph_sha256": {
+          "$ref": "formula-dsl-v1.schema.json#/$defs/Sha256"
+        }
+      }
+    },
+    "sampledRepairRecipe": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "schema_version",
+        "coordinate_space",
+        "operation_id",
+        "regions",
+        "recipe_sha256"
+      ],
+      "properties": {
+        "schema_version": {
+          "const": "local-sampled-repair/v1"
+        },
+        "coordinate_space": {
+          "const": "normalized_upright"
+        },
+        "operation_id": {
+          "const": "local.sampled_frequency_repair"
+        },
+        "regions": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 16,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "id",
+              "target",
+              "donor",
+              "blur_radius_pixels",
+              "feather_fraction",
+              "strength",
+              "rgb_offset"
+            ],
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^[a-z][a-z0-9_.-]{0,63}$"
+              },
+              "target": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "x",
+                  "y",
+                  "radius_x_pixels",
+                  "radius_y_pixels"
+                ],
+                "properties": {
+                  "x": {
+                    "type": "string",
+                    "pattern": "^(0|[1-9][0-9]*|-[1-9][0-9]*|-?(0|[1-9][0-9]*)\\.[0-9]*[1-9])$",
+                    "maxLength": 64
+                  },
+                  "y": {
+                    "type": "string",
+                    "pattern": "^(0|[1-9][0-9]*|-[1-9][0-9]*|-?(0|[1-9][0-9]*)\\.[0-9]*[1-9])$",
+                    "maxLength": 64
+                  },
+                  "radius_x_pixels": {
+                    "type": "string",
+                    "pattern": "^(0|[1-9][0-9]*|-[1-9][0-9]*|-?(0|[1-9][0-9]*)\\.[0-9]*[1-9])$",
+                    "maxLength": 64
+                  },
+                  "radius_y_pixels": {
+                    "type": "string",
+                    "pattern": "^(0|[1-9][0-9]*|-[1-9][0-9]*|-?(0|[1-9][0-9]*)\\.[0-9]*[1-9])$",
+                    "maxLength": 64
+                  }
+                }
+              },
+              "donor": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "x",
+                  "y"
+                ],
+                "properties": {
+                  "x": {
+                    "type": "string",
+                    "pattern": "^(0|[1-9][0-9]*|-[1-9][0-9]*|-?(0|[1-9][0-9]*)\\.[0-9]*[1-9])$",
+                    "maxLength": 64
+                  },
+                  "y": {
+                    "type": "string",
+                    "pattern": "^(0|[1-9][0-9]*|-[1-9][0-9]*|-?(0|[1-9][0-9]*)\\.[0-9]*[1-9])$",
+                    "maxLength": 64
+                  }
+                }
+              },
+              "blur_radius_pixels": {
+                "type": "string",
+                "pattern": "^(0|[1-9][0-9]*|-[1-9][0-9]*|-?(0|[1-9][0-9]*)\\.[0-9]*[1-9])$",
+                "maxLength": 64
+              },
+              "feather_fraction": {
+                "type": "string",
+                "pattern": "^(0|[1-9][0-9]*|-[1-9][0-9]*|-?(0|[1-9][0-9]*)\\.[0-9]*[1-9])$",
+                "maxLength": 64
+              },
+              "strength": {
+                "type": "string",
+                "pattern": "^(0|[1-9][0-9]*|-[1-9][0-9]*|-?(0|[1-9][0-9]*)\\.[0-9]*[1-9])$",
+                "maxLength": 64
+              },
+              "rgb_offset": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "r",
+                  "g",
+                  "b"
+                ],
+                "properties": {
+                  "r": {
+                    "type": "string",
+                    "pattern": "^(0|[1-9][0-9]*|-[1-9][0-9]*|-?(0|[1-9][0-9]*)\\.[0-9]*[1-9])$",
+                    "maxLength": 64
+                  },
+                  "g": {
+                    "type": "string",
+                    "pattern": "^(0|[1-9][0-9]*|-[1-9][0-9]*|-?(0|[1-9][0-9]*)\\.[0-9]*[1-9])$",
+                    "maxLength": 64
+                  },
+                  "b": {
+                    "type": "string",
+                    "pattern": "^(0|[1-9][0-9]*|-[1-9][0-9]*|-?(0|[1-9][0-9]*)\\.[0-9]*[1-9])$",
+                    "maxLength": 64
+                  }
+                }
+              },
+              "detail_strength": {
+                "type": "string",
+                "pattern": "^(0|[1-9][0-9]*|-[1-9][0-9]*|-?(0|[1-9][0-9]*)\\.[0-9]*[1-9])$",
+                "maxLength": 64
+              },
+              "exclusions": {
+                "type": "array",
+                "maxItems": 16,
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "x",
+                    "y",
+                    "radius_x_pixels",
+                    "radius_y_pixels"
+                  ],
+                  "properties": {
+                    "x": {
+                      "type": "string",
+                      "pattern": "^(0|[1-9][0-9]*|-[1-9][0-9]*|-?(0|[1-9][0-9]*)\\.[0-9]*[1-9])$",
+                      "maxLength": 64
+                    },
+                    "y": {
+                      "type": "string",
+                      "pattern": "^(0|[1-9][0-9]*|-[1-9][0-9]*|-?(0|[1-9][0-9]*)\\.[0-9]*[1-9])$",
+                      "maxLength": 64
+                    },
+                    "radius_x_pixels": {
+                      "type": "string",
+                      "pattern": "^(0|[1-9][0-9]*|-[1-9][0-9]*|-?(0|[1-9][0-9]*)\\.[0-9]*[1-9])$",
+                      "maxLength": 64
+                    },
+                    "radius_y_pixels": {
+                      "type": "string",
+                      "pattern": "^(0|[1-9][0-9]*|-[1-9][0-9]*|-?(0|[1-9][0-9]*)\\.[0-9]*[1-9])$",
+                      "maxLength": 64
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "recipe_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        }
+      }
+    },
+    "SameSourceRestoreRegion": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "polygon",
+        "exclusions",
+        "feather_pixels",
+        "strength",
+        "mode",
+        "band_radius_pixels",
+        "base",
+        "source"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "formula-dsl-v1.schema.json#/$defs/Identifier"
+        },
+        "polygon": {
+          "type": "array",
+          "minItems": 3,
+          "maxItems": 64,
+          "items": {
+            "$ref": "#/$defs/Point"
+          }
+        },
+        "exclusions": {
+          "type": "array",
+          "maxItems": 8,
+          "items": {
+            "type": "array",
+            "minItems": 3,
+            "maxItems": 64,
+            "items": {
+              "$ref": "#/$defs/Point"
+            }
+          }
+        },
+        "feather_pixels": {
+          "$ref": "formula-dsl-v1.schema.json#/$defs/DecimalString"
+        },
+        "strength": {
+          "$ref": "formula-dsl-v1.schema.json#/$defs/DecimalString"
+        },
+        "mode": {
+          "enum": [
+            "pixels",
+            "texture"
+          ]
+        },
+        "band_radius_pixels": {
+          "$ref": "formula-dsl-v1.schema.json#/$defs/DecimalString"
+        },
+        "base": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "manifest",
+            "manifest_sha256",
+            "master_sha256"
+          ],
+          "properties": {
+            "manifest": {
+              "type": "string",
+              "pattern": "^output/[^\\\\]+\\.manifest\\.json$"
+            },
+            "manifest_sha256": {
+              "$ref": "formula-dsl-v1.schema.json#/$defs/Sha256"
+            },
+            "master_sha256": {
+              "$ref": "formula-dsl-v1.schema.json#/$defs/Sha256"
+            }
+          }
+        },
+        "source": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "manifest",
+            "manifest_sha256",
+            "master_sha256"
+          ],
+          "properties": {
+            "manifest": {
+              "type": "string",
+              "pattern": "^output/[^\\\\]+\\.manifest\\.json$"
+            },
+            "manifest_sha256": {
+              "$ref": "formula-dsl-v1.schema.json#/$defs/Sha256"
+            },
+            "master_sha256": {
+              "$ref": "formula-dsl-v1.schema.json#/$defs/Sha256"
+            }
+          }
+        }
+      }
+    },
+    "SameSourceRestoreRecipe": {
+      "description": "Candidate same-RAW same-coordinate pixel/detail restoration from a hash-bound prior master. Not generated texture, cloning from another face, or Photoshop native history brush.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "schema_version",
+        "coordinate_space",
+        "operation_id",
+        "regions",
+        "recipe_sha256"
+      ],
+      "properties": {
+        "schema_version": {
+          "const": "local-same-source-restore/v1"
+        },
+        "coordinate_space": {
+          "const": "normalized_upright"
+        },
+        "operation_id": {
+          "const": "local.same_source_restore"
+        },
+        "regions": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 4,
+          "items": {
+            "$ref": "#/$defs/SameSourceRestoreRegion"
+          }
+        },
+        "recipe_sha256": {
+          "$ref": "formula-dsl-v1.schema.json#/$defs/Sha256"
+        }
+      }
+    },
+    "TonalBrushRegion": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "polygon",
+        "exclusions",
+        "feather_pixels",
+        "gate_blur_radius_pixels",
+        "luminance_gate",
+        "controls"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "formula-dsl-v1.schema.json#/$defs/Identifier"
+        },
+        "polygon": {
+          "type": "array",
+          "minItems": 3,
+          "maxItems": 64,
+          "items": {
+            "$ref": "#/$defs/Point"
+          }
+        },
+        "exclusions": {
+          "type": "array",
+          "maxItems": 8,
+          "items": {
+            "type": "array",
+            "minItems": 3,
+            "maxItems": 64,
+            "items": {
+              "$ref": "#/$defs/Point"
+            }
+          }
+        },
+        "feather_pixels": {
+          "$ref": "formula-dsl-v1.schema.json#/$defs/DecimalString"
+        },
+        "gate_blur_radius_pixels": {
+          "$ref": "formula-dsl-v1.schema.json#/$defs/DecimalString"
+        },
+        "luminance_gate": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "low",
+            "low_full",
+            "high_full",
+            "high"
+          ],
+          "properties": {
+            "low": {
+              "$ref": "formula-dsl-v1.schema.json#/$defs/DecimalString"
+            },
+            "low_full": {
+              "$ref": "formula-dsl-v1.schema.json#/$defs/DecimalString"
+            },
+            "high_full": {
+              "$ref": "formula-dsl-v1.schema.json#/$defs/DecimalString"
+            },
+            "high": {
+              "$ref": "formula-dsl-v1.schema.json#/$defs/DecimalString"
+            }
+          }
+        },
+        "controls": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 32,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "id",
+              "x",
+              "y",
+              "radius_pixels",
+              "delta_l"
+            ],
+            "properties": {
+              "id": {
+                "$ref": "formula-dsl-v1.schema.json#/$defs/Identifier"
+              },
+              "x": {
+                "$ref": "formula-dsl-v1.schema.json#/$defs/DecimalString"
+              },
+              "y": {
+                "$ref": "formula-dsl-v1.schema.json#/$defs/DecimalString"
+              },
+              "radius_pixels": {
+                "$ref": "formula-dsl-v1.schema.json#/$defs/DecimalString"
+              },
+              "delta_l": {
+                "$ref": "formula-dsl-v1.schema.json#/$defs/DecimalString"
+              }
+            }
+          }
+        }
+      }
+    },
+    "TonalBrushRecipe": {
+      "description": "Manual Lab-lightness corrections gated by frozen low-frequency lightness, with spatial protection; no output blurring or chroma corrections.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "schema_version",
+        "coordinate_space",
+        "operation_id",
+        "regions",
+        "recipe_sha256"
+      ],
+      "properties": {
+        "schema_version": {
+          "const": "local-tonal-brush/v1"
+        },
+        "coordinate_space": {
+          "const": "normalized_upright"
+        },
+        "operation_id": {
+          "const": "local.tonal_brush"
+        },
+        "regions": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 4,
+          "items": {
+            "$ref": "#/$defs/TonalBrushRegion"
+          }
+        },
+        "recipe_sha256": {
+          "$ref": "formula-dsl-v1.schema.json#/$defs/Sha256"
+        }
+      }
+    },
+    "SpatialLightEllipse": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "type",
+        "center",
+        "radius",
+        "rotation_degrees",
+        "exposure_ev"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9_.-]{0,63}$"
+        },
+        "type": {
+          "const": "ellipse"
+        },
+        "center": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "x",
+            "y"
+          ],
+          "properties": {
+            "x": {
+              "$ref": "formula-dsl-v1.schema.json#/$defs/DecimalString"
+            },
+            "y": {
+              "$ref": "formula-dsl-v1.schema.json#/$defs/DecimalString"
+            }
+          }
+        },
+        "radius": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "rx",
+            "ry"
+          ],
+          "properties": {
+            "rx": {
+              "$ref": "formula-dsl-v1.schema.json#/$defs/DecimalString"
+            },
+            "ry": {
+              "$ref": "formula-dsl-v1.schema.json#/$defs/DecimalString"
+            }
+          }
+        },
+        "rotation_degrees": {
+          "$ref": "formula-dsl-v1.schema.json#/$defs/DecimalString"
+        },
+        "exposure_ev": {
+          "$ref": "formula-dsl-v1.schema.json#/$defs/DecimalString"
+        },
+        "luminance_gate": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "low",
+            "low_full",
+            "high_full",
+            "high"
+          ],
+          "properties": {
+            "low": {
+              "$ref": "formula-dsl-v1.schema.json#/$defs/DecimalString"
+            },
+            "low_full": {
+              "$ref": "formula-dsl-v1.schema.json#/$defs/DecimalString"
+            },
+            "high_full": {
+              "$ref": "formula-dsl-v1.schema.json#/$defs/DecimalString"
+            },
+            "high": {
+              "$ref": "formula-dsl-v1.schema.json#/$defs/DecimalString"
+            }
+          }
+        }
+      }
+    },
+    "SpatialLightVignette": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "type",
+        "center",
+        "radius",
+        "rotation_degrees",
+        "exposure_ev",
+        "inner_radius",
+        "outer_radius"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9_.-]{0,63}$"
+        },
+        "type": {
+          "const": "vignette"
+        },
+        "center": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "x",
+            "y"
+          ],
+          "properties": {
+            "x": {
+              "$ref": "formula-dsl-v1.schema.json#/$defs/DecimalString"
+            },
+            "y": {
+              "$ref": "formula-dsl-v1.schema.json#/$defs/DecimalString"
+            }
+          }
+        },
+        "radius": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "rx",
+            "ry"
+          ],
+          "properties": {
+            "rx": {
+              "$ref": "formula-dsl-v1.schema.json#/$defs/DecimalString"
+            },
+            "ry": {
+              "$ref": "formula-dsl-v1.schema.json#/$defs/DecimalString"
+            }
+          }
+        },
+        "rotation_degrees": {
+          "$ref": "formula-dsl-v1.schema.json#/$defs/DecimalString"
+        },
+        "exposure_ev": {
+          "$ref": "formula-dsl-v1.schema.json#/$defs/DecimalString"
+        },
+        "inner_radius": {
+          "$ref": "formula-dsl-v1.schema.json#/$defs/DecimalString"
+        },
+        "outer_radius": {
+          "$ref": "formula-dsl-v1.schema.json#/$defs/DecimalString"
+        },
+        "luminance_gate": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "low",
+            "low_full",
+            "high_full",
+            "high"
+          ],
+          "properties": {
+            "low": {
+              "$ref": "formula-dsl-v1.schema.json#/$defs/DecimalString"
+            },
+            "low_full": {
+              "$ref": "formula-dsl-v1.schema.json#/$defs/DecimalString"
+            },
+            "high_full": {
+              "$ref": "formula-dsl-v1.schema.json#/$defs/DecimalString"
+            },
+            "high": {
+              "$ref": "formula-dsl-v1.schema.json#/$defs/DecimalString"
+            }
+          }
+        }
+      }
+    },
+    "SpatialLightRecipe": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "schema_version",
+        "coordinate_space",
+        "operation_id",
+        "regions",
+        "recipe_sha256"
+      ],
+      "properties": {
+        "schema_version": {
+          "const": "local-spatial-light/v1"
+        },
+        "coordinate_space": {
+          "const": "normalized_upright"
+        },
+        "operation_id": {
+          "const": "local.spatial_light"
+        },
+        "regions": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 4,
+          "items": {
+            "oneOf": [
+              {
+                "$ref": "#/$defs/SpatialLightEllipse"
+              },
+              {
+                "$ref": "#/$defs/SpatialLightVignette"
+              }
+            ]
+          }
+        },
+        "recipe_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        }
+      }
+    },
+    "SameImageCloneRecipe": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "schema_version",
+        "coordinate_space",
+        "operation_id",
+        "purpose",
+        "regions",
+        "recipe_sha256"
+      ],
+      "properties": {
+        "schema_version": {
+          "const": "local-same-image-clone/v1"
+        },
+        "coordinate_space": {
+          "const": "normalized_upright"
+        },
+        "operation_id": {
+          "const": "local.same_image_clone"
+        },
+        "purpose": {
+          "const": "shadow_cleanup"
+        },
+        "regions": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 4,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "id",
+              "polygon",
+              "donor_offset",
+              "feather_pixels"
+            ],
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^[a-z][a-z0-9_.-]{0,63}$"
+              },
+              "polygon": {
+                "type": "array",
+                "minItems": 3,
+                "maxItems": 64,
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "x",
+                    "y"
+                  ],
+                  "properties": {
+                    "x": {
+                      "$ref": "formula-dsl-v1.schema.json#/$defs/DecimalString"
+                    },
+                    "y": {
+                      "$ref": "formula-dsl-v1.schema.json#/$defs/DecimalString"
+                    }
+                  }
+                }
+              },
+              "donor_offset": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "x",
+                  "y"
+                ],
+                "properties": {
+                  "x": {
+                    "$ref": "formula-dsl-v1.schema.json#/$defs/DecimalString"
+                  },
+                  "y": {
+                    "$ref": "formula-dsl-v1.schema.json#/$defs/DecimalString"
+                  }
+                }
+              },
+              "feather_pixels": {
+                "$ref": "formula-dsl-v1.schema.json#/$defs/DecimalString"
+              }
+            }
+          }
+        },
+        "recipe_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        }
+      }
+    }
+  }
+}
