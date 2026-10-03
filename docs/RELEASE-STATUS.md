@@ -1,30 +1,29 @@
-# Release candidate status
+# 知识驱动版验证状态
 
-Version: 0.1.0-alpha.1. Experimental public source package under the MIT license.
+版本：0.2.0。替代早期纯执行 Alpha；这是带完整可分享研究的开发/试修技能，不是审美效果认证。
 
-- Core: Python 3.11+ standard library; optional Pillow 12.3.0 for safe previews.
-- Runtime: macOS, separately installed Photoshop and Camera Raw.
-- Independent-folder installation, source guards, plan compiler and attempt budget
-  are tested with non-photographic inputs. Private runtime history is not bundled.
-- A real local Adobe test used an original synthetic DNG, neutral and +0.5 exposure
-  variants, full 16-bit TIFF/JPEG exports and same-machine replay. Source integrity,
-  repeat pixels, changed pixels and increased brightness all passed on Python 3.13.5,
-  Apple Silicon, Photoshop 27.10.0, Camera Raw 18.6.
-- The first smaller synthetic fixture was rejected by Adobe; the generator was
-  corrected to a larger full-resolution-tagged DNG. This was a fixture failure,
-  not a claim of camera compatibility.
-- Independent forward testing found a symlink write escape in the wrapper's ingest
-  paths. Path checks and a regression were added before packaging.
-- True second-computer installation, all real camera formats, cross-version profile
-  parity and artistic quality are not verified. The repository's Actions page is
-  the source of current CI results. No hosted Photoshop test is claimed.
+- 包内知识：详细 Markdown 研究 + JSON 方向/方法关系 + 可检索索引 + 文件哈希。
+  清单和实际数量见 [manifest](../knowledge/manifest.json)，处理边界见 [知识范围](KNOWLEDGE-SCOPE.md)。
+- 私有来源没有随包继承：个人照片、反馈、配方、原路径、作者私有试修/评审均不分发。
+  过去档案的资格或 verified 文字不授予新使用者质量保证。
+- 计划与执行：源哈希、库版本、参考访问情况、逐关系判断及实际操作由编译器绑定；
+  中性基线不能用来偷跑调整；非用户合成探针只接受固定的生成夹具哈希。
+- 核心 Python 3.11+ 标准库；安全预览可选 Pillow 12.3.0。渲染需 macOS 与单独安装的 Adobe。
+- 本机真实 Adobe 合成测试已通过：512×384 原创 DNG、中性/全局曝光/手工画笔以及
+  384×288 原生裁剪，16 位 TIFF/JPEG、源只读、无源目录旁车、同机逐像素重放。
+  环境为 Apple Silicon、Python 3.13.5、Photoshop 27.10.0、Camera Raw 18.6。
+  画笔版的像素变化与整体亮度上升已测；不等于所有蒙版 primitive 或照片效果验证。
+- 自动测试覆盖隔离工作区、知识完整性、源身份、操作/关系绑定、错误归因拒绝、
+  路径/符号链接、预算、配方依赖和安全预览。Actions 页记录实际 CI，不宣称云端运行 Photoshop。
+- 仍未完成：第二台实体 Mac 的 Adobe 出图、全部真实相机格式/蒙版能力、
+  跨版本 profile 等价性、未见真实照片的效果验证、独立专业或用户最终验收。
+  知识方向仍为 reference_proposed；第三方参考不可访问时必须标文本假设。
+- 本地完整主库与生产入口不被公开包覆盖；新增学习先保留本地，再经逐条公开审查导出。
+  文件未变证明保存完整，不证明修改后的公开版与私人工作流审美等效。
 
-The owner approved the MIT license and public publication. No private photographs,
-photo inventories, user preferences or chat history belong in this package.
-The public GitHub account identifies the publisher; commits use its GitHub noreply
-address, not a private email address. The original research knowledge library is
-excluded; see [knowledge scope](KNOWLEDGE-SCOPE.md).
+发布者已授权 MIT 与 GitHub 公开发布。MIT 只覆盖仓库原创代码和研究表达；
+第三方摄影、教程与 Adobe 权利见 [第三方说明](../THIRD_PARTY.md)。
+提交使用 GitHub noreply 身份；账号作为发布者本身公开，不包含私人邮箱。
 
-Before each publication, rerun tests, the exact allowlist check and clean archive
-extraction. Check the actual Git index and commit identity separately: this text-only
-archive does not include a Git history or claim that an unrelated repository is clean.
+每次发布应重新运行知识校验、测试、精确文件白名单和干净解压验证。
+公开 issue 不应附个人照片、原片哈希、路径、授权文字或私有工作区。

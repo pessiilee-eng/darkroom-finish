@@ -1,4 +1,5 @@
 import importlib.util
+import hashlib
 import json
 from pathlib import Path
 import tempfile
@@ -34,6 +35,17 @@ class ReleaseCheckTests(unittest.TestCase):
     def test_symlink_rejected(self):
         (self.root / 'alias').symlink_to(self.root / 'README.md')
         with self.assertRaisesRegex(ValueError, 'Symlink'):
+            checker.check(self.root)
+
+    def test_manifest_must_match_published_research(self):
+        folder = self.root / 'knowledge'; folder.mkdir()
+        (folder / 'note.md').write_text('Original research')
+        manifest = {'schema': 'darkroom-knowledge/1', 'files': {'note.md': hashlib.sha256(b'Original research').hexdigest()}}
+        (folder / 'manifest.json').write_text(json.dumps(manifest))
+        (self.root / 'release-files.json').write_text(json.dumps(['release-files.json', 'README.md', 'knowledge/manifest.json', 'knowledge/note.md']))
+        self.assertEqual(len(checker.check(self.root)), 4)
+        (folder / 'note.md').write_text('Changed after review')
+        with self.assertRaisesRegex(ValueError, 'knowledge does not match'):
             checker.check(self.root)
 
 

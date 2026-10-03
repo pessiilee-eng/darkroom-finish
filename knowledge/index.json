@@ -1,0 +1,7531 @@
+{
+  "documents": [
+    {
+      "id": "guidance:references:color-intent",
+      "kind": "guidance",
+      "path": "guidance/color-intent.md",
+      "tags": [
+        "reference_proposed"
+      ],
+      "title": "色彩表达：从中性基线走到有意图的成片"
+    },
+    {
+      "id": "guidance:references:composition-and-crop",
+      "kind": "guidance",
+      "path": "guidance/composition-and-crop.md",
+      "tags": [
+        "reference_proposed"
+      ],
+      "title": "构图与裁剪：画幅有规范，位置有理由"
+    },
+    {
+      "id": "guidance:references:genre-and-intent",
+      "kind": "guidance",
+      "path": "guidance/genre-and-intent.md",
+      "tags": [
+        "reference_proposed"
+      ],
+      "title": "从题材和主题选择表达方向"
+    },
+    {
+      "id": "guidance:references:portrait",
+      "kind": "guidance",
+      "path": "guidance/portrait.md",
+      "tags": [
+        "reference_proposed"
+      ],
+      "title": "人像：先定结果，再分问题修饰"
+    },
+    {
+      "id": "guidance:references:work-target-library",
+      "kind": "guidance",
+      "path": "guidance/work-target-library.md",
+      "tags": [
+        "reference_proposed"
+      ],
+      "title": "用作品目标库完成方向选择"
+    },
+    {
+      "id": "photographer:photographers:7indigo",
+      "kind": "photographer",
+      "path": "photographers/7indigo.md",
+      "tags": [
+        "needs_source_verification",
+        "reference_proposed"
+      ],
+      "title": "7indigo"
+    },
+    {
+      "id": "photographer:photographers:ai-sheying-wangweiwei",
+      "kind": "photographer",
+      "path": "photographers/ai-sheying-wangweiwei.md",
+      "tags": [
+        "landscape-nature",
+        "reference_proposed"
+      ],
+      "title": "爱摄影的王伟伟（抖音手机摄影技巧头部）"
+    },
+    {
+      "id": "photographer:photographers:albert-watson",
+      "kind": "photographer",
+      "path": "photographers/albert-watson.md",
+      "tags": [
+        "city-architecture",
+        "coastal-seascape",
+        "landscape-nature",
+        "portrait",
+        "reference_proposed"
+      ],
+      "title": "Albert Watson"
+    },
+    {
+      "id": "photographer:photographers:alec-soth",
+      "kind": "photographer",
+      "path": "photographers/alec-soth.md",
+      "tags": [
+        "city-street-day",
+        "documentary",
+        "portrait",
+        "reference_proposed"
+      ],
+      "title": "Alec Soth"
+    },
+    {
+      "id": "photographer:photographers:aleksandra-wilk",
+      "kind": "photographer",
+      "path": "photographers/aleksandra-wilk.md",
+      "tags": [
+        "landscape-nature",
+        "overcast-snow-cityscape",
+        "reference_proposed"
+      ],
+      "title": "Aleksandra Wilk"
+    },
+    {
+      "id": "photographer:photographers:alex-strohl",
+      "kind": "photographer",
+      "path": "photographers/alex-strohl.md",
+      "tags": [
+        "landscape-nature",
+        "mountain-alpine-landscape",
+        "reference_proposed"
+      ],
+      "title": "Alex Strohl"
+    },
+    {
+      "id": "photographer:photographers:alex-webb",
+      "kind": "photographer",
+      "path": "photographers/alex-webb.md",
+      "tags": [
+        "documentary",
+        "reference_proposed",
+        "street",
+        "travel-documentary-people"
+      ],
+      "title": "alex-webb"
+    },
+    {
+      "id": "photographer:photographers:andreas-gursky",
+      "kind": "photographer",
+      "path": "photographers/andreas-gursky.md",
+      "tags": [
+        "city-architecture",
+        "landscape-nature",
+        "reference_proposed"
+      ],
+      "title": "Andreas Gursky"
+    },
+    {
+      "id": "photographer:photographers:andy-yeung",
+      "kind": "photographer",
+      "path": "photographers/andy-yeung.md",
+      "tags": [
+        "city-architecture",
+        "city-night-neon-rain",
+        "reference_proposed"
+      ],
+      "title": "Andy Yeung"
+    },
+    {
+      "id": "photographer:photographers:annie-leibovitz",
+      "kind": "photographer",
+      "path": "photographers/annie-leibovitz.md",
+      "tags": [
+        "reference_proposed"
+      ],
+      "title": "annie-leibovitz"
+    },
+    {
+      "id": "photographer:photographers:ansel-adams",
+      "kind": "photographer",
+      "path": "photographers/ansel-adams.md",
+      "tags": [
+        "coastal-seascape",
+        "landscape-nature",
+        "mountain-alpine-landscape",
+        "reference_proposed"
+      ],
+      "title": "Ansel Adams"
+    },
+    {
+      "id": "photographer:photographers:august-sander",
+      "kind": "photographer",
+      "path": "photographers/august-sander.md",
+      "tags": [
+        "documentary",
+        "portrait",
+        "reference_proposed"
+      ],
+      "title": "August Sander"
+    },
+    {
+      "id": "photographer:photographers:berenice-abbott",
+      "kind": "photographer",
+      "path": "photographers/berenice-abbott.md",
+      "tags": [
+        "city-architecture",
+        "documentary",
+        "reference_proposed"
+      ],
+      "title": "Berenice Abbott"
+    },
+    {
+      "id": "photographer:photographers:brassai",
+      "kind": "photographer",
+      "path": "photographers/brassai.md",
+      "tags": [
+        "city-architecture",
+        "night-snow-artificial-light",
+        "reference_proposed",
+        "street"
+      ],
+      "title": "brassai"
+    },
+    {
+      "id": "photographer:photographers:buchu-men-zhu",
+      "kind": "photographer",
+      "path": "photographers/buchu-men-zhu.md",
+      "tags": [
+        "needs_source_verification",
+        "reference_proposed"
+      ],
+      "title": "buchu-men-zhu"
+    },
+    {
+      "id": "photographer:photographers:cai-wenchuan",
+      "kind": "photographer",
+      "path": "photographers/cai-wenchuan.md",
+      "tags": [
+        "everyday-still-life",
+        "reference_proposed"
+      ],
+      "title": "蔡汶川（摄影师/小红书头部数码博主、摄影师账号运营教学者）"
+    },
+    {
+      "id": "photographer:photographers:candida-hofer",
+      "kind": "photographer",
+      "path": "photographers/candida-hofer.md",
+      "tags": [
+        "city-architecture",
+        "reference_proposed"
+      ],
+      "title": "Candida Höfer"
+    },
+    {
+      "id": "photographer:photographers:chen-junhe",
+      "kind": "photographer",
+      "path": "photographers/chen-junhe.md",
+      "tags": [
+        "needs_source_verification",
+        "reference_proposed"
+      ],
+      "title": "chen-junhe"
+    },
+    {
+      "id": "photographer:photographers:chris-burkard",
+      "kind": "photographer",
+      "path": "photographers/chris-burkard.md",
+      "tags": [
+        "coastal-seascape",
+        "landscape-nature",
+        "reference_proposed"
+      ],
+      "title": "chris-burkard"
+    },
+    {
+      "id": "photographer:photographers:christophe-jacrot",
+      "kind": "photographer",
+      "path": "photographers/christophe-jacrot.md",
+      "tags": [
+        "city-architecture",
+        "night-snow-artificial-light",
+        "reference_proposed"
+      ],
+      "title": "Christophe Jacrot"
+    },
+    {
+      "id": "photographer:photographers:chu-weimin-thomas",
+      "kind": "photographer",
+      "path": "photographers/chu-weimin-thomas.md",
+      "tags": [
+        "city-architecture",
+        "landscape-nature",
+        "overcast-snow-cityscape",
+        "reference_proposed"
+      ],
+      "title": "储卫民（Thomas 看看世界）"
+    },
+    {
+      "id": "photographer:photographers:daido-moriyama",
+      "kind": "photographer",
+      "path": "photographers/daido-moriyama.md",
+      "tags": [
+        "city-street-day",
+        "reference_proposed",
+        "street"
+      ],
+      "title": "Daido Moriyama"
+    },
+    {
+      "id": "photographer:photographers:david-alan-harvey",
+      "kind": "photographer",
+      "path": "photographers/david-alan-harvey.md",
+      "tags": [
+        "documentary",
+        "reference_proposed",
+        "street",
+        "travel-documentary-people"
+      ],
+      "title": "David Alan Harvey"
+    },
+    {
+      "id": "photographer:photographers:deana-lawson",
+      "kind": "photographer",
+      "path": "photographers/deana-lawson.md",
+      "tags": [
+        "portrait",
+        "reference_proposed"
+      ],
+      "title": "Deana Lawson"
+    },
+    {
+      "id": "photographer:photographers:diandi-lahai",
+      "kind": "photographer",
+      "path": "photographers/diandi-lahai.md",
+      "tags": [
+        "portrait",
+        "reference_proposed"
+      ],
+      "title": "垫底辣孩（闫浩，抖音 1800 万+/小红书 280 万变装摄影博主）"
+    },
+    {
+      "id": "photographer:photographers:dilip-mehta",
+      "kind": "photographer",
+      "path": "photographers/dilip-mehta.md",
+      "tags": [
+        "documentary",
+        "reference_proposed",
+        "travel-documentary-people"
+      ],
+      "title": "Dilip Mehta"
+    },
+    {
+      "id": "photographer:photographers:dipanjan-pal",
+      "kind": "photographer",
+      "path": "photographers/dipanjan-pal.md",
+      "tags": [
+        "landscape-nature",
+        "night-snow-artificial-light",
+        "overcast-snow-cityscape",
+        "reference_proposed"
+      ],
+      "title": "Dipanjan Pal"
+    },
+    {
+      "id": "photographer:photographers:dongdongqiang",
+      "kind": "photographer",
+      "path": "photographers/dongdongqiang.md",
+      "tags": [
+        "city-architecture",
+        "reference_proposed",
+        "street"
+      ],
+      "title": "拍照的东东枪（城市/铁道摄影审美线）"
+    },
+    {
+      "id": "photographer:photographers:edward-burtynsky",
+      "kind": "photographer",
+      "path": "photographers/edward-burtynsky.md",
+      "tags": [
+        "documentary",
+        "landscape-nature",
+        "overcast-snow-cityscape",
+        "reference_proposed"
+      ],
+      "title": "edward-burtynsky"
+    },
+    {
+      "id": "photographer:photographers:edward-weston",
+      "kind": "photographer",
+      "path": "photographers/edward-weston.md",
+      "tags": [
+        "coastal-seascape",
+        "everyday-still-life",
+        "landscape-nature",
+        "portrait",
+        "reference_proposed"
+      ],
+      "title": "Edward Weston"
+    },
+    {
+      "id": "photographer:photographers:eiko-hosoe",
+      "kind": "photographer",
+      "path": "photographers/eiko-hosoe.md",
+      "tags": [
+        "needs_source_verification",
+        "reference_proposed"
+      ],
+      "title": "eiko-hosoe"
+    },
+    {
+      "id": "photographer:photographers:evgenii-domanov",
+      "kind": "photographer",
+      "path": "photographers/evgenii-domanov.md",
+      "tags": [
+        "city-architecture",
+        "landscape-nature",
+        "overcast-snow-cityscape",
+        "reference_proposed"
+      ],
+      "title": "Evgenii Domanov"
+    },
+    {
+      "id": "photographer:photographers:ezra-stoller",
+      "kind": "photographer",
+      "path": "photographers/ezra-stoller.md",
+      "tags": [
+        "city-architecture",
+        "reference_proposed"
+      ],
+      "title": "Ezra Stoller"
+    },
+    {
+      "id": "photographer:photographers:fan-ho",
+      "kind": "photographer",
+      "path": "photographers/fan-ho.md",
+      "tags": [
+        "city-architecture",
+        "reference_proposed",
+        "street"
+      ],
+      "title": "Fan Ho（何藩）"
+    },
+    {
+      "id": "photographer:photographers:fatiaocheng-chengzi",
+      "kind": "photographer",
+      "path": "photographers/fatiaocheng-chengzi.md",
+      "tags": [
+        "portrait",
+        "reference_proposed",
+        "street"
+      ],
+      "title": "发条橙橙子摄影教学（街拍氛围感+直出调色线）"
+    },
+    {
+      "id": "photographer:photographers:feng-ke",
+      "kind": "photographer",
+      "path": "photographers/feng-ke.md",
+      "tags": [
+        "needs_source_verification",
+        "reference_proposed"
+      ],
+      "title": "feng-ke"
+    },
+    {
+      "id": "photographer:photographers:feng-li",
+      "kind": "photographer",
+      "path": "photographers/feng-li.md",
+      "tags": [
+        "documentary",
+        "night-snow-artificial-light",
+        "reference_proposed",
+        "street"
+      ],
+      "title": "Feng Li（冯立）"
+    },
+    {
+      "id": "photographer:photographers:frederik-buyckx",
+      "kind": "photographer",
+      "path": "photographers/frederik-buyckx.md",
+      "tags": [
+        "landscape-nature",
+        "overcast-snow-cityscape",
+        "reference_proposed"
+      ],
+      "title": "Frederik Buyckx"
+    },
+    {
+      "id": "photographer:photographers:galen-rowell",
+      "kind": "photographer",
+      "path": "photographers/galen-rowell.md",
+      "tags": [
+        "landscape-nature",
+        "mountain-alpine-landscape",
+        "reference_proposed"
+      ],
+      "title": "Galen Rowell"
+    },
+    {
+      "id": "photographer:photographers:garry-winogrand",
+      "kind": "photographer",
+      "path": "photographers/garry-winogrand.md",
+      "tags": [
+        "city-street-day",
+        "reference_proposed",
+        "street"
+      ],
+      "title": "garry-winogrand"
+    },
+    {
+      "id": "photographer:photographers:greg-girard",
+      "kind": "photographer",
+      "path": "photographers/greg-girard.md",
+      "tags": [
+        "city-architecture",
+        "city-night-neon-rain",
+        "documentary",
+        "needs_source_verification",
+        "reference_proposed"
+      ],
+      "title": "greg-girard"
+    },
+    {
+      "id": "photographer:photographers:gregory-crewdson",
+      "kind": "photographer",
+      "path": "photographers/gregory-crewdson.md",
+      "tags": [
+        "city-night-neon-rain",
+        "documentary",
+        "night-snow-artificial-light",
+        "portrait",
+        "reference_proposed"
+      ],
+      "title": "gregory-crewdson"
+    },
+    {
+      "id": "photographer:photographers:gueorgui-pinkhassov",
+      "kind": "photographer",
+      "path": "photographers/gueorgui-pinkhassov.md",
+      "tags": [
+        "documentary",
+        "reference_proposed",
+        "street",
+        "travel-documentary-people"
+      ],
+      "title": "gueorgui-pinkhassov"
+    },
+    {
+      "id": "photographer:photographers:guiji-chongqing",
+      "kind": "photographer",
+      "path": "photographers/guiji-chongqing.md",
+      "tags": [
+        "city-architecture",
+        "reference_proposed"
+      ],
+      "title": "鬼迹（重庆城市人文风光摄影师，抖音+小红书+B站）"
+    },
+    {
+      "id": "photographer:photographers:harry-gruyaert",
+      "kind": "photographer",
+      "path": "photographers/harry-gruyaert.md",
+      "tags": [
+        "city-street-day",
+        "reference_proposed",
+        "street"
+      ],
+      "title": "harry-gruyaert"
+    },
+    {
+      "id": "photographer:photographers:haruka-komori",
+      "kind": "photographer",
+      "path": "photographers/haruka-komori.md",
+      "tags": [
+        "documentary",
+        "everyday-still-life",
+        "japanese-quiet-daily",
+        "reference_proposed"
+      ],
+      "title": "Haruka Komori（小森はるか）"
+    },
+    {
+      "id": "photographer:photographers:hatakeyama-naoya",
+      "kind": "photographer",
+      "path": "photographers/hatakeyama-naoya.md",
+      "tags": [
+        "city-architecture",
+        "landscape-nature",
+        "overcast-snow-cityscape",
+        "reference_proposed"
+      ],
+      "title": "hatakeyama-naoya"
+    },
+    {
+      "id": "photographer:photographers:helene-binet",
+      "kind": "photographer",
+      "path": "photographers/helene-binet.md",
+      "tags": [
+        "city-architecture",
+        "reference_proposed"
+      ],
+      "title": "Hélène Binet"
+    },
+    {
+      "id": "photographer:photographers:henri-cartier-bresson",
+      "kind": "photographer",
+      "path": "photographers/henri-cartier-bresson.md",
+      "tags": [
+        "city-street-day",
+        "documentary",
+        "reference_proposed",
+        "street"
+      ],
+      "title": "Henri Cartier-Bresson"
+    },
+    {
+      "id": "photographer:photographers:hideaki-hamada",
+      "kind": "photographer",
+      "path": "photographers/hideaki-hamada.md",
+      "tags": [
+        "everyday-still-life",
+        "japanese-quiet-daily",
+        "reference_proposed"
+      ],
+      "title": "Hideaki Hamada（浜田英明）"
+    },
+    {
+      "id": "photographer:photographers:hiroh-kikai",
+      "kind": "photographer",
+      "path": "photographers/hiroh-kikai.md",
+      "tags": [
+        "documentary",
+        "portrait",
+        "reference_proposed"
+      ],
+      "title": "Hiroh Kikai（鬼海弘雄）"
+    },
+    {
+      "id": "photographer:photographers:hiroshi-sugimoto",
+      "kind": "photographer",
+      "path": "photographers/hiroshi-sugimoto.md",
+      "tags": [
+        "coastal-seascape",
+        "landscape-nature",
+        "reference_proposed"
+      ],
+      "title": "Hiroshi Sugimoto（杉本博司）"
+    },
+    {
+      "id": "photographer:photographers:hisa-matsumura",
+      "kind": "photographer",
+      "path": "photographers/hisa-matsumura.md",
+      "tags": [
+        "city-architecture",
+        "landscape-nature",
+        "overcast-snow-cityscape",
+        "reference_proposed"
+      ],
+      "title": "Hisa Matsumura"
+    },
+    {
+      "id": "photographer:photographers:hu-zhiwei",
+      "kind": "photographer",
+      "path": "photographers/hu-zhiwei.md",
+      "tags": [
+        "city-street-day",
+        "portrait",
+        "reference_proposed",
+        "street"
+      ],
+      "title": "胡致炜（上海街头人像，抖音 162 万）"
+    },
+    {
+      "id": "photographer:photographers:irving-penn",
+      "kind": "photographer",
+      "path": "photographers/irving-penn.md",
+      "tags": [
+        "reference_proposed"
+      ],
+      "title": "irving-penn"
+    },
+    {
+      "id": "photographer:photographers:ishiuchi-miyako",
+      "kind": "photographer",
+      "path": "photographers/ishiuchi-miyako.md",
+      "tags": [
+        "documentary",
+        "everyday-still-life",
+        "japanese-quiet-daily",
+        "reference_proposed"
+      ],
+      "title": "Ishiuchi Miyako（石内都）"
+    },
+    {
+      "id": "photographer:photographers:iwan-baan",
+      "kind": "photographer",
+      "path": "photographers/iwan-baan.md",
+      "tags": [
+        "city-architecture",
+        "documentary",
+        "reference_proposed"
+      ],
+      "title": "Iwan Baan"
+    },
+    {
+      "id": "photographer:photographers:j-fritz-rumpf",
+      "kind": "photographer",
+      "path": "photographers/j-fritz-rumpf.md",
+      "tags": [
+        "landscape-nature",
+        "overcast-snow-cityscape",
+        "reference_proposed"
+      ],
+      "title": "J. Fritz Rumpf"
+    },
+    {
+      "id": "photographer:photographers:jan-smid",
+      "kind": "photographer",
+      "path": "photographers/jan-smid.md",
+      "tags": [
+        "landscape-nature",
+        "night-snow-artificial-light",
+        "reference_proposed"
+      ],
+      "title": "Jan Šmíd"
+    },
+    {
+      "id": "photographer:photographers:jia-ye",
+      "kind": "photographer",
+      "path": "photographers/jia-ye.md",
+      "tags": [
+        "needs_source_verification",
+        "reference_proposed"
+      ],
+      "title": "jia-ye"
+    },
+    {
+      "id": "photographer:photographers:jimmy-chin",
+      "kind": "photographer",
+      "path": "photographers/jimmy-chin.md",
+      "tags": [
+        "documentary",
+        "landscape-nature",
+        "mountain-alpine-landscape",
+        "needs_source_verification",
+        "reference_proposed"
+      ],
+      "title": "jimmy-chin"
+    },
+    {
+      "id": "photographer:photographers:jin-haosen",
+      "kind": "photographer",
+      "path": "photographers/jin-haosen.md",
+      "tags": [
+        "everyday-still-life",
+        "portrait",
+        "reference_proposed"
+      ],
+      "title": "Jin Haosen（金浩森）"
+    },
+    {
+      "id": "photographer:photographers:joel-meyerowitz",
+      "kind": "photographer",
+      "path": "photographers/joel-meyerowitz.md",
+      "tags": [
+        "city-street-day",
+        "landscape-nature",
+        "reference_proposed",
+        "street"
+      ],
+      "title": "joel-meyerowitz"
+    },
+    {
+      "id": "photographer:photographers:josef-koudelka",
+      "kind": "photographer",
+      "path": "photographers/josef-koudelka.md",
+      "tags": [
+        "documentary",
+        "reference_proposed",
+        "travel-documentary-people"
+      ],
+      "title": "Josef Koudelka"
+    },
+    {
+      "id": "photographer:photographers:joël-meyerowitz",
+      "kind": "photographer",
+      "path": "photographers/joël-meyerowitz.md",
+      "tags": [
+        "reference_proposed"
+      ],
+      "title": "joël-meyerowitz"
+    },
+    {
+      "id": "photographer:photographers:juanmao-tong",
+      "kind": "photographer",
+      "path": "photographers/juanmao-tong.md",
+      "tags": [
+        "everyday-still-life",
+        "reference_proposed"
+      ],
+      "title": "卷毛佟（抖音手机摄影教学头部）"
+    },
+    {
+      "id": "photographer:photographers:julius-shulman",
+      "kind": "photographer",
+      "path": "photographers/julius-shulman.md",
+      "tags": [
+        "city-architecture",
+        "reference_proposed"
+      ],
+      "title": "Julius Shulman"
+    },
+    {
+      "id": "photographer:photographers:k-jiao-sheying",
+      "kind": "photographer",
+      "path": "photographers/k-jiao-sheying.md",
+      "tags": [
+        "portrait",
+        "reference_proposed"
+      ],
+      "title": "K教摄影（抖音人像摄影教学头部）"
+    },
+    {
+      "id": "photographer:photographers:kacper-kowalski",
+      "kind": "photographer",
+      "path": "photographers/kacper-kowalski.md",
+      "tags": [
+        "landscape-nature",
+        "night-snow-artificial-light",
+        "overcast-snow-cityscape",
+        "reference_proposed"
+      ],
+      "title": "Kacper Kowalski"
+    },
+    {
+      "id": "photographer:photographers:kayo-ume",
+      "kind": "photographer",
+      "path": "photographers/kayo-ume.md",
+      "tags": [
+        "everyday-still-life",
+        "reference_proposed",
+        "street"
+      ],
+      "title": "Kayo Ume（梅佳代）"
+    },
+    {
+      "id": "photographer:photographers:keichi-tanaka",
+      "kind": "photographer",
+      "path": "photographers/keichi-tanaka.md",
+      "tags": [
+        "needs_source_verification",
+        "reference_proposed"
+      ],
+      "title": "keichi-tanaka"
+    },
+    {
+      "id": "photographer:photographers:keith-loutit",
+      "kind": "photographer",
+      "path": "photographers/keith-loutit.md",
+      "tags": [
+        "needs_source_verification",
+        "reference_proposed"
+      ],
+      "title": "keith-loutit"
+    },
+    {
+      "id": "photographer:photographers:keizo-kitajima",
+      "kind": "photographer",
+      "path": "photographers/keizo-kitajima.md",
+      "tags": [
+        "documentary",
+        "japanese-quiet-daily",
+        "reference_proposed",
+        "street"
+      ],
+      "title": "Keizo Kitajima（北島敬三）"
+    },
+    {
+      "id": "photographer:photographers:koji-ueda",
+      "kind": "photographer",
+      "path": "photographers/koji-ueda.md",
+      "tags": [
+        "needs_source_verification",
+        "reference_proposed"
+      ],
+      "title": "koji-ueda"
+    },
+    {
+      "id": "photographer:photographers:kotori-kawashima",
+      "kind": "photographer",
+      "path": "photographers/kotori-kawashima.md",
+      "tags": [
+        "everyday-still-life",
+        "japanese-quiet-daily",
+        "portrait",
+        "reference_proposed"
+      ],
+      "title": "Kotori Kawashima（川島小鸟）"
+    },
+    {
+      "id": "photographer:photographers:kubota-hiroji",
+      "kind": "photographer",
+      "path": "photographers/kubota-hiroji.md",
+      "tags": [
+        "documentary",
+        "overcast-snow-cityscape",
+        "reference_proposed"
+      ],
+      "title": "kubota-hiroji"
+    },
+    {
+      "id": "photographer:photographers:lars-tunbjork",
+      "kind": "photographer",
+      "path": "photographers/lars-tunbjork.md",
+      "tags": [
+        "documentary",
+        "needs_source_verification",
+        "overcast-snow-cityscape",
+        "reference_proposed",
+        "street"
+      ],
+      "title": "lars-tunbjork"
+    },
+    {
+      "id": "photographer:photographers:lee-friedlander",
+      "kind": "photographer",
+      "path": "photographers/lee-friedlander.md",
+      "tags": [
+        "city-street-day",
+        "reference_proposed",
+        "street"
+      ],
+      "title": "lee-friedlander"
+    },
+    {
+      "id": "photographer:photographers:leonard-freed",
+      "kind": "photographer",
+      "path": "photographers/leonard-freed.md",
+      "tags": [
+        "documentary",
+        "reference_proposed",
+        "travel-documentary-people"
+      ],
+      "title": "Leonard Freed"
+    },
+    {
+      "id": "photographer:photographers:li-dong",
+      "kind": "photographer",
+      "path": "photographers/li-dong.md",
+      "tags": [
+        "needs_source_verification",
+        "reference_proposed"
+      ],
+      "title": "li-dong"
+    },
+    {
+      "id": "photographer:photographers:li-heng",
+      "kind": "photographer",
+      "path": "photographers/li-heng.md",
+      "tags": [
+        "needs_source_verification",
+        "reference_proposed"
+      ],
+      "title": "li-heng"
+    },
+    {
+      "id": "photographer:photographers:li-shaobai",
+      "kind": "photographer",
+      "path": "photographers/li-shaobai.md",
+      "tags": [
+        "city-architecture",
+        "needs_source_verification",
+        "overcast-snow-cityscape",
+        "reference_proposed"
+      ],
+      "title": "li-shaobai"
+    },
+    {
+      "id": "photographer:photographers:li-tao-ps",
+      "kind": "photographer",
+      "path": "photographers/li-tao-ps.md",
+      "tags": [
+        "landscape-nature",
+        "portrait",
+        "reference_proposed"
+      ],
+      "title": "李涛（李涛PS / 良知塾，中文 PS 后期教学元老）"
+    },
+    {
+      "id": "photographer:photographers:li-wei",
+      "kind": "photographer",
+      "path": "photographers/li-wei.md",
+      "tags": [
+        "needs_source_verification",
+        "reference_proposed"
+      ],
+      "title": "li-wei"
+    },
+    {
+      "id": "photographer:photographers:liam-wong",
+      "kind": "photographer",
+      "path": "photographers/liam-wong.md",
+      "tags": [
+        "city-architecture",
+        "city-night-neon-rain",
+        "reference_proposed"
+      ],
+      "title": "Liam Wong"
+    },
+    {
+      "id": "photographer:photographers:lian-zhiyong",
+      "kind": "photographer",
+      "path": "photographers/lian-zhiyong.md",
+      "tags": [
+        "needs_source_verification",
+        "reference_proposed"
+      ],
+      "title": "lian-zhiyong"
+    },
+    {
+      "id": "photographer:photographers:liangtian",
+      "kind": "photographer",
+      "path": "photographers/liangtian.md",
+      "tags": [
+        "portrait",
+        "reference_proposed",
+        "street"
+      ],
+      "title": "良田（抖音 2200 万粉丝街头人像摄影师）"
+    },
+    {
+      "id": "photographer:photographers:lieko-shiga",
+      "kind": "photographer",
+      "path": "photographers/lieko-shiga.md",
+      "tags": [
+        "documentary",
+        "everyday-still-life",
+        "japanese-quiet-daily",
+        "reference_proposed"
+      ],
+      "title": "Lieko Shiga（志賀理江子）"
+    },
+    {
+      "id": "photographer:photographers:lin-haiyin",
+      "kind": "photographer",
+      "path": "photographers/lin-haiyin.md",
+      "tags": [
+        "portrait",
+        "reference_proposed"
+      ],
+      "title": "林海音（Haiyin，人像摄影与闪光灯教学线）"
+    },
+    {
+      "id": "photographer:photographers:linksphotograph",
+      "kind": "photographer",
+      "path": "photographers/linksphotograph.md",
+      "tags": [
+        "landscape-nature",
+        "reference_proposed"
+      ],
+      "title": "Linksphotograph（纪昌元，小红书 187 万风光摄影 KOL）"
+    },
+    {
+      "id": "photographer:photographers:liu-minyang",
+      "kind": "photographer",
+      "path": "photographers/liu-minyang.md",
+      "tags": [
+        "needs_source_verification",
+        "reference_proposed"
+      ],
+      "title": "liu-minyang"
+    },
+    {
+      "id": "photographer:photographers:liu-tao",
+      "kind": "photographer",
+      "path": "photographers/liu-tao.md",
+      "tags": [
+        "city-street-day",
+        "reference_proposed",
+        "street"
+      ],
+      "title": "刘涛 (Liu Tao)"
+    },
+    {
+      "id": "photographer:photographers:liu-yang-retouch",
+      "kind": "photographer",
+      "path": "photographers/liu-yang-retouch.md",
+      "tags": [
+        "portrait",
+        "reference_proposed"
+      ],
+      "title": "刘杨（会修图的摄影师刘杨，商业人像精修教学线）"
+    },
+    {
+      "id": "photographer:photographers:lu-yuanmin",
+      "kind": "photographer",
+      "path": "photographers/lu-yuanmin.md",
+      "tags": [
+        "city-street-day",
+        "documentary",
+        "reference_proposed",
+        "street"
+      ],
+      "title": "陆元敏 (Lu Yuanmin)"
+    },
+    {
+      "id": "photographer:photographers:luo-dan",
+      "kind": "photographer",
+      "path": "photographers/luo-dan.md",
+      "tags": [
+        "city-street-day",
+        "documentary",
+        "landscape-nature",
+        "reference_proposed"
+      ],
+      "title": "骆丹 (Luo Dan)"
+    },
+    {
+      "id": "photographer:photographers:luo-ma",
+      "kind": "photographer",
+      "path": "photographers/luo-ma.md",
+      "tags": [
+        "needs_source_verification",
+        "reference_proposed"
+      ],
+      "title": "luo-ma"
+    },
+    {
+      "id": "photographer:photographers:marc-adamus",
+      "kind": "photographer",
+      "path": "photographers/marc-adamus.md",
+      "tags": [
+        "landscape-nature",
+        "mountain-alpine-landscape",
+        "reference_proposed"
+      ],
+      "title": "Marc Adamus"
+    },
+    {
+      "id": "photographer:photographers:mark-power",
+      "kind": "photographer",
+      "path": "photographers/mark-power.md",
+      "tags": [
+        "city-street-day",
+        "documentary",
+        "reference_proposed",
+        "street"
+      ],
+      "title": "mark-power"
+    },
+    {
+      "id": "photographer:photographers:markus-naartijarvi",
+      "kind": "photographer",
+      "path": "photographers/markus-naartijarvi.md",
+      "tags": [
+        "city-architecture",
+        "night-snow-artificial-light",
+        "reference_proposed"
+      ],
+      "title": "Markus Naarttijärvi"
+    },
+    {
+      "id": "photographer:photographers:martin-bailey",
+      "kind": "photographer",
+      "path": "photographers/martin-bailey.md",
+      "tags": [
+        "landscape-nature",
+        "night-snow-artificial-light",
+        "overcast-snow-cityscape",
+        "reference_proposed"
+      ],
+      "title": "Martin Bailey"
+    },
+    {
+      "id": "photographer:photographers:martin-parr-photographer",
+      "kind": "photographer",
+      "path": "photographers/martin-parr-photographer.md",
+      "tags": [
+        "city-street-day",
+        "documentary",
+        "reference_proposed",
+        "street"
+      ],
+      "title": "Martin Parr"
+    },
+    {
+      "id": "photographer:photographers:masao-yamamoto",
+      "kind": "photographer",
+      "path": "photographers/masao-yamamoto.md",
+      "tags": [
+        "everyday-still-life",
+        "reference_proposed"
+      ],
+      "title": "Masao Yamamoto（山本昌南）"
+    },
+    {
+      "id": "photographer:photographers:masashi-wakui",
+      "kind": "photographer",
+      "path": "photographers/masashi-wakui.md",
+      "tags": [
+        "city-architecture",
+        "night-snow-artificial-light",
+        "reference_proposed"
+      ],
+      "title": "Masashi Wakui（涌井真志）"
+    },
+    {
+      "id": "photographer:photographers:masayoshi-sukita",
+      "kind": "photographer",
+      "path": "photographers/masayoshi-sukita.md",
+      "tags": [
+        "portrait",
+        "reference_proposed"
+      ],
+      "title": "Masayoshi Sukita（鋤田正義）"
+    },
+    {
+      "id": "photographer:photographers:masumi-ishida",
+      "kind": "photographer",
+      "path": "photographers/masumi-ishida.md",
+      "tags": [
+        "everyday-still-life",
+        "japanese-quiet-daily",
+        "reference_proposed"
+      ],
+      "title": "Masumi Ishida（石田真澄）"
+    },
+    {
+      "id": "photographer:photographers:max-rive",
+      "kind": "photographer",
+      "path": "photographers/max-rive.md",
+      "tags": [
+        "landscape-nature",
+        "mountain-alpine-landscape",
+        "reference_proposed"
+      ],
+      "title": "Max Rive"
+    },
+    {
+      "id": "photographer:photographers:michael-fatali",
+      "kind": "photographer",
+      "path": "photographers/michael-fatali.md",
+      "tags": [
+        "landscape-nature",
+        "mountain-alpine-landscape",
+        "reference_proposed"
+      ],
+      "title": "Michael Fatali"
+    },
+    {
+      "id": "photographer:photographers:michael-frye",
+      "kind": "photographer",
+      "path": "photographers/michael-frye.md",
+      "tags": [
+        "landscape-nature",
+        "mountain-alpine-landscape",
+        "reference_proposed"
+      ],
+      "title": "Michael Frye"
+    },
+    {
+      "id": "photographer:photographers:michael-kenna",
+      "kind": "photographer",
+      "path": "photographers/michael-kenna.md",
+      "tags": [
+        "landscape-nature",
+        "night-snow-artificial-light",
+        "reference_proposed",
+        "street"
+      ],
+      "title": "Michael Kenna"
+    },
+    {
+      "id": "photographer:photographers:michael-wolf",
+      "kind": "photographer",
+      "path": "photographers/michael-wolf.md",
+      "tags": [
+        "city-architecture",
+        "city-night-neon-rain",
+        "reference_proposed",
+        "street"
+      ],
+      "title": "michael-wolf"
+    },
+    {
+      "id": "photographer:photographers:mika-ninagawa",
+      "kind": "photographer",
+      "path": "photographers/mika-ninagawa.md",
+      "tags": [
+        "everyday-still-life",
+        "portrait",
+        "reference_proposed"
+      ],
+      "title": "Mika Ninagawa（蜷川实花）"
+    },
+    {
+      "id": "photographer:photographers:mikiya-takimoto",
+      "kind": "photographer",
+      "path": "photographers/mikiya-takimoto.md",
+      "tags": [
+        "everyday-still-life",
+        "reference_proposed"
+      ],
+      "title": "Mikiya Takimoto（泷本干也）"
+    },
+    {
+      "id": "photographer:photographers:mikko-lagerstedt",
+      "kind": "photographer",
+      "path": "photographers/mikko-lagerstedt.md",
+      "tags": [
+        "landscape-nature",
+        "overcast-snow-cityscape",
+        "reference_proposed"
+      ],
+      "title": "Mikko Lagerstedt（Nordic 美学代表）"
+    },
+    {
+      "id": "photographer:photographers:naoki-honjo",
+      "kind": "photographer",
+      "path": "photographers/naoki-honjo.md",
+      "tags": [
+        "city-architecture",
+        "needs_source_verification",
+        "overcast-snow-cityscape",
+        "reference_proposed"
+      ],
+      "title": "Naoki Honjo（本城直季）"
+    },
+    {
+      "id": "photographer:photographers:naoya-hatakeyama",
+      "kind": "photographer",
+      "path": "photographers/naoya-hatakeyama.md",
+      "tags": [
+        "needs_source_verification",
+        "reference_proposed"
+      ],
+      "title": "naoya-hatakeyama"
+    },
+    {
+      "id": "photographer:photographers:niao-feifei",
+      "kind": "photographer",
+      "path": "photographers/niao-feifei.md",
+      "tags": [
+        "needs_source_verification",
+        "reference_proposed"
+      ],
+      "title": "niao-feifei"
+    },
+    {
+      "id": "photographer:photographers:nobuyoshi-araki",
+      "kind": "photographer",
+      "path": "photographers/nobuyoshi-araki.md",
+      "tags": [
+        "city-street-day",
+        "needs_source_verification",
+        "portrait",
+        "reference_proposed",
+        "street"
+      ],
+      "title": "nobuyoshi-araki"
+    },
+    {
+      "id": "photographer:photographers:noealz",
+      "kind": "photographer",
+      "path": "photographers/noealz.md",
+      "tags": [
+        "city-architecture",
+        "night-snow-artificial-light",
+        "reference_proposed",
+        "street"
+      ],
+      "title": "noealz"
+    },
+    {
+      "id": "photographer:photographers:olivia-arthur",
+      "kind": "photographer",
+      "path": "photographers/olivia-arthur.md",
+      "tags": [
+        "documentary",
+        "reference_proposed",
+        "travel-documentary-people"
+      ],
+      "title": "Olivia Arthur"
+    },
+    {
+      "id": "photographer:photographers:olivo-barbieri",
+      "kind": "photographer",
+      "path": "photographers/olivo-barbieri.md",
+      "tags": [
+        "city-architecture",
+        "overcast-snow-cityscape",
+        "reference_proposed"
+      ],
+      "title": "Olivo Barbieri"
+    },
+    {
+      "id": "photographer:photographers:orie-ichihashi",
+      "kind": "photographer",
+      "path": "photographers/orie-ichihashi.md",
+      "tags": [
+        "everyday-still-life",
+        "japanese-quiet-daily",
+        "reference_proposed"
+      ],
+      "title": "Orie Ichihashi（市橋織江）"
+    },
+    {
+      "id": "photographer:photographers:osamu-yokonami",
+      "kind": "photographer",
+      "path": "photographers/osamu-yokonami.md",
+      "tags": [
+        "everyday-still-life",
+        "portrait",
+        "reference_proposed"
+      ],
+      "title": "Osamu Yokonami（横浪修）"
+    },
+    {
+      "id": "photographer:photographers:paolo-roversi",
+      "kind": "photographer",
+      "path": "photographers/paolo-roversi.md",
+      "tags": [
+        "needs_source_verification",
+        "reference_proposed"
+      ],
+      "title": "paolo-roversi"
+    },
+    {
+      "id": "photographer:photographers:pentti-sammallahti",
+      "kind": "photographer",
+      "path": "photographers/pentti-sammallahti.md",
+      "tags": [
+        "landscape-nature",
+        "overcast-snow-cityscape",
+        "reference_proposed"
+      ],
+      "title": "pentti-sammallahti"
+    },
+    {
+      "id": "photographer:photographers:peter-lik",
+      "kind": "photographer",
+      "path": "photographers/peter-lik.md",
+      "tags": [
+        "needs_source_verification",
+        "reference_proposed"
+      ],
+      "title": "peter-lik"
+    },
+    {
+      "id": "photographer:photographers:preston-merchant",
+      "kind": "photographer",
+      "path": "photographers/preston-merchant.md",
+      "tags": [
+        "needs_source_verification",
+        "reference_proposed"
+      ],
+      "title": "preston-merchant"
+    },
+    {
+      "id": "photographer:photographers:qingshan-sheying",
+      "kind": "photographer",
+      "path": "photographers/qingshan-sheying.md",
+      "tags": [
+        "city-architecture",
+        "reference_proposed",
+        "street"
+      ],
+      "title": "青山摄影（「调色日记」Lightroom 仿色教学线）"
+    },
+    {
+      "id": "photographer:photographers:qiuqiu-piqihao",
+      "kind": "photographer",
+      "path": "photographers/qiuqiu-piqihao.md",
+      "tags": [
+        "portrait",
+        "reference_proposed"
+      ],
+      "title": "秋秋脾气好（抖音+小红书拍照技巧博主）"
+    },
+    {
+      "id": "photographer:photographers:raghu-rai",
+      "kind": "photographer",
+      "path": "photographers/raghu-rai.md",
+      "tags": [
+        "documentary",
+        "reference_proposed",
+        "travel-documentary-people"
+      ],
+      "title": "Raghu Rai"
+    },
+    {
+      "id": "photographer:photographers:ren-hang",
+      "kind": "photographer",
+      "path": "photographers/ren-hang.md",
+      "tags": [
+        "needs_source_verification",
+        "portrait",
+        "reference_proposed"
+      ],
+      "title": "Ren Hang（任航）"
+    },
+    {
+      "id": "photographer:photographers:ren-shulin",
+      "kind": "photographer",
+      "path": "photographers/ren-shulin.md",
+      "tags": [
+        "city-street-day",
+        "documentary",
+        "needs_source_verification",
+        "portrait",
+        "reference_proposed"
+      ],
+      "title": "任曙林 (Ren Shulin)"
+    },
+    {
+      "id": "photographer:photographers:reuben-wu",
+      "kind": "photographer",
+      "path": "photographers/reuben-wu.md",
+      "tags": [
+        "landscape-nature",
+        "night-snow-artificial-light",
+        "reference_proposed"
+      ],
+      "title": "Reuben Wu"
+    },
+    {
+      "id": "photographer:photographers:richard-avedon",
+      "kind": "photographer",
+      "path": "photographers/richard-avedon.md",
+      "tags": [
+        "portrait",
+        "reference_proposed",
+        "studio-editorial-portrait"
+      ],
+      "title": "Richard Avedon"
+    },
+    {
+      "id": "photographer:photographers:rineke-dijkstra",
+      "kind": "photographer",
+      "path": "photographers/rineke-dijkstra.md",
+      "tags": [
+        "portrait",
+        "reference_proposed"
+      ],
+      "title": "Rineke Dijkstra"
+    },
+    {
+      "id": "photographer:photographers:rinko-kawauchi",
+      "kind": "photographer",
+      "path": "photographers/rinko-kawauchi.md",
+      "tags": [
+        "everyday-still-life",
+        "japanese-quiet-daily",
+        "landscape-nature",
+        "portrait",
+        "reference_proposed"
+      ],
+      "title": "Rinko Kawauchi（川内伦子）"
+    },
+    {
+      "id": "photographer:photographers:rk",
+      "kind": "photographer",
+      "path": "photographers/rk.md",
+      "tags": [
+        "city-architecture",
+        "city-night-neon-rain",
+        "reference_proposed",
+        "street"
+      ],
+      "title": "RK（Ryosuke Kosuge / 小菅亮輔）"
+    },
+    {
+      "id": "photographer:photographers:romain-jacquet-lagreze",
+      "kind": "photographer",
+      "path": "photographers/romain-jacquet-lagreze.md",
+      "tags": [
+        "city-architecture",
+        "city-night-neon-rain",
+        "needs_source_verification",
+        "reference_proposed"
+      ],
+      "title": "romain-jacquet-lagreze"
+    },
+    {
+      "id": "photographer:photographers:ruan-yizhong",
+      "kind": "photographer",
+      "path": "photographers/ruan-yizhong.md",
+      "tags": [
+        "city-street-day",
+        "documentary",
+        "needs_source_verification",
+        "reference_proposed",
+        "street"
+      ],
+      "title": "阮义忠 (Ruan Yizhong)"
+    },
+    {
+      "id": "photographer:photographers:rut-blees-luxemburg",
+      "kind": "photographer",
+      "path": "photographers/rut-blees-luxemburg.md",
+      "tags": [
+        "city-architecture",
+        "reference_proposed"
+      ],
+      "title": "Rut Blees Luxemburg"
+    },
+    {
+      "id": "photographer:photographers:ryan-mcginley",
+      "kind": "photographer",
+      "path": "photographers/ryan-mcginley.md",
+      "tags": [
+        "needs_source_verification",
+        "reference_proposed"
+      ],
+      "title": "ryan-mcginley"
+    },
+    {
+      "id": "photographer:photographers:sanye-sheying",
+      "kind": "photographer",
+      "path": "photographers/sanye-sheying.md",
+      "tags": [
+        "city-street-day",
+        "reference_proposed",
+        "street"
+      ],
+      "title": "三也的摄影教学（扫街实战教学线）"
+    },
+    {
+      "id": "photographer:photographers:saul-leiter",
+      "kind": "photographer",
+      "path": "photographers/saul-leiter.md",
+      "tags": [
+        "city-street-day",
+        "needs_source_verification",
+        "reference_proposed",
+        "street"
+      ],
+      "title": "saul-leiter"
+    },
+    {
+      "id": "photographer:photographers:sebastiao-salgado",
+      "kind": "photographer",
+      "path": "photographers/sebastiao-salgado.md",
+      "tags": [
+        "documentary",
+        "landscape-nature",
+        "reference_proposed",
+        "travel-documentary-people"
+      ],
+      "title": "Sebastião Salgado"
+    },
+    {
+      "id": "photographer:photographers:shao-zhicheng",
+      "kind": "photographer",
+      "path": "photographers/shao-zhicheng.md",
+      "tags": [
+        "needs_source_verification",
+        "reference_proposed"
+      ],
+      "title": "shao-zhicheng"
+    },
+    {
+      "id": "photographer:photographers:sheyingshi-tailuo",
+      "kind": "photographer",
+      "path": "photographers/sheyingshi-tailuo.md",
+      "tags": [
+        "landscape-nature",
+        "portrait",
+        "reference_proposed"
+      ],
+      "title": "摄影师泰罗（B站百万粉系统教学线）"
+    },
+    {
+      "id": "photographer:photographers:sheyingshi-yuming",
+      "kind": "photographer",
+      "path": "photographers/sheyingshi-yuming.md",
+      "tags": [
+        "city-architecture",
+        "reference_proposed",
+        "street"
+      ],
+      "title": "摄影师聿铭（「追色手记」风格解构线）"
+    },
+    {
+      "id": "photographer:photographers:shiori-iwakura",
+      "kind": "photographer",
+      "path": "photographers/shiori-iwakura.md",
+      "tags": [
+        "everyday-still-life",
+        "reference_proposed"
+      ],
+      "title": "Shiori Iwakura（岩仓しおり）"
+    },
+    {
+      "id": "photographer:photographers:shoji-ueda",
+      "kind": "photographer",
+      "path": "photographers/shoji-ueda.md",
+      "tags": [
+        "city-street-day",
+        "everyday-still-life",
+        "landscape-nature",
+        "portrait",
+        "reference_proposed",
+        "street"
+      ],
+      "title": "Shoji Ueda"
+    },
+    {
+      "id": "photographer:photographers:sondre-burenius",
+      "kind": "photographer",
+      "path": "photographers/sondre-burenius.md",
+      "tags": [
+        "needs_source_verification",
+        "reference_proposed"
+      ],
+      "title": "sondre-burenius"
+    },
+    {
+      "id": "photographer:photographers:songfeng-zh",
+      "kind": "photographer",
+      "path": "photographers/songfeng-zh.md",
+      "tags": [
+        "needs_source_verification",
+        "reference_proposed"
+      ],
+      "title": "songfeng-zh"
+    },
+    {
+      "id": "photographer:photographers:stanley-lin",
+      "kind": "photographer",
+      "path": "photographers/stanley-lin.md",
+      "tags": [
+        "landscape-nature",
+        "night-snow-artificial-light",
+        "reference_proposed"
+      ],
+      "title": "Stanley Lin"
+    },
+    {
+      "id": "photographer:photographers:steve-mccurry",
+      "kind": "photographer",
+      "path": "photographers/steve-mccurry.md",
+      "tags": [
+        "documentary",
+        "portrait",
+        "reference_proposed",
+        "street",
+        "travel-documentary-people"
+      ],
+      "title": "Steve McCurry"
+    },
+    {
+      "id": "photographer:photographers:sze-tsung-leong",
+      "kind": "photographer",
+      "path": "photographers/sze-tsung-leong.md",
+      "tags": [
+        "city-architecture",
+        "overcast-snow-cityscape",
+        "reference_proposed"
+      ],
+      "title": "Sze Tsung Leong（梁志栓）"
+    },
+    {
+      "id": "photographer:photographers:takashi-yamamoto",
+      "kind": "photographer",
+      "path": "photographers/takashi-yamamoto.md",
+      "tags": [
+        "needs_source_verification",
+        "reference_proposed"
+      ],
+      "title": "takashi-yamamoto"
+    },
+    {
+      "id": "photographer:photographers:takashi-yanase",
+      "kind": "photographer",
+      "path": "photographers/takashi-yanase.md",
+      "tags": [
+        "needs_source_verification",
+        "reference_proposed"
+      ],
+      "title": "takashi-yanase"
+    },
+    {
+      "id": "photographer:photographers:takashi-yasui",
+      "kind": "photographer",
+      "path": "photographers/takashi-yasui.md",
+      "tags": [
+        "city-architecture",
+        "city-street-day",
+        "reference_proposed",
+        "street"
+      ],
+      "title": "保井崇志 (Takashi Yasui)"
+    },
+    {
+      "id": "photographer:photographers:takuma-nakahira",
+      "kind": "photographer",
+      "path": "photographers/takuma-nakahira.md",
+      "tags": [
+        "city-street-day",
+        "reference_proposed",
+        "street"
+      ],
+      "title": "Takuma Nakahira（中平卓马）"
+    },
+    {
+      "id": "photographer:photographers:teemu-jarvinen",
+      "kind": "photographer",
+      "path": "photographers/teemu-jarvinen.md",
+      "tags": [
+        "city-architecture",
+        "night-snow-artificial-light",
+        "reference_proposed",
+        "street"
+      ],
+      "title": "Teemu Jarvinen"
+    },
+    {
+      "id": "photographer:photographers:todd-hido",
+      "kind": "photographer",
+      "path": "photographers/todd-hido.md",
+      "tags": [
+        "city-architecture",
+        "landscape-nature",
+        "night-snow-artificial-light",
+        "reference_proposed"
+      ],
+      "title": "todd-hido"
+    },
+    {
+      "id": "photographer:photographers:tommy-kwok",
+      "kind": "photographer",
+      "path": "photographers/tommy-kwok.md",
+      "tags": [
+        "needs_source_verification",
+        "reference_proposed"
+      ],
+      "title": "tommy-kwok"
+    },
+    {
+      "id": "photographer:photographers:toru-kikugawa",
+      "kind": "photographer",
+      "path": "photographers/toru-kikugawa.md",
+      "tags": [
+        "needs_source_verification",
+        "reference_proposed"
+      ],
+      "title": "toru-kikugawa"
+    },
+    {
+      "id": "photographer:photographers:toshio-shibata",
+      "kind": "photographer",
+      "path": "photographers/toshio-shibata.md",
+      "tags": [
+        "city-architecture",
+        "everyday-still-life",
+        "japanese-quiet-daily",
+        "landscape-nature",
+        "reference_proposed"
+      ],
+      "title": "Toshio Shibata（柴田敏雄）"
+    },
+    {
+      "id": "photographer:photographers:toyokazu-nagano",
+      "kind": "photographer",
+      "path": "photographers/toyokazu-nagano.md",
+      "tags": [
+        "everyday-still-life",
+        "reference_proposed"
+      ],
+      "title": "Toyokazu Nagano（長能豊一）"
+    },
+    {
+      "id": "photographer:photographers:vivian-maier",
+      "kind": "photographer",
+      "path": "photographers/vivian-maier.md",
+      "tags": [
+        "city-street-day",
+        "needs_source_verification",
+        "portrait",
+        "reference_proposed",
+        "street"
+      ],
+      "title": "vivian-maier"
+    },
+    {
+      "id": "photographer:photographers:walter-niedermayr",
+      "kind": "photographer",
+      "path": "photographers/walter-niedermayr.md",
+      "tags": [
+        "city-architecture",
+        "landscape-nature",
+        "overcast-snow-cityscape",
+        "reference_proposed"
+      ],
+      "title": "Walter Niedermayr"
+    },
+    {
+      "id": "photographer:photographers:wang-chen",
+      "kind": "photographer",
+      "path": "photographers/wang-chen.md",
+      "tags": [
+        "needs_source_verification",
+        "reference_proposed"
+      ],
+      "title": "wang-chen"
+    },
+    {
+      "id": "photographer:photographers:wang-fuchun",
+      "kind": "photographer",
+      "path": "photographers/wang-fuchun.md",
+      "tags": [
+        "documentary",
+        "night-snow-artificial-light",
+        "reference_proposed"
+      ],
+      "title": "wang-fuchun"
+    },
+    {
+      "id": "photographer:photographers:william-klein",
+      "kind": "photographer",
+      "path": "photographers/william-klein.md",
+      "tags": [
+        "city-street-day",
+        "portrait",
+        "reference_proposed",
+        "street"
+      ],
+      "title": "william-klein"
+    },
+    {
+      "id": "photographer:photographers:wojiao-xiaoxiannv",
+      "kind": "photographer",
+      "path": "photographers/wojiao-xiaoxiannv.md",
+      "tags": [
+        "city-street-day",
+        "portrait",
+        "reference_proposed",
+        "street"
+      ],
+      "title": "我叫小仙女📷（上海街头摄影，抖音 168 万/小红书 42 万）"
+    },
+    {
+      "id": "photographer:photographers:xi-zelin",
+      "kind": "photographer",
+      "path": "photographers/xi-zelin.md",
+      "tags": [
+        "portrait",
+        "reference_proposed",
+        "street"
+      ],
+      "title": "席泽霖（PS 人像修图与风格化调色线）"
+    },
+    {
+      "id": "photographer:photographers:xian-weixiao",
+      "kind": "photographer",
+      "path": "photographers/xian-weixiao.md",
+      "tags": [
+        "portrait",
+        "reference_proposed"
+      ],
+      "title": "西安摄影师-微笑（抖音旅拍姿势教学）"
+    },
+    {
+      "id": "photographer:photographers:xiao-quan",
+      "kind": "photographer",
+      "path": "photographers/xiao-quan.md",
+      "tags": [
+        "documentary",
+        "portrait",
+        "reference_proposed"
+      ],
+      "title": "肖全（Xiao Quan）"
+    },
+    {
+      "id": "photographer:photographers:xin-haiyan",
+      "kind": "photographer",
+      "path": "photographers/xin-haiyan.md",
+      "tags": [
+        "needs_source_verification",
+        "reference_proposed"
+      ],
+      "title": "xin-haiyan"
+    },
+    {
+      "id": "photographer:photographers:xuecheng-liu",
+      "kind": "photographer",
+      "path": "photographers/xuecheng-liu.md",
+      "tags": [
+        "city-architecture",
+        "overcast-snow-cityscape",
+        "reference_proposed"
+      ],
+      "title": "Xuecheng Liu"
+    },
+    {
+      "id": "photographer:photographers:yan-ming",
+      "kind": "photographer",
+      "path": "photographers/yan-ming.md",
+      "tags": [
+        "city-street-day",
+        "documentary",
+        "reference_proposed"
+      ],
+      "title": "严明 (Yan Ming)"
+    },
+    {
+      "id": "photographer:photographers:yasumasa-morimura",
+      "kind": "photographer",
+      "path": "photographers/yasumasa-morimura.md",
+      "tags": [
+        "needs_source_verification",
+        "reference_proposed"
+      ],
+      "title": "yasumasa-morimura"
+    },
+    {
+      "id": "photographer:photographers:ye-wenzhi",
+      "kind": "photographer",
+      "path": "photographers/ye-wenzhi.md",
+      "tags": [
+        "needs_source_verification",
+        "reference_proposed"
+      ],
+      "title": "ye-wenzhi"
+    },
+    {
+      "id": "photographer:photographers:ye-zi-sheying",
+      "kind": "photographer",
+      "path": "photographers/ye-zi-sheying.md",
+      "tags": [
+        "everyday-still-life",
+        "reference_proposed"
+      ],
+      "title": "叶梓（叶梓玩摄影 / 摄影早自习）"
+    },
+    {
+      "id": "photographer:photographers:yichen-shushu",
+      "kind": "photographer",
+      "path": "photographers/yichen-shushu.md",
+      "tags": [
+        "portrait",
+        "reference_proposed",
+        "street"
+      ],
+      "title": "一晨叔叔（I光环摄影，人像调色与照片点评线）"
+    },
+    {
+      "id": "photographer:photographers:yinglun",
+      "kind": "photographer",
+      "path": "photographers/yinglun.md",
+      "tags": [
+        "portrait",
+        "reference_proposed"
+      ],
+      "title": "影伦（小红书 85 万拍摄技巧+色调教学博主）"
+    },
+    {
+      "id": "photographer:photographers:yingye-guangse",
+      "kind": "photographer",
+      "path": "photographers/yingye-guangse.md",
+      "tags": [
+        "landscape-nature",
+        "portrait",
+        "reference_proposed"
+      ],
+      "title": "影叶（影叶的光色世界，风光/人像通透后期方法线）"
+    },
+    {
+      "id": "photographer:photographers:yingzi-shouji-sheying",
+      "kind": "photographer",
+      "path": "photographers/yingzi-shouji-sheying.md",
+      "tags": [
+        "everyday-still-life",
+        "reference_proposed"
+      ],
+      "title": "英子（英子手机摄影，抖音+小红书双栖）"
+    },
+    {
+      "id": "photographer:photographers:yohei-yamada",
+      "kind": "photographer",
+      "path": "photographers/yohei-yamada.md",
+      "tags": [
+        "needs_source_verification",
+        "reference_proposed"
+      ],
+      "title": "yohei-yamada"
+    },
+    {
+      "id": "photographer:photographers:yoshiyuki-okuyama",
+      "kind": "photographer",
+      "path": "photographers/yoshiyuki-okuyama.md",
+      "tags": [
+        "everyday-still-life",
+        "japanese-quiet-daily",
+        "portrait",
+        "reference_proposed"
+      ],
+      "title": "Yoshiyuki Okuyama（奥山由之）"
+    },
+    {
+      "id": "photographer:photographers:youchi-kumamaru",
+      "kind": "photographer",
+      "path": "photographers/youchi-kumamaru.md",
+      "tags": [
+        "needs_source_verification",
+        "reference_proposed"
+      ],
+      "title": "youchi-kumamaru"
+    },
+    {
+      "id": "photographer:photographers:yousuf-karsh",
+      "kind": "photographer",
+      "path": "photographers/yousuf-karsh.md",
+      "tags": [
+        "reference_proposed"
+      ],
+      "title": "yousuf-karsh"
+    },
+    {
+      "id": "photographer:photographers:yu-wang",
+      "kind": "photographer",
+      "path": "photographers/yu-wang.md",
+      "tags": [
+        "needs_source_verification",
+        "reference_proposed"
+      ],
+      "title": "yu-wang"
+    },
+    {
+      "id": "photographer:photographers:yuichi-yokota",
+      "kind": "photographer",
+      "path": "photographers/yuichi-yokota.md",
+      "tags": [
+        "city-architecture",
+        "night-snow-artificial-light",
+        "overcast-snow-cityscape",
+        "reference_proposed"
+      ],
+      "title": "Yuichi Yokota（横田裕市）"
+    },
+    {
+      "id": "photographer:photographers:yusuke-tsukahara",
+      "kind": "photographer",
+      "path": "photographers/yusuke-tsukahara.md",
+      "tags": [
+        "needs_source_verification",
+        "reference_proposed"
+      ],
+      "title": "yusuke-tsukahara"
+    },
+    {
+      "id": "photographer:photographers:zanele-muholi",
+      "kind": "photographer",
+      "path": "photographers/zanele-muholi.md",
+      "tags": [
+        "documentary",
+        "portrait",
+        "reference_proposed"
+      ],
+      "title": "Zanele Muholi"
+    },
+    {
+      "id": "photographer:photographers:zhang-kechun",
+      "kind": "photographer",
+      "path": "photographers/zhang-kechun.md",
+      "tags": [
+        "documentary",
+        "landscape-nature",
+        "night-snow-artificial-light",
+        "reference_proposed"
+      ],
+      "title": "Zhang Kechun（张克纯）"
+    },
+    {
+      "id": "photographer:photographers:zhang-qianqi",
+      "kind": "photographer",
+      "path": "photographers/zhang-qianqi.md",
+      "tags": [
+        "city-street-day",
+        "documentary",
+        "reference_proposed"
+      ],
+      "title": "张乾琦 (Zhang Qianqi)"
+    },
+    {
+      "id": "photographer:photographers:zhang-xiao",
+      "kind": "photographer",
+      "path": "photographers/zhang-xiao.md",
+      "tags": [
+        "needs_source_verification",
+        "reference_proposed"
+      ],
+      "title": "Zhang Xiao（张晓）"
+    },
+    {
+      "id": "photographer:photographers:zhang-zhaotang",
+      "kind": "photographer",
+      "path": "photographers/zhang-zhaotang.md",
+      "tags": [
+        "city-street-day",
+        "documentary",
+        "needs_source_verification",
+        "reference_proposed",
+        "street"
+      ],
+      "title": "zhang-zhaotang"
+    },
+    {
+      "id": "photographer:photographers:zhou-yifu",
+      "kind": "photographer",
+      "path": "photographers/zhou-yifu.md",
+      "tags": [
+        "needs_source_verification",
+        "reference_proposed"
+      ],
+      "title": "zhou-yifu"
+    },
+    {
+      "id": "source:sources:2026-08-12-census-awards-cityscape",
+      "kind": "source",
+      "path": "sources/2026-08-12-census-awards-cityscape.md",
+      "tags": [
+        "reference_proposed"
+      ],
+      "title": "普查：奖项与机构池 · 冬季雪城/雪景（2026-08-12）"
+    },
+    {
+      "id": "source:sources:2026-08-12-census-awards-night-snow",
+      "kind": "source",
+      "path": "sources/2026-08-12-census-awards-night-snow.md",
+      "tags": [
+        "reference_proposed"
+      ],
+      "title": "普查：奖项与机构池 · 冬夜/雪景（2026-08-12）"
+    },
+    {
+      "id": "source:sources:2026-08-12-census-cn-cityscape",
+      "kind": "source",
+      "path": "sources/2026-08-12-census-cn-cityscape.md",
+      "tags": [
+        "reference_proposed"
+      ],
+      "title": "普查：中文生态 · 阴天雪城俯瞰（2026-08-12）"
+    },
+    {
+      "id": "source:sources:2026-08-12-census-cn-night-snow",
+      "kind": "source",
+      "path": "sources/2026-08-12-census-cn-night-snow.md",
+      "tags": [
+        "reference_proposed"
+      ],
+      "title": "普查：中文生态 · 冬夜人工光雪景（2026-08-12）"
+    },
+    {
+      "id": "source:sources:2026-08-12-census-pool6-bilibili",
+      "kind": "source",
+      "path": "sources/2026-08-12-census-pool6-bilibili.md",
+      "tags": [
+        "reference_proposed"
+      ],
+      "title": "第六池普查：B站头部摄影 UP 主（2026-08-12）"
+    },
+    {
+      "id": "source:sources:2026-08-12-census-pool6-xhs-douyin",
+      "kind": "source",
+      "path": "sources/2026-08-12-census-pool6-xhs-douyin.md",
+      "tags": [
+        "reference_proposed"
+      ],
+      "title": "第六池普查：小红书 + 抖音头部摄影博主（2026-08-12）"
+    },
+    {
+      "id": "source:sources:2026-08-12-census-tutorials-cityscape",
+      "kind": "source",
+      "path": "sources/2026-08-12-census-tutorials-cityscape.md",
+      "tags": [
+        "reference_proposed"
+      ],
+      "title": "普查：教学者池 · 阴天雪景/城市雪景后期（2026-08-12）"
+    },
+    {
+      "id": "source:sources:2026-08-12-census-tutorials-night-snow",
+      "kind": "source",
+      "path": "sources/2026-08-12-census-tutorials-night-snow.md",
+      "tags": [
+        "reference_proposed"
+      ],
+      "title": "普查：教学者池 · 冬夜/雪景后期（2026-08-12）"
+    },
+    {
+      "id": "source:sources:2026-08-12-deepdive-primary-references",
+      "kind": "source",
+      "path": "sources/2026-08-12-deepdive-primary-references.md",
+      "tags": [
+        "reference_proposed"
+      ],
+      "title": "深挖：主参考方法证据（2026-08-12）"
+    },
+    {
+      "id": "source:sources:2026-08-12-travel-portrait-params-research",
+      "kind": "source",
+      "path": "sources/2026-08-12-travel-portrait-params-research.md",
+      "tags": [
+        "reference_proposed"
+      ],
+      "title": "2026-08-12-travel-portrait-params-research"
+    },
+    {
+      "id": "source:sources:2026-09-07-japan-color-language",
+      "kind": "source",
+      "path": "sources/2026-09-07-japan-color-language.md",
+      "tags": [
+        "reference_proposed"
+      ],
+      "title": "日本街巷与夜景的颜色语言：本轮候选依据"
+    },
+    {
+      "id": "source:sources:2026-09-07-professional-workflow-calibration",
+      "kind": "source",
+      "path": "sources/2026-09-07-professional-workflow-calibration.md",
+      "tags": [
+        "reference_proposed"
+      ],
+      "title": "专业修图方法调研与当前流程校准"
+    },
+    {
+      "id": "source:sources:2026-09-08-bilibili-landscape-case-study",
+      "kind": "source",
+      "path": "sources/2026-09-08-bilibili-landscape-case-study.md",
+      "tags": [
+        "reference_proposed"
+      ],
+      "title": "B站风光教程学习试验：从画面核查到方法候选"
+    },
+    {
+      "id": "source:sources:2026-09-08-portrait-specialization",
+      "kind": "source",
+      "path": "sources/2026-09-08-portrait-specialization.md",
+      "tags": [
+        "reference_proposed"
+      ],
+      "title": "人像专项：依据、可见标准与能力边界"
+    },
+    {
+      "id": "source:sources:2026-09-09-video-distillation-reviewed-methods",
+      "kind": "source",
+      "path": "sources/2026-09-09-video-distillation-reviewed-methods.md",
+      "tags": [
+        "reference_proposed"
+      ],
+      "title": "视频蒸馏：来源方法研究候选"
+    },
+    {
+      "id": "source:sources:2026-09-10-composition-crop-and-color",
+      "kind": "source",
+      "path": "sources/2026-09-10-composition-crop-and-color.md",
+      "tags": [
+        "reference_proposed"
+      ],
+      "title": "构图、画幅与色彩表达：2026-09-10 来源核查"
+    },
+    {
+      "id": "source:sources:2026-09-10-genre-cinematic-street",
+      "kind": "source",
+      "path": "sources/2026-09-10-genre-cinematic-street.md",
+      "tags": [
+        "reference_proposed"
+      ],
+      "title": "题材、主题与表达：电影故事感及街头纪实的可用经验"
+    },
+    {
+      "id": "style-guidance:scene-v1:README",
+      "kind": "style-guidance",
+      "path": "style-targets/scene-v1/README.md",
+      "tags": [
+        "reference_proposed"
+      ],
+      "title": "固定十类场景作品目标库 V1"
+    },
+    {
+      "id": "style-guidance:scene-v1:ROUTING",
+      "kind": "style-guidance",
+      "path": "style-targets/scene-v1/ROUTING.md",
+      "tags": [
+        "reference_proposed"
+      ],
+      "title": "先从原料和目的选择方向"
+    },
+    {
+      "id": "style-guidance:scene-v1:TEST-PROTOCOL",
+      "kind": "style-guidance",
+      "path": "style-targets/scene-v1/TEST-PROTOCOL.md",
+      "tags": [
+        "reference_proposed"
+      ],
+      "title": "下阶段照片测试协议 V1"
+    },
+    {
+      "id": "style-library:scene-v1:atlas",
+      "kind": "style-library",
+      "path": "style-targets/scene-v1/atlas.json",
+      "tags": [
+        "reference_proposed",
+        "scene-v1"
+      ],
+      "title": "scene-v1 atlas"
+    },
+    {
+      "id": "style-library:scene-v1:catalog",
+      "kind": "style-library",
+      "path": "style-targets/scene-v1/catalog.json",
+      "tags": [
+        "reference_proposed",
+        "scene-v1"
+      ],
+      "title": "scene-v1 catalog"
+    },
+    {
+      "id": "style-library:works-v1:catalog",
+      "kind": "style-library",
+      "path": "style-targets/works-v1/catalog.json",
+      "tags": [
+        "reference_proposed",
+        "works-v1"
+      ],
+      "title": "works-v1 catalog"
+    },
+    {
+      "id": "video-note:narration-notes:BV1124y1p7GA-1013484438",
+      "kind": "video-note",
+      "path": "video-notes/BV1124y1p7GA-1013484438.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "构图",
+        "色彩",
+        "风光"
+      ],
+      "title": "【枯燥！】23 动漫感JK人像落日调色攻略：强化照片氛围感"
+    },
+    {
+      "id": "video-note:narration-notes:BV1194y1377u-1329206900",
+      "kind": "video-note",
+      "path": "video-notes/BV1194y1377u-1329206900.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "曲线",
+        "色彩",
+        "蒙版",
+        "降噪"
+      ],
+      "title": "「调色干货」教你调出秋日发光感少女人像 | 实战调色&重点总结 | 附练习原图及素材提供练习"
+    },
+    {
+      "id": "video-note:narration-notes:BV11N411q7ax-1253011419",
+      "kind": "video-note",
+      "path": "video-notes/BV11N411q7ax-1253011419.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "色彩",
+        "蒙版"
+      ],
+      "title": "追色技巧 看完必学会追色"
+    },
+    {
+      "id": "video-note:narration-notes:BV11NCVYFEu2-27454605625",
+      "kind": "video-note",
+      "path": "video-notes/BV11NCVYFEu2-27454605625.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "曲线",
+        "色彩",
+        "蒙版"
+      ],
+      "title": "新手向「照片发灰不通透？手把手教你调出通透感人像」｜附一晨修图显示器分享｜附练习原图"
+    },
+    {
+      "id": "video-note:narration-notes:BV11W411K77s-36203725",
+      "kind": "video-note",
+      "path": "video-notes/BV11W411K77s-36203725.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "曲线",
+        "色彩",
+        "蒙版"
+      ],
+      "title": "【不瞌睡修图课】PS三步轻松美白人物肤色"
+    },
+    {
+      "id": "video-note:narration-notes:BV11W411W7S8-33556961",
+      "kind": "video-note",
+      "path": "video-notes/BV11W411W7S8-33556961.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "色彩"
+      ],
+      "title": "【不瞌睡修图课】一条曲线调出日系胶片效果"
+    },
+    {
+      "id": "video-note:narration-notes:BV11g411T7Mt-369976556",
+      "kind": "video-note",
+      "path": "video-notes/BV11g411T7Mt-369976556.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "曲线",
+        "色彩",
+        "蒙版"
+      ],
+      "title": "用两根曲线做出朦胧梦幻风格照片"
+    },
+    {
+      "id": "video-note:narration-notes:BV11r4y117y7-421840010",
+      "kind": "video-note",
+      "path": "video-notes/BV11r4y117y7-421840010.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "色彩",
+        "蒙版"
+      ],
+      "title": "把灰片调成暖色系电影调"
+    },
+    {
+      "id": "video-note:narration-notes:BV125411V7En-257479153",
+      "kind": "video-note",
+      "path": "video-notes/BV125411V7En-257479153.md",
+      "tags": [
+        "reference_proposed",
+        "色彩",
+        "风光"
+      ],
+      "title": "从拍摄到后期完整流程！极致瀑布风光作品后期修图思路"
+    },
+    {
+      "id": "video-note:narration-notes:BV128u969EVy-40771259038",
+      "kind": "video-note",
+      "path": "video-notes/BV128u969EVy-40771259038.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "色彩",
+        "蒙版"
+      ],
+      "title": "棚拍大头精修 高级妆面"
+    },
+    {
+      "id": "video-note:narration-notes:BV12K4y1t7CL-195417710",
+      "kind": "video-note",
+      "path": "video-notes/BV12K4y1t7CL-195417710.md",
+      "tags": [
+        "reference_proposed",
+        "夜景",
+        "曲线",
+        "构图",
+        "色彩",
+        "蒙版",
+        "降噪",
+        "风光"
+      ],
+      "title": "从规划到后期，最强星空拍摄+银河调色教程来啦~ 世界第二高峰下现场演示！"
+    },
+    {
+      "id": "video-note:narration-notes:BV12P4y157uk-441041560",
+      "kind": "video-note",
+      "path": "video-notes/BV12P4y157uk-441041560.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "色彩",
+        "蒙版"
+      ],
+      "title": "写真的两种修法"
+    },
+    {
+      "id": "video-note:narration-notes:BV12R4y1o7nz-899590790",
+      "kind": "video-note",
+      "path": "video-notes/BV12R4y1o7nz-899590790.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "夜景",
+        "曲线",
+        "蒙版"
+      ],
+      "title": "【枯燥！】22 烟火人像后期修图调色攻略 附 原图及配套素材练习"
+    },
+    {
+      "id": "video-note:narration-notes:BV12S4y1P7w3-573986862",
+      "kind": "video-note",
+      "path": "video-notes/BV12S4y1P7w3-573986862.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "曲线",
+        "色彩",
+        "蒙版",
+        "风光"
+      ],
+      "title": "【枯燥！】16 清新动漫风Lolita人像后期调色 附：原图+天空素材"
+    },
+    {
+      "id": "video-note:narration-notes:BV12U4y127Hs-731214946",
+      "kind": "video-note",
+      "path": "video-notes/BV12U4y127Hs-731214946.md",
+      "tags": [
+        "reference_proposed",
+        "夜景",
+        "曲线",
+        "蒙版"
+      ],
+      "title": "夜景氛围调色"
+    },
+    {
+      "id": "video-note:narration-notes:BV12eGk6AEkd-38643044292",
+      "kind": "video-note",
+      "path": "video-notes/BV12eGk6AEkd-38643044292.md",
+      "tags": [
+        "reference_proposed",
+        "夜景",
+        "曲线",
+        "色彩",
+        "蒙版",
+        "降噪",
+        "风光"
+      ],
+      "title": "暗夜极光调色｜告别灰片，打造有情绪的画面色彩"
+    },
+    {
+      "id": "video-note:narration-notes:BV12s411K7Ri-47460790",
+      "kind": "video-note",
+      "path": "video-notes/BV12s411K7Ri-47460790.md",
+      "tags": [
+        "reference_proposed"
+      ],
+      "title": "【不瞌睡修图课】PS纠正模特驼背姿势"
+    },
+    {
+      "id": "video-note:narration-notes:BV12t411f7Wa-58880712",
+      "kind": "video-note",
+      "path": "video-notes/BV12t411f7Wa-58880712.md",
+      "tags": [
+        "reference_proposed"
+      ],
+      "title": "PS修妆"
+    },
+    {
+      "id": "video-note:narration-notes:BV13541147rf-188143245",
+      "kind": "video-note",
+      "path": "video-notes/BV13541147rf-188143245.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "构图",
+        "色彩",
+        "降噪"
+      ],
+      "title": "【干货】提升摄影后期水准的3点建议——LR系列教程最后一期"
+    },
+    {
+      "id": "video-note:narration-notes:BV1354y1R7md-182169761",
+      "kind": "video-note",
+      "path": "video-notes/BV1354y1R7md-182169761.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "构图",
+        "色彩",
+        "蒙版"
+      ],
+      "title": "浅谈如何让画面更清晰——锐化、清晰度与局部调整工具的应用【LR教程】06期"
+    },
+    {
+      "id": "video-note:narration-notes:BV13R4y1C7E6-914241448",
+      "kind": "video-note",
+      "path": "video-notes/BV13R4y1C7E6-914241448.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "构图",
+        "色彩",
+        "蒙版",
+        "风光"
+      ],
+      "title": "感受拍摄现场氛围，实战案例解读风光摄影前后期全流程！"
+    },
+    {
+      "id": "video-note:narration-notes:BV13V4y1U7We-1148144360",
+      "kind": "video-note",
+      "path": "video-notes/BV13V4y1U7We-1148144360.md",
+      "tags": [
+        "reference_proposed"
+      ],
+      "title": "Capture One的文件管理，会话？or 目录？"
+    },
+    {
+      "id": "video-note:narration-notes:BV13b411x7Y9-83249091",
+      "kind": "video-note",
+      "path": "video-notes/BV13b411x7Y9-83249091.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "构图",
+        "色彩",
+        "风光"
+      ],
+      "title": "Thomas教你调出卡通糖果色调照片（PS Camera Raw后期实战）"
+    },
+    {
+      "id": "video-note:narration-notes:BV13i4y1R7WS-467055639",
+      "kind": "video-note",
+      "path": "video-notes/BV13i4y1R7WS-467055639.md",
+      "tags": [
+        "reference_proposed"
+      ],
+      "title": "5分钟学会合成的透视原理"
+    },
+    {
+      "id": "video-note:narration-notes:BV13iSQBWEhe-37272030013",
+      "kind": "video-note",
+      "path": "video-notes/BV13iSQBWEhe-37272030013.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "色彩",
+        "蒙版",
+        "风光"
+      ],
+      "title": "如何修的不像AI图"
+    },
+    {
+      "id": "video-note:narration-notes:BV13q4y1X7io-373289768",
+      "kind": "video-note",
+      "path": "video-notes/BV13q4y1X7io-373289768.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "曲线",
+        "色彩"
+      ],
+      "title": "【枯燥11】 温柔的落日蓝紫色少女后期调色 附上一张 练习原图"
+    },
+    {
+      "id": "video-note:narration-notes:BV13v411K7ZB-381546037",
+      "kind": "video-note",
+      "path": "video-notes/BV13v411K7ZB-381546037.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "色彩"
+      ],
+      "title": "用PS修出娇艳欲滴的饱满唇形"
+    },
+    {
+      "id": "video-note:narration-notes:BV14F411g7qj-576485533",
+      "kind": "video-note",
+      "path": "video-notes/BV14F411g7qj-576485533.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "色彩",
+        "蒙版"
+      ],
+      "title": "保姆级沉浸式追色教程——课堂实录"
+    },
+    {
+      "id": "video-note:narration-notes:BV14K411H7yQ-211168991",
+      "kind": "video-note",
+      "path": "video-notes/BV14K411H7yQ-211168991.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "构图",
+        "色彩",
+        "蒙版",
+        "降噪",
+        "风光"
+      ],
+      "title": "pro！揭秘专业级风光摄影后期全流程！"
+    },
+    {
+      "id": "video-note:narration-notes:BV14K4y1H7oW-300685808",
+      "kind": "video-note",
+      "path": "video-notes/BV14K4y1H7oW-300685808.md",
+      "tags": [
+        "reference_proposed",
+        "蒙版",
+        "风光"
+      ],
+      "title": "如何后期强化照片的光线感？图层混合+亮度蒙版实战应用"
+    },
+    {
+      "id": "video-note:narration-notes:BV14P4y1f7rV-818361835",
+      "kind": "video-note",
+      "path": "video-notes/BV14P4y1f7rV-818361835.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "曲线",
+        "蒙版"
+      ],
+      "title": "修脸只会液化？来学五官重组之术！"
+    },
+    {
+      "id": "video-note:narration-notes:BV14T41167g5-1058376673",
+      "kind": "video-note",
+      "path": "video-notes/BV14T41167g5-1058376673.md",
+      "tags": [
+        "reference_proposed",
+        "色彩",
+        "风光"
+      ],
+      "title": "镜头眩光 纯靠后期就能祛除！"
+    },
+    {
+      "id": "video-note:narration-notes:BV14Y411M7qL-740370354",
+      "kind": "video-note",
+      "path": "video-notes/BV14Y411M7qL-740370354.md",
+      "tags": [
+        "reference_proposed",
+        "曲线"
+      ],
+      "title": "“拉灰图片，提取细节”处理单张大光比"
+    },
+    {
+      "id": "video-note:narration-notes:BV14YDQBJEct-37444126066",
+      "kind": "video-note",
+      "path": "video-notes/BV14YDQBJEct-37444126066.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "曲线",
+        "蒙版"
+      ],
+      "title": "教你调出干净通透的皮肤！皮肤美白曲线提亮大法+原理讲解 |  学员新疆旅拍照片修图讲解"
+    },
+    {
+      "id": "video-note:narration-notes:BV14h4y1t7vZ-1133987022",
+      "kind": "video-note",
+      "path": "video-notes/BV14h4y1t7vZ-1133987022.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "构图",
+        "色彩"
+      ],
+      "title": "喜大普奔！Capture One也加入了Ai功能！16.2版本更新介绍以及2023年购买建议"
+    },
+    {
+      "id": "video-note:narration-notes:BV14j421o7zg-1468844304",
+      "kind": "video-note",
+      "path": "video-notes/BV14j421o7zg-1468844304.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "色彩",
+        "蒙版",
+        "风光"
+      ],
+      "title": "摄影师如何提高自己的色彩控制力，立竿见影的前后期思路分享！"
+    },
+    {
+      "id": "video-note:narration-notes:BV14o4y1D7d5-371446607",
+      "kind": "video-note",
+      "path": "video-notes/BV14o4y1D7d5-371446607.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "色彩",
+        "蒙版"
+      ],
+      "title": "逆光拍的太黑？一招变成小清新"
+    },
+    {
+      "id": "video-note:narration-notes:BV14s411H7AS-45933765",
+      "kind": "video-note",
+      "path": "video-notes/BV14s411H7AS-45933765.md",
+      "tags": [
+        "reference_proposed",
+        "夜景",
+        "构图",
+        "色彩",
+        "蒙版",
+        "降噪",
+        "风光"
+      ],
+      "title": "HSL工具调色实战 - 城市黑金风格"
+    },
+    {
+      "id": "video-note:narration-notes:BV14u411U77x-477367121",
+      "kind": "video-note",
+      "path": "video-notes/BV14u411U77x-477367121.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "构图",
+        "蒙版"
+      ],
+      "title": "婴儿照速修 看完赶紧生个二胎试一下"
+    },
+    {
+      "id": "video-note:narration-notes:BV14y4y1T7Q2-370734529",
+      "kind": "video-note",
+      "path": "video-notes/BV14y4y1T7Q2-370734529.md",
+      "tags": [
+        "reference_proposed",
+        "构图",
+        "色彩"
+      ],
+      "title": "你看看你把人家拍的多胖！"
+    },
+    {
+      "id": "video-note:narration-notes:BV153411g71e-746877011",
+      "kind": "video-note",
+      "path": "video-notes/BV153411g71e-746877011.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "色彩",
+        "蒙版"
+      ],
+      "title": "将废片修成古装大片 看了原片 直呼我的老天爷"
+    },
+    {
+      "id": "video-note:narration-notes:BV154411b7Xv-88633989",
+      "kind": "video-note",
+      "path": "video-notes/BV154411b7Xv-88633989.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "色彩",
+        "蒙版"
+      ],
+      "title": "Photoshop选区、通道、蒙版关系与用法全解析"
+    },
+    {
+      "id": "video-note:narration-notes:BV15FBoY9E9Y-27060931603",
+      "kind": "video-note",
+      "path": "video-notes/BV15FBoY9E9Y-27060931603.md",
+      "tags": [
+        "reference_proposed",
+        "构图",
+        "风光"
+      ],
+      "title": "风光后期重要技巧 明度统一应用与实操案例"
+    },
+    {
+      "id": "video-note:narration-notes:BV15T411b7H7-1134415389",
+      "kind": "video-note",
+      "path": "video-notes/BV15T411b7H7-1134415389.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "曲线",
+        "色彩",
+        "蒙版"
+      ],
+      "title": "15分钟学会【人像修图】ps入门教程09期"
+    },
+    {
+      "id": "video-note:narration-notes:BV15T4y1B7aZ-733934501",
+      "kind": "video-note",
+      "path": "video-notes/BV15T4y1B7aZ-733934501.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "色彩",
+        "蒙版"
+      ],
+      "title": "质感重塑  时装大片修图"
+    },
+    {
+      "id": "video-note:narration-notes:BV15U4y1M7z7-439903959",
+      "kind": "video-note",
+      "path": "video-notes/BV15U4y1M7z7-439903959.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "色彩",
+        "蒙版",
+        "风光"
+      ],
+      "title": "风光老法师拯救计划"
+    },
+    {
+      "id": "video-note:narration-notes:BV15U4y1a7rq-310889886",
+      "kind": "video-note",
+      "path": "video-notes/BV15U4y1a7rq-310889886.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "曲线",
+        "色彩",
+        "蒙版",
+        "降噪"
+      ],
+      "title": "【枯燥!】7 动漫少女樱花JK后期调色攻略 附 同款预设+一晨常用PS动作文件"
+    },
+    {
+      "id": "video-note:narration-notes:BV15Z4y1H7fu-204195637",
+      "kind": "video-note",
+      "path": "video-notes/BV15Z4y1H7fu-204195637.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "曲线"
+      ],
+      "title": "{商业人物修图}--DB磨皮+头发修饰"
+    },
+    {
+      "id": "video-note:narration-notes:BV15f4y1D7ra-238780246",
+      "kind": "video-note",
+      "path": "video-notes/BV15f4y1D7ra-238780246.md",
+      "tags": [
+        "reference_proposed",
+        "色彩",
+        "风光"
+      ],
+      "title": "让照片光感提升十倍！日出日落的调色奥义"
+    },
+    {
+      "id": "video-note:narration-notes:BV15h411b7ib-442316940",
+      "kind": "video-note",
+      "path": "video-notes/BV15h411b7ib-442316940.md",
+      "tags": [
+        "reference_proposed",
+        "色彩",
+        "蒙版"
+      ],
+      "title": "Camera Raw/Lightroom史诗级强化：图层与蒙版！以后修图再也不用PS了？"
+    },
+    {
+      "id": "video-note:narration-notes:BV15o4y1375Q-1144645846",
+      "kind": "video-note",
+      "path": "video-notes/BV15o4y1375Q-1144645846.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "色彩"
+      ],
+      "title": "三分钟教你从LR无缝转换到使用Capture One"
+    },
+    {
+      "id": "video-note:narration-notes:BV15q4y1i7J7-548721628",
+      "kind": "video-note",
+      "path": "video-notes/BV15q4y1i7J7-548721628.md",
+      "tags": [
+        "reference_proposed",
+        "色彩",
+        "风光"
+      ],
+      "title": "《M43拍风光》12bit色深不够用？结合原片看M43的后期幅度及如何规避断层问题"
+    },
+    {
+      "id": "video-note:narration-notes:BV15s411E7wR-46746763",
+      "kind": "video-note",
+      "path": "video-notes/BV15s411E7wR-46746763.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "曲线",
+        "构图",
+        "色彩",
+        "蒙版"
+      ],
+      "title": "【不瞌睡修图课】如何修出一张干净的照片"
+    },
+    {
+      "id": "video-note:narration-notes:BV1654y1f7Xt-716819900",
+      "kind": "video-note",
+      "path": "video-notes/BV1654y1f7Xt-716819900.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "夜景",
+        "曲线",
+        "构图",
+        "色彩",
+        "蒙版",
+        "降噪"
+      ],
+      "title": "让夜景人像，自然通透！"
+    },
+    {
+      "id": "video-note:narration-notes:BV16J411V7Cp-140933888",
+      "kind": "video-note",
+      "path": "video-notes/BV16J411V7Cp-140933888.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "蒙版"
+      ],
+      "title": "水下摄影后期调色合成过程"
+    },
+    {
+      "id": "video-note:narration-notes:BV16P4y177wu-489402200",
+      "kind": "video-note",
+      "path": "video-notes/BV16P4y177wu-489402200.md",
+      "tags": [
+        "reference_proposed",
+        "曲线"
+      ],
+      "title": "滨田英明风格调色攻略"
+    },
+    {
+      "id": "video-note:narration-notes:BV1734y1W7oD-753936897",
+      "kind": "video-note",
+      "path": "video-notes/BV1734y1W7oD-753936897.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "构图",
+        "色彩",
+        "蒙版",
+        "风光"
+      ],
+      "title": "风光摄影双合成技术：景深+曝光合成"
+    },
+    {
+      "id": "video-note:narration-notes:BV1744y1B7Pa-351124647",
+      "kind": "video-note",
+      "path": "video-notes/BV1744y1B7Pa-351124647.md",
+      "tags": [
+        "reference_proposed",
+        "曲线"
+      ],
+      "title": "上个干货，很多同学问我DB怎么做精，这个视频就教你"
+    },
+    {
+      "id": "video-note:narration-notes:BV177411g7pm-151913134",
+      "kind": "video-note",
+      "path": "video-notes/BV177411g7pm-151913134.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "曲线",
+        "构图",
+        "色彩",
+        "蒙版",
+        "风光"
+      ],
+      "title": "修图思路的公开课  -灵动修图培训 刘杨后期教程 刘杨修图教程   商业修图教程 网络直播修图课  商业摄影线下课  视频广告拍摄课 广告摄影视频课  后期剪辑"
+    },
+    {
+      "id": "video-note:narration-notes:BV17T4y1Q7Uq-516675093",
+      "kind": "video-note",
+      "path": "video-notes/BV17T4y1Q7Uq-516675093.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "曲线",
+        "蒙版"
+      ],
+      "title": "质感时尚封面的修法"
+    },
+    {
+      "id": "video-note:narration-notes:BV17jNGzZE4V-36556703728",
+      "kind": "video-note",
+      "path": "video-notes/BV17jNGzZE4V-36556703728.md",
+      "tags": [
+        "reference_proposed",
+        "色彩"
+      ],
+      "title": "这张照片原图长什么样？童话色调修图思路分享08"
+    },
+    {
+      "id": "video-note:narration-notes:BV1824y1n7F4-1030775159",
+      "kind": "video-note",
+      "path": "video-notes/BV1824y1n7F4-1030775159.md",
+      "tags": [
+        "reference_proposed",
+        "构图",
+        "降噪"
+      ],
+      "title": "保姆级教程 使用zwo行星相机拍摄高清月亮环形山 天文望远镜"
+    },
+    {
+      "id": "video-note:narration-notes:BV189xhetE7m-26086343921",
+      "kind": "video-note",
+      "path": "video-notes/BV189xhetE7m-26086343921.md",
+      "tags": [
+        "reference_proposed",
+        "风光"
+      ],
+      "title": "景深合成——哈苏X2D中画幅⻛光摄影的必备技能｜#原来这么拍 第251集"
+    },
+    {
+      "id": "video-note:narration-notes:BV18F411d7jr-1176267523",
+      "kind": "video-note",
+      "path": "video-notes/BV18F411d7jr-1176267523.md",
+      "tags": [
+        "reference_proposed"
+      ],
+      "title": "Capture One for iPhone版本终于来了！"
+    },
+    {
+      "id": "video-note:narration-notes:BV18R4y1v7V1-1015786830",
+      "kind": "video-note",
+      "path": "video-notes/BV18R4y1v7V1-1015786830.md",
+      "tags": [
+        "reference_proposed",
+        "色彩",
+        "蒙版",
+        "风光"
+      ],
+      "title": "风光摄影后期必学的光线强化技术！亮度蒙版+图层混合还能这么用~"
+    },
+    {
+      "id": "video-note:narration-notes:BV18U4y1X7jZ-748311695",
+      "kind": "video-note",
+      "path": "video-notes/BV18U4y1X7jZ-748311695.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "曲线"
+      ],
+      "title": "5分钟学会面部结构光影画法"
+    },
+    {
+      "id": "video-note:narration-notes:BV18W411g7FJ-34582929",
+      "kind": "video-note",
+      "path": "video-notes/BV18W411g7FJ-34582929.md",
+      "tags": [
+        "reference_proposed",
+        "人像"
+      ],
+      "title": "【不瞌睡修图课】实用几招轻松去除杂物游客"
+    },
+    {
+      "id": "video-note:narration-notes:BV18g4y1B7ET-191950595",
+      "kind": "video-note",
+      "path": "video-notes/BV18g4y1B7ET-191950595.md",
+      "tags": [
+        "reference_proposed",
+        "夜景",
+        "构图",
+        "色彩",
+        "降噪",
+        "风光"
+      ],
+      "title": "手机后期修图全掌握（只使用iPhone内置编辑功能）"
+    },
+    {
+      "id": "video-note:narration-notes:BV18yfiBNE3S-36235251100",
+      "kind": "video-note",
+      "path": "video-notes/BV18yfiBNE3S-36235251100.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "色彩"
+      ],
+      "title": "底片翻拍必看！Capture One一键负片转正片！效率拉满"
+    },
+    {
+      "id": "video-note:narration-notes:BV1914y1E7Mh-912278599",
+      "kind": "video-note",
+      "path": "video-notes/BV1914y1E7Mh-912278599.md",
+      "tags": [
+        "reference_proposed",
+        "夜景",
+        "色彩",
+        "蒙版"
+      ],
+      "title": "缩星与银河强化一个插件全搞定"
+    },
+    {
+      "id": "video-note:narration-notes:BV193411t7pz-448286011",
+      "kind": "video-note",
+      "path": "video-notes/BV193411t7pz-448286011.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "曲线",
+        "构图",
+        "色彩",
+        "蒙版"
+      ],
+      "title": "写真如何修出俄罗斯味儿"
+    },
+    {
+      "id": "video-note:narration-notes:BV19J411T7n7-119853246",
+      "kind": "video-note",
+      "path": "video-notes/BV19J411T7n7-119853246.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "曲线",
+        "蒙版"
+      ],
+      "title": "为什么你的图修的总是很过   -灵动修图培训 刘杨后期教程 刘杨修图教程   商业修图教程 网络直播修图课  商业摄影线下课  视频广告拍摄课 广告摄影视频课"
+    },
+    {
+      "id": "video-note:narration-notes:BV19K4y1e77t-216066213",
+      "kind": "video-note",
+      "path": "video-notes/BV19K4y1e77t-216066213.md",
+      "tags": [
+        "reference_proposed",
+        "色彩",
+        "蒙版",
+        "风光"
+      ],
+      "title": "风光调色教程 | 忧郁蓝调"
+    },
+    {
+      "id": "video-note:narration-notes:BV19U4y147dJ-287626147",
+      "kind": "video-note",
+      "path": "video-notes/BV19U4y147dJ-287626147.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "构图",
+        "色彩",
+        "蒙版",
+        "降噪",
+        "风光"
+      ],
+      "title": "日照金山！专业摄影师教你风光摄影后期全流程"
+    },
+    {
+      "id": "video-note:narration-notes:BV19t4y1M7Wk-866735717",
+      "kind": "video-note",
+      "path": "video-notes/BV19t4y1M7Wk-866735717.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "构图",
+        "色彩",
+        "蒙版",
+        "风光"
+      ],
+      "title": "就差这么一点氛围感！强化光影对比，利用色彩体现照片氛围！"
+    },
+    {
+      "id": "video-note:narration-notes:BV19v4X6VEBn-41417183152",
+      "kind": "video-note",
+      "path": "video-notes/BV19v4X6VEBn-41417183152.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "构图",
+        "蒙版"
+      ],
+      "title": "天黑才开拍！一个灯拍出发光感转裙子少女（含调色教程）"
+    },
+    {
+      "id": "video-note:narration-notes:BV1AM4y1z77B-1070261800",
+      "kind": "video-note",
+      "path": "video-notes/BV1AM4y1z77B-1070261800.md",
+      "tags": [
+        "reference_proposed",
+        "色彩",
+        "蒙版",
+        "风光"
+      ],
+      "title": "HDR包围曝光合成 避雷指南"
+    },
+    {
+      "id": "video-note:narration-notes:BV1AQ4y1M7Xi-170388579",
+      "kind": "video-note",
+      "path": "video-notes/BV1AQ4y1M7Xi-170388579.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "夜景",
+        "曲线",
+        "色彩"
+      ],
+      "title": "简单高效的调色工具—色温色调与分离色调 | Lightroom系列教程第四期"
+    },
+    {
+      "id": "video-note:narration-notes:BV1AVQcYyEEf-28840496734",
+      "kind": "video-note",
+      "path": "video-notes/BV1AVQcYyEEf-28840496734.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "夜景",
+        "构图",
+        "色彩",
+        "蒙版",
+        "风光"
+      ],
+      "title": "比技术更重要的是后期思路！修图关键"
+    },
+    {
+      "id": "video-note:narration-notes:BV1Ae411u7Ab-827267665",
+      "kind": "video-note",
+      "path": "video-notes/BV1Ae411u7Ab-827267665.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "夜景",
+        "构图",
+        "色彩",
+        "蒙版"
+      ],
+      "title": "最易懂的摄影色彩搭配，不再盲目调色"
+    },
+    {
+      "id": "video-note:narration-notes:BV1Ag411P71z-451467670",
+      "kind": "video-note",
+      "path": "video-notes/BV1Ag411P71z-451467670.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "色彩",
+        "蒙版"
+      ],
+      "title": "极简风个人写真的修法"
+    },
+    {
+      "id": "video-note:narration-notes:BV1ArfbYyEy9-28012972877",
+      "kind": "video-note",
+      "path": "video-notes/BV1ArfbYyEy9-28012972877.md",
+      "tags": [
+        "reference_proposed",
+        "构图",
+        "色彩",
+        "蒙版",
+        "风光"
+      ],
+      "title": "风光摄影 改片案例全流程 逻辑和思路比技巧更重要"
+    },
+    {
+      "id": "video-note:narration-notes:BV1AwikBUEop-35177234587",
+      "kind": "video-note",
+      "path": "video-notes/BV1AwikBUEop-35177234587.md",
+      "tags": [
+        "reference_proposed",
+        "色彩",
+        "蒙版",
+        "风光"
+      ],
+      "title": "质感的前景气泡，让照片更丰富立体，冬季冰雪后期教程"
+    },
+    {
+      "id": "video-note:narration-notes:BV1B3411o7gy-961258660",
+      "kind": "video-note",
+      "path": "video-notes/BV1B3411o7gy-961258660.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "夜景",
+        "曲线",
+        "构图",
+        "蒙版"
+      ],
+      "title": "梦幻精灵落日烟火调色！电脑端+手机端调色思路全奉上 附练习原图"
+    },
+    {
+      "id": "video-note:narration-notes:BV1B5411k7ht-1420409374",
+      "kind": "video-note",
+      "path": "video-notes/BV1B5411k7ht-1420409374.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "曲线",
+        "构图",
+        "蒙版"
+      ],
+      "title": "「调色干货」冬日雪景少女调色 | 制作真实背景虚化 | 实战调色&重点总结 | 附练习原图及素材提供练习"
+    },
+    {
+      "id": "video-note:narration-notes:BV1BB4y197WS-728689793",
+      "kind": "video-note",
+      "path": "video-notes/BV1BB4y197WS-728689793.md",
+      "tags": [
+        "reference_proposed",
+        "色彩",
+        "蒙版"
+      ],
+      "title": "青灰色氛围电影色调追色案例"
+    },
+    {
+      "id": "video-note:narration-notes:BV1BL411V7Aa-479367604",
+      "kind": "video-note",
+      "path": "video-notes/BV1BL411V7Aa-479367604.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "色彩",
+        "蒙版"
+      ],
+      "title": "小清新写真照的修法"
+    },
+    {
+      "id": "video-note:narration-notes:BV1BY4y1v77B-564575656",
+      "kind": "video-note",
+      "path": "video-notes/BV1BY4y1v77B-564575656.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "色彩",
+        "蒙版",
+        "风光"
+      ],
+      "title": "《M43拍风光》12bit色深不够用？（第二期：后期避雷部分）"
+    },
+    {
+      "id": "video-note:narration-notes:BV1Bs421T7WV-1584371203",
+      "kind": "video-note",
+      "path": "video-notes/BV1Bs421T7WV-1584371203.md",
+      "tags": [
+        "reference_proposed",
+        "构图",
+        "风光"
+      ],
+      "title": "【短平快】实用PS后期技巧｜透视关系矫正"
+    },
+    {
+      "id": "video-note:narration-notes:BV1Bt4y1472i-775265103",
+      "kind": "video-note",
+      "path": "video-notes/BV1Bt4y1472i-775265103.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "曲线",
+        "色彩",
+        "蒙版"
+      ],
+      "title": "【枯燥！】19 逆光落日氛围感人像后期调色教学"
+    },
+    {
+      "id": "video-note:narration-notes:BV1Bw411M7hM-1321407624",
+      "kind": "video-note",
+      "path": "video-notes/BV1Bw411M7hM-1321407624.md",
+      "tags": [
+        "reference_proposed",
+        "构图",
+        "蒙版",
+        "风光"
+      ],
+      "title": "风光摄影现场 | 中国版牛角峰与秘境蓝湖，时间合成在山景中的应用"
+    },
+    {
+      "id": "video-note:narration-notes:BV1C34y1t7qG-552589331",
+      "kind": "video-note",
+      "path": "video-notes/BV1C34y1t7qG-552589331.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "色彩",
+        "蒙版"
+      ],
+      "title": "十分钟学会港式餐厅写真"
+    },
+    {
+      "id": "video-note:narration-notes:BV1CA411P7dv-384439033",
+      "kind": "video-note",
+      "path": "video-notes/BV1CA411P7dv-384439033.md",
+      "tags": [
+        "reference_proposed",
+        "色彩"
+      ],
+      "title": "一招解决片子发灰发黑"
+    },
+    {
+      "id": "video-note:narration-notes:BV1CB4y1u7Nq-345796332",
+      "kind": "video-note",
+      "path": "video-notes/BV1CB4y1u7Nq-345796332.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "构图"
+      ],
+      "title": "夏天的人像摄影课｜如何在民宿里拍一组美美的照片？"
+    },
+    {
+      "id": "video-note:narration-notes:BV1CG411377y-832568819",
+      "kind": "video-note",
+      "path": "video-notes/BV1CG411377y-832568819.md",
+      "tags": [
+        "reference_proposed",
+        "蒙版",
+        "风光"
+      ],
+      "title": "《风光摄影绝技》详解时间合成前后期在海景风光的应用 海景风光全攻略（二）"
+    },
+    {
+      "id": "video-note:narration-notes:BV1CL4y1c74U-711919384",
+      "kind": "video-note",
+      "path": "video-notes/BV1CL4y1c74U-711919384.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "色彩",
+        "蒙版"
+      ],
+      "title": "第一次结婚没啥经验 怎么修？"
+    },
+    {
+      "id": "video-note:narration-notes:BV1CW411Y7Ad-30402976",
+      "kind": "video-note",
+      "path": "video-notes/BV1CW411Y7Ad-30402976.md",
+      "tags": [
+        "reference_proposed",
+        "色彩",
+        "蒙版",
+        "风光"
+      ],
+      "title": "【摄影后期教程】Camera Raw画笔实战，平淡阴天秒变黄昏大片"
+    },
+    {
+      "id": "video-note:narration-notes:BV1Cr4y1275U-425556267",
+      "kind": "video-note",
+      "path": "video-notes/BV1Cr4y1275U-425556267.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "色彩",
+        "蒙版"
+      ],
+      "title": "一点点赛博色调"
+    },
+    {
+      "id": "video-note:narration-notes:BV1D3411v7wy-471938873",
+      "kind": "video-note",
+      "path": "video-notes/BV1D3411v7wy-471938873.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "色彩",
+        "蒙版",
+        "风光"
+      ],
+      "title": "简单易懂的日系写真调色"
+    },
+    {
+      "id": "video-note:narration-notes:BV1D44y117su-382186433",
+      "kind": "video-note",
+      "path": "video-notes/BV1D44y117su-382186433.md",
+      "tags": [
+        "reference_proposed",
+        "风光"
+      ],
+      "title": "简单两步，照片拨云见日，云朗风清"
+    },
+    {
+      "id": "video-note:narration-notes:BV1D8411m7u9-1205566960",
+      "kind": "video-note",
+      "path": "video-notes/BV1D8411m7u9-1205566960.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "色彩",
+        "降噪",
+        "风光"
+      ],
+      "title": "可能是最详细的直方图教程之一，前期拍摄后期修图，助你打造风格作品"
+    },
+    {
+      "id": "video-note:narration-notes:BV1D84y1e7xL-884041929",
+      "kind": "video-note",
+      "path": "video-notes/BV1D84y1e7xL-884041929.md",
+      "tags": [
+        "reference_proposed",
+        "构图",
+        "降噪",
+        "风光"
+      ],
+      "title": "M43技术流教你拍流星雨 ISO12800的极限降噪以及重要的风光合成思路"
+    },
+    {
+      "id": "video-note:narration-notes:BV1DL4y1c7ti-713534145",
+      "kind": "video-note",
+      "path": "video-notes/BV1DL4y1c7ti-713534145.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "蒙版"
+      ],
+      "title": "夏天专属清凉色调"
+    },
+    {
+      "id": "video-note:narration-notes:BV1Di4y1L7VV-257708395",
+      "kind": "video-note",
+      "path": "video-notes/BV1Di4y1L7VV-257708395.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "构图",
+        "色彩",
+        "蒙版",
+        "风光"
+      ],
+      "title": "侧光的光线渲染，让风光照片更具电影感"
+    },
+    {
+      "id": "video-note:narration-notes:BV1ETXaBpEyx-37090692027",
+      "kind": "video-note",
+      "path": "video-notes/BV1ETXaBpEyx-37090692027.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "曲线",
+        "色彩",
+        "蒙版"
+      ],
+      "title": "千万别用这个滤镜，否则照片色彩超级日系 | 樱花人像调色思路 + 滤镜分享"
+    },
+    {
+      "id": "video-note:narration-notes:BV1Ec411H7xk-1101938251",
+      "kind": "video-note",
+      "path": "video-notes/BV1Ec411H7xk-1101938251.md",
+      "tags": [
+        "reference_proposed",
+        "色彩",
+        "蒙版"
+      ],
+      "title": "榨干相机的RAW，这个最高宽容度公式 不许你不知道"
+    },
+    {
+      "id": "video-note:narration-notes:BV1Eq4y1m7c5-466330536",
+      "kind": "video-note",
+      "path": "video-notes/BV1Eq4y1m7c5-466330536.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "构图",
+        "色彩"
+      ],
+      "title": "森系风格修图+不同光比的色调统一"
+    },
+    {
+      "id": "video-note:narration-notes:BV1EzVJ6sEbr-38743378073",
+      "kind": "video-note",
+      "path": "video-notes/BV1EzVJ6sEbr-38743378073.md",
+      "tags": [
+        "reference_proposed",
+        "夜景",
+        "曲线",
+        "色彩",
+        "蒙版",
+        "降噪",
+        "风光"
+      ],
+      "title": "ACR最新硬核功能｜主体边缘控制"
+    },
+    {
+      "id": "video-note:narration-notes:BV1GA4y1Q7BG-710233664",
+      "kind": "video-note",
+      "path": "video-notes/BV1GA4y1Q7BG-710233664.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "曲线",
+        "色彩",
+        "蒙版"
+      ],
+      "title": "四分钟学会杂志质感男士调色"
+    },
+    {
+      "id": "video-note:narration-notes:BV1GD4y1w7c3-471187342",
+      "kind": "video-note",
+      "path": "video-notes/BV1GD4y1w7c3-471187342.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "色彩",
+        "蒙版"
+      ],
+      "title": "黑色也能调出五彩斑斓，黑衣服变白衣服，白衣服变黑衣服"
+    },
+    {
+      "id": "video-note:narration-notes:BV1GS4y1e75t-579990288",
+      "kind": "video-note",
+      "path": "video-notes/BV1GS4y1e75t-579990288.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "曲线",
+        "色彩"
+      ],
+      "title": "让图片更干净的简易修图法（附预设） | LR系列教程08期"
+    },
+    {
+      "id": "video-note:narration-notes:BV1Gg411F7TK-416044491",
+      "kind": "video-note",
+      "path": "video-notes/BV1Gg411F7TK-416044491.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "色彩",
+        "蒙版"
+      ],
+      "title": "公开处刑 图片处理过曝、液化技巧揭秘"
+    },
+    {
+      "id": "video-note:narration-notes:BV1GmjP6yEx2-39145441897",
+      "kind": "video-note",
+      "path": "video-notes/BV1GmjP6yEx2-39145441897.md",
+      "tags": [
+        "reference_proposed",
+        "色彩"
+      ],
+      "title": "照片发灰别拉饱和度，减掉这个颜色，立刻通透 | 互补色调色原理新手入门"
+    },
+    {
+      "id": "video-note:narration-notes:BV1GqzmYhEZ2-27145471316",
+      "kind": "video-note",
+      "path": "video-notes/BV1GqzmYhEZ2-27145471316.md",
+      "tags": [
+        "reference_proposed",
+        "色彩",
+        "蒙版",
+        "风光"
+      ],
+      "title": "通过制作光线与区域划分 增加图片深度与立体感"
+    },
+    {
+      "id": "video-note:narration-notes:BV1HEBTYtEoh-27324056541",
+      "kind": "video-note",
+      "path": "video-notes/BV1HEBTYtEoh-27324056541.md",
+      "tags": [
+        "reference_proposed",
+        "色彩",
+        "蒙版",
+        "风光"
+      ],
+      "title": "风光摄影后期 饱和度与自然饱和度到底啥区别？ 如何进行精细控制？"
+    },
+    {
+      "id": "video-note:narration-notes:BV1HJ411T7ZF-119673833",
+      "kind": "video-note",
+      "path": "video-notes/BV1HJ411T7ZF-119673833.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "曲线",
+        "蒙版"
+      ],
+      "title": "磨皮常见误区--DB"
+    },
+    {
+      "id": "video-note:narration-notes:BV1HJ411T7ZF-119674111",
+      "kind": "video-note",
+      "path": "video-notes/BV1HJ411T7ZF-119674111.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "曲线"
+      ],
+      "title": "磨皮常见误区--DB"
+    },
+    {
+      "id": "video-note:narration-notes:BV1HK4y1T7i1-310485730",
+      "kind": "video-note",
+      "path": "video-notes/BV1HK4y1T7i1-310485730.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "色彩",
+        "蒙版"
+      ],
+      "title": "PS入门教程02期：【图层与蒙版】最通俗易懂的讲解"
+    },
+    {
+      "id": "video-note:narration-notes:BV1HV411B7fw-292636502",
+      "kind": "video-note",
+      "path": "video-notes/BV1HV411B7fw-292636502.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "色彩",
+        "蒙版"
+      ],
+      "title": "【干货】你竟然还在用Lr和Ps调色！？获奖摄影师教你CaptureOne！第三集：调色"
+    },
+    {
+      "id": "video-note:narration-notes:BV1Hb411d7r1-1018096578",
+      "kind": "video-note",
+      "path": "video-notes/BV1Hb411d7r1-1018096578.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "曲线",
+        "构图",
+        "色彩",
+        "蒙版"
+      ],
+      "title": "摄影爱好者的PS入门系列教程 | 03期：工具栏的用法"
+    },
+    {
+      "id": "video-note:narration-notes:BV1Hr4y187DE-713261659",
+      "kind": "video-note",
+      "path": "video-notes/BV1Hr4y187DE-713261659.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "构图",
+        "色彩",
+        "蒙版",
+        "降噪",
+        "风光"
+      ],
+      "title": "相机直出的摄影照片能不能“见人”，我提倡后期，建立在前期努力的前提下。"
+    },
+    {
+      "id": "video-note:narration-notes:BV1Hv4y1f7vy-288050464",
+      "kind": "video-note",
+      "path": "video-notes/BV1Hv4y1f7vy-288050464.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "构图",
+        "色彩",
+        "蒙版"
+      ],
+      "title": "【干货】别再用Lightroom了！获奖摄影师教你Capture One！第二集：工具栏详解"
+    },
+    {
+      "id": "video-note:narration-notes:BV1J541117dk-585602940",
+      "kind": "video-note",
+      "path": "video-notes/BV1J541117dk-585602940.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "曲线",
+        "构图",
+        "色彩",
+        "蒙版",
+        "风光"
+      ],
+      "title": "逆光人像，就这么简单！"
+    },
+    {
+      "id": "video-note:narration-notes:BV1JE411b7Bw-127337262",
+      "kind": "video-note",
+      "path": "video-notes/BV1JE411b7Bw-127337262.md",
+      "tags": [
+        "reference_proposed",
+        "蒙版"
+      ],
+      "title": "PS校正脸型透视"
+    },
+    {
+      "id": "video-note:narration-notes:BV1JR4y1k7J9-926355029",
+      "kind": "video-note",
+      "path": "video-notes/BV1JR4y1k7J9-926355029.md",
+      "tags": [
+        "reference_proposed",
+        "色彩",
+        "蒙版",
+        "风光"
+      ],
+      "title": "《风光摄影技巧》ACR中的亮度蒙版 你会用吗？"
+    },
+    {
+      "id": "video-note:narration-notes:BV1JT411n77y-1103305894",
+      "kind": "video-note",
+      "path": "video-notes/BV1JT411n77y-1103305894.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "色彩"
+      ],
+      "title": "如何学习摄影调色？我整理出了十几种流行色调与色彩学习框架！"
+    },
+    {
+      "id": "video-note:narration-notes:BV1JTfABHEVQ-36220439617",
+      "kind": "video-note",
+      "path": "video-notes/BV1JTfABHEVQ-36220439617.md",
+      "tags": [
+        "reference_proposed",
+        "夜景",
+        "构图",
+        "色彩",
+        "蒙版",
+        "降噪"
+      ],
+      "title": "这张照片原图长什么样？修图思路分享05"
+    },
+    {
+      "id": "video-note:narration-notes:BV1Ji4y1d71q-461230935",
+      "kind": "video-note",
+      "path": "video-notes/BV1Ji4y1d71q-461230935.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "曲线",
+        "构图",
+        "色彩",
+        "蒙版",
+        "降噪",
+        "风光"
+      ],
+      "title": "阿刘摄影后期基础第三课"
+    },
+    {
+      "id": "video-note:narration-notes:BV1Jq4y1C7US-489918580",
+      "kind": "video-note",
+      "path": "video-notes/BV1Jq4y1C7US-489918580.md",
+      "tags": [
+        "reference_proposed",
+        "构图",
+        "色彩",
+        "蒙版",
+        "风光"
+      ],
+      "title": "《M43拍风光》如何手持完成 包围曝光+景深合成 / 全景接片"
+    },
+    {
+      "id": "video-note:narration-notes:BV1Jy4y1x7ex-320814489",
+      "kind": "video-note",
+      "path": "video-notes/BV1Jy4y1x7ex-320814489.md",
+      "tags": [
+        "reference_proposed",
+        "色彩"
+      ],
+      "title": "星空后期处理教程：利用半岛雪人处理处理漂亮的星轨照片"
+    },
+    {
+      "id": "video-note:narration-notes:BV1K54y1k76Y-255248816",
+      "kind": "video-note",
+      "path": "video-notes/BV1K54y1k76Y-255248816.md",
+      "tags": [
+        "reference_proposed",
+        "色彩",
+        "蒙版"
+      ],
+      "title": "每周一答(选择与分区）"
+    },
+    {
+      "id": "video-note:narration-notes:BV1K7411f7pv-164786897",
+      "kind": "video-note",
+      "path": "video-notes/BV1K7411f7pv-164786897.md",
+      "tags": [
+        "reference_proposed",
+        "蒙版"
+      ],
+      "title": "如何用亮度蒙版来做PS曝光合成？正确方法在这儿！"
+    },
+    {
+      "id": "video-note:narration-notes:BV1KL4y1n7DC-462994094",
+      "kind": "video-note",
+      "path": "video-notes/BV1KL4y1n7DC-462994094.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "蒙版"
+      ],
+      "title": "保姆级胶片调色 这次手也能学会"
+    },
+    {
+      "id": "video-note:narration-notes:BV1KZ421v77C-1506968890",
+      "kind": "video-note",
+      "path": "video-notes/BV1KZ421v77C-1506968890.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "色彩",
+        "蒙版",
+        "风光"
+      ],
+      "title": "后期处理阶段的控色小技巧和建议 你学会了嘛？"
+    },
+    {
+      "id": "video-note:narration-notes:BV1Km4y1Q7MF-470520019",
+      "kind": "video-note",
+      "path": "video-notes/BV1Km4y1Q7MF-470520019.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "构图",
+        "色彩",
+        "蒙版",
+        "风光"
+      ],
+      "title": "这条视频教你掌控光影"
+    },
+    {
+      "id": "video-note:narration-notes:BV1Ks41137U7-48975786",
+      "kind": "video-note",
+      "path": "video-notes/BV1Ks41137U7-48975786.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "曲线",
+        "构图",
+        "色彩",
+        "蒙版",
+        "降噪"
+      ],
+      "title": "【不瞌睡修图课】PS五分钟打造黄金柔焦色调"
+    },
+    {
+      "id": "video-note:narration-notes:BV1Kt67BbEsF-35657813341",
+      "kind": "video-note",
+      "path": "video-notes/BV1Kt67BbEsF-35657813341.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "曲线",
+        "色彩",
+        "蒙版"
+      ],
+      "title": "皮肤发黄发绿？一条曲线调出通透冷白皮 | 曲线调色保姆级原理讲解 | 附修图显示器分享华硕ProArt"
+    },
+    {
+      "id": "video-note:narration-notes:BV1L14y1f7Y3-1106385310",
+      "kind": "video-note",
+      "path": "video-notes/BV1L14y1f7Y3-1106385310.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "夜景",
+        "色彩"
+      ],
+      "title": "在-30℃雪地里能拍出什么样的人像照片？不是AI但是一晨的后期魔法"
+    },
+    {
+      "id": "video-note:narration-notes:BV1L541157U4-260774081",
+      "kind": "video-note",
+      "path": "video-notes/BV1L541157U4-260774081.md",
+      "tags": [
+        "reference_proposed",
+        "色彩"
+      ],
+      "title": "拒绝偏色！摄影后期色彩管理流程与要点解析！"
+    },
+    {
+      "id": "video-note:narration-notes:BV1LF411n7FP-505655257",
+      "kind": "video-note",
+      "path": "video-notes/BV1LF411n7FP-505655257.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "色彩",
+        "蒙版"
+      ],
+      "title": "清冷系男生风格街拍修法"
+    },
+    {
+      "id": "video-note:narration-notes:BV1LJ411P78u-116918322",
+      "kind": "video-note",
+      "path": "video-notes/BV1LJ411P78u-116918322.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "曲线",
+        "色彩"
+      ],
+      "title": "可选颜色与色相饱和度"
+    },
+    {
+      "id": "video-note:narration-notes:BV1LJ411P7Jx-116920534",
+      "kind": "video-note",
+      "path": "video-notes/BV1LJ411P7Jx-116920534.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "曲线",
+        "色彩",
+        "蒙版"
+      ],
+      "title": "摄影后期中常见肤色的问题"
+    },
+    {
+      "id": "video-note:narration-notes:BV1LM4y1u711-356036419",
+      "kind": "video-note",
+      "path": "video-notes/BV1LM4y1u711-356036419.md",
+      "tags": [
+        "reference_proposed",
+        "构图",
+        "色彩",
+        "蒙版",
+        "风光"
+      ],
+      "title": "风光摄影核心技术：亮度蒙版"
+    },
+    {
+      "id": "video-note:narration-notes:BV1La4y1H7eC-262748187",
+      "kind": "video-note",
+      "path": "video-notes/BV1La4y1H7eC-262748187.md",
+      "tags": [
+        "reference_proposed",
+        "蒙版",
+        "风光"
+      ],
+      "title": "风光摄影，如何做后期？"
+    },
+    {
+      "id": "video-note:narration-notes:BV1MM411s7Ab-1042674244",
+      "kind": "video-note",
+      "path": "video-notes/BV1MM411s7Ab-1042674244.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "色彩"
+      ],
+      "title": "透彻理解PS调色的底层原理与框架（下） | PS入门教程05期"
+    },
+    {
+      "id": "video-note:narration-notes:BV1MT4y1B7vR-730359182",
+      "kind": "video-note",
+      "path": "video-notes/BV1MT4y1B7vR-730359182.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "曲线",
+        "构图",
+        "色彩"
+      ],
+      "title": "3分钟学会街拍胶片调色"
+    },
+    {
+      "id": "video-note:narration-notes:BV1MW411p7Zr-34004105",
+      "kind": "video-note",
+      "path": "video-notes/BV1MW411p7Zr-34004105.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "曲线",
+        "色彩"
+      ],
+      "title": "【不瞌睡修图课】如何用PS一分钟调出清新日系人像"
+    },
+    {
+      "id": "video-note:narration-notes:BV1Mh411B7av-386160210",
+      "kind": "video-note",
+      "path": "video-notes/BV1Mh411B7av-386160210.md",
+      "tags": [
+        "reference_proposed",
+        "色彩"
+      ],
+      "title": "你还不知道怎么看直方图也不知道曝光怎么调整？【Capture One】"
+    },
+    {
+      "id": "video-note:narration-notes:BV1NR4y177Si-506208463",
+      "kind": "video-note",
+      "path": "video-notes/BV1NR4y177Si-506208463.md",
+      "tags": [
+        "reference_proposed",
+        "蒙版",
+        "降噪"
+      ],
+      "title": "【唐僧】超长曝光无噪点的秘密-2：后期高效降噪"
+    },
+    {
+      "id": "video-note:narration-notes:BV1NS4y18749-720600573",
+      "kind": "video-note",
+      "path": "video-notes/BV1NS4y18749-720600573.md",
+      "tags": [
+        "reference_proposed",
+        "构图",
+        "色彩",
+        "降噪",
+        "风光"
+      ],
+      "title": "小底相机玩打印 2000w像素变身2亿，欢迎来到计算摄影时代"
+    },
+    {
+      "id": "video-note:narration-notes:BV1NW411T7qD-36314228",
+      "kind": "video-note",
+      "path": "video-notes/BV1NW411T7qD-36314228.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "曲线",
+        "色彩",
+        "蒙版"
+      ],
+      "title": "【不瞌睡修图课】PS三分钟人像皮肤变通透"
+    },
+    {
+      "id": "video-note:narration-notes:BV1NY4y1M71D-826407178",
+      "kind": "video-note",
+      "path": "video-notes/BV1NY4y1M71D-826407178.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "曲线",
+        "构图",
+        "色彩",
+        "蒙版"
+      ],
+      "title": "简单4步，解决逆光人像难题"
+    },
+    {
+      "id": "video-note:narration-notes:BV1NxhYzYEQ5-31984454735",
+      "kind": "video-note",
+      "path": "video-notes/BV1NxhYzYEQ5-31984454735.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "色彩",
+        "蒙版",
+        "风光"
+      ],
+      "title": "「调色干货」教你调出清新动漫少女人像 | 实战调色&预设分享 | 附练习原图及天空素材提供练习"
+    },
+    {
+      "id": "video-note:narration-notes:BV1P1421k73q-1598848987",
+      "kind": "video-note",
+      "path": "video-notes/BV1P1421k73q-1598848987.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "曲线",
+        "蒙版"
+      ],
+      "title": "修图师必看！人像修图基本流程"
+    },
+    {
+      "id": "video-note:narration-notes:BV1PD4y1D7DD-213541705",
+      "kind": "video-note",
+      "path": "video-notes/BV1PD4y1D7DD-213541705.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "色彩",
+        "风光"
+      ],
+      "title": "风光摄影调色工具大汇总"
+    },
+    {
+      "id": "video-note:narration-notes:BV1PE411T7im-162709322",
+      "kind": "video-note",
+      "path": "video-notes/BV1PE411T7im-162709322.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "色彩",
+        "风光"
+      ],
+      "title": "曲线是调色之王吗？【LR系统教程】03期"
+    },
+    {
+      "id": "video-note:narration-notes:BV1PJ411j7if-140788728",
+      "kind": "video-note",
+      "path": "video-notes/BV1PJ411j7if-140788728.md",
+      "tags": [
+        "reference_proposed",
+        "色彩",
+        "风光"
+      ],
+      "title": "詹姆斯摄影：灰镜和堆栈的长曝光效果对比"
+    },
+    {
+      "id": "video-note:narration-notes:BV1PXfGYAEbq-28034008862",
+      "kind": "video-note",
+      "path": "video-notes/BV1PXfGYAEbq-28034008862.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "曲线",
+        "蒙版"
+      ],
+      "title": "三分钟实现  光线自由"
+    },
+    {
+      "id": "video-note:narration-notes:BV1Pg411R7VT-746959924",
+      "kind": "video-note",
+      "path": "video-notes/BV1Pg411R7VT-746959924.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "构图",
+        "色彩",
+        "风光"
+      ],
+      "title": "动漫风人像调色入门：前期配色到后期调色基础案例"
+    },
+    {
+      "id": "video-note:narration-notes:BV1Pm4y137PR-1300924329",
+      "kind": "video-note",
+      "path": "video-notes/BV1Pm4y137PR-1300924329.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "构图",
+        "色彩"
+      ],
+      "title": "照片处理的后期全流程：从存储到整理、从照片管理到缩减LR占用空间"
+    },
+    {
+      "id": "video-note:narration-notes:BV1QL411y7kA-1051084341",
+      "kind": "video-note",
+      "path": "video-notes/BV1QL411y7kA-1051084341.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "色彩",
+        "蒙版"
+      ],
+      "title": "简明易懂 | 通道混合器的原理和用法 | PS入门教程06期"
+    },
+    {
+      "id": "video-note:narration-notes:BV1QR4y1A7V8-721165167",
+      "kind": "video-note",
+      "path": "video-notes/BV1QR4y1A7V8-721165167.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "曲线",
+        "构图",
+        "色彩"
+      ],
+      "title": "【枯燥！】17 樱花人像配调色思路讲解：如何通过色彩搭配指导后期修图"
+    },
+    {
+      "id": "video-note:narration-notes:BV1Qs41177Ar-46605017",
+      "kind": "video-note",
+      "path": "video-notes/BV1Qs41177Ar-46605017.md",
+      "tags": [
+        "reference_proposed",
+        "构图",
+        "蒙版"
+      ],
+      "title": "【不瞌睡修图课】PS修复照片瑕疵四大技巧"
+    },
+    {
+      "id": "video-note:narration-notes:BV1R1BGB9EgG-34945827303",
+      "kind": "video-note",
+      "path": "video-notes/BV1R1BGB9EgG-34945827303.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "色彩"
+      ],
+      "title": "这预设离谱到我想报警...连双下巴都给我修掉了 | 一键搞定调色+修脸"
+    },
+    {
+      "id": "video-note:narration-notes:BV1R7411N7uM-156716395",
+      "kind": "video-note",
+      "path": "video-notes/BV1R7411N7uM-156716395.md",
+      "tags": [
+        "reference_proposed",
+        "夜景"
+      ],
+      "title": "照片管理、筛选与批量处理 | 【LR系统教程】01期"
+    },
+    {
+      "id": "video-note:narration-notes:BV1RG411L7hT-871680268",
+      "kind": "video-note",
+      "path": "video-notes/BV1RG411L7hT-871680268.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "色彩"
+      ],
+      "title": "请收藏，最全的图片去灰技巧"
+    },
+    {
+      "id": "video-note:narration-notes:BV1RLqdBgEPN-34836512899",
+      "kind": "video-note",
+      "path": "video-notes/BV1RLqdBgEPN-34836512899.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "蒙版"
+      ],
+      "title": "灰，就是照片廉价感的来源 | 曲线基础入门与实战案例讲解"
+    },
+    {
+      "id": "video-note:narration-notes:BV1RR4y1A7RX-718474590",
+      "kind": "video-note",
+      "path": "video-notes/BV1RR4y1A7RX-718474590.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "色彩",
+        "蒙版"
+      ],
+      "title": "配色与调色  高级灰电影调"
+    },
+    {
+      "id": "video-note:narration-notes:BV1RRrqBvEop-35353268180",
+      "kind": "video-note",
+      "path": "video-notes/BV1RRrqBvEop-35353268180.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "构图",
+        "色彩"
+      ],
+      "title": "肤色发黑、水面发黄？教你修出夏日泳池「通透蓝」，LAB调色+去路人（学员作品分享）"
+    },
+    {
+      "id": "video-note:narration-notes:BV1RT4y1R73B-432849366",
+      "kind": "video-note",
+      "path": "video-notes/BV1RT4y1R73B-432849366.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "曲线",
+        "色彩",
+        "蒙版"
+      ],
+      "title": "古铜色肌肉男也能透"
+    },
+    {
+      "id": "video-note:narration-notes:BV1RX4y1R75T-1075033915",
+      "kind": "video-note",
+      "path": "video-notes/BV1RX4y1R75T-1075033915.md",
+      "tags": [
+        "reference_proposed",
+        "色彩"
+      ],
+      "title": "小白也能懂 | 色彩深度、色彩空间、如何设置相机和软件 | PS入门教程07期"
+    },
+    {
+      "id": "video-note:narration-notes:BV1RYZXBXEZj-36137078613",
+      "kind": "video-note",
+      "path": "video-notes/BV1RYZXBXEZj-36137078613.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "曲线",
+        "色彩",
+        "蒙版",
+        "降噪"
+      ],
+      "title": "保姆级新年人像调色教程：调色、磨皮、液化、质感加强、氛围强化 | 附调色原图+素材分享"
+    },
+    {
+      "id": "video-note:narration-notes:BV1Rb4y1S74g-319455870",
+      "kind": "video-note",
+      "path": "video-notes/BV1Rb4y1S74g-319455870.md",
+      "tags": [
+        "reference_proposed",
+        "人像"
+      ],
+      "title": "10分钟带你了解人像鼻子修图中注意的细节-灵动商业人像精修教程"
+    },
+    {
+      "id": "video-note:narration-notes:BV1RduvzPEtF-31029134008",
+      "kind": "video-note",
+      "path": "video-notes/BV1RduvzPEtF-31029134008.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "曲线",
+        "色彩",
+        "蒙版"
+      ],
+      "title": "快来学调色！宫崎骏动漫风人像调色保姆级教学！调色原理+练习原图分享！"
+    },
+    {
+      "id": "video-note:narration-notes:BV1Rs4y1X7tp-1119388403",
+      "kind": "video-note",
+      "path": "video-notes/BV1Rs4y1X7tp-1119388403.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "色彩",
+        "蒙版"
+      ],
+      "title": "如果用商业修图思路来修婚纱"
+    },
+    {
+      "id": "video-note:narration-notes:BV1Rt4y1Q7zh-210011436",
+      "kind": "video-note",
+      "path": "video-notes/BV1Rt4y1Q7zh-210011436.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "色彩",
+        "蒙版",
+        "风光"
+      ],
+      "title": "用手机Snapseed修相机RAW格式的图片"
+    },
+    {
+      "id": "video-note:narration-notes:BV1S14y1a73m-832230385",
+      "kind": "video-note",
+      "path": "video-notes/BV1S14y1a73m-832230385.md",
+      "tags": [
+        "reference_proposed",
+        "曲线"
+      ],
+      "title": "保姆级教程：使用天文望远镜拍摄太阳黑子及后期处理 干货天文科普"
+    },
+    {
+      "id": "video-note:narration-notes:BV1S24y1473d-1052939809",
+      "kind": "video-note",
+      "path": "video-notes/BV1S24y1473d-1052939809.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "曲线",
+        "色彩",
+        "蒙版"
+      ],
+      "title": "为什么你片子不通透 、没有氛围感   4分钟学会"
+    },
+    {
+      "id": "video-note:narration-notes:BV1S34y1476s-564697431",
+      "kind": "video-note",
+      "path": "video-notes/BV1S34y1476s-564697431.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "曲线",
+        "色彩",
+        "蒙版"
+      ],
+      "title": "村花的逆袭 乡村大舞台到T台"
+    },
+    {
+      "id": "video-note:narration-notes:BV1S34y1o7UZ-435275199",
+      "kind": "video-note",
+      "path": "video-notes/BV1S34y1o7UZ-435275199.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "色彩",
+        "蒙版"
+      ],
+      "title": "从无知少女到冷艳女王"
+    },
+    {
+      "id": "video-note:narration-notes:BV1SS4y1e7aJ-750282119",
+      "kind": "video-note",
+      "path": "video-notes/BV1SS4y1e7aJ-750282119.md",
+      "tags": [
+        "reference_proposed",
+        "夜景",
+        "色彩",
+        "风光"
+      ],
+      "title": "一步搞定网红色调！LR校准面板三原色工具实战！"
+    },
+    {
+      "id": "video-note:narration-notes:BV1SY4y1x7DA-741796279",
+      "kind": "video-note",
+      "path": "video-notes/BV1SY4y1x7DA-741796279.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "构图",
+        "色彩"
+      ],
+      "title": "“荣获五星保姆教程”梦幻延时摄影后期全流程｜还附赠调色的，哈哈哈哈哈哈哈哈哈哈"
+    },
+    {
+      "id": "video-note:narration-notes:BV1SZ3E6vEJM-40311852254",
+      "kind": "video-note",
+      "path": "video-notes/BV1SZ3E6vEJM-40311852254.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "色彩",
+        "蒙版"
+      ],
+      "title": "调色思路分享暖色调少女肤色"
+    },
+    {
+      "id": "video-note:narration-notes:BV1SaStYbEar-26517965503",
+      "kind": "video-note",
+      "path": "video-notes/BV1SaStYbEar-26517965503.md",
+      "tags": [
+        "reference_proposed",
+        "构图",
+        "色彩"
+      ],
+      "title": "Capture One一键仿色教程！"
+    },
+    {
+      "id": "video-note:narration-notes:BV1So4y1d7MW-277899163",
+      "kind": "video-note",
+      "path": "video-notes/BV1So4y1d7MW-277899163.md",
+      "tags": [
+        "reference_proposed",
+        "色彩"
+      ],
+      "title": "你对RAW文件一无所知：Lightroom VS Capture One"
+    },
+    {
+      "id": "video-note:narration-notes:BV1Ss411n7TR-45642582",
+      "kind": "video-note",
+      "path": "video-notes/BV1Ss411n7TR-45642582.md",
+      "tags": [
+        "reference_proposed",
+        "夜景",
+        "曲线",
+        "构图",
+        "色彩",
+        "蒙版",
+        "降噪"
+      ],
+      "title": "星空摄影拍摄+后期PS处理超详细教学视频，雪山星空实地取景"
+    },
+    {
+      "id": "video-note:narration-notes:BV1TB4y1N7DW-365639990",
+      "kind": "video-note",
+      "path": "video-notes/BV1TB4y1N7DW-365639990.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "蒙版"
+      ],
+      "title": "两根曲线做出完美牛奶肌"
+    },
+    {
+      "id": "video-note:narration-notes:BV1TD4y1y7Xw-852119964",
+      "kind": "video-note",
+      "path": "video-notes/BV1TD4y1y7Xw-852119964.md",
+      "tags": [
+        "reference_proposed",
+        "蒙版"
+      ],
+      "title": "《独门绝技》如何加强天光乍泄、耶稣光（拒绝AI插件）"
+    },
+    {
+      "id": "video-note:narration-notes:BV1TK4y1u77T-371818499",
+      "kind": "video-note",
+      "path": "video-notes/BV1TK4y1u77T-371818499.md",
+      "tags": [
+        "reference_proposed",
+        "色彩",
+        "蒙版"
+      ],
+      "title": "手动景深合成！没有什么困难是解决不了的！【干货】"
+    },
+    {
+      "id": "video-note:narration-notes:BV1TRyfBdEcS-33632682607",
+      "kind": "video-note",
+      "path": "video-notes/BV1TRyfBdEcS-33632682607.md",
+      "tags": [
+        "reference_proposed",
+        "风光"
+      ],
+      "title": "【短平快】实用PS后期技巧｜一键去除天空污点"
+    },
+    {
+      "id": "video-note:narration-notes:BV1Tu4y1V7jX-1352285277",
+      "kind": "video-note",
+      "path": "video-notes/BV1Tu4y1V7jX-1352285277.md",
+      "tags": [
+        "reference_proposed",
+        "色彩",
+        "蒙版",
+        "风光"
+      ],
+      "title": "阴天照片如何调色？3招后期处理让阴雨天也能出大片！"
+    },
+    {
+      "id": "video-note:narration-notes:BV1UH4y1Q7tz-1255825819",
+      "kind": "video-note",
+      "path": "video-notes/BV1UH4y1Q7tz-1255825819.md",
+      "tags": [
+        "reference_proposed",
+        "色彩",
+        "风光"
+      ],
+      "title": "2023年对焦包围如何拍摄与后期？挪威A7CR+16-35GM二代12张景深合成实战！"
+    },
+    {
+      "id": "video-note:narration-notes:BV1UL4y1V7oB-584895655",
+      "kind": "video-note",
+      "path": "video-notes/BV1UL4y1V7oB-584895655.md",
+      "tags": [
+        "reference_proposed",
+        "色彩",
+        "蒙版"
+      ],
+      "title": "苗族姑娘前期拍摄技巧：动作引导及后期补足"
+    },
+    {
+      "id": "video-note:narration-notes:BV1UV411G7MB-1222448443",
+      "kind": "video-note",
+      "path": "video-notes/BV1UV411G7MB-1222448443.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "色彩"
+      ],
+      "title": "为什么说曲线是调色之王！"
+    },
+    {
+      "id": "video-note:narration-notes:BV1UW411F7H7-42225397",
+      "kind": "video-note",
+      "path": "video-notes/BV1UW411F7H7-42225397.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "夜景",
+        "曲线",
+        "构图",
+        "色彩"
+      ],
+      "title": "「直播回顾」摄影师张千里拍摄思路讲解，教你如何学会照片复盘【原来这么拍】"
+    },
+    {
+      "id": "video-note:narration-notes:BV1V341157vz-541560506",
+      "kind": "video-note",
+      "path": "video-notes/BV1V341157vz-541560506.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "曲线",
+        "色彩",
+        "蒙版"
+      ],
+      "title": "国潮风修图思路分享"
+    },
+    {
+      "id": "video-note:narration-notes:BV1V54y147KY-280420847",
+      "kind": "video-note",
+      "path": "video-notes/BV1V54y147KY-280420847.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "构图",
+        "色彩"
+      ],
+      "title": "梦幻的青色调如何调出？适合阴天雨天多云天的后期色调！"
+    },
+    {
+      "id": "video-note:narration-notes:BV1V741137RK-151380883",
+      "kind": "video-note",
+      "path": "video-notes/BV1V741137RK-151380883.md",
+      "tags": [
+        "reference_proposed",
+        "构图",
+        "色彩",
+        "蒙版"
+      ],
+      "title": "LR/Lightroom你不知道的一个摄影后期重磅工具/亮度蒙版"
+    },
+    {
+      "id": "video-note:narration-notes:BV1VD4y1F7rS-473066491",
+      "kind": "video-note",
+      "path": "video-notes/BV1VD4y1F7rS-473066491.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "蒙版"
+      ],
+      "title": "两分钟速调街拍风格写真"
+    },
+    {
+      "id": "video-note:narration-notes:BV1VF411z7Qv-455858101",
+      "kind": "video-note",
+      "path": "video-notes/BV1VF411z7Qv-455858101.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "夜景",
+        "曲线",
+        "色彩",
+        "蒙版"
+      ],
+      "title": "调色写轮眼-开！一张照片 三种色调"
+    },
+    {
+      "id": "video-note:narration-notes:BV1VG411x7qX-757771365",
+      "kind": "video-note",
+      "path": "video-notes/BV1VG411x7qX-757771365.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "曲线",
+        "构图",
+        "色彩",
+        "蒙版"
+      ],
+      "title": "【摄影后期思维】花海人像案例：前期拍摄遗憾与后期画面补足"
+    },
+    {
+      "id": "video-note:narration-notes:BV1VHAJe3E6T-28482733234",
+      "kind": "video-note",
+      "path": "video-notes/BV1VHAJe3E6T-28482733234.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "曲线"
+      ],
+      "title": "简单4步，让肤色通透明亮！"
+    },
+    {
+      "id": "video-note:narration-notes:BV1VP4y137CH-453901611",
+      "kind": "video-note",
+      "path": "video-notes/BV1VP4y137CH-453901611.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "曲线",
+        "色彩",
+        "蒙版"
+      ],
+      "title": "水下古风汉服修图+公开处刑"
+    },
+    {
+      "id": "video-note:narration-notes:BV1VXTj64Em7-39581584455",
+      "kind": "video-note",
+      "path": "video-notes/BV1VXTj64Em7-39581584455.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "色彩"
+      ],
+      "title": "调色不再靠感觉：一招端点法，精准解决偏色（附波形图讲解）"
+    },
+    {
+      "id": "video-note:narration-notes:BV1Ve4y1b7jX-843236274",
+      "kind": "video-note",
+      "path": "video-notes/BV1Ve4y1b7jX-843236274.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "曲线",
+        "蒙版"
+      ],
+      "title": "人生第一次拍日出！天使人像拍摄与后期调色分享"
+    },
+    {
+      "id": "video-note:narration-notes:BV1Vi4y1Z7Sz-457734156",
+      "kind": "video-note",
+      "path": "video-notes/BV1Vi4y1Z7Sz-457734156.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "色彩",
+        "蒙版"
+      ],
+      "title": "部落战士改造（将不同风格照片统一色调 ③）"
+    },
+    {
+      "id": "video-note:narration-notes:BV1Vs411A7in-48062970",
+      "kind": "video-note",
+      "path": "video-notes/BV1Vs411A7in-48062970.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "构图",
+        "色彩",
+        "风光"
+      ],
+      "title": "【不瞌睡修图课】PS30秒调出质感黑白照片"
+    },
+    {
+      "id": "video-note:narration-notes:BV1WP4y187N1-421303466",
+      "kind": "video-note",
+      "path": "video-notes/BV1WP4y187N1-421303466.md",
+      "tags": [
+        "reference_proposed",
+        "色彩"
+      ],
+      "title": "阴雨天暗调调色  匆匆忙忙碎银几两"
+    },
+    {
+      "id": "video-note:narration-notes:BV1WY411L7a6-505326958",
+      "kind": "video-note",
+      "path": "video-notes/BV1WY411L7a6-505326958.md",
+      "tags": [
+        "reference_proposed",
+        "色彩"
+      ],
+      "title": "这次更新可能扼杀盗版！Capture One 15.1"
+    },
+    {
+      "id": "video-note:narration-notes:BV1Wg411a7uC-865381265",
+      "kind": "video-note",
+      "path": "video-notes/BV1Wg411a7uC-865381265.md",
+      "tags": [
+        "reference_proposed",
+        "色彩",
+        "风光"
+      ],
+      "title": "《M43拍风光》HDR包围曝光到底怎么用（二）"
+    },
+    {
+      "id": "video-note:narration-notes:BV1Wy4y1Y7WL-294120534",
+      "kind": "video-note",
+      "path": "video-notes/BV1Wy4y1Y7WL-294120534.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "蒙版"
+      ],
+      "title": "摄影局部后期核心技术，如何用亮度蒙版精准调整照片中的物体"
+    },
+    {
+      "id": "video-note:narration-notes:BV1X44y1F7a8-1229642010",
+      "kind": "video-note",
+      "path": "video-notes/BV1X44y1F7a8-1229642010.md",
+      "tags": [
+        "reference_proposed",
+        "色彩",
+        "蒙版",
+        "风光"
+      ],
+      "title": "风光摄影 | 两个方法教你用最自然的的方式加强暖光效果"
+    },
+    {
+      "id": "video-note:narration-notes:BV1X64y1U7G5-315116025",
+      "kind": "video-note",
+      "path": "video-notes/BV1X64y1U7G5-315116025.md",
+      "tags": [
+        "reference_proposed",
+        "蒙版"
+      ],
+      "title": "【不看血亏】Capture One 21（14.1）更新了什么重要功能！？【HSINYALIN】"
+    },
+    {
+      "id": "video-note:narration-notes:BV1X8411D7Va-1198575184",
+      "kind": "video-note",
+      "path": "video-notes/BV1X8411D7Va-1198575184.md",
+      "tags": [
+        "reference_proposed",
+        "夜景",
+        "曲线",
+        "构图",
+        "色彩",
+        "蒙版",
+        "风光"
+      ],
+      "title": "PS高效极简的修图教程来了，零基础也能听得懂，青橙色调仅仅就用了一步"
+    },
+    {
+      "id": "video-note:narration-notes:BV1XK4y1f7MZ-246240780",
+      "kind": "video-note",
+      "path": "video-notes/BV1XK4y1f7MZ-246240780.md",
+      "tags": [
+        "reference_proposed",
+        "色彩",
+        "蒙版",
+        "降噪",
+        "风光"
+      ],
+      "title": "风光摄影：细节决定质感！噪点消消乐"
+    },
+    {
+      "id": "video-note:narration-notes:BV1Xi4y1D7Cm-559485200",
+      "kind": "video-note",
+      "path": "video-notes/BV1Xi4y1D7Cm-559485200.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "曲线",
+        "色彩",
+        "蒙版"
+      ],
+      "title": "要想把汉服修的通透干净"
+    },
+    {
+      "id": "video-note:narration-notes:BV1Xs411p7Rx-45408292",
+      "kind": "video-note",
+      "path": "video-notes/BV1Xs411p7Rx-45408292.md",
+      "tags": [
+        "reference_proposed",
+        "蒙版"
+      ],
+      "title": "图层蒙板手动曝光合并技术，记录下高光阴影自然的照片"
+    },
+    {
+      "id": "video-note:narration-notes:BV1Xv4y1u76M-746127949",
+      "kind": "video-note",
+      "path": "video-notes/BV1Xv4y1u76M-746127949.md",
+      "tags": [
+        "reference_proposed",
+        "夜景",
+        "曲线",
+        "色彩",
+        "蒙版"
+      ],
+      "title": "万能后期 偷天换月  送视频中所有笔刷"
+    },
+    {
+      "id": "video-note:narration-notes:BV1Y34y1d7pV-442833616",
+      "kind": "video-note",
+      "path": "video-notes/BV1Y34y1d7pV-442833616.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "色彩"
+      ],
+      "title": "街拍的两种修法"
+    },
+    {
+      "id": "video-note:narration-notes:BV1Y8jt65EBm-39285818644",
+      "kind": "video-note",
+      "path": "video-notes/BV1Y8jt65EBm-39285818644.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "构图",
+        "色彩"
+      ],
+      "title": "两分钟 有手就会  日系街拍氛围调色"
+    },
+    {
+      "id": "video-note:narration-notes:BV1YShgzmE72-31460230076",
+      "kind": "video-note",
+      "path": "video-notes/BV1YShgzmE72-31460230076.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "色彩",
+        "蒙版",
+        "风光"
+      ],
+      "title": "风光摄影后期关键性思路讲析 | 全流程拆解"
+    },
+    {
+      "id": "video-note:narration-notes:BV1YT411v7WE-1034553724",
+      "kind": "video-note",
+      "path": "video-notes/BV1YT411v7WE-1034553724.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "色彩"
+      ],
+      "title": "透彻理解PS调色的底层原理与框架（上） | PS入门教程04期"
+    },
+    {
+      "id": "video-note:narration-notes:BV1YTAyzTEYc-36312779591",
+      "kind": "video-note",
+      "path": "video-notes/BV1YTAyzTEYc-36312779591.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "构图",
+        "色彩",
+        "蒙版",
+        "风光"
+      ],
+      "title": "这摄影后期也太炸裂了吧"
+    },
+    {
+      "id": "video-note:narration-notes:BV1YU4y1K7NH-460828487",
+      "kind": "video-note",
+      "path": "video-notes/BV1YU4y1K7NH-460828487.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "夜景",
+        "色彩",
+        "蒙版"
+      ],
+      "title": "【枯燥！】14 梦幻夜景人像调色流程"
+    },
+    {
+      "id": "video-note:narration-notes:BV1YW411z7FV-56518736",
+      "kind": "video-note",
+      "path": "video-notes/BV1YW411z7FV-56518736.md",
+      "tags": [
+        "reference_proposed",
+        "构图",
+        "风光"
+      ],
+      "title": "【不瞌睡修图课】二次构图大作战"
+    },
+    {
+      "id": "video-note:narration-notes:BV1YZ4y1t7pm-739529480",
+      "kind": "video-note",
+      "path": "video-notes/BV1YZ4y1t7pm-739529480.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "曲线",
+        "色彩",
+        "蒙版"
+      ],
+      "title": "4分钟皮肤变的白皙通透"
+    },
+    {
+      "id": "video-note:narration-notes:BV1Ys4y157Rr-1045827273",
+      "kind": "video-note",
+      "path": "video-notes/BV1Ys4y157Rr-1045827273.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "构图",
+        "色彩"
+      ],
+      "title": "为什么你调色不高级  来学颜色混合法则"
+    },
+    {
+      "id": "video-note:narration-notes:BV1Yv411W7ai-282049736",
+      "kind": "video-note",
+      "path": "video-notes/BV1Yv411W7ai-282049736.md",
+      "tags": [
+        "reference_proposed",
+        "蒙版",
+        "风光"
+      ],
+      "title": "【干货】获奖摄影师教你Capture One！第一集：入门指南"
+    },
+    {
+      "id": "video-note:narration-notes:BV1Yz4y1C7im-249576327",
+      "kind": "video-note",
+      "path": "video-notes/BV1Yz4y1C7im-249576327.md",
+      "tags": [
+        "reference_proposed",
+        "构图",
+        "降噪",
+        "风光"
+      ],
+      "title": "【詹姆斯】十分钟学会 手把手教你拍延时！ 分步前期拍摄 + 超简单PS直出延时《摄影小白教室 • 第九集》"
+    },
+    {
+      "id": "video-note:narration-notes:BV1Z4411o77S-111848351",
+      "kind": "video-note",
+      "path": "video-notes/BV1Z4411o77S-111848351.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "曲线",
+        "色彩"
+      ],
+      "title": "通透肌肤的修图经验分享"
+    },
+    {
+      "id": "video-note:narration-notes:BV1ZY411F7oG-730192254",
+      "kind": "video-note",
+      "path": "video-notes/BV1ZY411F7oG-730192254.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "曲线",
+        "构图",
+        "色彩"
+      ],
+      "title": "5分钟调色教程【油画感】Lightroom系列教程09期"
+    },
+    {
+      "id": "video-note:narration-notes:BV1Zc411N7bd-1122420793",
+      "kind": "video-note",
+      "path": "video-notes/BV1Zc411N7bd-1122420793.md",
+      "tags": [
+        "reference_proposed",
+        "构图",
+        "色彩",
+        "蒙版"
+      ],
+      "title": "如何让照片更清晰 | 重新认识清晰度 | PS入门教程08期"
+    },
+    {
+      "id": "video-note:narration-notes:BV1Zt41147wP-73409505",
+      "kind": "video-note",
+      "path": "video-notes/BV1Zt41147wP-73409505.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "色彩",
+        "蒙版"
+      ],
+      "title": "如何利用Photoshop通道，完成复杂的后期抠图"
+    },
+    {
+      "id": "video-note:narration-notes:BV1Zu411d7bv-427279701",
+      "kind": "video-note",
+      "path": "video-notes/BV1Zu411d7bv-427279701.md",
+      "tags": [
+        "reference_proposed",
+        "构图",
+        "蒙版"
+      ],
+      "title": "未来风格修图"
+    },
+    {
+      "id": "video-note:narration-notes:BV1a4411G7R4-97864777",
+      "kind": "video-note",
+      "path": "video-notes/BV1a4411G7R4-97864777.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "曲线",
+        "色彩",
+        "蒙版"
+      ],
+      "title": "中性灰/双曲线磨皮教程 | 泰罗摄影后期教程82期"
+    },
+    {
+      "id": "video-note:narration-notes:BV1aH1TBnEVa-33551286976",
+      "kind": "video-note",
+      "path": "video-notes/BV1aH1TBnEVa-33551286976.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "构图",
+        "色彩",
+        "蒙版"
+      ],
+      "title": "硬核 | 原来我对HDR照片的理解是错的 ! 真相大公开 ! 唐僧VLOG-109"
+    },
+    {
+      "id": "video-note:narration-notes:BV1aU4y1b79P-325375175",
+      "kind": "video-note",
+      "path": "video-notes/BV1aU4y1b79P-325375175.md",
+      "tags": [
+        "reference_proposed",
+        "蒙版",
+        "风光"
+      ],
+      "title": "全流程！景深合成前后期"
+    },
+    {
+      "id": "video-note:narration-notes:BV1ah41127jU-281303845",
+      "kind": "video-note",
+      "path": "video-notes/BV1ah41127jU-281303845.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "夜景",
+        "曲线",
+        "构图",
+        "色彩",
+        "蒙版",
+        "降噪"
+      ],
+      "title": "【枯燥!】1 如此枯燥的夜景青橙色调人像后期调色教学 附上一晨同款预设"
+    },
+    {
+      "id": "video-note:narration-notes:BV1b64y1i7sy-326901102",
+      "kind": "video-note",
+      "path": "video-notes/BV1b64y1i7sy-326901102.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "构图",
+        "色彩",
+        "降噪"
+      ],
+      "title": "【干货】富士用户的Capture One后期指南【HSINYALIN】"
+    },
+    {
+      "id": "video-note:narration-notes:BV1be4y1W7gE-889177600",
+      "kind": "video-note",
+      "path": "video-notes/BV1be4y1W7gE-889177600.md",
+      "tags": [
+        "reference_proposed",
+        "色彩",
+        "风光"
+      ],
+      "title": "不管你用不用Capture One，这期都一定要看！"
+    },
+    {
+      "id": "video-note:narration-notes:BV1c34y1P7Kb-1281438346",
+      "kind": "video-note",
+      "path": "video-notes/BV1c34y1P7Kb-1281438346.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "色彩",
+        "蒙版"
+      ],
+      "title": "四分钟学会  图片调色通透亮丽"
+    },
+    {
+      "id": "video-note:narration-notes:BV1c7411x737-147120160",
+      "kind": "video-note",
+      "path": "video-notes/BV1c7411x737-147120160.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "色彩",
+        "蒙版"
+      ],
+      "title": "曲线调色  -灵动修图培训 刘杨后期教程 刘杨修图教程   商业修图教程 网络直播修图课  商业摄影线下课  视频广告拍摄课 广告摄影视频课  后期剪辑课 摄影"
+    },
+    {
+      "id": "video-note:narration-notes:BV1c7411x737-147120599",
+      "kind": "video-note",
+      "path": "video-notes/BV1c7411x737-147120599.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "色彩",
+        "蒙版"
+      ],
+      "title": "曲线调色  -灵动修图培训 刘杨后期教程 刘杨修图教程   商业修图教程 网络直播修图课  商业摄影线下课  视频广告拍摄课 广告摄影视频课  后期剪辑课 摄影"
+    },
+    {
+      "id": "video-note:narration-notes:BV1cE411C77n-123555376",
+      "kind": "video-note",
+      "path": "video-notes/BV1cE411C77n-123555376.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "色彩",
+        "蒙版",
+        "降噪"
+      ],
+      "title": "如何校正照片偏色?"
+    },
+    {
+      "id": "video-note:narration-notes:BV1cE411j7eL-163207281",
+      "kind": "video-note",
+      "path": "video-notes/BV1cE411j7eL-163207281.md",
+      "tags": [
+        "reference_proposed",
+        "构图",
+        "色彩",
+        "蒙版",
+        "风光"
+      ],
+      "title": "摄影知识！风光摄影后期修图大揭秘【自然摄影师雷雨】"
+    },
+    {
+      "id": "video-note:narration-notes:BV1cK411c7aj-327907114",
+      "kind": "video-note",
+      "path": "video-notes/BV1cK411c7aj-327907114.md",
+      "tags": [
+        "reference_proposed",
+        "构图",
+        "色彩",
+        "蒙版",
+        "风光"
+      ],
+      "title": "前期到后期，我是怎么完成一张西藏雪山照片的？唐僧VLOG25｜西藏｜拉萨｜雪山｜风光摄影｜摄影技巧｜Lightroom｜Photoshop"
+    },
+    {
+      "id": "video-note:narration-notes:BV1cK4y1x7di-212095164",
+      "kind": "video-note",
+      "path": "video-notes/BV1cK4y1x7di-212095164.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "蒙版",
+        "风光"
+      ],
+      "title": "【詹姆斯PS教程】风光摄影必学的亮度蒙版 - Photoshop 2020 从入门到精通 第七集"
+    },
+    {
+      "id": "video-note:narration-notes:BV1cY4y1p76m-574195913",
+      "kind": "video-note",
+      "path": "video-notes/BV1cY4y1p76m-574195913.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "色彩"
+      ],
+      "title": "春天就是要拍樱花~"
+    },
+    {
+      "id": "video-note:narration-notes:BV1cu4m1K7ZQ-1431166368",
+      "kind": "video-note",
+      "path": "video-notes/BV1cu4m1K7ZQ-1431166368.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "曲线",
+        "色彩",
+        "蒙版"
+      ],
+      "title": "「一晨魔法」一个很简单，但发光氛围感十足的调色法！｜学员作品调色实战指导&附插件分享"
+    },
+    {
+      "id": "video-note:narration-notes:BV1d14y1J788-901299110",
+      "kind": "video-note",
+      "path": "video-notes/BV1d14y1J788-901299110.md",
+      "tags": [
+        "reference_proposed",
+        "色彩"
+      ],
+      "title": "非影棚摄影必看！Capture One 23的新功能会改变你的整个工作流"
+    },
+    {
+      "id": "video-note:narration-notes:BV1d9kdYaEph-27507362140",
+      "kind": "video-note",
+      "path": "video-notes/BV1d9kdYaEph-27507362140.md",
+      "tags": [
+        "reference_proposed",
+        "色彩",
+        "蒙版",
+        "风光"
+      ],
+      "title": "风光摄影后期 局部增减饱和度与色彩快速纠偏工具 你必须知道"
+    },
+    {
+      "id": "video-note:narration-notes:BV1dE41147gV-159697200",
+      "kind": "video-note",
+      "path": "video-notes/BV1dE41147gV-159697200.md",
+      "tags": [
+        "reference_proposed",
+        "色彩"
+      ],
+      "title": "直方图与曝光调整 | 【LR教程】Lightroom基础教程系列第二期"
+    },
+    {
+      "id": "video-note:narration-notes:BV1dK4y157pY-265413174",
+      "kind": "video-note",
+      "path": "video-notes/BV1dK4y157pY-265413174.md",
+      "tags": [
+        "reference_proposed",
+        "色彩"
+      ],
+      "title": "揭秘长曝光拍鸟，从前到后的完整过程和思路【旅行摄影师唐僧VLOG-07】"
+    },
+    {
+      "id": "video-note:narration-notes:BV1dd4y127mS-796450141",
+      "kind": "video-note",
+      "path": "video-notes/BV1dd4y127mS-796450141.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "构图",
+        "蒙版",
+        "风光"
+      ],
+      "title": "《风光摄影绝技》景深+HDR+接片全流程——你的视界岂止镜头里的14毫米"
+    },
+    {
+      "id": "video-note:narration-notes:BV1ds411p7oP-45498548",
+      "kind": "video-note",
+      "path": "video-notes/BV1ds411p7oP-45498548.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "色彩",
+        "风光"
+      ],
+      "title": "【不瞌睡修图课】PS调出夏日紫调胶片"
+    },
+    {
+      "id": "video-note:narration-notes:BV1dsiyB6EcV-35238577911",
+      "kind": "video-note",
+      "path": "video-notes/BV1dsiyB6EcV-35238577911.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "色彩",
+        "蒙版"
+      ],
+      "title": "偏色，就是另一种廉价感 | RGB三条曲线，精准控制色彩"
+    },
+    {
+      "id": "video-note:narration-notes:BV1dt4y187XU-758385322",
+      "kind": "video-note",
+      "path": "video-notes/BV1dt4y187XU-758385322.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "曲线",
+        "色彩",
+        "蒙版"
+      ],
+      "title": "课堂作业批改 可选颜色小技巧"
+    },
+    {
+      "id": "video-note:narration-notes:BV1e64y1X72U-370967293",
+      "kind": "video-note",
+      "path": "video-notes/BV1e64y1X72U-370967293.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "色彩"
+      ],
+      "title": "【负片】获奖摄影师的Capture One胶片后期指南"
+    },
+    {
+      "id": "video-note:narration-notes:BV1eKndzEEqq-32787990065",
+      "kind": "video-note",
+      "path": "video-notes/BV1eKndzEEqq-32787990065.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "色彩",
+        "蒙版"
+      ],
+      "title": "调色总是脏脏的？一步到位，掌握纯净色彩核心技法！｜ 直方图实战全解 + 我的修图电脑推荐"
+    },
+    {
+      "id": "video-note:narration-notes:BV1eL4y1h7yh-402551106",
+      "kind": "video-note",
+      "path": "video-notes/BV1eL4y1h7yh-402551106.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "色彩",
+        "蒙版"
+      ],
+      "title": "婚礼场景黑金调色"
+    },
+    {
+      "id": "video-note:narration-notes:BV1eM4y1L7yQ-392870894",
+      "kind": "video-note",
+      "path": "video-notes/BV1eM4y1L7yQ-392870894.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "曲线",
+        "色彩",
+        "蒙版"
+      ],
+      "title": "哥特系暗黑气质女反派 是这样修出来的"
+    },
+    {
+      "id": "video-note:narration-notes:BV1ed4y1t79m-905423114",
+      "kind": "video-note",
+      "path": "video-notes/BV1ed4y1t79m-905423114.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "曲线",
+        "色彩"
+      ],
+      "title": "快来学人像皮肤修饰！教你修出通透有质感的皮肤"
+    },
+    {
+      "id": "video-note:narration-notes:BV1ep4y1t7tv-324718157",
+      "kind": "video-note",
+      "path": "video-notes/BV1ep4y1t7tv-324718157.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "曲线",
+        "构图",
+        "色彩",
+        "降噪"
+      ],
+      "title": "【枯燥!】8 前期到后期：春日感日系樱花JK少女调色教程 附 同款调色lut文件+彩虹素材"
+    },
+    {
+      "id": "video-note:narration-notes:BV1f94y1m74y-742142747",
+      "kind": "video-note",
+      "path": "video-notes/BV1f94y1m74y-742142747.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "蒙版"
+      ],
+      "title": "3分钟去除脖纹 做出天鹅颈"
+    },
+    {
+      "id": "video-note:narration-notes:BV1fA4y1U7nG-712721140",
+      "kind": "video-note",
+      "path": "video-notes/BV1fA4y1U7nG-712721140.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "曲线",
+        "色彩",
+        "蒙版"
+      ],
+      "title": "形体到调色  油画风格修图解析"
+    },
+    {
+      "id": "video-note:narration-notes:BV1fN411Q7DW-310547721",
+      "kind": "video-note",
+      "path": "video-notes/BV1fN411Q7DW-310547721.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "曲线",
+        "构图",
+        "色彩",
+        "蒙版",
+        "降噪",
+        "风光"
+      ],
+      "title": "如何调出干净通透的肤色"
+    },
+    {
+      "id": "video-note:narration-notes:BV1fh411J73k-422929679",
+      "kind": "video-note",
+      "path": "video-notes/BV1fh411J73k-422929679.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "色彩",
+        "蒙版"
+      ],
+      "title": "通道调色法的进阶教程，送通道选区动作"
+    },
+    {
+      "id": "video-note:narration-notes:BV1fj42197Xt-1483188962",
+      "kind": "video-note",
+      "path": "video-notes/BV1fj42197Xt-1483188962.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "构图"
+      ],
+      "title": "樱花人像+Photoshop AI修图：我称之为绝杀！「一晨花季人像PS修图必备技能」"
+    },
+    {
+      "id": "video-note:narration-notes:BV1g34y1X7ZC-409724429",
+      "kind": "video-note",
+      "path": "video-notes/BV1g34y1X7ZC-409724429.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "蒙版"
+      ],
+      "title": "4分钟教会你将平平无奇的棚拍做成印象派油画"
+    },
+    {
+      "id": "video-note:narration-notes:BV1gH4y1w7ZH-1584389600",
+      "kind": "video-note",
+      "path": "video-notes/BV1gH4y1w7ZH-1584389600.md",
+      "tags": [
+        "reference_proposed",
+        "风光"
+      ],
+      "title": "【短平快】实用PS后期技巧｜快速分离RAW与JPEG格式"
+    },
+    {
+      "id": "video-note:narration-notes:BV1gQ4y1y7if-405162616",
+      "kind": "video-note",
+      "path": "video-notes/BV1gQ4y1y7if-405162616.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "色彩"
+      ],
+      "title": "从零开始，如何快速调出一个胶片预设"
+    },
+    {
+      "id": "video-note:narration-notes:BV1gW411e76a-30490663",
+      "kind": "video-note",
+      "path": "video-notes/BV1gW411e76a-30490663.md",
+      "tags": [
+        "reference_proposed",
+        "构图",
+        "色彩",
+        "蒙版"
+      ],
+      "title": "【摄影后期】梦幻冷暖色风格调色"
+    },
+    {
+      "id": "video-note:narration-notes:BV1gW5u6UEwM-38284625468",
+      "kind": "video-note",
+      "path": "video-notes/BV1gW5u6UEwM-38284625468.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "曲线",
+        "色彩"
+      ],
+      "title": "为什么你的色彩总是脏脏的？2分钟教你调出通透动漫风色彩人像 | 附练习图供大家练手！"
+    },
+    {
+      "id": "video-note:narration-notes:BV1ga411R7DV-814122372",
+      "kind": "video-note",
+      "path": "video-notes/BV1ga411R7DV-814122372.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "曲线",
+        "色彩",
+        "蒙版"
+      ],
+      "title": "前期拍摄到后期调色：一场落日烟火少女人像拍摄记录"
+    },
+    {
+      "id": "video-note:narration-notes:BV1h7411r7Mm-146020345",
+      "kind": "video-note",
+      "path": "video-notes/BV1h7411r7Mm-146020345.md",
+      "tags": [
+        "reference_proposed"
+      ],
+      "title": "科普：天文摄影中的亮场，暗场，平场"
+    },
+    {
+      "id": "video-note:narration-notes:BV1hD4y1D75q-197515274",
+      "kind": "video-note",
+      "path": "video-notes/BV1hD4y1D75q-197515274.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "色彩",
+        "蒙版"
+      ],
+      "title": "PS后期高手之路提高篇 本尊再次上线，继续三连~ PS/Photoshop小白入门教程【良知塾李涛PS】"
+    },
+    {
+      "id": "video-note:narration-notes:BV1hD4y1D75q-197522298",
+      "kind": "video-note",
+      "path": "video-notes/BV1hD4y1D75q-197522298.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "色彩",
+        "蒙版"
+      ],
+      "title": "PS后期高手之路提高篇 本尊再次上线，继续三连~ PS/Photoshop小白入门教程【良知塾李涛PS】"
+    },
+    {
+      "id": "video-note:narration-notes:BV1hD4y1D75q-197538691",
+      "kind": "video-note",
+      "path": "video-notes/BV1hD4y1D75q-197538691.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "夜景",
+        "曲线",
+        "构图",
+        "色彩",
+        "降噪",
+        "风光"
+      ],
+      "title": "PS后期高手之路提高篇 本尊再次上线，继续三连~ PS/Photoshop小白入门教程【良知塾李涛PS】"
+    },
+    {
+      "id": "video-note:narration-notes:BV1hD4y1D75q-197545788",
+      "kind": "video-note",
+      "path": "video-notes/BV1hD4y1D75q-197545788.md",
+      "tags": [
+        "reference_proposed",
+        "色彩",
+        "蒙版"
+      ],
+      "title": "PS后期高手之路提高篇 本尊再次上线，继续三连~ PS/Photoshop小白入门教程【良知塾李涛PS】"
+    },
+    {
+      "id": "video-note:narration-notes:BV1hS4y1r7CV-511773230",
+      "kind": "video-note",
+      "path": "video-notes/BV1hS4y1r7CV-511773230.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "色彩",
+        "蒙版"
+      ],
+      "title": "细节拉满的霸道总裁调色 全是技巧 没有感情"
+    },
+    {
+      "id": "video-note:narration-notes:BV1ha411J7va-718418294",
+      "kind": "video-note",
+      "path": "video-notes/BV1ha411J7va-718418294.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "色彩",
+        "蒙版",
+        "降噪"
+      ],
+      "title": "让银河通透明亮！星空摄影必看"
+    },
+    {
+      "id": "video-note:narration-notes:BV1iE421P7bH-1578392010",
+      "kind": "video-note",
+      "path": "video-notes/BV1iE421P7bH-1578392010.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "色彩",
+        "蒙版",
+        "降噪"
+      ],
+      "title": "超好用的PS插件！Nik Collection 7中我最常用的十大功能！"
+    },
+    {
+      "id": "video-note:narration-notes:BV1iG4y1K73U-1004926142",
+      "kind": "video-note",
+      "path": "video-notes/BV1iG4y1K73U-1004926142.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "构图",
+        "色彩",
+        "蒙版",
+        "降噪",
+        "风光"
+      ],
+      "title": "晚霞照片只会狂拉饱和度？这样后期修图效果更好！"
+    },
+    {
+      "id": "video-note:narration-notes:BV1iQTT6KEwZ-39480264467",
+      "kind": "video-note",
+      "path": "video-notes/BV1iQTT6KEwZ-39480264467.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "色彩",
+        "蒙版"
+      ],
+      "title": "通透感冷白皮 布灵布灵修图技巧"
+    },
+    {
+      "id": "video-note:narration-notes:BV1iRsnzYEvc-33277021914",
+      "kind": "video-note",
+      "path": "video-notes/BV1iRsnzYEvc-33277021914.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "色彩"
+      ],
+      "title": "哈苏X2DII的HDR到底怎么玩？｜#原来这么拍# 第261集"
+    },
+    {
+      "id": "video-note:narration-notes:BV1ih41187Tg-436880643",
+      "kind": "video-note",
+      "path": "video-notes/BV1ih41187Tg-436880643.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "曲线",
+        "色彩",
+        "蒙版"
+      ],
+      "title": "秀一下青铜变王者的操作"
+    },
+    {
+      "id": "video-note:narration-notes:BV1ixenzREta-31916951889",
+      "kind": "video-note",
+      "path": "video-notes/BV1ixenzREta-31916951889.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "构图",
+        "色彩",
+        "风光"
+      ],
+      "title": "为什么调色你一听就会，一学就废？｜清新人像色彩搭配+调色讲解｜送给新手的第一节人像色彩搭配入门课"
+    },
+    {
+      "id": "video-note:narration-notes:BV1iz4y157Xg-1270331288",
+      "kind": "video-note",
+      "path": "video-notes/BV1iz4y157Xg-1270331288.md",
+      "tags": [
+        "reference_proposed",
+        "蒙版",
+        "降噪",
+        "风光"
+      ],
+      "title": "职业摄影师如何降噪与锐化？(2023年新版)"
+    },
+    {
+      "id": "video-note:narration-notes:BV1iz4y1C7cm-249250642",
+      "kind": "video-note",
+      "path": "video-notes/BV1iz4y1C7cm-249250642.md",
+      "tags": [
+        "reference_proposed",
+        "夜景",
+        "色彩",
+        "风光"
+      ],
+      "title": "只用两个PS工具，调出上百种流行后期色调？！三原色+色温色调工具调色教程"
+    },
+    {
+      "id": "video-note:narration-notes:BV1j44y1a7Xr-457623257",
+      "kind": "video-note",
+      "path": "video-notes/BV1j44y1a7Xr-457623257.md",
+      "tags": [
+        "reference_proposed",
+        "风光"
+      ],
+      "title": "拍风光的你从此再也不需要用进PS修图！Capture One22来了！"
+    },
+    {
+      "id": "video-note:narration-notes:BV1j7411n79x-152599510",
+      "kind": "video-note",
+      "path": "video-notes/BV1j7411n79x-152599510.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "构图",
+        "色彩",
+        "蒙版",
+        "降噪",
+        "风光"
+      ],
+      "title": "阿刘讲解如何做出来一张精彩的蓝调接片"
+    },
+    {
+      "id": "video-note:narration-notes:BV1jD4y1o7sp-232681459",
+      "kind": "video-note",
+      "path": "video-notes/BV1jD4y1o7sp-232681459.md",
+      "tags": [
+        "reference_proposed",
+        "夜景",
+        "构图",
+        "风光"
+      ],
+      "title": "天眼星空照片是如何策划和拍摄的？如何通过后期日转夜完成前期无法实现的效果！"
+    },
+    {
+      "id": "video-note:narration-notes:BV1jR4y1E7tE-436356801",
+      "kind": "video-note",
+      "path": "video-notes/BV1jR4y1E7tE-436356801.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "构图",
+        "色彩",
+        "蒙版",
+        "风光"
+      ],
+      "title": "甲方套路深 我想回农村"
+    },
+    {
+      "id": "video-note:narration-notes:BV1jS4y1b7Ji-717331821",
+      "kind": "video-note",
+      "path": "video-notes/BV1jS4y1b7Ji-717331821.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "夜景",
+        "色彩",
+        "蒙版"
+      ],
+      "title": "快速有效，让人像通透有层次！"
+    },
+    {
+      "id": "video-note:narration-notes:BV1jr4y1X7tJ-457107893",
+      "kind": "video-note",
+      "path": "video-notes/BV1jr4y1X7tJ-457107893.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "色彩",
+        "蒙版"
+      ],
+      "title": "游客照修出故事感（将不同风格照片统一色调 ②）"
+    },
+    {
+      "id": "video-note:narration-notes:BV1kK4y1Q7Ff-298472465",
+      "kind": "video-note",
+      "path": "video-notes/BV1kK4y1Q7Ff-298472465.md",
+      "tags": [
+        "reference_proposed",
+        "夜景",
+        "曲线",
+        "色彩",
+        "降噪"
+      ],
+      "title": "【枯燥!】3 如此枯燥的《雨夜》迷幻青蓝紫色调后期调色教学 附上一晨同款预设"
+    },
+    {
+      "id": "video-note:narration-notes:BV1kT4y1d7pJ-439075643",
+      "kind": "video-note",
+      "path": "video-notes/BV1kT4y1d7pJ-439075643.md",
+      "tags": [
+        "reference_proposed",
+        "构图",
+        "色彩",
+        "蒙版"
+      ],
+      "title": "朋友圈也卷起来了！"
+    },
+    {
+      "id": "video-note:narration-notes:BV1kU4y1B7yd-778311398",
+      "kind": "video-note",
+      "path": "video-notes/BV1kU4y1B7yd-778311398.md",
+      "tags": [
+        "reference_proposed",
+        "构图",
+        "色彩",
+        "蒙版",
+        "风光"
+      ],
+      "title": "如何在后期把拍到的耶稣光加强"
+    },
+    {
+      "id": "video-note:narration-notes:BV1kV4y1V7dp-863647719",
+      "kind": "video-note",
+      "path": "video-notes/BV1kV4y1V7dp-863647719.md",
+      "tags": [
+        "reference_proposed",
+        "色彩",
+        "风光"
+      ],
+      "title": "《M43拍风光》单张 / 超解析 / HDR到底怎么用（一）"
+    },
+    {
+      "id": "video-note:narration-notes:BV1kp4y1i7gL-216494148",
+      "kind": "video-note",
+      "path": "video-notes/BV1kp4y1i7gL-216494148.md",
+      "tags": [
+        "reference_proposed",
+        "夜景",
+        "构图",
+        "色彩",
+        "蒙版",
+        "降噪",
+        "风光"
+      ],
+      "title": "星空车轨大片原来这么拍！摄影师演示夜景时间合成拍摄技术"
+    },
+    {
+      "id": "video-note:narration-notes:BV1kr4y1J7kU-582403325",
+      "kind": "video-note",
+      "path": "video-notes/BV1kr4y1J7kU-582403325.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "曲线"
+      ],
+      "title": "修图中的面部结构"
+    },
+    {
+      "id": "video-note:narration-notes:BV1m4bC6yEbV-40926579541",
+      "kind": "video-note",
+      "path": "video-notes/BV1m4bC6yEbV-40926579541.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "色彩",
+        "蒙版"
+      ],
+      "title": "为什么你的照片又黑又脏？3招教你调出宫崎骏治愈色彩!| 附练习图供大家练手"
+    },
+    {
+      "id": "video-note:narration-notes:BV1mK411p7G9-204107464",
+      "kind": "video-note",
+      "path": "video-notes/BV1mK411p7G9-204107464.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "色彩",
+        "蒙版"
+      ],
+      "title": "摄影后期必备！如何用亮度蒙版技术精准调整照片影调"
+    },
+    {
+      "id": "video-note:narration-notes:BV1mV41127jG-232076340",
+      "kind": "video-note",
+      "path": "video-notes/BV1mV41127jG-232076340.md",
+      "tags": [
+        "reference_proposed",
+        "夜景",
+        "降噪",
+        "风光"
+      ],
+      "title": "风光摄影｜银河拍摄及降噪"
+    },
+    {
+      "id": "video-note:narration-notes:BV1mV411x72S-348925479",
+      "kind": "video-note",
+      "path": "video-notes/BV1mV411x72S-348925479.md",
+      "tags": [
+        "reference_proposed",
+        "蒙版",
+        "风光"
+      ],
+      "title": "手动创建亮度蒙版，风光摄影师必学技能！"
+    },
+    {
+      "id": "video-note:narration-notes:BV1n3NGzwEBH-36557030528",
+      "kind": "video-note",
+      "path": "video-notes/BV1n3NGzwEBH-36557030528.md",
+      "tags": [
+        "reference_proposed",
+        "色彩",
+        "蒙版"
+      ],
+      "title": "这张照片原图长什么样？阴雨天青色调修图思路分享09"
+    },
+    {
+      "id": "video-note:narration-notes:BV1nE411X7iF-120447463",
+      "kind": "video-note",
+      "path": "video-notes/BV1nE411X7iF-120447463.md",
+      "tags": [
+        "reference_proposed",
+        "曲线"
+      ],
+      "title": "妆面磨皮过程  -灵动修图培训 刘杨后期教程 刘杨修图教程   商业修图教程 网络直播修图课  商业摄影线下课  视频广告拍摄课 广告摄影视频课  后期剪辑课"
+    },
+    {
+      "id": "video-note:narration-notes:BV1nH4y137ZC-1547884334",
+      "kind": "video-note",
+      "path": "video-notes/BV1nH4y137ZC-1547884334.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "色彩",
+        "蒙版"
+      ],
+      "title": "落日蓝调梦幻调色教程 | 国人自制正版免费辉光插件来了！实战修图讲解｜附插件+原图分享"
+    },
+    {
+      "id": "video-note:narration-notes:BV1nf8x69EY3-41187279991",
+      "kind": "video-note",
+      "path": "video-notes/BV1nf8x69EY3-41187279991.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "色彩",
+        "蒙版"
+      ],
+      "title": "调色为什么没感觉 爆改CCD色调"
+    },
+    {
+      "id": "video-note:narration-notes:BV1nh411j7pc-1104019288",
+      "kind": "video-note",
+      "path": "video-notes/BV1nh411j7pc-1104019288.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "构图",
+        "色彩",
+        "蒙版"
+      ],
+      "title": "写真背景杂乱 怎么修"
+    },
+    {
+      "id": "video-note:narration-notes:BV1nh411t7VF-433642239",
+      "kind": "video-note",
+      "path": "video-notes/BV1nh411t7VF-433642239.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "构图",
+        "色彩",
+        "蒙版",
+        "降噪",
+        "风光"
+      ],
+      "title": "修图4小时的照片都修了啥？风光大片PSD揭秘，逐图层分析思路！"
+    },
+    {
+      "id": "video-note:narration-notes:BV1nj411f7AR-155428667",
+      "kind": "video-note",
+      "path": "video-notes/BV1nj411f7AR-155428667.md",
+      "tags": [
+        "reference_proposed",
+        "构图",
+        "蒙版"
+      ],
+      "title": "热门景点照片竟然空无一人？PS堆栈技术还能这么用！"
+    },
+    {
+      "id": "video-note:narration-notes:BV1nq4y1J7uB-329746704",
+      "kind": "video-note",
+      "path": "video-notes/BV1nq4y1J7uB-329746704.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "夜景",
+        "色彩",
+        "蒙版"
+      ],
+      "title": "【枯燥!】9 不可错过的PS下雨特效：下雨氛围感强化后期制作 附 练习素材+同款PS下雨动作"
+    },
+    {
+      "id": "video-note:narration-notes:BV1ns411n7wB-46465083",
+      "kind": "video-note",
+      "path": "video-notes/BV1ns411n7wB-46465083.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "曲线",
+        "构图",
+        "色彩",
+        "蒙版"
+      ],
+      "title": "【不瞌睡修图课】如何完整地修一张图"
+    },
+    {
+      "id": "video-note:narration-notes:BV1nv411g7Wm-420086285",
+      "kind": "video-note",
+      "path": "video-notes/BV1nv411g7Wm-420086285.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "蒙版"
+      ],
+      "title": "简单调个秋日氛围色"
+    },
+    {
+      "id": "video-note:narration-notes:BV1nv4y1A7Eh-724231497",
+      "kind": "video-note",
+      "path": "video-notes/BV1nv4y1A7Eh-724231497.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "曲线",
+        "色彩",
+        "蒙版"
+      ],
+      "title": "情侣写真这样修 绝不翻车"
+    },
+    {
+      "id": "video-note:narration-notes:BV1nw4m1e7S3-1584386450",
+      "kind": "video-note",
+      "path": "video-notes/BV1nw4m1e7S3-1584386450.md",
+      "tags": [
+        "reference_proposed",
+        "风光"
+      ],
+      "title": "【短平快】实用PS后期技巧｜删格化智能对象"
+    },
+    {
+      "id": "video-note:narration-notes:BV1o64y1a7Gv-401012956",
+      "kind": "video-note",
+      "path": "video-notes/BV1o64y1a7Gv-401012956.md",
+      "tags": [
+        "reference_proposed",
+        "色彩",
+        "蒙版"
+      ],
+      "title": "7分钟教会你把轻飘飘的图修fashion"
+    },
+    {
+      "id": "video-note:narration-notes:BV1o7411D752-171134194",
+      "kind": "video-note",
+      "path": "video-notes/BV1o7411D752-171134194.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "构图",
+        "色彩",
+        "风光"
+      ],
+      "title": "低饱和青橙色调几步搞定，ACR/Lightroom网红调色后期"
+    },
+    {
+      "id": "video-note:narration-notes:BV1o7411W7zg-147590553",
+      "kind": "video-note",
+      "path": "video-notes/BV1o7411W7zg-147590553.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "色彩",
+        "蒙版",
+        "风光"
+      ],
+      "title": "现代摄影后期最重要技术之一：亮度蒙版入门教程"
+    },
+    {
+      "id": "video-note:narration-notes:BV1oA411J7kJ-803703528",
+      "kind": "video-note",
+      "path": "video-notes/BV1oA411J7kJ-803703528.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "色彩",
+        "蒙版",
+        "降噪",
+        "风光"
+      ],
+      "title": "风光摄影PS摄影后期教程｜实战风光后期处理全流程—清楚看清每一步"
+    },
+    {
+      "id": "video-note:narration-notes:BV1oL4y1874W-415898959",
+      "kind": "video-note",
+      "path": "video-notes/BV1oL4y1874W-415898959.md",
+      "tags": [
+        "reference_proposed"
+      ],
+      "title": "Capture One21（14.4）更新介绍"
+    },
+    {
+      "id": "video-note:narration-notes:BV1oP411L7z6-804214082",
+      "kind": "video-note",
+      "path": "video-notes/BV1oP411L7z6-804214082.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "曲线",
+        "构图",
+        "色彩"
+      ],
+      "title": "【枯燥！】20 情书主题人像拍摄心得与基础调色流程讲解"
+    },
+    {
+      "id": "video-note:narration-notes:BV1pN4y1K7Ey-840376100",
+      "kind": "video-note",
+      "path": "video-notes/BV1pN4y1K7Ey-840376100.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "色彩",
+        "蒙版"
+      ],
+      "title": "万能追色大法，看完就会仿色"
+    },
+    {
+      "id": "video-note:narration-notes:BV1pW411j7N1-36777605",
+      "kind": "video-note",
+      "path": "video-notes/BV1pW411j7N1-36777605.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "构图",
+        "色彩"
+      ],
+      "title": "【不瞌睡修图课】杂乱照片变干净调色思路"
+    },
+    {
+      "id": "video-note:narration-notes:BV1pk4y1w7TT-1266098871",
+      "kind": "video-note",
+      "path": "video-notes/BV1pk4y1w7TT-1266098871.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "构图",
+        "色彩",
+        "蒙版",
+        "降噪",
+        "风光"
+      ],
+      "title": "PS系列教程完结篇 | 风光摄影后期教程 | 堆栈、d&b"
+    },
+    {
+      "id": "video-note:narration-notes:BV1pt4y1C7jN-190942221",
+      "kind": "video-note",
+      "path": "video-notes/BV1pt4y1C7jN-190942221.md",
+      "tags": [
+        "reference_proposed",
+        "色彩"
+      ],
+      "title": "PS后期高手之路基础篇  本尊上线，欢迎三连"
+    },
+    {
+      "id": "video-note:narration-notes:BV1pt4y1C7jN-190946688",
+      "kind": "video-note",
+      "path": "video-notes/BV1pt4y1C7jN-190946688.md",
+      "tags": [
+        "reference_proposed",
+        "色彩"
+      ],
+      "title": "PS后期高手之路基础篇  本尊上线，欢迎三连"
+    },
+    {
+      "id": "video-note:narration-notes:BV1pt4y1C7jN-190958922",
+      "kind": "video-note",
+      "path": "video-notes/BV1pt4y1C7jN-190958922.md",
+      "tags": [
+        "reference_proposed",
+        "色彩"
+      ],
+      "title": "PS后期高手之路基础篇  本尊上线，欢迎三连"
+    },
+    {
+      "id": "video-note:narration-notes:BV1pt4y1C7jN-190962580",
+      "kind": "video-note",
+      "path": "video-notes/BV1pt4y1C7jN-190962580.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "色彩"
+      ],
+      "title": "PS后期高手之路基础篇  本尊上线，欢迎三连"
+    },
+    {
+      "id": "video-note:narration-notes:BV1pt4y1C7jN-190966090",
+      "kind": "video-note",
+      "path": "video-notes/BV1pt4y1C7jN-190966090.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "色彩"
+      ],
+      "title": "PS后期高手之路基础篇  本尊上线，欢迎三连"
+    },
+    {
+      "id": "video-note:narration-notes:BV1pt4y1C7jN-190968980",
+      "kind": "video-note",
+      "path": "video-notes/BV1pt4y1C7jN-190968980.md",
+      "tags": [
+        "reference_proposed",
+        "色彩"
+      ],
+      "title": "PS后期高手之路基础篇  本尊上线，欢迎三连"
+    },
+    {
+      "id": "video-note:narration-notes:BV1pt4y1C7jN-190972844",
+      "kind": "video-note",
+      "path": "video-notes/BV1pt4y1C7jN-190972844.md",
+      "tags": [
+        "reference_proposed",
+        "构图"
+      ],
+      "title": "PS后期高手之路基础篇  本尊上线，欢迎三连"
+    },
+    {
+      "id": "video-note:narration-notes:BV1pt4y1C7jN-190976321",
+      "kind": "video-note",
+      "path": "video-notes/BV1pt4y1C7jN-190976321.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "色彩",
+        "蒙版"
+      ],
+      "title": "PS后期高手之路基础篇  本尊上线，欢迎三连"
+    },
+    {
+      "id": "video-note:narration-notes:BV1pt4y1C7jN-190979785",
+      "kind": "video-note",
+      "path": "video-notes/BV1pt4y1C7jN-190979785.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "色彩"
+      ],
+      "title": "PS后期高手之路基础篇  本尊上线，欢迎三连"
+    },
+    {
+      "id": "video-note:narration-notes:BV1pt4y1C7jN-190983489",
+      "kind": "video-note",
+      "path": "video-notes/BV1pt4y1C7jN-190983489.md",
+      "tags": [
+        "reference_proposed",
+        "色彩",
+        "蒙版"
+      ],
+      "title": "PS后期高手之路基础篇  本尊上线，欢迎三连"
+    },
+    {
+      "id": "video-note:narration-notes:BV1pt4y1C7jN-190986921",
+      "kind": "video-note",
+      "path": "video-notes/BV1pt4y1C7jN-190986921.md",
+      "tags": [
+        "reference_proposed",
+        "色彩"
+      ],
+      "title": "PS后期高手之路基础篇  本尊上线，欢迎三连"
+    },
+    {
+      "id": "video-note:narration-notes:BV1pt4y1C7jN-190991105",
+      "kind": "video-note",
+      "path": "video-notes/BV1pt4y1C7jN-190991105.md",
+      "tags": [
+        "reference_proposed",
+        "蒙版"
+      ],
+      "title": "PS后期高手之路基础篇  本尊上线，欢迎三连"
+    },
+    {
+      "id": "video-note:narration-notes:BV1pt4y1C7jN-190994792",
+      "kind": "video-note",
+      "path": "video-notes/BV1pt4y1C7jN-190994792.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "色彩"
+      ],
+      "title": "PS后期高手之路基础篇  本尊上线，欢迎三连"
+    },
+    {
+      "id": "video-note:narration-notes:BV1pt4y1C7jN-191002676",
+      "kind": "video-note",
+      "path": "video-notes/BV1pt4y1C7jN-191002676.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "曲线",
+        "色彩",
+        "蒙版"
+      ],
+      "title": "PS后期高手之路基础篇  本尊上线，欢迎三连"
+    },
+    {
+      "id": "video-note:narration-notes:BV1pt4y1C7jN-191006825",
+      "kind": "video-note",
+      "path": "video-notes/BV1pt4y1C7jN-191006825.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "色彩"
+      ],
+      "title": "PS后期高手之路基础篇  本尊上线，欢迎三连"
+    },
+    {
+      "id": "video-note:narration-notes:BV1pt4y1C7jN-191010274",
+      "kind": "video-note",
+      "path": "video-notes/BV1pt4y1C7jN-191010274.md",
+      "tags": [
+        "reference_proposed",
+        "色彩"
+      ],
+      "title": "PS后期高手之路基础篇  本尊上线，欢迎三连"
+    },
+    {
+      "id": "video-note:narration-notes:BV1pt4y1C7jN-191014223",
+      "kind": "video-note",
+      "path": "video-notes/BV1pt4y1C7jN-191014223.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "色彩",
+        "蒙版"
+      ],
+      "title": "PS后期高手之路基础篇  本尊上线，欢迎三连"
+    },
+    {
+      "id": "video-note:narration-notes:BV1pt4y1C7jN-191017669",
+      "kind": "video-note",
+      "path": "video-notes/BV1pt4y1C7jN-191017669.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "蒙版"
+      ],
+      "title": "PS后期高手之路基础篇  本尊上线，欢迎三连"
+    },
+    {
+      "id": "video-note:narration-notes:BV1pt4y1C7jN-191021969",
+      "kind": "video-note",
+      "path": "video-notes/BV1pt4y1C7jN-191021969.md",
+      "tags": [
+        "reference_proposed",
+        "构图",
+        "色彩",
+        "蒙版"
+      ],
+      "title": "PS后期高手之路基础篇  本尊上线，欢迎三连"
+    },
+    {
+      "id": "video-note:narration-notes:BV1pt4y1C7jN-191031231",
+      "kind": "video-note",
+      "path": "video-notes/BV1pt4y1C7jN-191031231.md",
+      "tags": [
+        "reference_proposed",
+        "色彩"
+      ],
+      "title": "PS后期高手之路基础篇  本尊上线，欢迎三连"
+    },
+    {
+      "id": "video-note:narration-notes:BV1pt4y1C7jN-191035616",
+      "kind": "video-note",
+      "path": "video-notes/BV1pt4y1C7jN-191035616.md",
+      "tags": [
+        "reference_proposed",
+        "构图",
+        "色彩",
+        "蒙版"
+      ],
+      "title": "PS后期高手之路基础篇  本尊上线，欢迎三连"
+    },
+    {
+      "id": "video-note:narration-notes:BV1pt4y1C7jN-191040089",
+      "kind": "video-note",
+      "path": "video-notes/BV1pt4y1C7jN-191040089.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "色彩",
+        "蒙版",
+        "降噪"
+      ],
+      "title": "PS后期高手之路基础篇  本尊上线，欢迎三连"
+    },
+    {
+      "id": "video-note:narration-notes:BV1pt4y1C7jN-191044102",
+      "kind": "video-note",
+      "path": "video-notes/BV1pt4y1C7jN-191044102.md",
+      "tags": [
+        "reference_proposed",
+        "构图",
+        "色彩"
+      ],
+      "title": "PS后期高手之路基础篇  本尊上线，欢迎三连"
+    },
+    {
+      "id": "video-note:narration-notes:BV1pt4y1C7jN-191048055",
+      "kind": "video-note",
+      "path": "video-notes/BV1pt4y1C7jN-191048055.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "色彩",
+        "蒙版"
+      ],
+      "title": "PS后期高手之路基础篇  本尊上线，欢迎三连"
+    },
+    {
+      "id": "video-note:narration-notes:BV1pt4y1Q7WP-212993455",
+      "kind": "video-note",
+      "path": "video-notes/BV1pt4y1Q7WP-212993455.md",
+      "tags": [
+        "reference_proposed",
+        "色彩",
+        "蒙版",
+        "风光"
+      ],
+      "title": "风光摄影PS摄影后期教程｜提高画质-高反差保留与中性灰图层结合"
+    },
+    {
+      "id": "video-note:narration-notes:BV1qE411M78R-161705860",
+      "kind": "video-note",
+      "path": "video-notes/BV1qE411M78R-161705860.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "曲线",
+        "色彩",
+        "蒙版"
+      ],
+      "title": "【摄影教程】手把手教你人像后期调色 | 如何在PS里实现欧美风色调？"
+    },
+    {
+      "id": "video-note:narration-notes:BV1qJ411M7dA-119247778",
+      "kind": "video-note",
+      "path": "video-notes/BV1qJ411M7dA-119247778.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "曲线",
+        "色彩",
+        "蒙版",
+        "风光"
+      ],
+      "title": "每周一答--如何调出复古色调  -灵动修图培训 刘杨后期教程 刘杨修图教程   商业修图教程 网络直播修图课  商业摄影线下课  视频广告拍摄课 广告摄影视频课"
+    },
+    {
+      "id": "video-note:narration-notes:BV1qK4y1d7uR-338485123",
+      "kind": "video-note",
+      "path": "video-notes/BV1qK4y1d7uR-338485123.md",
+      "tags": [
+        "reference_proposed",
+        "色彩",
+        "蒙版",
+        "风光"
+      ],
+      "title": "【雷雨LR摄影教程】硬核风景摄影后期干货教学"
+    },
+    {
+      "id": "video-note:narration-notes:BV1qR4y1n77s-420680799",
+      "kind": "video-note",
+      "path": "video-notes/BV1qR4y1n77s-420680799.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "色彩"
+      ],
+      "title": "专治各种不服 嘿嘿嘿【doge】"
+    },
+    {
+      "id": "video-note:narration-notes:BV1qu4y1z7vJ-1272355281",
+      "kind": "video-note",
+      "path": "video-notes/BV1qu4y1z7vJ-1272355281.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "曲线",
+        "色彩"
+      ],
+      "title": "调色必学！ 弄懂色彩原理！"
+    },
+    {
+      "id": "video-note:narration-notes:BV1r3411K7Nb-588784086",
+      "kind": "video-note",
+      "path": "video-notes/BV1r3411K7Nb-588784086.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "构图",
+        "蒙版"
+      ],
+      "title": "【摄影教程】光影人像实拍创作全过程"
+    },
+    {
+      "id": "video-note:narration-notes:BV1rB4y1B79k-803972882",
+      "kind": "video-note",
+      "path": "video-notes/BV1rB4y1B79k-803972882.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "构图",
+        "色彩",
+        "蒙版",
+        "风光"
+      ],
+      "title": "风光摄影前后期全流程，高效打造光影世界"
+    },
+    {
+      "id": "video-note:narration-notes:BV1rJ411A7GA-117542877",
+      "kind": "video-note",
+      "path": "video-notes/BV1rJ411A7GA-117542877.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "色彩",
+        "蒙版"
+      ],
+      "title": "后期调色流程总结，包含Lightroom/ACR所有调色工具用法解析"
+    },
+    {
+      "id": "video-note:narration-notes:BV1rT4y1N7CL-282700272",
+      "kind": "video-note",
+      "path": "video-notes/BV1rT4y1N7CL-282700272.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "色彩",
+        "蒙版",
+        "降噪",
+        "风光"
+      ],
+      "title": "风光摄影后期绝技：画光"
+    },
+    {
+      "id": "video-note:narration-notes:BV1rV411e7iM-302822814",
+      "kind": "video-note",
+      "path": "video-notes/BV1rV411e7iM-302822814.md",
+      "tags": [
+        "reference_proposed",
+        "构图",
+        "色彩"
+      ],
+      "title": "【干货】距离专业摄影师你只差一根线！获奖摄影师教你Capture One！第四集：联机拍摄"
+    },
+    {
+      "id": "video-note:narration-notes:BV1rZgV6TE8F-40846361389",
+      "kind": "video-note",
+      "path": "video-notes/BV1rZgV6TE8F-40846361389.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "色彩",
+        "蒙版"
+      ],
+      "title": "通透皮肤 亮丽彩妆 棚拍图的玩法"
+    },
+    {
+      "id": "video-note:narration-notes:BV1rq4y127e8-464960762",
+      "kind": "video-note",
+      "path": "video-notes/BV1rq4y127e8-464960762.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "色彩"
+      ],
+      "title": "两分钟婚礼照简修"
+    },
+    {
+      "id": "video-note:narration-notes:BV1rs411A7dL-48230863",
+      "kind": "video-note",
+      "path": "video-notes/BV1rs411A7dL-48230863.md",
+      "tags": [
+        "reference_proposed",
+        "蒙版",
+        "降噪"
+      ],
+      "title": "如何用堆栈拍出低噪点的银河星空"
+    },
+    {
+      "id": "video-note:narration-notes:BV1s341117b9-420346572",
+      "kind": "video-note",
+      "path": "video-notes/BV1s341117b9-420346572.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "夜景",
+        "曲线",
+        "色彩",
+        "蒙版"
+      ],
+      "title": "【枯燥！】13 夜景人像后期调色教学 使用lightroom和photoshop调色"
+    },
+    {
+      "id": "video-note:narration-notes:BV1s5411d7kK-715428181",
+      "kind": "video-note",
+      "path": "video-notes/BV1s5411d7kK-715428181.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "构图",
+        "色彩",
+        "风光"
+      ],
+      "title": "理性分析，摄影为什么后期？如何后期？"
+    },
+    {
+      "id": "video-note:narration-notes:BV1sBrKYiEim-27713734152",
+      "kind": "video-note",
+      "path": "video-notes/BV1sBrKYiEim-27713734152.md",
+      "tags": [
+        "reference_proposed",
+        "夜景",
+        "曲线",
+        "构图",
+        "色彩",
+        "蒙版",
+        "降噪",
+        "风光"
+      ],
+      "title": "风光摄影后期全流程分享！黄山冰雪全景接片实战调色练习！"
+    },
+    {
+      "id": "video-note:narration-notes:BV1sD4y1o7h6-236483026",
+      "kind": "video-note",
+      "path": "video-notes/BV1sD4y1o7h6-236483026.md",
+      "tags": [
+        "reference_proposed",
+        "夜景",
+        "色彩",
+        "蒙版",
+        "降噪",
+        "风光"
+      ],
+      "title": "风光摄影后期｜三种银河调色方案"
+    },
+    {
+      "id": "video-note:narration-notes:BV1sg411w7uD-460974956",
+      "kind": "video-note",
+      "path": "video-notes/BV1sg411w7uD-460974956.md",
+      "tags": [
+        "reference_proposed",
+        "色彩",
+        "蒙版"
+      ],
+      "title": "这次可能你连脑子都学不会"
+    },
+    {
+      "id": "video-note:narration-notes:BV1sh411v77c-338371531",
+      "kind": "video-note",
+      "path": "video-notes/BV1sh411v77c-338371531.md",
+      "tags": [
+        "reference_proposed",
+        "蒙版",
+        "风光"
+      ],
+      "title": "这三种后期操作，正在毁掉你的照片！"
+    },
+    {
+      "id": "video-note:narration-notes:BV1si4y157Ke-263619657",
+      "kind": "video-note",
+      "path": "video-notes/BV1si4y157Ke-263619657.md",
+      "tags": [
+        "reference_proposed",
+        "色彩"
+      ],
+      "title": "颜色分级替换分离色调，Lightroom最强调色工具诞生！"
+    },
+    {
+      "id": "video-note:narration-notes:BV1ss4y1K7ER-1091773943",
+      "kind": "video-note",
+      "path": "video-notes/BV1ss4y1K7ER-1091773943.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "曲线",
+        "色彩",
+        "蒙版"
+      ],
+      "title": "「修图必备」3大后期技巧提升樱花人像氛围感：附一晨常用修图素材大公开！"
+    },
+    {
+      "id": "video-note:narration-notes:BV1tS4y1a7QF-587993232",
+      "kind": "video-note",
+      "path": "video-notes/BV1tS4y1a7QF-587993232.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "色彩",
+        "蒙版"
+      ],
+      "title": "直方图和Camera Raw保姆级详解"
+    },
+    {
+      "id": "video-note:narration-notes:BV1tW411p7HX-34087112",
+      "kind": "video-note",
+      "path": "video-notes/BV1tW411p7HX-34087112.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "夜景",
+        "曲线",
+        "色彩"
+      ],
+      "title": "【不瞌睡修图课】如何矫正夜景偏色人像"
+    },
+    {
+      "id": "video-note:narration-notes:BV1ti4y1t7ss-178108585",
+      "kind": "video-note",
+      "path": "video-notes/BV1ti4y1t7ss-178108585.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "色彩"
+      ],
+      "title": "拓展HSL调色思路的钥匙-以胶片色为例「LR教程」05期"
+    },
+    {
+      "id": "video-note:narration-notes:BV1ty4y1q7Jt-260478926",
+      "kind": "video-note",
+      "path": "video-notes/BV1ty4y1q7Jt-260478926.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "色彩",
+        "蒙版",
+        "降噪",
+        "风光"
+      ],
+      "title": "【摄影VLOG-5】RAW原图是啥样的？我是这么后期修图的。【旅行摄影师唐僧】"
+    },
+    {
+      "id": "video-note:narration-notes:BV1u6TS6yEeN-39693979188",
+      "kind": "video-note",
+      "path": "video-notes/BV1u6TS6yEeN-39693979188.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "曲线",
+        "色彩",
+        "蒙版"
+      ],
+      "title": "修皮肤万能思路 干净通透 有手就会"
+    },
+    {
+      "id": "video-note:narration-notes:BV1u94y1p7xf-1273590340",
+      "kind": "video-note",
+      "path": "video-notes/BV1u94y1p7xf-1273590340.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "夜景",
+        "曲线",
+        "构图",
+        "色彩",
+        "蒙版",
+        "降噪"
+      ],
+      "title": "「调色干货」教你调出通透感夜景人像照片 | 实战调色&重点总结 | 附练习原图及素材提供练习"
+    },
+    {
+      "id": "video-note:narration-notes:BV1uB4y1V7bL-809623226",
+      "kind": "video-note",
+      "path": "video-notes/BV1uB4y1V7bL-809623226.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "构图",
+        "色彩",
+        "蒙版",
+        "风光"
+      ],
+      "title": "风光摄影师都在用的TK Action插件教程！亮度蒙版+输出锐化太好用了！"
+    },
+    {
+      "id": "video-note:narration-notes:BV1uE411279Z-124854933",
+      "kind": "video-note",
+      "path": "video-notes/BV1uE411279Z-124854933.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "色彩",
+        "蒙版"
+      ],
+      "title": "阿凡达统一肤色  -灵动修图培训 刘杨后期教程 刘杨修图教程   商业修图教程 网络直播修图课  商业摄影线下课  视频广告拍摄课 广告摄影视频课  后期剪辑课"
+    },
+    {
+      "id": "video-note:narration-notes:BV1uN4y1M7t1-776058510",
+      "kind": "video-note",
+      "path": "video-notes/BV1uN4y1M7t1-776058510.md",
+      "tags": [
+        "reference_proposed",
+        "夜景",
+        "构图",
+        "蒙版",
+        "降噪",
+        "风光"
+      ],
+      "title": "全网最强摄影时间合成技术教程！商业/风光摄影师必学~"
+    },
+    {
+      "id": "video-note:narration-notes:BV1uU4y1J7pp-380920412",
+      "kind": "video-note",
+      "path": "video-notes/BV1uU4y1J7pp-380920412.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "曲线",
+        "蒙版"
+      ],
+      "title": "PS人像精修脸部美化教程"
+    },
+    {
+      "id": "video-note:narration-notes:BV1uW411u7GK-35087606",
+      "kind": "video-note",
+      "path": "video-notes/BV1uW411u7GK-35087606.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "蒙版"
+      ],
+      "title": "【不瞌睡修图课】完爆手机软件，小白也能学会的磨皮技巧"
+    },
+    {
+      "id": "video-note:narration-notes:BV1ux3e6CEjD-40362442836",
+      "kind": "video-note",
+      "path": "video-notes/BV1ux3e6CEjD-40362442836.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "色彩",
+        "蒙版",
+        "风光"
+      ],
+      "title": "摄影后期教程｜复古油画色彩，改变照片的氛围意境"
+    },
+    {
+      "id": "video-note:narration-notes:BV1v7411r7a2-145995849",
+      "kind": "video-note",
+      "path": "video-notes/BV1v7411r7a2-145995849.md",
+      "tags": [
+        "reference_proposed",
+        "降噪",
+        "风光"
+      ],
+      "title": "【詹姆斯摄影后期教程第⑤期】最简单的星空堆栈降噪方法 -- Kandao RAW+ 4K"
+    },
+    {
+      "id": "video-note:narration-notes:BV1vG4y1P77o-1010233060",
+      "kind": "video-note",
+      "path": "video-notes/BV1vG4y1P77o-1010233060.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "构图",
+        "色彩"
+      ],
+      "title": "金光穿孔与景深合成技术"
+    },
+    {
+      "id": "video-note:narration-notes:BV1vG4y1a7Hr-809246999",
+      "kind": "video-note",
+      "path": "video-notes/BV1vG4y1a7Hr-809246999.md",
+      "tags": [
+        "reference_proposed",
+        "构图",
+        "色彩",
+        "蒙版",
+        "风光"
+      ],
+      "title": "《风光摄影后期》梦幻雪境后期全流程 —— 全raw流程处理（ACR/LR）"
+    },
+    {
+      "id": "video-note:narration-notes:BV1vM411Y7Em-1077730730",
+      "kind": "video-note",
+      "path": "video-notes/BV1vM411Y7Em-1077730730.md",
+      "tags": [
+        "reference_proposed",
+        "色彩"
+      ],
+      "title": "摄影爱好者的PS入门系列教程 | 01期：简要介绍"
+    },
+    {
+      "id": "video-note:narration-notes:BV1vS4y1Q75G-465638276",
+      "kind": "video-note",
+      "path": "video-notes/BV1vS4y1Q75G-465638276.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "色彩"
+      ],
+      "title": "两分钟街拍快修"
+    },
+    {
+      "id": "video-note:narration-notes:BV1vV411p764-378955058",
+      "kind": "video-note",
+      "path": "video-notes/BV1vV411p764-378955058.md",
+      "tags": [
+        "reference_proposed"
+      ],
+      "title": "【福利】Capture One最终章！【HSINYALIN】"
+    },
+    {
+      "id": "video-note:narration-notes:BV1voUzBtEnz-34298987509",
+      "kind": "video-note",
+      "path": "video-notes/BV1voUzBtEnz-34298987509.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "曲线",
+        "色彩",
+        "蒙版"
+      ],
+      "title": "治愈暖色人像4大修图技巧讲解：调色、磨皮、液化、强化光感 | 附国产正版辉光插件免费分享"
+    },
+    {
+      "id": "video-note:narration-notes:BV1vs411E7CE-46877620",
+      "kind": "video-note",
+      "path": "video-notes/BV1vs411E7CE-46877620.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "曲线",
+        "构图",
+        "色彩",
+        "蒙版"
+      ],
+      "title": "【不瞌睡修图课】PS修出暗调古风照片"
+    },
+    {
+      "id": "video-note:narration-notes:BV1vvQiBdE5g-37491247691",
+      "kind": "video-note",
+      "path": "video-notes/BV1vvQiBdE5g-37491247691.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "构图",
+        "色彩",
+        "蒙版",
+        "风光"
+      ],
+      "title": "全流程前后期思路｜前期认真拍，后期更轻松"
+    },
+    {
+      "id": "video-note:narration-notes:BV1w5411L7Vh-248631018",
+      "kind": "video-note",
+      "path": "video-notes/BV1w5411L7Vh-248631018.md",
+      "tags": [
+        "reference_proposed",
+        "色彩",
+        "蒙版",
+        "风光"
+      ],
+      "title": "如此添加星芒，让照片焕然重生！独家技法！"
+    },
+    {
+      "id": "video-note:narration-notes:BV1w7411F7Za-155658450",
+      "kind": "video-note",
+      "path": "video-notes/BV1w7411F7Za-155658450.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "曲线",
+        "蒙版"
+      ],
+      "title": "{人物后期}DB基础练习--素描效果  灵动刘杨修图培训"
+    },
+    {
+      "id": "video-note:narration-notes:BV1wB4y1P778-311041249",
+      "kind": "video-note",
+      "path": "video-notes/BV1wB4y1P778-311041249.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "曲线",
+        "构图",
+        "色彩",
+        "蒙版"
+      ],
+      "title": "后期修图调色思路"
+    },
+    {
+      "id": "video-note:narration-notes:BV1wZ4y1L7yK-243827921",
+      "kind": "video-note",
+      "path": "video-notes/BV1wZ4y1L7yK-243827921.md",
+      "tags": [
+        "reference_proposed",
+        "构图",
+        "风光"
+      ],
+      "title": "【曝光合成+全景接片+构图修正】风光大片组合拳"
+    },
+    {
+      "id": "video-note:narration-notes:BV1wZ4y1R77S-460379505",
+      "kind": "video-note",
+      "path": "video-notes/BV1wZ4y1R77S-460379505.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "蒙版"
+      ],
+      "title": "四分钟教你统一颜色 有手就会系列"
+    },
+    {
+      "id": "video-note:narration-notes:BV1wa4y1E7wf-231869204",
+      "kind": "video-note",
+      "path": "video-notes/BV1wa4y1E7wf-231869204.md",
+      "tags": [
+        "reference_proposed",
+        "构图",
+        "蒙版",
+        "风光"
+      ],
+      "title": "雪山下的鲁冰花，风光摄影必备技能“景深合成”现场教学"
+    },
+    {
+      "id": "video-note:narration-notes:BV1wz4y1g7VJ-1241744218",
+      "kind": "video-note",
+      "path": "video-notes/BV1wz4y1g7VJ-1241744218.md",
+      "tags": [
+        "reference_proposed",
+        "夜景",
+        "曲线",
+        "构图",
+        "色彩",
+        "风光"
+      ],
+      "title": "PS中隐藏的调色神器！深入浅出讲解三原色工具！"
+    },
+    {
+      "id": "video-note:narration-notes:BV1x3411x73w-463240575",
+      "kind": "video-note",
+      "path": "video-notes/BV1x3411x73w-463240575.md",
+      "tags": [
+        "reference_proposed",
+        "色彩",
+        "蒙版",
+        "降噪",
+        "风光"
+      ],
+      "title": "阴雨天修片妙招【后期全流程】"
+    },
+    {
+      "id": "video-note:narration-notes:BV1xA41177NZ-246150971",
+      "kind": "video-note",
+      "path": "video-notes/BV1xA41177NZ-246150971.md",
+      "tags": [
+        "reference_proposed",
+        "构图",
+        "风光"
+      ],
+      "title": "① 风光摄影系列教程｜第一课，风光摄影全流程"
+    },
+    {
+      "id": "video-note:narration-notes:BV1xZ4y1R7nh-504447460",
+      "kind": "video-note",
+      "path": "video-notes/BV1xZ4y1R7nh-504447460.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "夜景",
+        "曲线",
+        "色彩",
+        "蒙版"
+      ],
+      "title": "【枯燥！】15 2022年第一场烟火人像の调色教学"
+    },
+    {
+      "id": "video-note:narration-notes:BV1xs411w7hn-48814591",
+      "kind": "video-note",
+      "path": "video-notes/BV1xs411w7hn-48814591.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "曲线",
+        "色彩"
+      ],
+      "title": "【不瞌睡修图课】PS粗暴试验复古港风调色"
+    },
+    {
+      "id": "video-note:narration-notes:BV1yA4y1d7PD-733898813",
+      "kind": "video-note",
+      "path": "video-notes/BV1yA4y1d7PD-733898813.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "曲线",
+        "色彩"
+      ],
+      "title": "简单4步，让肤色通透明亮！"
+    },
+    {
+      "id": "video-note:narration-notes:BV1yDzpYyECr-27111194998",
+      "kind": "video-note",
+      "path": "video-notes/BV1yDzpYyECr-27111194998.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "夜景",
+        "色彩",
+        "蒙版"
+      ],
+      "title": "夜景全景的地景打光 你其实可以后期做出来"
+    },
+    {
+      "id": "video-note:narration-notes:BV1yF41137QG-569807679",
+      "kind": "video-note",
+      "path": "video-notes/BV1yF41137QG-569807679.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "色彩"
+      ],
+      "title": "国风速修 四分钟出一张武侠片"
+    },
+    {
+      "id": "video-note:narration-notes:BV1yJ4m1u7j9-1585218009",
+      "kind": "video-note",
+      "path": "video-notes/BV1yJ4m1u7j9-1585218009.md",
+      "tags": [
+        "reference_proposed",
+        "色彩",
+        "风光"
+      ],
+      "title": "【短平快】实用PS后期技巧｜三种存储JPEG格式方法"
+    },
+    {
+      "id": "video-note:narration-notes:BV1yP4y1h7n9-412636076",
+      "kind": "video-note",
+      "path": "video-notes/BV1yP4y1h7n9-412636076.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "色彩"
+      ],
+      "title": "成为调色写轮眼——根据参考图调出想要颜色"
+    },
+    {
+      "id": "video-note:narration-notes:BV1yU421o7Jh-1429096777",
+      "kind": "video-note",
+      "path": "video-notes/BV1yU421o7Jh-1429096777.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "构图",
+        "蒙版",
+        "风光"
+      ],
+      "title": "风光摄影全部构图调整技巧合集 一个视频教会你！（可为or不可为 大量案例演示）"
+    },
+    {
+      "id": "video-note:narration-notes:BV1yZ4y1e7E4-762864168",
+      "kind": "video-note",
+      "path": "video-notes/BV1yZ4y1e7E4-762864168.md",
+      "tags": [
+        "reference_proposed"
+      ],
+      "title": "平板上最专业的照片管理软件？Capture One for iPad 来了！但又好像没有来？"
+    },
+    {
+      "id": "video-note:narration-notes:BV1yeL46ZERn-38496830781",
+      "kind": "video-note",
+      "path": "video-notes/BV1yeL46ZERn-38496830781.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "色彩"
+      ],
+      "title": "灰，就是照片廉价感的来源（进阶版） | 曲线分区去灰与实战案例讲解"
+    },
+    {
+      "id": "video-note:narration-notes:BV1yr4y1V7Z8-744007859",
+      "kind": "video-note",
+      "path": "video-notes/BV1yr4y1V7Z8-744007859.md",
+      "tags": [
+        "reference_proposed",
+        "色彩",
+        "风光"
+      ],
+      "title": "PS中隐藏的调色之王 - 校准面板三原色工具！"
+    },
+    {
+      "id": "video-note:narration-notes:BV1ys411P75E-47636113",
+      "kind": "video-note",
+      "path": "video-notes/BV1ys411P75E-47636113.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "曲线",
+        "色彩",
+        "蒙版"
+      ],
+      "title": "【不瞌睡修图课】PS一分钟调出阴郁胶片蓝调"
+    },
+    {
+      "id": "video-note:narration-notes:BV1z5411Z7L9-499142868",
+      "kind": "video-note",
+      "path": "video-notes/BV1z5411Z7L9-499142868.md",
+      "tags": [
+        "reference_proposed",
+        "构图",
+        "降噪",
+        "风光"
+      ],
+      "title": "【唐僧】超长曝光降噪的秘密 & 21年的摄影总结，技巧设备问答-春节特辑"
+    },
+    {
+      "id": "video-note:narration-notes:BV1zK411K7tz-235593711",
+      "kind": "video-note",
+      "path": "video-notes/BV1zK411K7tz-235593711.md",
+      "tags": [
+        "reference_proposed",
+        "色彩",
+        "蒙版"
+      ],
+      "title": "“质感都市”风格城市大片制作揭秘，冷色调明度建筑如何后期？"
+    },
+    {
+      "id": "video-note:narration-notes:BV1zK4y1t7V6-197120086",
+      "kind": "video-note",
+      "path": "video-notes/BV1zK4y1t7V6-197120086.md",
+      "tags": [
+        "reference_proposed",
+        "人像",
+        "构图",
+        "色彩",
+        "风光"
+      ],
+      "title": "【詹姆斯摄影直播课】二次构图还能这样玩儿的后期直播 20200530 无剪辑回放"
+    },
+    {
+      "id": "video-note:narration-notes:BV1zV411a7az-260220260",
+      "kind": "video-note",
+      "path": "video-notes/BV1zV411a7az-260220260.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "色彩",
+        "蒙版",
+        "风光"
+      ],
+      "title": "塑造景物立体感的三种方法，风光摄影利器！"
+    },
+    {
+      "id": "video-note:narration-notes:BV1zZ4y1H71U-204552034",
+      "kind": "video-note",
+      "path": "video-notes/BV1zZ4y1H71U-204552034.md",
+      "tags": [
+        "reference_proposed",
+        "夜景",
+        "曲线",
+        "色彩",
+        "蒙版",
+        "降噪",
+        "风光"
+      ],
+      "title": "风光摄影PS后期软件Nik Collection 3 核心功能演示"
+    },
+    {
+      "id": "video-note:narration-notes:BV1za4y1Z7Gh-1342401856",
+      "kind": "video-note",
+      "path": "video-notes/BV1za4y1Z7Gh-1342401856.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "色彩"
+      ],
+      "title": "揭秘摄影师旅行工作流 | SW272U体验分享"
+    },
+    {
+      "id": "video-note:narration-notes:BV1zb4y1S7fJ-394920350",
+      "kind": "video-note",
+      "path": "video-notes/BV1zb4y1S7fJ-394920350.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "色彩",
+        "蒙版"
+      ],
+      "title": "照片逼格的提升利器"
+    },
+    {
+      "id": "video-note:narration-notes:BV1ze4y1x7PL-885896295",
+      "kind": "video-note",
+      "path": "video-notes/BV1ze4y1x7PL-885896295.md",
+      "tags": [
+        "reference_proposed",
+        "夜景",
+        "曲线",
+        "构图",
+        "色彩",
+        "蒙版",
+        "风光"
+      ],
+      "title": "色彩后期真的靠感觉吗？核心方法绝对有法可依！"
+    },
+    {
+      "id": "video-note:narration-notes:BV1zm4y1S78s-493225090",
+      "kind": "video-note",
+      "path": "video-notes/BV1zm4y1S78s-493225090.md",
+      "tags": [
+        "reference_proposed",
+        "曲线",
+        "色彩"
+      ],
+      "title": "小清新图的两种修法"
+    }
+  ],
+  "schema": "darkroom-knowledge-index/1",
+  "version": "0.2.0"
+}

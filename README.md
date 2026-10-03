@@ -1,18 +1,31 @@
 # Darkroom Finish
 
-用自然语言决定一张照片要怎样表达，让 AI 规划调整，由本机 Photoshop / Camera Raw
-执行并保留可核验的参数与前后对照。照片和工作记录默认留在自己的电脑。
+从内置的摄影师研究、作品目标和方法知识出发，先判断这张照片要表达什么、适合借鉴什么，
+再由本机 Photoshop / Camera Raw 执行，回到真实画面检查结果。照片和工作记录默认留在自己的电脑。
 
-**0.1.0-alpha.1：实验版。** 面向 macOS 上的单张 RAW，全局影调、颜色与曲线。
+**0.2.0：知识驱动版。** 替代早期纯执行 Alpha，知识随整个 Skill 一起安装，不另依赖作者私有库。
+面向 macOS 上的单张 RAW，知识研究与试修能力仍有明确边界。
 不保证专业成片、所有相机格式或跨机相同像素。真实第二台电脑验收尚待完成。
 此仓库不包含作者照片、私人配方、账户信息、运行历史或第三方摄影素材。
 
 ## 摄影师知识库是否包含在内
 
-本版公开的是独立修图 Skill 和执行内核，**不是原私人研究系统的完整复制**。
-历史摄影师档案、具体作品目标库、教程笔记、参考图及个人试修配方未随包发布；
-保留的是重新编写的通用画面判断与操作规则。因此不能宣传为“内置全部摄影师风格库”
-或保证复现私人项目的全部效果。处理范围与后续知识包原则见 [知识库边界](docs/KNOWLEDGE-SCOPE.md)。
+包含可分发的研究文本、主作品目标库、方法与来源索引。档案深度不一，部分仍只是待核查线索。
+真实数量与逐类处置在
+[`knowledge/manifest.json`](knowledge/manifest.json)，完整范围见 [知识库边界](docs/KNOWLEDGE-SCOPE.md)。
+Markdown 保留研究解释，JSON 连接题材、作品关系、适配条件与操作方法；它们不是预设。
+第三方作品仅保留出处与观察，不分发图片；私人照片、配方、偏好与用户反馈不进入包。
+
+```text
+SKILL.md：观察 → 检索 → 适配 → 规划 → 执行 → 看图纠偏
+knowledge/：档案与方法 Markdown + 方向/索引/版本 JSON
+runtime/：知识计划校验 + 技术卡编译 + 本机 Adobe 执行
+私人工作区：库快照 + 本人照片副本 + 计划/结果/评价（不提交 Git）
+```
+
+知识检索无需 Adobe、无需网络；实际作品查看可能需要网络，显影需要本机 Adobe。
+编译器要求把所用知识、照片身份、关系取舍和实际操作一起冻结，防止只“提到摄影师”而没有依据。
+文件齐全和计划有效不保证修图审美达标，也不保证复现私人项目的全部效果。
 
 ## 需要什么
 
@@ -32,6 +45,8 @@ Codex 可将整个文件夹放进项目的 `.agents/skills/darkroom-finish/`；�
 
 ```bash
 python3 -B scripts/darkroom.py doctor
+python3 -B scripts/knowledge.py verify
+python3 -B scripts/knowledge.py search "光线"
 python3 -B -m unittest discover -s tests -v
 ```
 
@@ -47,8 +62,8 @@ python3 -B scripts/darkroom.py doctor --photoshop-app "/Applications/Adobe Photo
 
 可以对助手说：
 
-> 用 darkroom-finish 帮我修这张 RAW。保持现场光线和自然颜色，先给我一版，
-> 告诉我做了什么和仍有什么问题。只访问我给你的这个文件。
+> 用 darkroom-finish 帮我修这张 RAW。先看图，再从内置知识库选择适合的方向和方法，
+> 告诉我借鉴了什么、哪些是针对本图的判断。只访问我给你的这个文件。
 
 助手会执行 [本机操作](references/local-workflow.md)。新建的工作区要放在安装目录之外，
 也不要放到照片原目录中。工作区包含私人照片、参数和授权文字，不要提交到 Git。
@@ -61,12 +76,14 @@ python3 -B scripts/darkroom.py doctor --photoshop-app "/Applications/Adobe Photo
 ## 当前限制
 
 便捷入口接受 NEF/DNG/CR2/CR3/ARW/RAF/ORF/RW2/PEF 扩展名；实际解码能力依赖
-Camera Raw 的相机支持，不能把扩展名准入当作全部型号测试通过。普通 JPEG 输入不在首版范围。
-基础编译器的手工蒙版和有限原生裁剪留作进阶接口，不承诺自动人像精修。
+Camera Raw 的相机支持，不能把扩展名准入当作全部型号测试通过。普通 JPEG 输入不在本版范围。
+显式手工蒙版和有限 DNG 原生裁剪可通过计划接口使用，不承诺自动人像精修。
+库中未接入执行器的技术只作为研究，不用相似滑块冒充完整实现；照片不适配所选方向时停止并说明。
 初始与修正总计默认最多三次计划；缺失输出、原片变化或篡改均停止，不自动无限重试。
 
 `rendered` 不代表用户满意。效果、安装可用性和参数实际生效分别检查。
 这里不会扫描相册、连接私人网站、自动外发照片或调用其他供应商模型。
 
 采用 [MIT 许可证](LICENSE)，见 [验证状态](docs/RELEASE-STATUS.md)。
+MIT 适用于本仓库原创代码与研究表达，不授予第三方作品、教程或 Adobe 软件的权利。
 请勿把本地工作区或真实照片附在公开 issue 中。

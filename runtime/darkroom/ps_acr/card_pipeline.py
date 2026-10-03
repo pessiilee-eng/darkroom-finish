@@ -869,7 +869,7 @@ def main() -> int:
     if not args.review_ticket and not args.local_trial_plan:
         raise SystemExit("REFUSED: --review-ticket or --local-trial-plan is required before reading photos or writing renders")
     if args.review_ticket or args.base_master_manifest or args.review_crop_plan:
-        raise SystemExit('REFUSED: public alpha supports local RAW trials and native ACR geometry only')
+        raise SystemExit('REFUSED: public runtime supports local RAW trials and native ACR geometry only')
     if args.review_ticket:
         _review_ticket_call('check-render', {'ticket': args.review_ticket, 'argv': sys.argv[1:]})
         _REVIEW_EXECUTION_TICKET = args.review_ticket
@@ -912,7 +912,7 @@ def _render(args) -> int:
     if args.base_master_manifest:
         return run_from_base_master(args, theme_manifest, cards, mask_graph, postprocess_recipe)
     if postprocess_recipe:
-        raise SystemExit('REFUSED: raster recipes are not included in public alpha')
+        raise SystemExit('REFUSED: raster recipes are not included in public runtime')
     if postprocess_recipe and args.preview_only:
         raise SystemExit("REFUSED: local tone balancing requires full TIFF and replay")
 

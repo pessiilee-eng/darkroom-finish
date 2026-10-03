@@ -14,6 +14,12 @@ or image-generation model assets in this package.
 
 The compiler, schema interpreter, geometry and source-protection code are adapted
 from the author's local darkroom project. Private evidence has been removed;
-registry entries do not inherit historical probe or review approval. Photography
-guidance is expressed as general decision criteria, not claimed photographer
-recipes. Public Adobe documentation links describe platform capabilities only.
+registry entries do not inherit historical probe or review approval.
+
+The bundled knowledge contains project-authored research expression, historical
+notes and candidate method analysis with attribution and public source links.
+It does not license, redistribute or claim ownership of third-party artworks,
+videos, courses, verbatim transcripts, presets or source webpages. Artist names
+identify research subjects, not endorsements. Historical verification labels do
+not grant new execution or quality certification. Public Adobe documentation
+links describe platform capabilities only; empirical portability is separate.

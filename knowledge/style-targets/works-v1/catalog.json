@@ -1,0 +1,4414 @@
+{
+  "evidence_boundary": "Public source links and original research observations only. No bundled images, private viewing/review records, photographer recipe attribution, or validated transfer/execution claims.",
+  "historical_research": true,
+  "packages": [
+    {
+      "author": "Saul Leiter",
+      "core_relations": [
+        {
+          "capture_dependency": "需要源图已有近远遮挡/玻璃/反射或等效可见空间分层；不能后期造帘、造水痕。",
+          "description": "近层遮挡与远处可见片段共同构成观看，主体在层间被发现。",
+          "failure_signal": "只截主体或全局锐化，使前后变成同一平面。",
+          "id": "layers",
+          "postprocess_intent": "选择保留这段观看关系的常规比例裁框；依据层间位置调局部反差，允许大块非主体区域有功能。",
+          "work_ids": [
+            "L01",
+            "L02"
+          ]
+        },
+        {
+          "capture_dependency": "原图须有可区分的颜色载体；不要求必须红帘/黄车。",
+          "description": "少数较有色的色面与较中性的宽区域相衬，颜色跟随物体和层次，而不是统一色罩。",
+          "failure_signal": "所有材料一起黄/灰；强调色面被抹掉，或每个色块同样抢眼。",
+          "id": "color-areas",
+          "postprocess_intent": "先保持不同材料/光源身份，再控制各色面积和密度；对同色但不同角色区域不能一刀切去饱和。",
+          "work_ids": [
+            "L01",
+            "L02"
+          ]
+        },
+        {
+          "capture_dependency": "动作与位置属于拍摄事实；没有的动作不能补。",
+          "description": "人物的动作/轮廓与环境距离同时可读，不依赖把脸或人变成最大最亮区域。",
+          "failure_signal": "人物虽然变大但失去所在空间，或完全消失且观看无法成立。",
+          "id": "human-distance",
+          "postprocess_intent": "以整幅尺度核验人物支点，再局部调整使其适度可读；裁剪保留表达需要的通道和空间。",
+          "work_ids": [
+            "L01",
+            "L02"
+          ]
+        }
+      ],
+      "distinctions": "与夜灯包相比，主导关系是隔层发现人与少数色面；亮光源不是必要条件。L03仅是同作者可保留丰富绿与信息的边界，不拿它证明L01/L02的玻璃条件。",
+      "fit": {
+        "incompatible": [
+          "必须清晰交代每个人面部、无遮挡纪实信息的任务。",
+          "没有近远层却希望生成玻璃/虚焦/雨雪效果。",
+          "只因为日本、冬季、胶片标签就选此包。"
+        ],
+        "required": [
+          "有实际可辨的前后层或隔物观看条件。",
+          "希望表达观看距离、偶遇或含蓄街头关系，接受主体不占主导面积。"
+        ]
+      },
+      "id": "leiter-layered-street",
+      "label": "遮挡中的街头层次与色面",
+      "methods": [
+        {
+          "evidence_type": "project_hypothesis",
+          "id": "frame",
+          "limitation": "裁剪只选择已有信息，不能补拍摄视点或改变对象位置。",
+          "operation_ids": [],
+          "relation_ids": [
+            "layers",
+            "human-distance"
+          ],
+          "source_refs": [],
+          "status": "reference_proposed",
+          "strategy": "composition_decision"
+        },
+        {
+          "evidence_type": "project_hypothesis",
+          "id": "separate-color",
+          "limitation": "本项目候选能力；先判断哪些颜色需改，非固定全部使用。手工蒙版须验边界；不是作者真实参数。",
+          "operation_ids": [
+            "acr.temperature",
+            "acr.tint",
+            "acr.saturation_adjustment_orange",
+            "acr.saturation_adjustment_yellow",
+            "acr.saturation_adjustment_green",
+            "acr.brush_mask"
+          ],
+          "relation_ids": [
+            "color-areas"
+          ],
+          "source_refs": [
+            "https://helpx.adobe.com/uk/camera-raw/desktop/using/make-color-tonal-adjustments-camera.html",
+            "https://helpx.adobe.com/camera-raw/desktop/edit-and-enhance-images/masking-and-local-adjustments/masking.html"
+          ],
+          "status": "reference_proposed"
+        },
+        {
+          "evidence_type": "project_hypothesis",
+          "id": "layer-tone",
+          "limitation": "曲线不可重造景深；不给远景和近物强行同等清晰度。",
+          "operation_ids": [
+            "acr.point_curve_rgb",
+            "acr.shadows2012",
+            "acr.brush_mask"
+          ],
+          "relation_ids": [
+            "layers",
+            "human-distance"
+          ],
+          "source_refs": [
+            "https://helpx.adobe.com/uk/camera-raw/desktop/using/make-color-tonal-adjustments-camera.html",
+            "https://helpx.adobe.com/camera-raw/desktop/edit-and-enhance-images/masking-and-local-adjustments/masking.html"
+          ],
+          "status": "reference_proposed"
+        }
+      ],
+      "source_limits": "官方展示版非原底片/原RAW；细节、颗粒与颜色受网页版本影响，不推定真实后期操作。",
+      "status": "reference_proposed",
+      "subject_ids": [
+        "street",
+        "documentary"
+      ],
+      "tag_ids": [
+        "layered-view",
+        "restrained-color"
+      ],
+      "works": [
+        {
+          "id": "L01",
+          "image_url": "https://images.squarespace-cdn.com/content/v1/602d38553d9bab5833f90232/37c2710e-6870-4c2a-842b-dd2980c81aaf/Red+Curtain_1956.jpg?format=1500w",
+          "observation": "前景深酒红帘布及横杆占据很大画幅，失焦的近层切开灰白街面；上部行人与下部局部行人通过两个开口被看见。暖色集中在近层，远处偏灰冷，人物不因较小而失去作用。",
+          "resolution_limit": "public_display_reference_only; no native detail or calibrated print evidence bundled",
+          "rights": "publicly viewable copyrighted work; local study only; redistribution not granted",
+          "role": "primary",
+          "source_url": "https://www.saulleiterfoundation.org/color",
+          "title": "Red Curtain, 1956"
+        },
+        {
+          "id": "L02",
+          "image_url": "https://images.squarespace-cdn.com/content/v1/602d38553d9bab5833f90232/6de4d634-e06b-4c8a-8a9c-0e9bb7a2b390/Snow_1970.jpg?format=1500w",
+          "observation": "带水痕与反写字的玻璃位于最前层，灰白雪街上深色行人居右；其后黄色车辆形成独立色面。清楚的水痕与较软的街景区别观看距离；黄色没有铺满整幅。",
+          "resolution_limit": "public_display_reference_only; no native detail or calibrated print evidence bundled",
+          "rights": "publicly viewable copyrighted work; local study only; redistribution not granted",
+          "role": "primary",
+          "source_url": "https://www.saulleiterfoundation.org/color",
+          "title": "Snow, 1970"
+        },
+        {
+          "id": "L03",
+          "image_url": "https://images.squarespace-cdn.com/content/v1/602d38553d9bab5833f90232/e404c463-8c43-41ab-9b00-8f3f144f3ac2/San+Carlo+Restaurant_1952-crop.jpg?format=1500w",
+          "observation": "绿色餐馆外墙、红色交通灯、小块暖色橱窗文字、前景两名行人与密集落雪同时成立。画面较L01/L02更具可辨现场信息；它说明作者不是一律抹绿、抹细节，也不作为所有帧必须有玻璃的证明。",
+          "resolution_limit": "public_display_reference_only; no native detail or calibrated print evidence bundled",
+          "rights": "publicly viewable copyrighted work; local study only; redistribution not granted",
+          "role": "boundary",
+          "source_url": "https://www.saulleiterfoundation.org/color",
+          "title": "San Carlo Restaurant, 1952"
+        }
+      ]
+    },
+    {
+      "author": "Gueorgui Pinkhassov",
+      "core_relations": [
+        {
+          "capture_dependency": "需要源中真实光源及受光/反光材料；已经完全剪切的材料颜色未必可恢复。",
+          "description": "高亮光源、有颜色的受光面和深暗区域形成明确等级，亮处仍有发光感。",
+          "failure_signal": "整体压暗使亮灯像哑光色块，或抬黑过度使夜晚发灰。",
+          "id": "light-hierarchy",
+          "postprocess_intent": "分别安排白端、亮部、中间调与黑端；保留可接受的灯芯白亮，同时使邻近受光材料与暗区区分。",
+          "work_ids": [
+            "P01",
+            "P03"
+          ]
+        },
+        {
+          "capture_dependency": "反光方向、轨道/波浪/立面与透视在拍摄中存在；不要求每图有水或轨道。",
+          "description": "光及其受光痕迹沿画面已有路径连接近处与深处，暗区分隔并衬托这条联系。",
+          "failure_signal": "只剩孤立灯牌、背景一片抹黑，或裁掉连接光与环境的路径。",
+          "id": "light-space",
+          "postprocess_intent": "保护承担连接的受光路径；按实际光向有限局部明暗，构图不只围绕最亮物截取。",
+          "work_ids": [
+            "P01",
+            "P03"
+          ]
+        },
+        {
+          "capture_dependency": "取决于现场实际光谱与材质；P01强蓝青、P03强暖，不能强制每张橙青两半。",
+          "description": "不同颜色由具体光源和受光材质承载，色彩饱满处有位置，不能把暖色全部去掉。",
+          "failure_signal": "HSL全局压橙黄把灯周围的色光联系抹去；或强加蓝色给无蓝光的环境。",
+          "id": "color-carriers",
+          "postprocess_intent": "区分灯芯、暖照明材料、环境色再校色；保留选定主次和亮度过渡，避免黄色材料变灰白。",
+          "work_ids": [
+            "P01",
+            "P03"
+          ]
+        }
+      ],
+      "distinctions": "相较Leiter包，重点在光源/受光/暗空间的实际联系，既可冷色也可暖色。P02是暖色主导的边界参照，不自动作为其他照片的色彩目标；日本冬夜与昭和不是本组作品的事实标签。",
+      "fit": {
+        "incompatible": [
+          "期望高明度、均匀柔光的生活人像。",
+          "光源或受光路径完全不存在，需生成才像参照。",
+          "必须还原白天或清晰交代所有暗处细节。"
+        ],
+        "required": [
+          "真实夜灯与有信息的受光/反射面。",
+          "希望表达夜间光色和空间，允许部分环境及人物在暗处。"
+        ]
+      },
+      "id": "pinkhassov-night-light",
+      "label": "夜灯、受光面与深暗空间",
+      "methods": [
+        {
+          "evidence_type": "project_hypothesis",
+          "id": "range-tone",
+          "limitation": "这些范围相互叠加；选择依据源图，不能把“深夜”翻译成统一降低曝光。",
+          "operation_ids": [
+            "acr.whites2012",
+            "acr.highlights2012",
+            "acr.blacks2012",
+            "acr.shadows2012",
+            "acr.point_curve_rgb"
+          ],
+          "relation_ids": [
+            "light-hierarchy"
+          ],
+          "source_refs": [
+            "https://helpx.adobe.com/uk/camera-raw/desktop/using/make-color-tonal-adjustments-camera.html"
+          ],
+          "status": "reference_proposed"
+        },
+        {
+          "evidence_type": "project_hypothesis",
+          "id": "local-light",
+          "limitation": "只加强真实光向；手工局部需检查边缘与颜色副作用，不添加光源或晕光。",
+          "operation_ids": [
+            "acr.brush_mask",
+            "acr.linear_gradient_mask",
+            "local.spatial_light"
+          ],
+          "relation_ids": [
+            "light-space",
+            "color-carriers"
+          ],
+          "source_refs": [
+            "https://helpx.adobe.com/camera-raw/desktop/edit-and-enhance-images/masking-and-local-adjustments/masking.html"
+          ],
+          "status": "reference_proposed"
+        },
+        {
+          "evidence_type": "project_hypothesis",
+          "id": "material-color",
+          "limitation": "先看灯芯与材料的不同需要，再选择HSL或局部；并非要求把所有列出控制都改动。",
+          "operation_ids": [
+            "acr.temperature",
+            "acr.tint",
+            "acr.saturation_adjustment_orange",
+            "acr.saturation_adjustment_yellow",
+            "acr.saturation_adjustment_blue",
+            "acr.brush_mask"
+          ],
+          "relation_ids": [
+            "color-carriers"
+          ],
+          "source_refs": [
+            "https://helpx.adobe.com/uk/camera-raw/desktop/using/make-color-tonal-adjustments-camera.html",
+            "https://helpx.adobe.com/camera-raw/desktop/edit-and-enhance-images/masking-and-local-adjustments/masking.html"
+          ],
+          "status": "reference_proposed"
+        },
+        {
+          "evidence_type": "project_hypothesis",
+          "id": "frame",
+          "limitation": "任何标准裁框均服从所选受光路径，无固定居中或强制宽幅。",
+          "operation_ids": [],
+          "relation_ids": [
+            "light-space"
+          ],
+          "source_refs": [],
+          "status": "reference_proposed",
+          "strategy": "composition_decision"
+        }
+      ],
+      "source_limits": "官方Blackpool 2018网页公开预览；不由作品外观归因作者的曲线/饱和度参数。P02飞鸟时机/运动不可后期复制。",
+      "status": "reference_proposed",
+      "subject_ids": [
+        "street",
+        "city-architecture",
+        "landscape-nature"
+      ],
+      "tag_ids": [
+        "night-light",
+        "dense-color"
+      ],
+      "works": [
+        {
+          "id": "P01",
+          "image_url": "https://content.magnumphotos.com/wp-content/uploads/2018/10/cortex/nn11563365-teaser-story-big.jpg",
+          "observation": "上部摩天轮与横向建筑灯带极亮，下部蓝青绿反射沿湿沙/波浪延伸，之间及边缘保留大块深黑。亮点、彩色反射和暗层分工明确；水的可见形态来自受光纹理而不是全局提亮。",
+          "resolution_limit": "public_display_reference_only; no native detail or calibrated print evidence bundled",
+          "rights": "publicly viewable copyrighted work; local study only; redistribution not granted",
+          "role": "primary",
+          "source_url": "https://www.magnumphotos.com/arts-culture/travel/tripping-the-light-fantastic-gueorgui-pinkhassov-photographs-blackpool-illuminations/",
+          "title": "Blackpool Illuminations, October 2018; asset NN11563365"
+        },
+        {
+          "id": "P02",
+          "image_url": "https://content.magnumphotos.com/wp-content/uploads/2018/10/cortex/nn11563355-teaser-story-big.jpg",
+          "observation": "中央路灯白亮核心外是大面积橙红夜空与受光飞鸟，紫红高塔偏左，楼体近景暖亮。这是强暖主导的边界参照，证明此系列并非每帧固定冷暖二分；也说明不能仅用摄影师名字选定用户喜欢的色彩。",
+          "resolution_limit": "public_display_reference_only; no native detail or calibrated print evidence bundled",
+          "rights": "publicly viewable copyrighted work; local study only; redistribution not granted",
+          "role": "boundary",
+          "source_url": "https://www.magnumphotos.com/arts-culture/travel/tripping-the-light-fantastic-gueorgui-pinkhassov-photographs-blackpool-illuminations/",
+          "title": "Blackpool Tower and illuminations, October 2018; asset NN11563355"
+        },
+        {
+          "id": "P03",
+          "image_url": "https://content.magnumphotos.com/wp-content/uploads/2018/10/cortex/nn11563347-teaser-story-big.jpg",
+          "observation": "灯串与轨道向街道深处汇聚，黄白电车与迎面车灯很亮，右侧行人仍在暗处；蓝白灯点只占上沿一小块。地面暗红棕与几处高光相接，夜色并不需要把全部人物和黑色打开。",
+          "resolution_limit": "public_display_reference_only; no native detail or calibrated print evidence bundled",
+          "rights": "publicly viewable copyrighted work; local study only; redistribution not granted",
+          "role": "primary",
+          "source_url": "https://www.magnumphotos.com/arts-culture/travel/tripping-the-light-fantastic-gueorgui-pinkhassov-photographs-blackpool-illuminations/",
+          "title": "Blackpool Illuminations, October 2018; asset NN11563347"
+        }
+      ]
+    },
+    {
+      "author": "Michael Kenna",
+      "core_relations": [
+        {
+          "capture_dependency": "源中已有可分开的轮廓、间隔及足够简洁的真实背景；不以删物制造。",
+          "description": "可辨线形与空处、间隔共同构成秩序；既可由少数主要形体成立，也可由大量重复单元及其变化成立，形状比颜色承担更多表达。",
+          "failure_signal": "只剩粗黑剪影、断枝或全白空洞；颜色本来承担关键内容却被去掉。",
+          "id": "line-and-interval",
+          "postprocess_intent": "选择常规裁框保护线形节奏与必要间隔，提出单色转换及明暗组织的候选。",
+          "work_ids": [
+            "K1",
+            "K2",
+            "K3"
+          ]
+        },
+        {
+          "capture_dependency": "源图须已有可分辨的近远层次；只有平面重复图案时不满足本包全部核心，可记录另需线形节奏分支。雪、雾、水不是必备物件。",
+          "description": "近处形体与远处空间通过明暗梯度及边缘差别分开，空处仍有层次；此关系以K1/K2为参照，K3只补充重复线形的间隔秩序，不承担纵深标准。",
+          "failure_signal": "近远一起拉平，枝间空隙消失，空处断带或局部光圈。",
+          "id": "tonal-distance",
+          "postprocess_intent": "分别判断黑白端、中间调与必要手工局部；不一律提成高调或加四角暗。",
+          "work_ids": [
+            "K1",
+            "K2"
+          ]
+        }
+      ],
+      "distinctions": "相对 LND-02，让颜色退出、由线与间隔承载空间，不是靠区域物色组织海岸日常。",
+      "failure_examples": [
+        "天空与雪被拉成同一白洞、树线加粗成实黑块",
+        "一律加深四角成隧道",
+        "把 K2 高光带和前景同时提亮抹掉纵深"
+      ],
+      "fit": {
+        "incompatible": [
+          "必须凭空删物或生成雾雪才能得到所需关系",
+          "颜色承载本次主要叙事",
+          "只有平面重复节奏，没有本包第二条所需的近远关系"
+        ],
+        "required": [
+          "真实轮廓、空处或重复间隔可共同组织观看，且具有可用近远层次",
+          "本次表达由形状、明暗与空间承担，颜色并非不可替代的内容"
+        ]
+      },
+      "id": "kenna-line-space",
+      "label": "单色线形与静默空间",
+      "methods": [
+        {
+          "evidence_type": "project_hypothesis",
+          "id": "line-frame",
+          "limitation": "选择已有空间，不能生成稀疏场景。",
+          "operation_ids": [],
+          "relation_ids": [
+            "line-and-interval"
+          ],
+          "source_refs": [],
+          "status": "reference_proposed",
+          "strategy": "composition_decision"
+        },
+        {
+          "evidence_type": "project_hypothesis",
+          "id": "monochrome-trial",
+          "limitation": "当前仅全局去色候选，不能称银盐、专用黑白混色器或作者工艺；若区域灰阶不分离必须判能力不足。",
+          "operation_ids": [
+            "acr.saturation"
+          ],
+          "relation_ids": [
+            "line-and-interval"
+          ],
+          "source_refs": [],
+          "status": "reference_proposed"
+        },
+        {
+          "evidence_type": "project_hypothesis",
+          "id": "range-tone",
+          "limitation": "K2本来偏暗；不由Kenna名字推出通篇高调。",
+          "operation_ids": [
+            "acr.point_curve_rgb",
+            "acr.whites2012",
+            "acr.blacks2012",
+            "acr.highlights2012",
+            "acr.shadows2012"
+          ],
+          "relation_ids": [
+            "tonal-distance"
+          ],
+          "source_refs": [],
+          "status": "reference_proposed"
+        },
+        {
+          "evidence_type": "project_hypothesis",
+          "id": "regional",
+          "limitation": "只维护既有区域差别，原生细节需另验。",
+          "operation_ids": [
+            "acr.brush_mask",
+            "acr.linear_gradient_mask"
+          ],
+          "relation_ids": [
+            "tonal-distance"
+          ],
+          "source_refs": [],
+          "status": "reference_proposed"
+        }
+      ],
+      "status": "reference_proposed",
+      "subject_ids": [
+        "landscape-nature",
+        "city-architecture"
+      ],
+      "tag_ids": [
+        "monochrome",
+        "quiet-space"
+      ],
+      "unknowns": [
+        "作者这三幅完整拍摄/冲印参数未查证",
+        "公开 JPEG 不证明纸本印相细节",
+        "无新照片测试，无用户校准；不覆盖 Kenna 全部作品",
+        "本地低清图不足判断原始纸本的微纹理与实际印相黑白端"
+      ],
+      "visible_acceptance": [
+        "缩略图仍分清主线与空处",
+        "细枝/栅栏未被吃掉",
+        "远处仍退后，空处没有断带/光圈"
+      ],
+      "works": [
+        {
+          "id": "K1",
+          "image_url": "https://static-assets.artlogic.net/w_1000,h_1000,c_limit,f_auto,fl_lossy,q_60/artlogicstorage/jacksonfineart/images/view/f0fff8a4457167a37c1c5d0ba84b8ea5j.jpg",
+          "observation": "黑树自左下斜伸右上，细枝仍分开；下方亮雪、右侧深些的湖、淡远山形成层次，大片空处有轻缓变化。",
+          "resolution_limit": "public_display_reference_only; no native detail or calibrated print evidence bundled",
+          "rights": "Copyright retained; public display preview for local study, no redistribution permission asserted.",
+          "role": "primary",
+          "source_url": "https://www.jacksonfineart.com/artworks/31059/",
+          "title": "Kussharo Lake Tree, Study 7, Kotan, Hokkaido, Japan"
+        },
+        {
+          "id": "K2",
+          "image_url": "https://static-assets.artlogic.net/w_1050,c_limit,f_auto,fl_lossy,q_auto/ws-peterfetterman/usr/images/blog_entries/main_image/items/f4/f489c29b54614aa89e7e973e9eebab05/1330.jpeg",
+          "observation": "上方近枝与下方近水暗，中下部雾、雪山形成亮带；积雪沿枝成细亮边，近水纹较强、远水较弱。这是偏暗框围亮远方，不是通篇高调。",
+          "resolution_limit": "public_display_reference_only; no native detail or calibrated print evidence bundled",
+          "rights": "Copyright retained; public display preview for local study, no redistribution permission asserted.",
+          "role": "primary",
+          "source_url": "https://www.peterfetterman.com/blog/569-1330-michael-kenna-kussharo-lake-study-6-hokkaido-2004/",
+          "title": "Kussharo Lake, Study 6, Hokkaido"
+        },
+        {
+          "id": "K3",
+          "image_url": "https://static-assets.artlogic.net/w_1000,h_1000,c_limit,f_auto,fl_lossy,q_auto/artlogicstorage/peterfetterman/images/view/a7aa0e92b5eb53e41ded9e910e431f21j.jpg",
+          "observation": "短横栅栏排列于白雪，轻微弯曲、错位和排距形成节奏；左上树群较重，一棵细树打断规则，空白间隔仍清晰。",
+          "resolution_limit": "public_display_reference_only; no native detail or calibrated print evidence bundled",
+          "rights": "Copyright retained; public display preview for local study, no redistribution permission asserted.",
+          "role": "primary",
+          "source_url": "https://www.peterfetterman.com/artworks/59244-michael-kenna-fifty-fences-taisetsu-hokkaido-japan.-2004/",
+          "title": "Fifty Fences, Taisetsu, Hokkaido, Japan"
+        }
+      ]
+    },
+    {
+      "author": "Joel Meyerowitz",
+      "core_relations": [
+        {
+          "capture_dependency": "已有近景与开阔外层及相容视点；不强制每张同时有海、栏杆或柱子。",
+          "description": "可触摸的日常近层与开阔的外部空间共同存在，框架/间隔引导目光穿出；近物并非默认干扰。",
+          "failure_signal": "为简洁只截近物或只剩远景，原本的观看联系丢失。",
+          "id": "near-to-open",
+          "postprocess_intent": "选择裁框和区域密度，使近物有质感且后方空间仍可读。",
+          "work_ids": [
+            "M1",
+            "M2",
+            "M3"
+          ]
+        },
+        {
+          "capture_dependency": "源中真实光色差异与材料信息可用；不可补天、造闪电或反射。",
+          "description": "颜色随光照和材料改变；暖/冷区域、亮白与深暗各有位置，日光和暮色有不同明暗安排。",
+          "failure_signal": "全图橙黄或过饱和青；白物变灰、亮布褶皱被吞、暮色提成白日。",
+          "id": "light-material-color",
+          "postprocess_intent": "分开光源、白端、阴影和物色，选择WB、曲线/分色及必要局部。",
+          "work_ids": [
+            "M1",
+            "M2",
+            "M3"
+          ]
+        }
+      ],
+      "distinctions": "相对 LND-01，颜色与物体受光承载空间，允许较多日常细节；不能折叠为泛化低饱和风光。",
+      "failure_examples": [
+        "全图橙黄使海与墙同色",
+        "海水被推成高饱和青",
+        "全提阴影摊平空间",
+        "把明亮日光误做过曝白雾"
+      ],
+      "fit": {
+        "incompatible": [
+          "无光色区域且要硬造冷暖",
+          "通道剪切已丢失关键亮部颜色",
+          "必须补天/换海才成立",
+          "纯山岳全景仅因题材风光自动套用"
+        ],
+        "required": [
+          "海岸/开阔自然空间加日常近景",
+          "具有真实光色区域差的旅行风景"
+        ]
+      },
+      "id": "meyerowitz-cape-color",
+      "label": "海岸日常的光色空间",
+      "methods": [
+        {
+          "evidence_type": "project_hypothesis",
+          "id": "frame",
+          "limitation": "保留的是本图选择的近远联系，无固定物件清单。",
+          "operation_ids": [],
+          "relation_ids": [
+            "near-to-open"
+          ],
+          "source_refs": [],
+          "status": "reference_proposed",
+          "strategy": "composition_decision"
+        },
+        {
+          "evidence_type": "project_hypothesis",
+          "id": "tone",
+          "limitation": "不把暮色曲线套给日光场景。",
+          "operation_ids": [
+            "acr.point_curve_rgb",
+            "acr.whites2012",
+            "acr.blacks2012",
+            "acr.shadows2012",
+            "acr.highlights2012"
+          ],
+          "relation_ids": [
+            "light-material-color",
+            "near-to-open"
+          ],
+          "source_refs": [],
+          "status": "reference_proposed"
+        },
+        {
+          "evidence_type": "project_hypothesis",
+          "id": "material-color",
+          "limitation": "方法是可选择的能力集合；不默认压蓝或压橙，区域保护优先。",
+          "operation_ids": [
+            "acr.temperature",
+            "acr.tint",
+            "acr.saturation_adjustment_aqua",
+            "acr.saturation_adjustment_blue",
+            "acr.brush_mask"
+          ],
+          "relation_ids": [
+            "light-material-color"
+          ],
+          "source_refs": [],
+          "status": "reference_proposed"
+        }
+      ],
+      "status": "reference_proposed",
+      "subject_ids": [
+        "landscape-nature",
+        "city-architecture"
+      ],
+      "tag_ids": [
+        "daylight-color",
+        "spatial-color"
+      ],
+      "unknowns": [
+        "官网只给系列文件名/索引，具体题名与年份未核实",
+        "每幅胶片、测光、冲印参数未知",
+        "无新照片测试，无用户校准；不覆盖作者全部作品",
+        "本地低清图不足判断原始纸本的微纹理与实际印相黑白端"
+      ],
+      "visible_acceptance": [
+        "亮白物有明暗而不灰，水与沙颜色仍不同",
+        "暮色像暮色，门扇不过度提成均匀灰",
+        "栏杆/地平线无光圈，布/湿滩保留质感"
+      ],
+      "works": [
+        {
+          "id": "M1",
+          "image_url": "https://images.squarespace-cdn.com/content/v1/58adfb9237c581abe8c7e5fb/1514998264763-Y7J7RZ1S2YOKD5H2MIYG/07_Neg_0433_FinalForAperture.jpg?format=1000w",
+          "observation": "左窗/门廊顶暖琥珀，远海天蓝紫；门扇暗，地板和白栏杆接住分区暖光；右侧闪电是细高亮事件。",
+          "resolution_limit": "public_display_reference_only; no native detail or calibrated print evidence bundled",
+          "rights": "Copyright retained; public display preview for local study, no redistribution permission asserted.",
+          "role": "primary",
+          "source_url": "https://www.joelmeyerowitz.com/cape-light",
+          "title": "Cape Light official gallery Slide 1: 07_Neg_0433_FinalForAperture.jpg"
+        },
+        {
+          "id": "M2",
+          "image_url": "https://images.squarespace-cdn.com/content/v1/58adfb9237c581abe8c7e5fb/1514998271749-QT6VWTVCMAMWCXDUQ3YF/009.%2BNeg_0593.jpg?format=1000w",
+          "observation": "完整低清图：左侧橙黄/珊瑚粉布鲜明，右侧冷蓝条纹布并置；白晒架有木纹，右侧木墙由暖棕受光面与深窗组成，蓝天白云分明。布褶、翻起边缘及地面投影表现体积。初次网页截图处于淡入过渡，颜色判断已以完整文件校正。",
+          "resolution_limit": "public_display_reference_only; no native detail or calibrated print evidence bundled",
+          "rights": "Copyright retained; public display preview for local study, no redistribution permission asserted.",
+          "role": "primary",
+          "source_url": "https://www.joelmeyerowitz.com/cape-light",
+          "title": "Cape Light official gallery Slide 2: 009. Neg_0593.jpg"
+        },
+        {
+          "id": "M3",
+          "image_url": "https://images.squarespace-cdn.com/content/v1/58adfb9237c581abe8c7e5fb/1514998276355-BFU4RR25CJY7QL3013P1/Neg_0650_Reprox.jpg?format=1000w",
+          "observation": "白栏杆/立柱构成近景，蓝灰水、米色沙洲、褐湿滩依次展开；柱子的受光面/阴影不同，小船和水纹保留地点细节。",
+          "resolution_limit": "public_display_reference_only; no native detail or calibrated print evidence bundled",
+          "rights": "Copyright retained; public display preview for local study, no redistribution permission asserted.",
+          "role": "primary",
+          "source_url": "https://www.joelmeyerowitz.com/cape-light",
+          "title": "Cape Light official gallery Slide 3: Neg_0650_Reprox.jpg"
+        }
+      ]
+    },
+    {
+      "author": "Alec Soth",
+      "core_relations": [
+        {
+          "capture_dependency": "姿态、视点及人物与场所的关系在源中成立；镜、窗不是所有图的必留物件。",
+          "description": "人物状态与其所在环境共同可读；背景、反射或框景在有作用时保留，不把人从场所里孤立出来。",
+          "failure_signal": "人变大变亮，但只剩普通大脸，环境信息与空间联系失去作用。",
+          "id": "person-in-place",
+          "postprocess_intent": "以裁框和分区密度调整观看主次，保住本图实际要表达的人与地方关系。",
+          "work_ids": [
+            "soth-anna",
+            "soth-galina",
+            "soth-nick"
+          ]
+        },
+        {
+          "capture_dependency": "源中有相容软光/可用明暗层次；不能把硬光一键变成另一个现场。",
+          "description": "人物受光过渡柔和且仍有体积，脸颈手与场景光照相容；环境亮部可以比脸亮。",
+          "failure_signal": "去清晰/磨皮抹掉皱纹和材质，脸部灰黑斑或发白光圈，颈手失联。",
+          "id": "soft-volume",
+          "postprocess_intent": "分开诊断真实暗面、脏色和纹理缺陷，对具体问题有限局部修饰。",
+          "work_ids": [
+            "soth-anna",
+            "soth-galina",
+            "soth-nick"
+          ]
+        }
+      ],
+      "craft_limits": "参考网页尺度支持整体及有限局部关系；用户照片100%皮肤/细节须另验，不能从网页图猜原生微纹理。",
+      "failure_examples": [
+        "抬亮脸破坏现场光向或使脸和颈手失联",
+        "为了柔和而全图去清晰/磨平，把衣物、皱纹和空间结构一起删掉",
+        "减绿/橙导致肤色灰紫、嘴唇失色，或修饰边缘出现光圈",
+        "裁掉镜中关系、手或有意义物件后仅剩普通大脸"
+      ],
+      "fit": {
+        "incompatible": [
+          "正午硬光/闪光作为主表达且无软光基础",
+          "原脸失焦、剪切或严重色污染，需先解决工艺问题",
+          "需要极简背景/商业美容近景/高反差戏剧光的任务"
+        ],
+        "required": [
+          "人物姿态/神情已成立的室内环境肖像",
+          "现场已有宽大软光或窗光、脸部有可用曝光层次",
+          "背景物件或反射与人物有意义的空间关系"
+        ]
+      },
+      "id": "soth-environmental-portrait",
+      "label": "柔和室内光中的人物与居室层次",
+      "methods": [
+        {
+          "evidence_type": "project_hypothesis",
+          "id": "frame",
+          "limitation": "先选人的状态和环境关系，不自动裁近。",
+          "operation_ids": [],
+          "relation_ids": [
+            "person-in-place"
+          ],
+          "source_refs": [],
+          "status": "reference_proposed",
+          "strategy": "composition_decision"
+        },
+        {
+          "evidence_type": "project_hypothesis",
+          "id": "scene-tone",
+          "limitation": "不抬平全部阴影，保留合理暗面与亮窗。",
+          "operation_ids": [
+            "acr.point_curve_rgb",
+            "acr.shadows2012",
+            "acr.highlights2012",
+            "acr.whites2012",
+            "acr.blacks2012"
+          ],
+          "relation_ids": [
+            "person-in-place",
+            "soft-volume"
+          ],
+          "source_refs": [],
+          "status": "reference_proposed"
+        },
+        {
+          "evidence_type": "project_hypothesis",
+          "id": "local-face",
+          "limitation": "只在具体缺陷成立且尺度足够时使用；不是默认磨皮，不改变身份与年龄。",
+          "operation_ids": [
+            "acr.brush_mask",
+            "local.skin_control_field"
+          ],
+          "relation_ids": [
+            "soft-volume"
+          ],
+          "source_refs": [],
+          "status": "reference_proposed"
+        },
+        {
+          "evidence_type": "project_hypothesis",
+          "id": "skin-scene-color",
+          "limitation": "全局WB会连带环境；局部色差不以统一皮肤颜色为目标。",
+          "operation_ids": [
+            "acr.temperature",
+            "acr.tint",
+            "acr.brush_mask"
+          ],
+          "relation_ids": [
+            "soft-volume"
+          ],
+          "source_refs": [],
+          "status": "reference_proposed"
+        }
+      ],
+      "source_scope": "仅上述三幅所形成的关系包；不是该作者/系列全部作品标签。",
+      "status": "reference_proposed",
+      "subject_ids": [
+        "portrait",
+        "documentary"
+      ],
+      "tag_ids": [
+        "soft-environment",
+        "layered-view"
+      ],
+      "unknowns": [
+        "公开成片无法区分拍摄光、胶片/数字媒介、扫描/冲印与后期贡献。",
+        "现有手工几何蒙版缺少自动语义/Color Range和复杂布尔组合；精细皮肤隔离仍可能不足。",
+        "ACR本轮只核registry写入准入，未补原生读回/逐操作探针/回放。",
+        "尚未看用户照片，未作实际适配决定。"
+      ],
+      "visible_acceptance": [
+        "正常观看人物状态与居住空间同时成立，主体不是一块外贴的亮皮肤。",
+        "亮窗/白帘可明亮，黑衣/深木仍有重量；没有全幅HDR式展平。",
+        "参考支持的观看尺度下保留体积；未来用户原生细节须另查毛孔/细毛、边界和纹理连续性。"
+      ],
+      "works": [
+        {
+          "id": "soth-anna",
+          "image_url": "https://alecsoth.com/photography/media/pages/projects/i-know-how-furiously-your-heart-is-beating/c41995d458-1551369195/2017_11zl0006.jpg",
+          "observation": "人物坐在画面中段，右侧亮窗、藤蔓、椅背、反射和虚前景一起构成可穿透的层次；脸不是全图最亮区。 银绿衣物和植被形成近色关系，棕木/椅子提供温度；环境保留深处和光亮，不是全幅抬成浅灰。 面部一侧与眼窝较暗、头发和衣物折痕有受光；脸颈手保留深浅变化。此预览能看见皱纹与体积，不能证明原生毛孔或印刷细节。",
+          "resolution_limit": "public_display_reference_only; no native detail or calibrated print evidence bundled",
+          "rights": "Copyright retained; public display preview for local study, no redistribution permission asserted.",
+          "role": "primary",
+          "source_url": "https://alecsoth.com/photography/projects/i-know-how-furiously-your-heart-is-beating",
+          "title": "Anna. Kentfield, California."
+        },
+        {
+          "id": "soth-galina",
+          "image_url": "https://alecsoth.com/photography/media/pages/projects/i-know-how-furiously-your-heart-is-beating/10d91ab6f5-1551369195/2018_05zl0069.jpg",
+          "observation": "前景后脑与肩部模糊，镜中三个方向的脸清楚，桌上旧照片继续人物关系；镜边和物件是内容，不能当干扰删除。 奶油白墙/帘占大面积，木桌暖棕与黑衣建立重量；黑衣上的亮片仍是点状亮，脸部不追成墙一样白。 面部眼下、鼻侧和下颌阴影明确，唇色与肤色分开，额头纹理可辨；柔光不等于没有阴影或年龄特征。实际灯具/布光未核实。",
+          "resolution_limit": "public_display_reference_only; no native detail or calibrated print evidence bundled",
+          "rights": "Copyright retained; public display preview for local study, no redistribution permission asserted.",
+          "role": "primary",
+          "source_url": "https://alecsoth.com/photography/projects/i-know-how-furiously-your-heart-is-beating",
+          "title": "Galina. Odessa."
+        },
+        {
+          "id": "soth-nick",
+          "image_url": "https://alecsoth.com/photography/media/pages/projects/i-know-how-furiously-your-heart-is-beating/4803d8562c-1551369195/2017_12zl0038.jpg",
+          "observation": "窗格、反射、左侧虚紫花和右侧花布把躺卧人物包围；人物脸部很小，局部清楚，人物姿态与场所比面部精修更有权重。 整体较Anna明亮，白毯仍有毛织纹理，室内深蓝裤子提供暗部锚点，紫红/绿环境颜色有独立角色；不能把本组统一成低饱和。 皮肤比大面积白毯暗并带暖色，手臂/肩胸有柔和过渡；此图的人脸尺度不足以检验细毛、毛孔或局部色斑修复。",
+          "resolution_limit": "public_display_reference_only; no native detail or calibrated print evidence bundled",
+          "rights": "Copyright retained; public display preview for local study, no redistribution permission asserted.",
+          "role": "primary",
+          "source_url": "https://alecsoth.com/photography/projects/i-know-how-furiously-your-heart-is-beating",
+          "title": "Nick. Los Angeles."
+        }
+      ]
+    },
+    {
+      "author": "Rinko Kawauchi",
+      "core_relations": [
+        {
+          "capture_dependency": "人、表面纹理与光的相对位置在源中存在；没有光路不能制造。",
+          "description": "日常表面的光与人的尺度/动作共同组织观看，人物可以很小或只出现身体局部。",
+          "failure_signal": "只全图变白/青或把人物放大，光与尺度关系没有改善。",
+          "id": "light-and-human-scale",
+          "postprocess_intent": "以构图、已有反射的局部明暗与整体密度呈现联系，不自动提亮每张脸。",
+          "work_ids": [
+            "rinko-illuminance-01-r",
+            "rinko-illuminance-06-l"
+          ]
+        },
+        {
+          "capture_dependency": "源中高光邻域有信息；被剪切的细节未必可恢复。",
+          "description": "轻密度或局部强反光周围仍有可辨结构和深色支点；两类亮度分布不必统一。",
+          "failure_signal": "全部高光压成灰，或全幅泛白、衣物水纹/台阶形态被抹去。",
+          "id": "luminous-structure",
+          "postprocess_intent": "分别处理亮端、中间调与暗色结构，维持当图冷暖和表面过渡。",
+          "work_ids": [
+            "rinko-illuminance-01-r",
+            "rinko-illuminance-06-l"
+          ]
+        }
+      ],
+      "craft_limits": "参考网页尺度支持整体及有限局部关系；用户照片100%皮肤/细节须另验，不能从网页图猜原生微纹理。",
+      "failure_examples": [
+        "只有全图变白、变青、低反差，没有更清楚的光与人关系",
+        "台阶和水纹被去清晰/辉光覆盖",
+        "给看不清的脸强行局部提亮，破坏本来小人物的尺度",
+        "把白天日常选图当作雪夜或高ISO降噪参照"
+      ],
+      "fit": {
+        "incompatible": [
+          "大脸肖像肤质验收",
+          "要求清楚交代每个人脸的多人合照",
+          "需要沉重暗部/冷暖人工光对抗的冬夜任务",
+          "原片大面积剪切或无可用表面细节"
+        ],
+        "required": [
+          "已有自然反光、逆光/眩光或浅色场景中的人物日常",
+          "人较小、身体局部或动作已足以成立的旅行/生活片段"
+        ]
+      },
+      "id": "kawauchi-daily-light",
+      "label": "日常中的明亮光感与人物尺度",
+      "methods": [
+        {
+          "evidence_type": "project_hypothesis",
+          "id": "frame",
+          "limitation": "只选择已有比例与动作空间，不默认正方形。",
+          "operation_ids": [],
+          "relation_ids": [
+            "light-and-human-scale"
+          ],
+          "source_refs": [],
+          "status": "reference_proposed",
+          "strategy": "composition_decision"
+        },
+        {
+          "evidence_type": "project_hypothesis",
+          "id": "luminous-tone",
+          "limitation": "浅冷水面与暖灰绿台阶不能共用色温/曝光。",
+          "operation_ids": [
+            "acr.point_curve_rgb",
+            "acr.whites2012",
+            "acr.highlights2012",
+            "acr.blacks2012",
+            "acr.temperature",
+            "acr.tint"
+          ],
+          "relation_ids": [
+            "luminous-structure"
+          ],
+          "source_refs": [],
+          "status": "reference_proposed"
+        },
+        {
+          "evidence_type": "project_hypothesis",
+          "id": "reflected-light",
+          "limitation": "约束真实反射位置；现有暖色sun_glow不等同台阶白闪光，不作为本包方法。",
+          "operation_ids": [
+            "acr.brush_mask",
+            "acr.linear_gradient_mask"
+          ],
+          "relation_ids": [
+            "light-and-human-scale",
+            "luminous-structure"
+          ],
+          "source_refs": [],
+          "status": "reference_proposed"
+        }
+      ],
+      "source_scope": "仅官方01_R与06_L两图，人物/日常交叉分支；日本作者身份不等于日式冬夜依据。",
+      "status": "reference_proposed",
+      "subject_ids": [
+        "everyday-still-life",
+        "documentary",
+        "portrait"
+      ],
+      "tag_ids": [
+        "luminous-daily",
+        "human-scale"
+      ],
+      "unknowns": [
+        "两图外观一致性限于光主导与人物尺度，色温和亮度分布不完全相同。",
+        "600px参考不能支撑细节、噪声或印刷层次评价。",
+        "现场反射/眩光与后期贡献不可从成片分离；不设置作者滑块。",
+        "本轮没有用户素材适配与回放。"
+      ],
+      "visible_acceptance": [
+        "人物、光和表面的关系比原来更明确，正常全图可见收益。",
+        "明亮处仍有水纹/台阶层次；允许有来源的极亮反射点，同时周围的过渡自然。",
+        "人的比例/动作成立，深衣和色彩差异保留，未冒出额外假光源。"
+      ],
+      "works": [
+        {
+          "id": "rinko-illuminance-01-r",
+          "image_url": "https://rinkokawauchi.com/en/wp-content/uploads/sites/2/2017/12/Illuminance_01_R-600x600.jpg",
+          "observation": "人物在左上角很小，画面主要是浅水流纹与沙地；水流斜向和弯曲纹理带动目光，人物提供尺度与活动线索。 大面积浅灰蓝/近白由细微冷暖和密度变化分开，水的透明层次仍可读；人物头发/身体小块较暗，不被抬亮成白点。 亮度主导成立但局部有纹理；600像素原网页预览不支持面部肤色、体积肌理精修结论。",
+          "resolution_limit": "public_display_reference_only; no native detail or calibrated print evidence bundled",
+          "rights": "Copyright retained; public display preview for local study, no redistribution permission asserted.",
+          "role": "primary",
+          "source_url": "https://rinkokawauchi.com/en/works/194/",
+          "title": "官方图01_R：浅水与小人物"
+        },
+        {
+          "id": "rinko-illuminance-06-l",
+          "image_url": "https://rinkokawauchi.com/en/wp-content/uploads/sites/2/2017/12/Illuminance_06_L-600x600.jpg",
+          "observation": "一列明亮反射沿台阶向上延伸，人物由深衣、白袜与腿部局部构成；看不到脸也能读出上行日常动作。 亮点中心接近白并向周围柔散，台阶总体偏暖灰绿、人物黑衣给结构；光感不依赖全幅高曝光或统一蓝调。 台阶水平边和重复步幅未被辉光抹去，强光和可读暗部共存；人物细节只是环境中的节奏，不应逐脸提亮或磨皮。",
+          "resolution_limit": "public_display_reference_only; no native detail or calibrated print evidence bundled",
+          "rights": "Copyright retained; public display preview for local study, no redistribution permission asserted.",
+          "role": "primary",
+          "source_url": "https://rinkokawauchi.com/en/works/194/",
+          "title": "官方图06_L：台阶闪光与行人"
+        }
+      ]
+    },
+    {
+      "author": "Hideaki Hamada",
+      "core_relations": [
+        {
+          "capture_dependency": "需要已有表情、手脚关系与恰当机位；后期不能造奔跑或亲近。",
+          "description": "人物的动作或姿态与其周围可行动的空间共同成立。",
+          "failure_signal": "保住大量景色却截断关键手脚；或裁大人脸使动作与所在位置消失。",
+          "id": "gesture-space",
+          "postprocess_intent": "围绕实际动作和视线保留必要方向；主体较小时核验动作仍读得出。",
+          "work_ids": [
+            "HH01",
+            "HH02",
+            "HH03"
+          ]
+        },
+        {
+          "capture_dependency": "已有柔光或逆光/散射条件；强光方向、景深和炫光来自拍摄。",
+          "description": "环境允许明亮、柔软，人物的衣物、表情和基本体积仍与环境分开。",
+          "failure_signal": "泛白吞掉人脸身体；以全局绿黄罩或模糊代替环境光。",
+          "id": "bright-environment-person",
+          "postprocess_intent": "分开保护人物与环境亮度；保留衣褶、肤色区别和明暗体积。",
+          "work_ids": [
+            "HH01",
+            "HH02",
+            "HH03"
+          ]
+        }
+      ],
+      "distinctions": "与kawauchi-daily-light相比，人物表情/动作更直接；与dijkstra-park-presence相比，容许更明亮环境与主动游戏。不是所有图都必须逆光或保留宽景。",
+      "fit": {
+        "incompatible": [
+          "需要源图没有的逆光、奔跑、浅景深。",
+          "仅凭日本作者或孩子题材推定适配。"
+        ],
+        "required": [
+          "希望表达亲密日常、动作或童年体验。",
+          "人物姿态可读且环境对叙事有作用。"
+        ]
+      },
+      "id": "hamada-child-in-place",
+      "label": "童年动作与明亮日常空间",
+      "methods": [
+        {
+          "evidence_type": "project_hypothesis",
+          "id": "frame",
+          "limitation": "裁框只选择已有关系；按本图动作、空间和用途决定比例，不能改变视点或补对象。",
+          "operation_ids": [],
+          "relation_ids": [
+            "gesture-space"
+          ],
+          "source_refs": [],
+          "status": "reference_proposed",
+          "strategy": "composition_decision"
+        },
+        {
+          "evidence_type": "project_hypothesis",
+          "id": "tone",
+          "limitation": "按源图已有光向和材料安排明暗；不得以统一曲线代替区域关系，也不推定作者曲线。",
+          "operation_ids": [
+            "acr.point_curve_rgb",
+            "acr.whites2012",
+            "acr.blacks2012",
+            "acr.shadows2012",
+            "acr.highlights2012"
+          ],
+          "relation_ids": [
+            "bright-environment-person"
+          ],
+          "source_refs": [],
+          "status": "reference_proposed"
+        },
+        {
+          "evidence_type": "project_hypothesis",
+          "id": "regional",
+          "limitation": "仅维护实际存在的区域差别；须检查边缘、光向和原生细节，不添加雾、光源或运动。",
+          "operation_ids": [
+            "acr.brush_mask",
+            "acr.linear_gradient_mask"
+          ],
+          "relation_ids": [
+            "bright-environment-person"
+          ],
+          "source_refs": [],
+          "status": "reference_proposed"
+        },
+        {
+          "evidence_type": "project_hypothesis",
+          "id": "skin-scene-color",
+          "limitation": "全局WB会连带环境；局部色差不以统一皮肤颜色为目标。",
+          "operation_ids": [
+            "acr.temperature",
+            "acr.tint",
+            "acr.brush_mask"
+          ],
+          "relation_ids": [
+            "bright-environment-person"
+          ],
+          "source_refs": [],
+          "status": "reference_proposed"
+        }
+      ],
+      "source_limits": "HH01/HH03中人物较小，不足以制定皮肤微纹理标准；仅识别光、体积、动作和环境关系。",
+      "status": "reference_proposed",
+      "subject_ids": [
+        "portrait",
+        "documentary",
+        "landscape-nature"
+      ],
+      "tag_ids": [
+        "soft-environment",
+        "human-scale",
+        "luminous-daily"
+      ],
+      "works": [
+        {
+          "id": "HH01",
+          "image_url": "https://hideakihamada.com/wp/wp-content/uploads/2024/01/11_-1536x1253.jpg",
+          "observation": "两名孩子完整站在河岸下部；浅色花枝和河道向远处展开。衣服较深，脸与手有温暖明暗，环境很亮但枝、石与水未合成同一白面。",
+          "resolution_limit": "public_display_reference_only; no native detail or calibrated print evidence bundled",
+          "rights": "Publicly viewable copyrighted photography; local research only. No redistribution licence inferred.",
+          "role": "primary",
+          "source_url": "https://hideakihamada.com/works/2232/",
+          "title": "Haru and Mina #1 — official image 1, asset 11_"
+        },
+        {
+          "id": "HH02",
+          "image_url": "https://hideakihamada.com/wp/wp-content/uploads/2024/01/21_-1536x1238.jpg",
+          "observation": "两个孩子从左侧门柱探身，张口、歪头与手共同构成动作。深门栏靠近人物，右侧浅巷向远处退；暖肤色与灰衣、绿叶分别可读。",
+          "resolution_limit": "public_display_reference_only; no native detail or calibrated print evidence bundled",
+          "rights": "Publicly viewable copyrighted photography; local research only. No redistribution licence inferred.",
+          "role": "primary",
+          "source_url": "https://hideakihamada.com/works/2232/",
+          "title": "Haru and Mina #1 — official image 2, asset 21_"
+        },
+        {
+          "id": "HH03",
+          "image_url": "https://hideakihamada.com/wp/wp-content/uploads/2024/01/12-1536x1253.jpg",
+          "observation": "两个孩子分开向前奔跑，手脚轮廓完整；上方穿叶强光连到亮草地，树冠保留深色。人物脸部有表情但小，光晕不是全画面统一模糊。",
+          "resolution_limit": "public_display_reference_only; no native detail or calibrated print evidence bundled",
+          "rights": "Publicly viewable copyrighted photography; local research only. No redistribution licence inferred.",
+          "role": "primary",
+          "source_url": "https://hideakihamada.com/works/2232/",
+          "title": "Haru and Mina #1 — official image 6, asset 12"
+        }
+      ]
+    },
+    {
+      "author": "Tina Barney",
+      "core_relations": [
+        {
+          "capture_dependency": "实际多人位置、姿态与机位必须已经成立。",
+          "description": "多人姿态、视线和间隔组织观看，不把每个人都处理成单独证件像。",
+          "failure_signal": "每张脸平均提亮却使整体关系散开；关键互动被裁掉。",
+          "id": "ensemble-relations",
+          "postprocess_intent": "裁框保住人物间联系及必要的手、肢体和视线出口。",
+          "work_ids": [
+            "TB01",
+            "TB02",
+            "TB03"
+          ]
+        },
+        {
+          "capture_dependency": "已有居室结构、镜面或入口与材料颜色；不凭后期布置现场。",
+          "description": "居室表面和重复颜色支撑人物关系，门窗/镜面仍传达空间层次。",
+          "failure_signal": "杂物被全抹去后人物失去场所；色罩把衣物与皮肤混在一起。",
+          "id": "room-color-depth",
+          "postprocess_intent": "按人物、近物与房间光线分层调密度；保护肤色与布、墙、木头的区别。",
+          "work_ids": [
+            "TB01",
+            "TB02",
+            "TB03"
+          ]
+        }
+      ],
+      "distinctions": "与soth-environmental-portrait相比更依赖群体姿态与居室重复；与leiter-layered-street相比是可辨居室关系，非街头遮挡发现。",
+      "fit": {
+        "incompatible": [
+          "单人孤立头像或极简空景。",
+          "要求造人物互动、房间布局或镜面。"
+        ],
+        "required": [
+          "有多人或人物与镜像组成的实际关系。",
+          "环境信息对表达有意义，允许不均匀视线与密集细节。"
+        ]
+      },
+      "id": "barney-room-ensemble",
+      "label": "室内群像的姿态与空间关系",
+      "methods": [
+        {
+          "evidence_type": "project_hypothesis",
+          "id": "frame",
+          "limitation": "裁框只选择已有关系；按本图动作、空间和用途决定比例，不能改变视点或补对象。",
+          "operation_ids": [],
+          "relation_ids": [
+            "ensemble-relations"
+          ],
+          "source_refs": [],
+          "status": "reference_proposed",
+          "strategy": "composition_decision"
+        },
+        {
+          "evidence_type": "project_hypothesis",
+          "id": "tone",
+          "limitation": "按源图已有光向和材料安排明暗；不得以统一曲线代替区域关系，也不推定作者曲线。",
+          "operation_ids": [
+            "acr.point_curve_rgb",
+            "acr.whites2012",
+            "acr.blacks2012",
+            "acr.shadows2012",
+            "acr.highlights2012"
+          ],
+          "relation_ids": [
+            "room-color-depth"
+          ],
+          "source_refs": [],
+          "status": "reference_proposed"
+        },
+        {
+          "evidence_type": "project_hypothesis",
+          "id": "separate-color",
+          "limitation": "只在观察到缺口时选用既有白平衡/HSL/局部能力；保护相邻材料，非作者参数或全局色罩。",
+          "operation_ids": [
+            "acr.temperature",
+            "acr.tint",
+            "acr.saturation_adjustment_orange",
+            "acr.saturation_adjustment_yellow",
+            "acr.saturation_adjustment_green",
+            "acr.brush_mask"
+          ],
+          "relation_ids": [
+            "room-color-depth"
+          ],
+          "source_refs": [
+            "https://helpx.adobe.com/uk/camera-raw/desktop/using/make-color-tonal-adjustments-camera.html",
+            "https://helpx.adobe.com/camera-raw/desktop/edit-and-enhance-images/masking-and-local-adjustments/masking.html"
+          ],
+          "status": "reference_proposed"
+        }
+      ],
+      "source_limits": "网页参照仅约束该展示尺度的关系；未校准、未独立读图、未迁移验证。",
+      "status": "reference_proposed",
+      "subject_ids": [
+        "portrait",
+        "documentary"
+      ],
+      "tag_ids": [
+        "spatial-color",
+        "human-scale"
+      ],
+      "works": [
+        {
+          "id": "TB01",
+          "image_url": "https://images.squarespace-cdn.com/content/v1/53b2fabae4b0cce59c2e9019/1404331494209-Q8V6W9EQ86BLK1772DMP/1987+Jill+%26+Polly+in+the+Bathroom.jpg?format=1500w",
+          "observation": "镜面重复左侧人物；中间转身与右侧垂眼不同，梳洗台、花帘和浴袍以相近粉色联结，窗外绿区与室内相隔。",
+          "resolution_limit": "public_display_reference_only; no native detail or calibrated print evidence bundled",
+          "rights": "Publicly viewable copyrighted photography; local research only. No redistribution licence inferred.",
+          "role": "primary",
+          "source_url": "https://www.tinabarney.com/",
+          "title": "Jill & Polly in the Bathroom, 1987"
+        },
+        {
+          "id": "TB02",
+          "image_url": "https://images.squarespace-cdn.com/content/v1/53b2fabae4b0cce59c2e9019/1404331387402-4MJV3EXNW6UO2JJWITGJ/1983+Mark%2C+Amy%2C+%26+Tara.jpg?format=1500w",
+          "observation": "近处坐姿、中央坐姿与后方站姿形成三个距离；红白布料反复呼应，右侧敞门把室内延到另一间亮黄房。",
+          "resolution_limit": "public_display_reference_only; no native detail or calibrated print evidence bundled",
+          "rights": "Publicly viewable copyrighted photography; local research only. No redistribution licence inferred.",
+          "role": "primary",
+          "source_url": "https://www.tinabarney.com/",
+          "title": "Mark, Amy, & Tara, 1983"
+        },
+        {
+          "id": "TB03",
+          "image_url": "https://images.squarespace-cdn.com/content/v1/53b2fabae4b0cce59c2e9019/1404331395719-XNBLEB6IG052HCF6CKM5/1983+The+Graduation.jpg?format=1500w",
+          "observation": "门口围绕不同坐立和转头姿态组织多人；浅蓝白衣服与蓝腰带在深木门旁重复，人物彼此的朝向比单张脸更主导。",
+          "resolution_limit": "public_display_reference_only; no native detail or calibrated print evidence bundled",
+          "rights": "Publicly viewable copyrighted photography; local research only. No redistribution licence inferred.",
+          "role": "primary",
+          "source_url": "https://www.tinabarney.com/",
+          "title": "The Graduation, 1983"
+        }
+      ]
+    },
+    {
+      "author": "Rineke Dijkstra",
+      "core_relations": [
+        {
+          "capture_dependency": "需要实际姿态、可见身体与恰当拍摄距离。",
+          "description": "身体姿态和携带物完整传达人物状态，面部与身体共同被观看。",
+          "failure_signal": "只保脸或裁掉滑板车、手脚等状态支点。",
+          "id": "body-state",
+          "postprocess_intent": "保护手脚、身体接触点和相关物件；以整图再检查脸部明暗。",
+          "work_ids": [
+            "RD01",
+            "RD02",
+            "RD03"
+          ]
+        },
+        {
+          "capture_dependency": "原场景有人物与植物光照区别；不能从平光造定向照明。",
+          "description": "有层次的绿环境包围人物，皮肤、衣料与环境各保颜色和体积。",
+          "failure_signal": "人物漂白如贴片；全局绿罩侵入皮肤；抬平阴影后树林失去深度。",
+          "id": "figure-green-separation",
+          "postprocess_intent": "人物和树荫分别处理，保留深绿与亮斑；只修实际色偏和体积缺口。",
+          "work_ids": [
+            "RD01",
+            "RD02",
+            "RD03"
+          ]
+        }
+      ],
+      "distinctions": "与hamada-child-in-place相比更静止、身体状态更集中，深绿仍厚；与soth-environmental-portrait相比以外部植物和完整身体为主要场景。",
+      "fit": {
+        "incompatible": [
+          "目标是奔跑瞬间或环境近乎全白发散。",
+          "希望通过全局去绿或亮肤一项控制完成全部关系。"
+        ],
+        "required": [
+          "公园/林荫中的人物有可读全身或半身姿态。",
+          "需要稳住人物存在，同时保留自然环境密度。"
+        ]
+      },
+      "id": "dijkstra-park-presence",
+      "label": "完整身体与浓绿公园中的人物存在",
+      "methods": [
+        {
+          "evidence_type": "project_hypothesis",
+          "id": "frame",
+          "limitation": "裁框只选择已有关系；按本图动作、空间和用途决定比例，不能改变视点或补对象。",
+          "operation_ids": [],
+          "relation_ids": [
+            "body-state"
+          ],
+          "source_refs": [],
+          "status": "reference_proposed",
+          "strategy": "composition_decision"
+        },
+        {
+          "evidence_type": "project_hypothesis",
+          "id": "tone",
+          "limitation": "按源图已有光向和材料安排明暗；不得以统一曲线代替区域关系，也不推定作者曲线。",
+          "operation_ids": [
+            "acr.point_curve_rgb",
+            "acr.whites2012",
+            "acr.blacks2012",
+            "acr.shadows2012",
+            "acr.highlights2012"
+          ],
+          "relation_ids": [
+            "figure-green-separation"
+          ],
+          "source_refs": [],
+          "status": "reference_proposed"
+        },
+        {
+          "evidence_type": "project_hypothesis",
+          "id": "regional",
+          "limitation": "仅维护实际存在的区域差别；须检查边缘、光向和原生细节，不添加雾、光源或运动。",
+          "operation_ids": [
+            "acr.brush_mask",
+            "acr.linear_gradient_mask"
+          ],
+          "relation_ids": [
+            "figure-green-separation"
+          ],
+          "source_refs": [],
+          "status": "reference_proposed"
+        },
+        {
+          "evidence_type": "project_hypothesis",
+          "id": "skin-scene-color",
+          "limitation": "全局WB会连带环境；局部色差不以统一皮肤颜色为目标。",
+          "operation_ids": [
+            "acr.temperature",
+            "acr.tint",
+            "acr.brush_mask"
+          ],
+          "relation_ids": [
+            "figure-green-separation"
+          ],
+          "source_refs": [],
+          "status": "reference_proposed"
+        }
+      ],
+      "source_limits": "网页参照仅约束该展示尺度的关系；未校准、未独立读图、未迁移验证。",
+      "status": "reference_proposed",
+      "subject_ids": [
+        "portrait",
+        "landscape-nature"
+      ],
+      "tag_ids": [
+        "human-scale",
+        "dense-color",
+        "soft-environment"
+      ],
+      "works": [
+        {
+          "id": "RD01",
+          "image_url": "https://static-assets.artlogic.net/w_1400,h_1400,c_limit,f_auto,fl_lossy,q_auto/ws-mariangoodman/usr/images/feature_panels/image/162/rineke-dijkstra_parc-de-la-ciutadella-barcelona-june-4-2005.jpg",
+          "observation": "女孩连同滑板车全身被交代，站在绿水和树木之前；暖色背心与脸、灰短裤、粉车身彼此区分。上枝与远船给出地点，人物没有被绿水染成一色。",
+          "resolution_limit": "public_display_reference_only; no native detail or calibrated print evidence bundled",
+          "rights": "Publicly viewable copyrighted photography; local research only. No redistribution licence inferred.",
+          "role": "primary",
+          "source_url": "https://www.mariangoodman.com/viewing-room/2/",
+          "title": "Parque de la Ciudadela, Barcelona, June 4, 2005"
+        },
+        {
+          "id": "RD02",
+          "image_url": "https://static-assets.artlogic.net/w_1400,h_1400,c_limit,f_auto,fl_lossy,q_auto/ws-mariangoodman/usr/images/feature_panels/image/159/rineke-dijkstra_sefton-park-june-10-2006.jpg",
+          "observation": "两人坐在树下，前伸腿、手和松散坐姿构成主体；上半部浓深绿冠与草地亮斑分开。白衬衫、红外套和脸显出体积，背景保持阴影。",
+          "resolution_limit": "public_display_reference_only; no native detail or calibrated print evidence bundled",
+          "rights": "Publicly viewable copyrighted photography; local research only. No redistribution licence inferred.",
+          "role": "primary",
+          "source_url": "https://www.mariangoodman.com/viewing-room/2/",
+          "title": "Sefton Park, Liverpool, June 10, 2006"
+        },
+        {
+          "id": "RD03",
+          "image_url": "https://static-assets.artlogic.net/w_800,c_limit,f_auto,fl_lossy,q_auto/ws-mariangoodman/usr/images/feature_panels/images_and_objects/158/rineke-dijkstra_el-parque-del-retiro-madrid-july-2-2006.jpg",
+          "observation": "站立女孩与手中垂下的绳索形成完整轮廓，花裙在树荫中仍有颜色；身后路径与碎亮阳光把人物放回公园，没有全景平均变亮。",
+          "resolution_limit": "public_display_reference_only; no native detail or calibrated print evidence bundled",
+          "rights": "Publicly viewable copyrighted photography; local research only. No redistribution licence inferred.",
+          "role": "primary",
+          "source_url": "https://www.mariangoodman.com/viewing-room/2/",
+          "title": "El Parque del Retiro, Madrid, July 2, 2006"
+        }
+      ]
+    },
+    {
+      "author": "Hiroshi Sugimoto",
+      "core_relations": [
+        {
+          "capture_dependency": "需要真实开阔海天视野与水平关系；现有大障碍不能靠调色移除。",
+          "description": "海与天空形成上下场域，边界可清楚或渐隐，但两者关系能被感知。",
+          "failure_signal": "只剩平涂灰矩形；或为了硬边破坏原有雾化过渡。",
+          "id": "two-fields",
+          "postprocess_intent": "以所选参照判断边线与上下密度，避免一律强化地平线。",
+          "work_ids": [
+            "HS01",
+            "HS02"
+          ]
+        },
+        {
+          "capture_dependency": "实际雾、浪纹和运动积累属于拍摄事实；不靠全局模糊伪造。",
+          "description": "低细节区域仍以缓慢明暗变化和适量水纹承担距离。",
+          "failure_signal": "强去雾/清晰度让宁静渐变变成硬纹；低对比处理造成脏灰。",
+          "id": "quiet-gradation",
+          "postprocess_intent": "保住细弱梯度，局部控制海天而不抹平全部波纹。",
+          "work_ids": [
+            "HS01",
+            "HS02"
+          ]
+        }
+      ],
+      "distinctions": "与kenna-line-space相比减少物体线形，表达核心是场域与海天边界；与sammallahti-fog-habitat相比不依赖树与动物事件。",
+      "fit": {
+        "incompatible": [
+          "颜色、人物或地标是任务核心。",
+          "期望把复杂岸景后期生成纯净海平线。"
+        ],
+        "required": [
+          "源图有开阔海天关系，接受单色与少量对象。"
+        ]
+      },
+      "id": "sugimoto-sea-air-fields",
+      "label": "海天场域与边界的强弱",
+      "methods": [
+        {
+          "evidence_type": "project_hypothesis",
+          "id": "frame",
+          "limitation": "裁框只选择已有关系；按本图动作、空间和用途决定比例，不能改变视点或补对象。",
+          "operation_ids": [],
+          "relation_ids": [
+            "two-fields"
+          ],
+          "source_refs": [],
+          "status": "reference_proposed",
+          "strategy": "composition_decision"
+        },
+        {
+          "evidence_type": "project_hypothesis",
+          "id": "monochrome-trial",
+          "limitation": "当前仅全局去色候选，不能称银盐、专用黑白混色器或作者工艺；若区域灰阶不分离必须判能力不足。",
+          "operation_ids": [
+            "acr.saturation"
+          ],
+          "relation_ids": [
+            "two-fields"
+          ],
+          "source_refs": [],
+          "status": "reference_proposed"
+        },
+        {
+          "evidence_type": "project_hypothesis",
+          "id": "tone",
+          "limitation": "按源图已有光向和材料安排明暗；不得以统一曲线代替区域关系，也不推定作者曲线。",
+          "operation_ids": [
+            "acr.point_curve_rgb",
+            "acr.whites2012",
+            "acr.blacks2012",
+            "acr.shadows2012",
+            "acr.highlights2012"
+          ],
+          "relation_ids": [
+            "quiet-gradation"
+          ],
+          "source_refs": [],
+          "status": "reference_proposed"
+        },
+        {
+          "evidence_type": "project_hypothesis",
+          "id": "regional",
+          "limitation": "仅维护实际存在的区域差别；须检查边缘、光向和原生细节，不添加雾、光源或运动。",
+          "operation_ids": [
+            "acr.brush_mask",
+            "acr.linear_gradient_mask"
+          ],
+          "relation_ids": [
+            "quiet-gradation"
+          ],
+          "source_refs": [],
+          "status": "reference_proposed"
+        }
+      ],
+      "source_limits": "官网预览约850像素，仅支持整体渐变关系；不用于胶片、纸张或真实曝光时长推断。",
+      "status": "reference_proposed",
+      "subject_ids": [
+        "landscape-nature"
+      ],
+      "tag_ids": [
+        "monochrome",
+        "quiet-space"
+      ],
+      "works": [
+        {
+          "id": "HS01",
+          "image_url": "https://images.squarespace-cdn.com/content/v1/581cb131be6594d1fe22a557/1492635385718-PJBXYT9M6F2FTWK7RXHC/301_CARIBBEAN_SEA%28Hi_Res%29.jpg?format=1500w",
+          "observation": "中央清楚的平线分开浅天空与深水面；水纹向近处加密，上部只保留很轻的亮度变化。",
+          "resolution_limit": "public_display_reference_only; no native detail or calibrated print evidence bundled",
+          "rights": "Publicly viewable copyrighted photography; local research only. No redistribution licence inferred.",
+          "role": "primary",
+          "source_url": "https://www.sugimotohiroshi.com/seascapesjapanese",
+          "title": "Caribbean Sea, Jamaica, 1980"
+        },
+        {
+          "id": "HS02",
+          "image_url": "https://images.squarespace-cdn.com/content/v1/581cb131be6594d1fe22a557/1492635440604-0VAPJKGGG5XD237GNEAW/image-asset.jpeg?format=1500w",
+          "observation": "天空向中央亮灰过渡，再向下方深水渐变；海天边线不清晰，弱水纹仍在底部。空处并非单一灰值。",
+          "resolution_limit": "public_display_reference_only; no native detail or calibrated print evidence bundled",
+          "rights": "Publicly viewable copyrighted photography; local research only. No redistribution licence inferred.",
+          "role": "primary",
+          "source_url": "https://www.sugimotohiroshi.com/seascapesjapanese",
+          "title": "Ligurian Sea, Saviore, 1993"
+        },
+        {
+          "id": "HS03",
+          "image_url": "https://images.squarespace-cdn.com/content/v1/581cb131be6594d1fe22a557/1492635469989-9WH2CZTPMV91L0IW95B8/image-asset.jpeg?format=1500w",
+          "observation": "几乎全深灰的上下场域由细弱水平边界区别；下部更暗，仅有微弱纹理。作为暗密度边界，不能从作者名推导统一高调。",
+          "resolution_limit": "public_display_reference_only; no native detail or calibrated print evidence bundled",
+          "rights": "Publicly viewable copyrighted photography; local research only. No redistribution licence inferred.",
+          "role": "boundary",
+          "source_url": "https://www.sugimotohiroshi.com/seascapesjapanese",
+          "title": "Baltic Sea, Rügen, 1996"
+        }
+      ]
+    },
+    {
+      "author": "Irving Penn",
+      "core_relations": [
+        {
+          "capture_dependency": "需要原图真实表面纹理、合焦与足够尺度；食物状态不是后期特效。",
+          "description": "颜色、光泽和可见纹理一起区分每种材料，不被统一光滑或染色取代。",
+          "failure_signal": "食物变塑料；细纹被锐化成颗粒噪声；所有浅物一起漂白。",
+          "id": "material-identity",
+          "postprocess_intent": "分材料保护颜色与微反差，保住高光和较暗表面中的结构。",
+          "work_ids": [
+            "IP01",
+            "IP02",
+            "IP03"
+          ]
+        },
+        {
+          "capture_dependency": "摆放、重力接触、机位和光向必须真实存在。",
+          "description": "对象摆放的几何与接触阴影共同形成体积，背景不与主体争夺。",
+          "failure_signal": "阴影被抹去导致悬浮；造假投影；裁框让结构失重。",
+          "id": "contact-geometry",
+          "postprocess_intent": "裁框保留必要支点，调整对象与底面明暗以维持空间。",
+          "work_ids": [
+            "IP01",
+            "IP02",
+            "IP03"
+          ]
+        }
+      ],
+      "distinctions": "与kawauchi-daily-light相比，材料的明确结构和构成更重要，不能靠整体朦胧取代；与Weston式单色体积研究相比，本包颜色身份不可随意删除。",
+      "fit": {
+        "incompatible": [
+          "环境叙事是主要目的的随手餐桌图。",
+          "期望后期重摆物品、造霜粒或救回失焦纹理。"
+        ],
+        "required": [
+          "已有精确可读表面与摆放关系的静物/食物。"
+        ]
+      },
+      "id": "penn-food-material",
+      "label": "食物几何、接触阴影与材料质感",
+      "methods": [
+        {
+          "evidence_type": "project_hypothesis",
+          "id": "frame",
+          "limitation": "裁框只选择已有关系；按本图动作、空间和用途决定比例，不能改变视点或补对象。",
+          "operation_ids": [],
+          "relation_ids": [
+            "contact-geometry"
+          ],
+          "source_refs": [],
+          "status": "reference_proposed",
+          "strategy": "composition_decision"
+        },
+        {
+          "evidence_type": "project_hypothesis",
+          "id": "tone",
+          "limitation": "按源图已有光向和材料安排明暗；不得以统一曲线代替区域关系，也不推定作者曲线。",
+          "operation_ids": [
+            "acr.point_curve_rgb",
+            "acr.whites2012",
+            "acr.blacks2012",
+            "acr.shadows2012",
+            "acr.highlights2012"
+          ],
+          "relation_ids": [
+            "material-identity",
+            "contact-geometry"
+          ],
+          "source_refs": [],
+          "status": "reference_proposed"
+        },
+        {
+          "evidence_type": "project_hypothesis",
+          "id": "separate-color",
+          "limitation": "只在观察到缺口时选用既有白平衡/HSL/局部能力；保护相邻材料，非作者参数或全局色罩。",
+          "operation_ids": [
+            "acr.temperature",
+            "acr.tint",
+            "acr.saturation_adjustment_orange",
+            "acr.saturation_adjustment_yellow",
+            "acr.saturation_adjustment_green",
+            "acr.brush_mask"
+          ],
+          "relation_ids": [
+            "material-identity"
+          ],
+          "source_refs": [
+            "https://helpx.adobe.com/uk/camera-raw/desktop/using/make-color-tonal-adjustments-camera.html",
+            "https://helpx.adobe.com/camera-raw/desktop/edit-and-enhance-images/masking-and-local-adjustments/masking.html"
+          ],
+          "status": "reference_proposed"
+        },
+        {
+          "evidence_type": "project_hypothesis",
+          "id": "regional",
+          "limitation": "仅维护实际存在的区域差别；须检查边缘、光向和原生细节，不添加雾、光源或运动。",
+          "operation_ids": [
+            "acr.brush_mask",
+            "acr.linear_gradient_mask"
+          ],
+          "relation_ids": [
+            "contact-geometry"
+          ],
+          "source_refs": [],
+          "status": "reference_proposed"
+        }
+      ],
+      "source_limits": "网页参照仅约束该展示尺度的关系；未校准、未独立读图、未迁移验证。",
+      "status": "reference_proposed",
+      "subject_ids": [
+        "everyday-still-life"
+      ],
+      "tag_ids": [
+        "spatial-color",
+        "dense-color"
+      ],
+      "works": [
+        {
+          "id": "IP01",
+          "image_url": "https://images.squarespace-cdn.com/content/v1/58cfe9e91b10e37dbd7bc584/1492020155465-BTRBDZRZW2Z6CQPEOQTE/still_life_with_watermelon_new_york_1947.jpg?format=1500w",
+          "observation": "粉红瓜肉横向占据前中部，葡萄与叶子堆在后方；种子、果皮、布纹和桌面各有表面差异，零散食物细节使构成不完全规整。",
+          "resolution_limit": "public_display_reference_only; no native detail or calibrated print evidence bundled",
+          "rights": "Publicly viewable copyrighted photography; local research only. No redistribution licence inferred.",
+          "role": "primary",
+          "source_url": "https://irvingpenn.org/still-life/",
+          "title": "Still Life with Watermelon, New York, 1947"
+        },
+        {
+          "id": "IP02",
+          "image_url": "https://images.squarespace-cdn.com/content/v1/58cfe9e91b10e37dbd7bc584/1490994220436-CE777PPRP4YWO1G635F8/frozen_foods_with_string_beans_new_york_1977.jpg?format=1500w",
+          "observation": "冻结食物块叠成几何形，蓝紫、青绿、红、黄分区鲜明；霜粒与颗粒在深色块中仍能读到，块间暗隙和底部反射建立体积。",
+          "resolution_limit": "public_display_reference_only; no native detail or calibrated print evidence bundled",
+          "rights": "Publicly viewable copyrighted photography; local research only. No redistribution licence inferred.",
+          "role": "primary",
+          "source_url": "https://irvingpenn.org/still-life/",
+          "title": "Frozen Foods with String Beans, New York, 1977"
+        },
+        {
+          "id": "IP03",
+          "image_url": "https://images.squarespace-cdn.com/content/v1/58cfe9e91b10e37dbd7bc584/1491315803471-VEYU0K9TFH3VSK6TPNAX/fig-tofu-and-salmon-new-york-1998.jpg?format=1500w",
+          "observation": "深色无花果、浅豆腐方块和切面鱼段叠放，三种表面的光泽和纹理不同；白背景很净，但接触阴影与果皮反光仍清楚。",
+          "resolution_limit": "public_display_reference_only; no native detail or calibrated print evidence bundled",
+          "rights": "Publicly viewable copyrighted photography; local research only. No redistribution licence inferred.",
+          "role": "primary",
+          "source_url": "https://irvingpenn.org/still-life/",
+          "title": "Fig, Tofu, and Salmon, New York, 1998"
+        }
+      ]
+    },
+    {
+      "author": "Luigi Ghirri",
+      "core_relations": [
+        {
+          "capture_dependency": "原图要有真实框、墙边或等效开口与远处空间。",
+          "description": "近处建筑/人工边界组织对远处开放空间的观看。",
+          "failure_signal": "近物被裁掉，或近物过重吞掉远处开放感。",
+          "id": "built-aperture",
+          "postprocess_intent": "裁框维护近边与远域关系，不只截成孤立海景。",
+          "work_ids": [
+            "LG01",
+            "LG02",
+            "LG03"
+          ]
+        },
+        {
+          "capture_dependency": "需要可恢复的亮部层次及原有日光/阴影。",
+          "description": "明亮材料和空域保持细小色差、阴影与距离，轻淡不等于一片白。",
+          "failure_signal": "所有白面剪切；天空水面同一青色；用重清晰度消除空气。",
+          "id": "bright-differentiation",
+          "postprocess_intent": "分别控制白墙、石材、天空与水的亮度和颜色；允许柔和远景。",
+          "work_ids": [
+            "LG01",
+            "LG02",
+            "LG03"
+          ]
+        }
+      ],
+      "distinctions": "与meyerowitz-cape-color相比更依赖建筑边界/开口的图像构造；与sugimoto-sea-air-fields相比近处物体和轻淡颜色不可省略。",
+      "fit": {
+        "incompatible": [
+          "人物动作是唯一核心而开口只是无关背景。",
+          "只有封闭墙面或需要凭空造远景。"
+        ],
+        "required": [
+          "建筑边界与开阔海天有共同构图作用。",
+          "希望明亮、平静、几何清楚的场所观感。"
+        ]
+      },
+      "id": "ghirri-coastal-apertures",
+      "label": "明亮建筑边界与海岸开口",
+      "methods": [
+        {
+          "evidence_type": "project_hypothesis",
+          "id": "frame",
+          "limitation": "裁框只选择已有关系；按本图动作、空间和用途决定比例，不能改变视点或补对象。",
+          "operation_ids": [],
+          "relation_ids": [
+            "built-aperture"
+          ],
+          "source_refs": [],
+          "status": "reference_proposed",
+          "strategy": "composition_decision"
+        },
+        {
+          "evidence_type": "project_hypothesis",
+          "id": "tone",
+          "limitation": "按源图已有光向和材料安排明暗；不得以统一曲线代替区域关系，也不推定作者曲线。",
+          "operation_ids": [
+            "acr.point_curve_rgb",
+            "acr.whites2012",
+            "acr.blacks2012",
+            "acr.shadows2012",
+            "acr.highlights2012"
+          ],
+          "relation_ids": [
+            "bright-differentiation"
+          ],
+          "source_refs": [],
+          "status": "reference_proposed"
+        },
+        {
+          "evidence_type": "project_hypothesis",
+          "id": "material-color",
+          "limitation": "方法是可选择的能力集合；不默认压蓝或压橙，区域保护优先。",
+          "operation_ids": [
+            "acr.temperature",
+            "acr.tint",
+            "acr.saturation_adjustment_aqua",
+            "acr.saturation_adjustment_blue",
+            "acr.brush_mask"
+          ],
+          "relation_ids": [
+            "bright-differentiation"
+          ],
+          "source_refs": [],
+          "status": "reference_proposed"
+        }
+      ],
+      "source_limits": "网页参照仅约束该展示尺度的关系；未校准、未独立读图、未迁移验证。",
+      "status": "reference_proposed",
+      "subject_ids": [
+        "city-architecture",
+        "landscape-nature"
+      ],
+      "tag_ids": [
+        "quiet-space",
+        "daylight-color"
+      ],
+      "works": [
+        {
+          "id": "LG01",
+          "image_url": "https://fondazioneluigighirri.it/cdn/5805ggcvgm1d/6uMSEUjd5YISAMUEYe6Y8S/c36287f0a895716d8c2b4e04c8e9b79e/Trani_-1982.jpg?w=1600&fm=jpg",
+          "observation": "浅石墙在左右与下沿框住海天，灯柱虽小仍清楚；石材暖灰与海天蓝分离，边缘局部细节和大片空域相衬。",
+          "resolution_limit": "public_display_reference_only; no native detail or calibrated print evidence bundled",
+          "rights": "Publicly viewable copyrighted photography; local research only. No redistribution licence inferred.",
+          "role": "primary",
+          "source_url": "https://fondazioneluigighirri.it/en/artist/selected-works/paesaggio-italiano",
+          "title": "Trani, 1982"
+        },
+        {
+          "id": "LG02",
+          "image_url": "https://fondazioneluigighirri.it/cdn/5805ggcvgm1d/7AyARFZ9rqIMIMCMw0WcEA/7b53d9d5cc6f626c06181293bba0376e/d-Capri-1981-da-Paesaggio-Italiano-e-Topo_ico.jpg?w=1600&fm=jpg",
+          "observation": "近白墙与灰拱影组成左侧，窗样开口露出浅海和石雕。白面之间仍有明暗，石雕颗粒把近物与淡远景分开。",
+          "resolution_limit": "public_display_reference_only; no native detail or calibrated print evidence bundled",
+          "rights": "Publicly viewable copyrighted photography; local research only. No redistribution licence inferred.",
+          "role": "primary",
+          "source_url": "https://fondazioneluigighirri.it/en/artist/selected-works/paesaggio-italiano",
+          "title": "Capri, 1981"
+        },
+        {
+          "id": "LG03",
+          "image_url": "https://fondazioneluigighirri.it/cdn/5805ggcvgm1d/gsqk0s8raEoaY2SsW6iSy/2f3c9b4814bf25d3d38ff65ad665c64b/ghirri-cornice-copy-telaio.jpg?w=1600&fm=jpg",
+          "observation": "白矩形框立在沙滩，海平线穿过框内；框的投影落回沙地。天蓝、灰绿水与沙色轻淡但有身份，直框与波纹形成对照。",
+          "resolution_limit": "public_display_reference_only; no native detail or calibrated print evidence bundled",
+          "rights": "Publicly viewable copyrighted photography; local research only. No redistribution licence inferred.",
+          "role": "primary",
+          "source_url": "https://fondazioneluigighirri.it/en/artist/selected-works/paesaggio-italiano",
+          "title": "Marina di Ravenna, 1986 — beach frame asset"
+        }
+      ]
+    },
+    {
+      "author": "Pentti Sammallahti",
+      "core_relations": [
+        {
+          "capture_dependency": "已有动物位置、姿态和树形；不能生成动物或移动位置。",
+          "description": "小动物与树/地形尺度互相说明，事件虽小仍可发现。",
+          "failure_signal": "只放大动物或忽略到完全无法发现；失去树与地面的关系。",
+          "id": "inhabited-scale",
+          "postprocess_intent": "裁框保留其栖身关系，在最终观看尺寸确认小事件可读。",
+          "work_ids": [
+            "PS01",
+            "PS02"
+          ]
+        },
+        {
+          "capture_dependency": "真实气象和距离衰减是拍摄条件。",
+          "description": "远近形体随雾雪中的密度与边缘强弱分层，浅空间仍有方向。",
+          "failure_signal": "去雾把远景拉到近景；降反差让近树也无力；以平白遮盖细节冒充雾。",
+          "id": "fog-distance",
+          "postprocess_intent": "有限单色与区域密度控制，保留近形及退远梯度。",
+          "work_ids": [
+            "PS01",
+            "PS02"
+          ]
+        }
+      ],
+      "distinctions": "与kenna-line-space相比，小动物的在场和气象中的层次是主参照核心；与sugimoto-sea-air-fields相比仍需可辨的物体距离。",
+      "fit": {
+        "incompatible": [
+          "没有气象衰减却要求造雾；必须依靠丰富色彩叙事。",
+          "纯线形空景中没有动物却声明此包事件成立。"
+        ],
+        "required": [
+          "已有雾雪/低能见度及小动物与环境关系。"
+        ]
+      },
+      "id": "sammallahti-fog-habitat",
+      "label": "雾雪中的树形、距离与小动物",
+      "methods": [
+        {
+          "evidence_type": "project_hypothesis",
+          "id": "frame",
+          "limitation": "裁框只选择已有关系；按本图动作、空间和用途决定比例，不能改变视点或补对象。",
+          "operation_ids": [],
+          "relation_ids": [
+            "inhabited-scale"
+          ],
+          "source_refs": [],
+          "status": "reference_proposed",
+          "strategy": "composition_decision"
+        },
+        {
+          "evidence_type": "project_hypothesis",
+          "id": "monochrome-trial",
+          "limitation": "当前仅全局去色候选，不能称银盐、专用黑白混色器或作者工艺；若区域灰阶不分离必须判能力不足。",
+          "operation_ids": [
+            "acr.saturation"
+          ],
+          "relation_ids": [
+            "inhabited-scale",
+            "fog-distance"
+          ],
+          "source_refs": [],
+          "status": "reference_proposed"
+        },
+        {
+          "evidence_type": "project_hypothesis",
+          "id": "tone",
+          "limitation": "按源图已有光向和材料安排明暗；不得以统一曲线代替区域关系，也不推定作者曲线。",
+          "operation_ids": [
+            "acr.point_curve_rgb",
+            "acr.whites2012",
+            "acr.blacks2012",
+            "acr.shadows2012",
+            "acr.highlights2012"
+          ],
+          "relation_ids": [
+            "fog-distance"
+          ],
+          "source_refs": [],
+          "status": "reference_proposed"
+        },
+        {
+          "evidence_type": "project_hypothesis",
+          "id": "regional",
+          "limitation": "仅维护实际存在的区域差别；须检查边缘、光向和原生细节，不添加雾、光源或运动。",
+          "operation_ids": [
+            "acr.brush_mask",
+            "acr.linear_gradient_mask"
+          ],
+          "relation_ids": [
+            "fog-distance"
+          ],
+          "source_refs": [],
+          "status": "reference_proposed"
+        }
+      ],
+      "source_limits": "PS02源图只有640×448，适合整体关系，不能制定毛发、颗粒或细节标准；PS03仅边界。",
+      "status": "reference_proposed",
+      "subject_ids": [
+        "landscape-nature",
+        "documentary"
+      ],
+      "tag_ids": [
+        "monochrome",
+        "quiet-space"
+      ],
+      "works": [
+        {
+          "id": "PS01",
+          "image_url": "https://static-assets.artlogic.net/w_1050,c_limit,f_auto,fl_lossy,q_auto/ws-peterfetterman/usr/images/blog_entries/main_image/items/4d/4decd770546f4bbd80ac1b080ba5d9fa/penttihelsinki.jpg",
+          "observation": "中央树较深，右侧树较浅，远小灌木更弱；两只地面鸟与空中飞鸟占很小面积，雪地和天空接近却没有完全失去落地关系。",
+          "resolution_limit": "public_display_reference_only; no native detail or calibrated print evidence bundled",
+          "rights": "Publicly viewable copyrighted photography; local research only. No redistribution licence inferred.",
+          "role": "primary",
+          "source_url": "https://www.peterfetterman.com/blog/47-834-pentti-sammallahti-helsinki-finland-2016/",
+          "title": "Helsinki, Finland, 2016"
+        },
+        {
+          "id": "PS02",
+          "image_url": "https://static-assets.artlogic.net/w_1600,h_1600,c_limit,f_auto,fl_lossy,q_auto/artlogicstorage/peterfetterman/images/view/99bfb8d0df22d678e256e0a98b67ee5aj.jpg",
+          "observation": "左近树与树下马是最明确的轮廓；中间小马与后树在雾中变淡。地面斜纹把近处与浅灰空域相接，灰阶有前后而非只留剪影。",
+          "resolution_limit": "public_display_reference_only; no native detail or calibrated print evidence bundled",
+          "rights": "Publicly viewable copyrighted photography; local research only. No redistribution licence inferred.",
+          "role": "primary",
+          "source_url": "https://www.peterfetterman.com/artists/156-pentti-sammallahti/works/28182-pentti-sammallahti-untitled-two-horses-trees-fog-2003/",
+          "title": "Untitled (Two Horses, Trees & Fog), 2003"
+        },
+        {
+          "id": "PS03",
+          "image_url": "https://static-assets.artlogic.net/w_1050,c_limit,f_auto,fl_lossy,q_auto/ws-peterfetterman/usr/images/blog_entries/main_image/items/8f/8f1233af2ebf4a2e861636c68d717fb4/1426.jpeg",
+          "observation": "深黑树冠几乎占满上部，树干缝隙露出亮背景；下部水中映影和小鸟分开成为窄亮带中的节奏。用作密暗边界，非雾雪主参照。",
+          "resolution_limit": "public_display_reference_only; no native detail or calibrated print evidence bundled",
+          "rights": "Publicly viewable copyrighted photography; local research only. No redistribution licence inferred.",
+          "role": "boundary",
+          "source_url": "https://www.peterfetterman.com/blog/533-1426-pentti-sammallahti-lake-numazawa-fukushima-japan-2005/",
+          "title": "Lake Numazawa, Fukushima, Japan, 2005"
+        }
+      ]
+    },
+    {
+      "author": "Ernst Haas",
+      "core_relations": [
+        {
+          "capture_dependency": "水流形态、波峰、拍摄时刻和曝光积累必须已存在。",
+          "description": "受光水体与较暗岩石/远水相衬，运动沿已有形态有明确路径。",
+          "failure_signal": "白水剪切成无结构色块；提暗部后动势支撑丢失。",
+          "id": "water-dark-structure",
+          "postprocess_intent": "保护水线/泡沫与邻近暗区的相对密度，不能用假模糊制造慢门。",
+          "work_ids": [
+            "EH01",
+            "EH02"
+          ]
+        },
+        {
+          "capture_dependency": "需要原图真实水色和光的区域变化，不把任何水都染绿。",
+          "description": "水色因区域受光与空间角色变化，亮部颜色和较暗水体可区分。",
+          "failure_signal": "整个画面被统一青绿罩覆盖；深处颜色和泡沫身份一起丢失。",
+          "id": "water-color-depth",
+          "postprocess_intent": "按近水、远水、白沫/受光水丝分别检查颜色和亮度。",
+          "work_ids": [
+            "EH01",
+            "EH02"
+          ]
+        }
+      ],
+      "distinctions": "与meyerowitz-cape-color相比，更集中于水的光色与运动形态；与shore-natural-depth相比更依赖局部强亮/深色的集中对照。此包与Haas纽约街头包场景和关系不同。",
+      "fit": {
+        "incompatible": [
+          "静水无动势却要求生成瀑布丝；需要均匀明亮轻淡环境。",
+          "以绿色为固定参数，不检查实际水体与光。"
+        ],
+        "required": [
+          "水流/波浪及明暗分布在原图可读，愿意保留较深底色。"
+        ]
+      },
+      "id": "haas-water-light",
+      "label": "水的光色密度与可见动势",
+      "methods": [
+        {
+          "evidence_type": "project_hypothesis",
+          "id": "frame",
+          "limitation": "裁框只选择已有关系；按本图动作、空间和用途决定比例，不能改变视点或补对象。",
+          "operation_ids": [],
+          "relation_ids": [
+            "water-dark-structure"
+          ],
+          "source_refs": [],
+          "status": "reference_proposed",
+          "strategy": "composition_decision"
+        },
+        {
+          "evidence_type": "project_hypothesis",
+          "id": "tone",
+          "limitation": "按源图已有光向和材料安排明暗；不得以统一曲线代替区域关系，也不推定作者曲线。",
+          "operation_ids": [
+            "acr.point_curve_rgb",
+            "acr.whites2012",
+            "acr.blacks2012",
+            "acr.shadows2012",
+            "acr.highlights2012"
+          ],
+          "relation_ids": [
+            "water-dark-structure"
+          ],
+          "source_refs": [],
+          "status": "reference_proposed"
+        },
+        {
+          "evidence_type": "project_hypothesis",
+          "id": "material-color",
+          "limitation": "方法是可选择的能力集合；不默认压蓝或压橙，区域保护优先。",
+          "operation_ids": [
+            "acr.temperature",
+            "acr.tint",
+            "acr.saturation_adjustment_aqua",
+            "acr.saturation_adjustment_blue",
+            "acr.brush_mask"
+          ],
+          "relation_ids": [
+            "water-color-depth"
+          ],
+          "source_refs": [],
+          "status": "reference_proposed"
+        },
+        {
+          "evidence_type": "project_hypothesis",
+          "id": "regional",
+          "limitation": "仅维护实际存在的区域差别；须检查边缘、光向和原生细节，不添加雾、光源或运动。",
+          "operation_ids": [
+            "acr.brush_mask",
+            "acr.linear_gradient_mask"
+          ],
+          "relation_ids": [
+            "water-dark-structure",
+            "water-color-depth"
+          ],
+          "source_refs": [],
+          "status": "reference_proposed"
+        }
+      ],
+      "source_limits": "网页参照仅约束该展示尺度的关系；未校准、未独立读图、未迁移验证。",
+      "status": "reference_proposed",
+      "subject_ids": [
+        "landscape-nature"
+      ],
+      "tag_ids": [
+        "dense-color",
+        "spatial-color"
+      ],
+      "works": [
+        {
+          "id": "EH01",
+          "image_url": "https://ernst-haas.com/wp-content/uploads/color-creation2/color-creation-74*.jpg",
+          "observation": "浅亮水丝沿深岩石斜边和竖面向下汇合，水潭偏青绿；不同粗细水束与暗岩共同构成动势，亮水不是一块死白。",
+          "resolution_limit": "public_display_reference_only; no native detail or calibrated print evidence bundled",
+          "rights": "Publicly viewable copyrighted photography; local research only. No redistribution licence inferred.",
+          "role": "primary",
+          "source_url": "https://ernst-haas.com/classic-color-creation/",
+          "title": "Kyushu Waterfall, Japan, 1981"
+        },
+        {
+          "id": "EH02",
+          "image_url": "https://ernst-haas.com/wp-content/uploads/color-creation2/color-creation-111*.jpg",
+          "observation": "近浪透亮偏绿，破浪白沫与较暗远海相接；上部蓝天和亮云形成另一层。近远水体的绿与蓝有空间角色，没有全图绿色罩。",
+          "resolution_limit": "public_display_reference_only; no native detail or calibrated print evidence bundled",
+          "rights": "Publicly viewable copyrighted photography; local research only. No redistribution licence inferred.",
+          "role": "primary",
+          "source_url": "https://ernst-haas.com/classic-color-creation/",
+          "title": "Tobago Wave, Caribbean, 1968"
+        },
+        {
+          "id": "EH03",
+          "image_url": "https://ernst-haas.com/wp-content/uploads/color-creation2/color-creation-142*.jpg",
+          "observation": "细枝上黄叶在近处发亮，后方深绿林层柔软而仍有树干。仅作同作者非水体边界：浓色不等于所有区域同样饱和或抬亮。",
+          "resolution_limit": "public_display_reference_only; no native detail or calibrated print evidence bundled",
+          "rights": "Publicly viewable copyrighted photography; local research only. No redistribution licence inferred.",
+          "role": "boundary",
+          "source_url": "https://ernst-haas.com/classic-color-creation/",
+          "title": "Autumn Maple Leaves, Kyoto, Japan, 1981"
+        }
+      ]
+    },
+    {
+      "author": "Toshio Shibata",
+      "core_relations": [
+        {
+          "capture_dependency": "视点、结构几何和自然边界来自现场。",
+          "description": "人工结构的方向、重复和间隔与自然区域共同组织画面。",
+          "failure_signal": "只剩孤立桥梁/水面；过度透视修正改变空间关系。",
+          "id": "structure-interval",
+          "postprocess_intent": "裁框明确结构路径及与自然的接合，不为消除干扰而删除核心部件。",
+          "work_ids": [
+            "TS01",
+            "TS02"
+          ]
+        },
+        {
+          "capture_dependency": "需要已有物体颜色、阴影或反射，不造色块。",
+          "description": "材料颜色、光照与阴影组成可辨色面，平面节奏仍保留材料性质。",
+          "failure_signal": "全部绿化或灰化；结构与环境粘成同一材质。",
+          "id": "color-material-planes",
+          "postprocess_intent": "分混凝土、金属、水与植物控制颜色密度；保持真实光向。",
+          "work_ids": [
+            "TS01",
+            "TS02"
+          ]
+        }
+      ],
+      "distinctions": "与ghirri-coastal-apertures相比更集中在结构方向与色面相接，开放海天不是必要条件；与shore-urban-continuity相比更接近平面几何，日常城市信息较少。",
+      "fit": {
+        "incompatible": [
+          "纯自然风光无人工结构。",
+          "要求凭后期改变桥的透视、颜色身份或结构重复。"
+        ],
+        "required": [
+          "人工结构与山林/水/地形形成可辨关系。"
+        ]
+      },
+      "id": "shibata-engineered-nature",
+      "label": "人工结构与自然色面的几何秩序",
+      "methods": [
+        {
+          "evidence_type": "project_hypothesis",
+          "id": "frame",
+          "limitation": "裁框只选择已有关系；按本图动作、空间和用途决定比例，不能改变视点或补对象。",
+          "operation_ids": [],
+          "relation_ids": [
+            "structure-interval"
+          ],
+          "source_refs": [],
+          "status": "reference_proposed",
+          "strategy": "composition_decision"
+        },
+        {
+          "evidence_type": "project_hypothesis",
+          "id": "tone",
+          "limitation": "按源图已有光向和材料安排明暗；不得以统一曲线代替区域关系，也不推定作者曲线。",
+          "operation_ids": [
+            "acr.point_curve_rgb",
+            "acr.whites2012",
+            "acr.blacks2012",
+            "acr.shadows2012",
+            "acr.highlights2012"
+          ],
+          "relation_ids": [
+            "color-material-planes"
+          ],
+          "source_refs": [],
+          "status": "reference_proposed"
+        },
+        {
+          "evidence_type": "project_hypothesis",
+          "id": "separate-color",
+          "limitation": "只在观察到缺口时选用既有白平衡/HSL/局部能力；保护相邻材料，非作者参数或全局色罩。",
+          "operation_ids": [
+            "acr.temperature",
+            "acr.tint",
+            "acr.saturation_adjustment_orange",
+            "acr.saturation_adjustment_yellow",
+            "acr.saturation_adjustment_green",
+            "acr.brush_mask"
+          ],
+          "relation_ids": [
+            "color-material-planes"
+          ],
+          "source_refs": [
+            "https://helpx.adobe.com/uk/camera-raw/desktop/using/make-color-tonal-adjustments-camera.html",
+            "https://helpx.adobe.com/camera-raw/desktop/edit-and-enhance-images/masking-and-local-adjustments/masking.html"
+          ],
+          "status": "reference_proposed"
+        },
+        {
+          "evidence_type": "project_hypothesis",
+          "id": "regional",
+          "limitation": "仅维护实际存在的区域差别；须检查边缘、光向和原生细节，不添加雾、光源或运动。",
+          "operation_ids": [
+            "acr.brush_mask",
+            "acr.linear_gradient_mask"
+          ],
+          "relation_ids": [
+            "color-material-planes"
+          ],
+          "source_refs": [],
+          "status": "reference_proposed"
+        }
+      ],
+      "source_limits": "网页参照仅约束该展示尺度的关系；未校准、未独立读图、未迁移验证。",
+      "status": "reference_proposed",
+      "subject_ids": [
+        "landscape-nature",
+        "city-architecture"
+      ],
+      "tag_ids": [
+        "spatial-color",
+        "dense-color"
+      ],
+      "works": [
+        {
+          "id": "TS01",
+          "image_url": "https://www.polkagalerie.com/docs/artistes/Toshio-Shibata/Color/Toshio-Shibata-Color-Hanno-City-tirage-photo.jpg",
+          "observation": "横向青色梁、绿金水面、斜黑投影和浅混凝土形成色带；底部深蓝水面仍有细小波纹。画面接近平面构成，材料表面仍可辨。",
+          "resolution_limit": "public_display_reference_only; no native detail or calibrated print evidence bundled",
+          "rights": "Publicly viewable copyrighted photography; local research only. No redistribution licence inferred.",
+          "role": "primary",
+          "source_url": "https://www.polkagalerie.com/oeuvres.php?id=200&l=2&o=2267&a=75",
+          "title": "Hanno City, Saitama Prefecture, 2006"
+        },
+        {
+          "id": "TS02",
+          "image_url": "https://www.polkagalerie.com/docs/artistes/Toshio-Shibata/Color/Toshio-Shibata-Color-Okawa-Village-Tosa-County-Kochi-Prefecture-tirage-photo.jpg",
+          "observation": "红色桥梁骨架斜向深入画面，浅扶栏与深绿山林相接；远端重复结构逐渐压紧，背景雾感较软但没有消失。",
+          "resolution_limit": "public_display_reference_only; no native detail or calibrated print evidence bundled",
+          "rights": "Publicly viewable copyrighted photography; local research only. No redistribution licence inferred.",
+          "role": "primary",
+          "source_url": "https://www.polkagalerie.com/oeuvres.php?id=200&l=2&o=2269&a=75",
+          "title": "Okawa Village, Kochi Prefecture, 2007"
+        }
+      ]
+    },
+    {
+      "author": "Stephen Shore",
+      "core_relations": [
+        {
+          "capture_dependency": "真实机位、透视和物体距离，不能后期重排城市。",
+          "description": "近处日常物、道路与建筑向远处保持连续可读空间。",
+          "failure_signal": "只截最显眼招牌；清理过多细节后空间成为孤立拼块。",
+          "id": "continuous-space",
+          "postprocess_intent": "裁框判断近物是否支撑进入画面；保留有用边缘与路径。",
+          "work_ids": [
+            "SSU01",
+            "SSU02",
+            "SSU03"
+          ]
+        },
+        {
+          "capture_dependency": "需要真实颜色载体与可辨明暗层次。",
+          "description": "不同材料的颜色与日照/阴影共同说明位置，鲜明色块不压倒灰白的连接区。",
+          "failure_signal": "全局橙青或去饱和吞掉物体身份；明暗全部平均。",
+          "id": "situated-color",
+          "postprocess_intent": "维持材料差异，分别检查白车、墙、天空、植物和标识。",
+          "work_ids": [
+            "SSU01",
+            "SSU02",
+            "SSU03"
+          ]
+        }
+      ],
+      "distinctions": "与ghirri-coastal-apertures相比容纳更多城市事实和多层颜色；与leiter-layered-street相比强调公开可辨空间，遮挡不是必需。",
+      "fit": {
+        "incompatible": [
+          "只需单人动作特写，环境无叙事作用。",
+          "要从混乱源图造不存在的干净视点。"
+        ],
+        "required": [
+          "城市环境的普通物和空间阅读是目的。",
+          "源图具有可读前中后层及材料颜色。"
+        ]
+      },
+      "id": "shore-urban-continuity",
+      "label": "日光下城市色彩与空间的连续阅读",
+      "methods": [
+        {
+          "evidence_type": "project_hypothesis",
+          "id": "frame",
+          "limitation": "裁框只选择已有关系；按本图动作、空间和用途决定比例，不能改变视点或补对象。",
+          "operation_ids": [],
+          "relation_ids": [
+            "continuous-space"
+          ],
+          "source_refs": [],
+          "status": "reference_proposed",
+          "strategy": "composition_decision"
+        },
+        {
+          "evidence_type": "project_hypothesis",
+          "id": "tone",
+          "limitation": "按源图已有光向和材料安排明暗；不得以统一曲线代替区域关系，也不推定作者曲线。",
+          "operation_ids": [
+            "acr.point_curve_rgb",
+            "acr.whites2012",
+            "acr.blacks2012",
+            "acr.shadows2012",
+            "acr.highlights2012"
+          ],
+          "relation_ids": [
+            "situated-color"
+          ],
+          "source_refs": [],
+          "status": "reference_proposed"
+        },
+        {
+          "evidence_type": "project_hypothesis",
+          "id": "separate-color",
+          "limitation": "只在观察到缺口时选用既有白平衡/HSL/局部能力；保护相邻材料，非作者参数或全局色罩。",
+          "operation_ids": [
+            "acr.temperature",
+            "acr.tint",
+            "acr.saturation_adjustment_orange",
+            "acr.saturation_adjustment_yellow",
+            "acr.saturation_adjustment_green",
+            "acr.brush_mask"
+          ],
+          "relation_ids": [
+            "situated-color"
+          ],
+          "source_refs": [
+            "https://helpx.adobe.com/uk/camera-raw/desktop/using/make-color-tonal-adjustments-camera.html",
+            "https://helpx.adobe.com/camera-raw/desktop/edit-and-enhance-images/masking-and-local-adjustments/masking.html"
+          ],
+          "status": "reference_proposed"
+        },
+        {
+          "evidence_type": "project_hypothesis",
+          "id": "regional",
+          "limitation": "仅维护实际存在的区域差别；须检查边缘、光向和原生细节，不添加雾、光源或运动。",
+          "operation_ids": [
+            "acr.brush_mask",
+            "acr.linear_gradient_mask"
+          ],
+          "relation_ids": [
+            "situated-color"
+          ],
+          "source_refs": [],
+          "status": "reference_proposed"
+        }
+      ],
+      "source_limits": "网页参照仅约束该展示尺度的关系；未校准、未独立读图、未迁移验证。",
+      "status": "reference_proposed",
+      "subject_ids": [
+        "city-architecture",
+        "street"
+      ],
+      "tag_ids": [
+        "daylight-color",
+        "spatial-color"
+      ],
+      "works": [
+        {
+          "id": "SSU01",
+          "image_url": "https://static-assets.artlogic.net/w_2020,h_1160,c_limit/exhibit-e/5576fee507a72c0678771e53/feb53e9daadda6a7e3bb74699d670960.jpeg",
+          "observation": "粉墙泳池在近处，路对面店面和后方水塔分层展开；黄招牌、青池面与灰路各有位置，日照与阴影都保留信息。",
+          "resolution_limit": "public_display_reference_only; no native detail or calibrated print evidence bundled",
+          "rights": "Publicly viewable copyrighted photography; local research only. No redistribution licence inferred.",
+          "role": "primary",
+          "source_url": "https://www.303gallery.com/artists/stephen-shore/images/uncommon-places",
+          "title": "Marland Street, Hobbs, New Mexico, February 19, 1975"
+        },
+        {
+          "id": "SSU02",
+          "image_url": "https://static-assets.artlogic.net/w_2020,h_1160,c_limit/exhibit-e/5576fee507a72c0678771e53/6276b0dfcad7bb8dac3e4121aaaaae33.jpeg",
+          "observation": "两侧砖墙把中间浅墙绿窗建筑和红白车组织起来，左后方路面下坡到淡绿山；颜色清楚但路与天空不抢主体。",
+          "resolution_limit": "public_display_reference_only; no native detail or calibrated print evidence bundled",
+          "rights": "Publicly viewable copyrighted photography; local research only. No redistribution licence inferred.",
+          "role": "primary",
+          "source_url": "https://www.303gallery.com/artists/stephen-shore/images/uncommon-places",
+          "title": "Church and Second Streets, Easton, Pennsylvania, June 20, 1974"
+        },
+        {
+          "id": "SSU03",
+          "image_url": "https://static-assets.artlogic.net/w_2020,h_1160,c_limit/exhibit-e/5576fee507a72c0678771e53/4b4d0b86eb6ab6be6b2d4e0fe7139bd5.jpeg",
+          "observation": "近处车辆与路口连到蓝色玻璃立面，幕墙内有扭曲建筑反射；白车、树与浅墙分别受光，反射和实体建筑同时可读。",
+          "resolution_limit": "public_display_reference_only; no native detail or calibrated print evidence bundled",
+          "rights": "Publicly viewable copyrighted photography; local research only. No redistribution licence inferred.",
+          "role": "primary",
+          "source_url": "https://www.303gallery.com/artists/stephen-shore/images/uncommon-places",
+          "title": "Taylor Street and West Fifth Street, Fort Worth, Texas, June 13, 1976"
+        }
+      ]
+    },
+    {
+      "author": "Stephen Shore",
+      "core_relations": [
+        {
+          "capture_dependency": "拍摄视点和地形距离已存在，空气透视不是可随意合成的滤镜。",
+          "description": "近地表/水、植被或坡面与远处空气通过连续层次形成空间。",
+          "failure_signal": "去雾/局部反差把远处拉近；所有区域同密度。",
+          "id": "natural-depth",
+          "postprocess_intent": "依据实际地形安排裁框和近远反差，保留远处自然退淡。",
+          "work_ids": [
+            "SSN01",
+            "SSN02"
+          ]
+        },
+        {
+          "capture_dependency": "原图有真实植被及光照变化；不能染绿季节不同的植被。",
+          "description": "绿色随材料、受光和距离变化，与土/水/天空等区域相互区分。",
+          "failure_signal": "全图同一绿罩；绿地无层次或像荧光块；蓝水与土被绿色污染。",
+          "id": "green-variety",
+          "postprocess_intent": "维护亮叶、暗树、草坡的差异，避免全局绿偏侵入其他材料。",
+          "work_ids": [
+            "SSN01",
+            "SSN02"
+          ]
+        }
+      ],
+      "distinctions": "与haas-water-light相比颜色沿完整日常空间分布，不以强亮水体为单一中心；与kenna-line-space相比保留颜色与丰富生态细节。SSN01人物尺度只适配风景/游憩目的，不成为人物任务默认裁法。",
+      "fit": {
+        "incompatible": [
+          "任务唯一核心是人物互动且宽景削弱其可读性。",
+          "需要浓密夜色、全白雾场或消除所有人工事实。"
+        ],
+        "required": [
+          "日光自然环境有可见深度、植物变化与场景尺度。"
+        ]
+      },
+      "id": "shore-natural-depth",
+      "label": "日光自然中的绿层、空气与空间尺度",
+      "methods": [
+        {
+          "evidence_type": "project_hypothesis",
+          "id": "frame",
+          "limitation": "裁框只选择已有关系；按本图动作、空间和用途决定比例，不能改变视点或补对象。",
+          "operation_ids": [],
+          "relation_ids": [
+            "natural-depth"
+          ],
+          "source_refs": [],
+          "status": "reference_proposed",
+          "strategy": "composition_decision"
+        },
+        {
+          "evidence_type": "project_hypothesis",
+          "id": "tone",
+          "limitation": "按源图已有光向和材料安排明暗；不得以统一曲线代替区域关系，也不推定作者曲线。",
+          "operation_ids": [
+            "acr.point_curve_rgb",
+            "acr.whites2012",
+            "acr.blacks2012",
+            "acr.shadows2012",
+            "acr.highlights2012"
+          ],
+          "relation_ids": [
+            "natural-depth"
+          ],
+          "source_refs": [],
+          "status": "reference_proposed"
+        },
+        {
+          "evidence_type": "project_hypothesis",
+          "id": "separate-color",
+          "limitation": "只在观察到缺口时选用既有白平衡/HSL/局部能力；保护相邻材料，非作者参数或全局色罩。",
+          "operation_ids": [
+            "acr.temperature",
+            "acr.tint",
+            "acr.saturation_adjustment_orange",
+            "acr.saturation_adjustment_yellow",
+            "acr.saturation_adjustment_green",
+            "acr.brush_mask"
+          ],
+          "relation_ids": [
+            "green-variety"
+          ],
+          "source_refs": [
+            "https://helpx.adobe.com/uk/camera-raw/desktop/using/make-color-tonal-adjustments-camera.html",
+            "https://helpx.adobe.com/camera-raw/desktop/edit-and-enhance-images/masking-and-local-adjustments/masking.html"
+          ],
+          "status": "reference_proposed"
+        },
+        {
+          "evidence_type": "project_hypothesis",
+          "id": "regional",
+          "limitation": "仅维护实际存在的区域差别；须检查边缘、光向和原生细节，不添加雾、光源或运动。",
+          "operation_ids": [
+            "acr.brush_mask",
+            "acr.linear_gradient_mask"
+          ],
+          "relation_ids": [
+            "green-variety",
+            "natural-depth"
+          ],
+          "source_refs": [],
+          "status": "reference_proposed"
+        }
+      ],
+      "source_limits": "网页参照仅约束该展示尺度的关系；未校准、未独立读图、未迁移验证。",
+      "status": "reference_proposed",
+      "subject_ids": [
+        "landscape-nature",
+        "documentary"
+      ],
+      "tag_ids": [
+        "daylight-color",
+        "spatial-color",
+        "human-scale"
+      ],
+      "works": [
+        {
+          "id": "SSN01",
+          "image_url": "https://static-assets.artlogic.net/w_2020,h_1160,c_limit/exhibit-e/5576fee507a72c0678771e53/735795abfffb044ecdd52d22853fba83.jpeg",
+          "observation": "近水反射、浅沙洲、明暗不同的绿树和远灰蓝山层层相连；人物分散在河岸活动而仍可见，树木没有被统一成一个绿色值。",
+          "resolution_limit": "public_display_reference_only; no native detail or calibrated print evidence bundled",
+          "rights": "Publicly viewable copyrighted photography; local research only. No redistribution licence inferred.",
+          "role": "primary",
+          "source_url": "https://www.303gallery.com/artists/stephen-shore/images/uncommon-places",
+          "title": "Merced River, Yosemite National Park, California, August 13, 1979"
+        },
+        {
+          "id": "SSN02",
+          "image_url": "https://static-assets.artlogic.net/w_2020,h_1160,c_limit/exhibit-e/5576fee507a72c0678771e53/95ce32fe393bfbe73f07c55b5fe77c2e.jpeg",
+          "observation": "大片草坡以缓慢明暗与起伏延伸，近树较深，后山与右侧林地更远；蓝天云团明亮，绿草内部仍分清局部起伏和小尺度物。",
+          "resolution_limit": "public_display_reference_only; no native detail or calibrated print evidence bundled",
+          "rights": "Publicly viewable copyrighted photography; local research only. No redistribution licence inferred.",
+          "role": "primary",
+          "source_url": "https://www.303gallery.com/artists/stephen-shore/images/landscapes",
+          "title": "Gallatin County, Montana, 1982"
+        },
+        {
+          "id": "SSN03",
+          "image_url": "https://static-assets.artlogic.net/w_2020,h_1160,c_limit/exhibit-e/5576fee507a72c0678771e53/65c729fcc61695247d9f3f9d6d283145.jpeg",
+          "observation": "近土路与轨道、横跨电线和远绿山共存，远山比近草淡。作为有人为介入的边界，说明不能把所有人工痕迹视为必删杂物。",
+          "resolution_limit": "public_display_reference_only; no native detail or calibrated print evidence bundled",
+          "rights": "Publicly viewable copyrighted photography; local research only. No redistribution licence inferred.",
+          "role": "boundary",
+          "source_url": "https://www.303gallery.com/artists/stephen-shore/images/landscapes",
+          "title": "Putnam County, New York, 1984–1986"
+        }
+      ]
+    },
+    {
+      "author": "Ansel Adams",
+      "core_relations": [
+        {
+          "capture_dependency": "原图需有真实树干/根等形态、距离与合焦。",
+          "description": "自然形体的重复或弯曲以间隔和明暗转折形成节奏。",
+          "failure_signal": "只剩装饰黑白线；形体相互并合或支点被切断。",
+          "id": "form-rhythm",
+          "postprocess_intent": "裁框围绕结构联系；单色转译须先确认相邻形体灰阶能区分。",
+          "work_ids": [
+            "AA01",
+            "AA02"
+          ]
+        },
+        {
+          "capture_dependency": "有效纹理和光向必须已拍到；不能恢复失焦细节。",
+          "description": "表面纹理与体积同时存在，亮处有质感、暗处有必要结构。",
+          "failure_signal": "过锐产生硬边；黑位堵塞所有背景；亮面变平白。",
+          "id": "texture-volume",
+          "postprocess_intent": "按表面与体积检查曲线和区域反差，保留暗部层次而不抬平。",
+          "work_ids": [
+            "AA01",
+            "AA02"
+          ]
+        }
+      ],
+      "distinctions": "与kenna-line-space相比重视丰富表面与体积；与penn-food-material相比是现场自然结构及单色转译，不依赖摆放食物或颜色身份。",
+      "fit": {
+        "incompatible": [
+          "颜色/季节色是表达核心。",
+          "源图失焦或缺少定向明暗却要求后期雕刻形态。"
+        ],
+        "required": [
+          "纹理和自然形体是主要观看内容，接受单色。"
+        ]
+      },
+      "id": "adams-natural-form",
+      "label": "自然纹理中的单色体积与节奏",
+      "methods": [
+        {
+          "evidence_type": "project_hypothesis",
+          "id": "frame",
+          "limitation": "裁框只选择已有关系；按本图动作、空间和用途决定比例，不能改变视点或补对象。",
+          "operation_ids": [],
+          "relation_ids": [
+            "form-rhythm"
+          ],
+          "source_refs": [],
+          "status": "reference_proposed",
+          "strategy": "composition_decision"
+        },
+        {
+          "evidence_type": "project_hypothesis",
+          "id": "monochrome-trial",
+          "limitation": "当前仅全局去色候选，不能称银盐、专用黑白混色器或作者工艺；若区域灰阶不分离必须判能力不足。",
+          "operation_ids": [
+            "acr.saturation"
+          ],
+          "relation_ids": [
+            "form-rhythm"
+          ],
+          "source_refs": [],
+          "status": "reference_proposed"
+        },
+        {
+          "evidence_type": "project_hypothesis",
+          "id": "tone",
+          "limitation": "按源图已有光向和材料安排明暗；不得以统一曲线代替区域关系，也不推定作者曲线。",
+          "operation_ids": [
+            "acr.point_curve_rgb",
+            "acr.whites2012",
+            "acr.blacks2012",
+            "acr.shadows2012",
+            "acr.highlights2012"
+          ],
+          "relation_ids": [
+            "texture-volume"
+          ],
+          "source_refs": [],
+          "status": "reference_proposed"
+        },
+        {
+          "evidence_type": "project_hypothesis",
+          "id": "regional",
+          "limitation": "仅维护实际存在的区域差别；须检查边缘、光向和原生细节，不添加雾、光源或运动。",
+          "operation_ids": [
+            "acr.brush_mask",
+            "acr.linear_gradient_mask"
+          ],
+          "relation_ids": [
+            "texture-volume"
+          ],
+          "source_refs": [],
+          "status": "reference_proposed"
+        }
+      ],
+      "source_limits": "这里只研究两幅自然细部，不概括Adams所有山水作品，不推断Zone System数值或银盐处理参数。",
+      "status": "reference_proposed",
+      "subject_ids": [
+        "landscape-nature",
+        "everyday-still-life"
+      ],
+      "tag_ids": [
+        "monochrome",
+        "quiet-space"
+      ],
+      "works": [
+        {
+          "id": "AA01",
+          "image_url": "https://articles.anseladams.com/wp-content/uploads/2026/03/Aspens-Northern-New-Mexico-V-by-Ansel-Adams-scaled.jpg",
+          "observation": "亮白树干在深林背景前形成不等间隔，树皮斑点与圆柱阴影同时存在；背景暗而仍有枝条，亮干并非平白线。",
+          "resolution_limit": "public_display_reference_only; no native detail or calibrated print evidence bundled",
+          "rights": "Publicly viewable copyrighted photography; local research only. No redistribution licence inferred.",
+          "role": "primary",
+          "source_url": "https://articles.anseladams.com/aspens-northern-new-mexico-1958-story/",
+          "title": "Aspens, Northern New Mexico (V), 1958"
+        },
+        {
+          "id": "AA02",
+          "image_url": "https://articles.anseladams.com/wp-content/uploads/2026/08/Roots-Foster-Gardens-Honolulu-Hawaii22-original-photograph-by-Ansel-Adams-1948-826x1030.jpg",
+          "observation": "粗大根部以弯曲明暗棱线互相穿插，凹处较深；小圆叶与根皮纹理尺度不同，表面亮度沿立体转折变化。",
+          "resolution_limit": "public_display_reference_only; no native detail or calibrated print evidence bundled",
+          "rights": "Publicly viewable copyrighted photography; local research only. No redistribution licence inferred.",
+          "role": "primary",
+          "source_url": "https://articles.anseladams.com/aspens-northern-new-mexico-1958-story/",
+          "title": "Roots, Foster Gardens, Honolulu, Hawaii, 1948"
+        }
+      ]
+    },
+    {
+      "author": "Edward Weston",
+      "core_relations": [
+        {
+          "capture_dependency": "物体形态、摆放、机位与有效光向须已拍到；不能后期雕刻不存在的隆起或凹面。",
+          "description": "连续的明暗转折让曲面、凹谷与外轮廓同时可读。",
+          "failure_signal": "亮部成为平白贴片；阴影连成无层次黑块；强局部反差把曲面切成硬色带。",
+          "id": "curve-volume",
+          "postprocess_intent": "按真实转折安排密度，先检查整件物体的体积再看局部反差。",
+          "work_ids": [
+            "weston-7",
+            "weston-10",
+            "weston-28"
+          ]
+        },
+        {
+          "capture_dependency": "原图须有有效对焦与材料纹理、恰当背景；无法从失焦恢复纤维。",
+          "description": "纹理和重复线条支持物体形状，暗背景与关键轮廓保持必要区别。",
+          "failure_signal": "表面过锐抢走体积；纯黑底吞掉关键轮廓；为套黑白而失去材料辨识。",
+          "id": "surface-form",
+          "postprocess_intent": "裁框围绕形态联结，去色后检查相邻灰阶和表面区别，不追求统一锐度。",
+          "work_ids": [
+            "weston-7",
+            "weston-10",
+            "weston-28"
+          ]
+        }
+      ],
+      "distinctions": "与penn-food-material相比，以单色连续曲面为主，不靠食物色彩和多物摆放；与adams-natural-form相比集中于孤立近物的塑形，现场生态联系较少。",
+      "fit": {
+        "incompatible": [
+          "产品颜色或场景故事是不可丢失的核心。",
+          "希望靠后期重摆物体、重造背景或修复失焦纹理。"
+        ],
+        "required": [
+          "自然材料的形态和表面是主要观看内容，接受单色转译。",
+          "源图已有可辨光向、曲面和有效细节。"
+        ]
+      },
+      "id": "weston-sculptural-material",
+      "label": "近距离自然材料的单色曲面与纹理",
+      "methods": [
+        {
+          "evidence_type": "project_hypothesis",
+          "id": "frame",
+          "limitation": "裁框只选择已有关系；不能改变拍摄视点、结构、人物位置或运动状态。",
+          "operation_ids": [],
+          "relation_ids": [
+            "surface-form"
+          ],
+          "source_refs": [],
+          "status": "reference_proposed",
+          "strategy": "composition_decision"
+        },
+        {
+          "evidence_type": "project_hypothesis",
+          "id": "monochrome-trial",
+          "limitation": "当前只有全局去色候选，不能称专用黑白混色器、银盐或作者工艺；去色后区域灰阶不分离则判能力不足。",
+          "operation_ids": [
+            "acr.saturation"
+          ],
+          "relation_ids": [
+            "curve-volume",
+            "surface-form"
+          ],
+          "source_refs": [],
+          "status": "reference_proposed"
+        },
+        {
+          "evidence_type": "project_hypothesis",
+          "id": "tone",
+          "limitation": "先依据源图已有光向、表面和空间判断明暗关系；不是作者曲线或固定参数。",
+          "operation_ids": [
+            "acr.point_curve_rgb",
+            "acr.whites2012",
+            "acr.blacks2012",
+            "acr.shadows2012",
+            "acr.highlights2012"
+          ],
+          "relation_ids": [
+            "curve-volume"
+          ],
+          "source_refs": [],
+          "status": "reference_proposed"
+        },
+        {
+          "evidence_type": "project_hypothesis",
+          "id": "regional",
+          "limitation": "只维护已有区域差别，须检查过渡与原生细节；不添加灯光、人物、结构或材料纹理。",
+          "operation_ids": [
+            "acr.brush_mask",
+            "acr.linear_gradient_mask"
+          ],
+          "relation_ids": [
+            "curve-volume",
+            "surface-form"
+          ],
+          "source_refs": [],
+          "status": "reference_proposed"
+        }
+      ],
+      "source_limits": "三幅家族官网预览宽750px，只能支持可见体积与中尺度表面关系；展示偏暖和数字纹理不是原作银盐色调/颗粒标准。标题、年份与作品编号由官网图录定位；未用户校准、未独立读图、未迁移验证。",
+      "status": "reference_proposed",
+      "subject_ids": [
+        "everyday-still-life"
+      ],
+      "tag_ids": [
+        "monochrome",
+        "quiet-space"
+      ],
+      "works": [
+        {
+          "id": "weston-7",
+          "image_url": "https://images.squarespace-cdn.com/content/v1/62db1283651bee544d404537/0cd0e40e-d955-4655-b8fe-ae9e1099c00e/Shell-1927-14S.jpg?format=750w",
+          "observation": "壳体占据大部分竖幅，弯曲外缘围出内部较暗的凹面；上方椭圆曲面有纵向亮带，下部较浅表面带细条纹。暗背景与壳体接近处仍靠轮廓和渐变区分。",
+          "resolution_limit": "public_display_reference_only; no native detail or calibrated print evidence bundled",
+          "rights": "Publicly viewable copyrighted photography; local research only. No redistribution licence inferred.",
+          "role": "primary",
+          "source_url": "https://www.edward-weston.com/edwardweston",
+          "title": "Shell, 1927 (14S)"
+        },
+        {
+          "id": "weston-10",
+          "image_url": "https://images.squarespace-cdn.com/content/v1/62db1283651bee544d404537/7063b88c-6d82-42ab-85de-9f485c010971/Pepper-1930-30P.jpg?format=750w",
+          "observation": "椒体的多个隆起相接，顶部亮带沿弧面弯曲，中央与下方由亮灰逐渐转深；表面不像单色剪影，凹谷和外轮廓共同维持体积。",
+          "resolution_limit": "public_display_reference_only; no native detail or calibrated print evidence bundled",
+          "rights": "Publicly viewable copyrighted photography; local research only. No redistribution licence inferred.",
+          "role": "primary",
+          "source_url": "https://www.edward-weston.com/edwardweston",
+          "title": "Pepper, 1930 (30P)"
+        },
+        {
+          "id": "weston-28",
+          "image_url": "https://images.squarespace-cdn.com/content/v1/62db1283651bee544d404537/45f2e7fd-fb78-4d03-a7b2-c0868a40b6c6/Cabbage-Leaf-1931-39V.jpg?format=750w",
+          "observation": "叶片占满横幅大部，肋脉从下方汇向上部隆起，再向两侧弯下；浅脊与深沟交替，细小表面纹理服从大尺度起伏，后方保留暗空处。",
+          "resolution_limit": "public_display_reference_only; no native detail or calibrated print evidence bundled",
+          "rights": "Publicly viewable copyrighted photography; local research only. No redistribution licence inferred.",
+          "role": "primary",
+          "source_url": "https://www.edward-weston.com/edwardweston",
+          "title": "Cabbage Leaf, 1931 (39V)"
+        }
+      ]
+    },
+    {
+      "author": "Candida Höfer",
+      "core_relations": [
+        {
+          "capture_dependency": "已有室内布局、机位和建筑/家具重复；不可依赖裁剪重建对称或虚构通道。",
+          "description": "轴线、成组重复和留出的通道共同组织室内观看。",
+          "failure_signal": "追求绝对对称而扭曲建筑；裁掉一侧关键重复；只留下装饰细节而失去房间秩序。",
+          "id": "axis-repetition",
+          "postprocess_intent": "以实际轴线和边缘关系决定取舍；确认关键成对结构和通道连续。",
+          "work_ids": [
+            "hofer-palafoxiana",
+            "hofer-girolamini",
+            "hofer-conway"
+          ]
+        },
+        {
+          "capture_dependency": "原场景已有照度与材料分区；不能把缺乏细节的白面当可恢复纹理。",
+          "description": "明亮顶面/墙/地与较深家具、藏品及颜色重复彼此区分，支持空间秩序。",
+          "failure_signal": "抬平深木色后空间变薄；白色全部漂成一片；全局色罩混淆墙、木与书。",
+          "id": "bright-material-order",
+          "postprocess_intent": "按白面、木质/红档案与地面分别检查明暗和颜色，保留需要的密度差。",
+          "work_ids": [
+            "hofer-palafoxiana",
+            "hofer-girolamini",
+            "hofer-conway"
+          ]
+        }
+      ],
+      "distinctions": "与ghirri-coastal-apertures相比更依赖室内重复和中央空间秩序，未必需要室外开口；与baan-lived-architecture相比空间/藏品而非人的通行是主要观看内容。",
+      "fit": {
+        "incompatible": [
+          "人物互动是核心，却准备为了空房效果删人或裁掉动作。",
+          "源图机位无轴线关系，要求后期生成完美对称。"
+        ],
+        "required": [
+          "室内结构、家具或藏品的秩序是画面目的。",
+          "源图已有可读重复与通道，允许空间本身成为主体。"
+        ]
+      },
+      "id": "hofer-ordered-interiors",
+      "label": "室内轴线、重复与明亮表面的秩序",
+      "methods": [
+        {
+          "evidence_type": "project_hypothesis",
+          "id": "frame",
+          "limitation": "裁框只选择已有关系；不能改变拍摄视点、结构、人物位置或运动状态。",
+          "operation_ids": [],
+          "relation_ids": [
+            "axis-repetition"
+          ],
+          "source_refs": [],
+          "status": "reference_proposed",
+          "strategy": "composition_decision"
+        },
+        {
+          "evidence_type": "project_hypothesis",
+          "id": "tone",
+          "limitation": "先依据源图已有光向、表面和空间判断明暗关系；不是作者曲线或固定参数。",
+          "operation_ids": [
+            "acr.point_curve_rgb",
+            "acr.whites2012",
+            "acr.blacks2012",
+            "acr.shadows2012",
+            "acr.highlights2012"
+          ],
+          "relation_ids": [
+            "bright-material-order"
+          ],
+          "source_refs": [],
+          "status": "reference_proposed"
+        },
+        {
+          "evidence_type": "project_hypothesis",
+          "id": "separate-color",
+          "limitation": "项目已有白平衡/HSL/蒙版仅作为按缺口选择的能力；不推定作者方法，不全局染绿，不用统一去饱和替代材料分离。",
+          "operation_ids": [
+            "acr.temperature",
+            "acr.tint",
+            "acr.saturation_adjustment_orange",
+            "acr.saturation_adjustment_yellow",
+            "acr.saturation_adjustment_green",
+            "acr.brush_mask"
+          ],
+          "relation_ids": [
+            "bright-material-order"
+          ],
+          "source_refs": [
+            "https://helpx.adobe.com/uk/camera-raw/desktop/using/make-color-tonal-adjustments-camera.html",
+            "https://helpx.adobe.com/camera-raw/desktop/edit-and-enhance-images/masking-and-local-adjustments/masking.html"
+          ],
+          "status": "reference_proposed"
+        },
+        {
+          "evidence_type": "project_hypothesis",
+          "id": "regional",
+          "limitation": "只维护已有区域差别，须检查过渡与原生细节；不添加灯光、人物、结构或材料纹理。",
+          "operation_ids": [
+            "acr.brush_mask",
+            "acr.linear_gradient_mask"
+          ],
+          "relation_ids": [
+            "bright-material-order"
+          ],
+          "source_refs": [],
+          "status": "reference_proposed"
+        }
+      ],
+      "source_limits": "画廊网页预览宽750px；远处书脊与壁画不构成精细纹理标准。Palafoxiana大片顶面接近展示白，不能声称所有高光都有细节。Conway含白色展示边缘；不将其当成摄影构图的必需白框。三幅仅支持这一室内子集，未校准或迁移验证。",
+      "status": "reference_proposed",
+      "subject_ids": [
+        "city-architecture"
+      ],
+      "tag_ids": [
+        "quiet-space",
+        "spatial-color",
+        "daylight-color"
+      ],
+      "works": [
+        {
+          "id": "hofer-palafoxiana",
+          "image_url": "https://www.gallerik.com/imager/uploads/images/Candida-Hoefer/Candida-Hoefer-2022/5620/c761ac4e3778f14871049df681bfc491.jpg",
+          "observation": "两侧深暖木书架和中央桌椅沿长轴向远端汇拢；浅拱顶与金色弧线占上部，红褐地砖保留重复。大片顶面很亮，家具和书架仍有密度。",
+          "resolution_limit": "public_display_reference_only; no native detail or calibrated print evidence bundled",
+          "rights": "Publicly viewable copyrighted photography; local research only. No redistribution licence inferred.",
+          "role": "primary",
+          "source_url": "https://www.gallerik.com/exhibitions/candida-hoefer",
+          "title": "Biblioteca Palafoxiana Puebla II 2015"
+        },
+        {
+          "id": "hofer-girolamini",
+          "image_url": "https://www.gallerik.com/imager/uploads/images/Candida-Hoefer/Candida-Hoefer-2022/5619/5a181a9e529c9009dc12ef308d562f15.jpg",
+          "observation": "左右书架、栏杆与上方窗口形成成组重复，中央后窗与地面通道连成轴线；壁画天顶有暖褐与淡绿区域，浅地面把深木色两侧分开。",
+          "resolution_limit": "public_display_reference_only; no native detail or calibrated print evidence bundled",
+          "rights": "Publicly viewable copyrighted photography; local research only. No redistribution licence inferred.",
+          "role": "primary",
+          "source_url": "https://www.gallerik.com/exhibitions/candida-hoefer",
+          "title": "Biblioteca dei Girolamini Napoli I 2009"
+        },
+        {
+          "id": "hofer-conway",
+          "image_url": "https://www.gallerik.com/imager/uploads/images/Candida-Hoefer/Candida-Hoefer-2022/5660/03cadf5239ed072b340f904e98af3a4f.jpg",
+          "observation": "两列红色档案夹和白色格架夹出中央通道，后方桌椅与墙上建筑图像继续吸引视线；重复红白矩形较密，灰地面和通道较空。",
+          "resolution_limit": "public_display_reference_only; no native detail or calibrated print evidence bundled",
+          "rights": "Publicly viewable copyrighted photography; local research only. No redistribution licence inferred.",
+          "role": "primary",
+          "source_url": "https://www.gallerik.com/exhibitions/candida-hoefer",
+          "title": "Conway Library London II 2004"
+        }
+      ]
+    },
+    {
+      "author": "Iwan Baan",
+      "core_relations": [
+        {
+          "capture_dependency": "真实行人/骑车者及其位置、动作、时间和拍摄距离必须已存在。",
+          "description": "实际通行的人、路径和建筑入口/边缘联系起来，说明空间如何被使用。",
+          "failure_signal": "为整洁删人或车辆；只保建筑导致身体/车轮截断；一律裁大人物而失去使用空间。",
+          "id": "inhabited-path",
+          "postprocess_intent": "裁框按人—路径—建筑关系决定范围，保留完整动作线索；整图确认人仍可读。",
+          "work_ids": [
+            "baan-4",
+            "baan-5",
+            "baan-6"
+          ]
+        },
+        {
+          "capture_dependency": "建筑形态、遮挡和自然光来自现场；不能以后期移树或补天空。",
+          "description": "浅建筑、深树影与道路/草地在同一日光空间中各有密度，体量与环境都能读出。",
+          "failure_signal": "把树全部抬亮后主体失去体量；全局绿偏侵入浅墙和人物；墙面漂白无转折。",
+          "id": "building-tree-daylight",
+          "postprocess_intent": "分建筑受光面、树荫和地面检查密度与颜色，保留远近关系和必要遮挡。",
+          "work_ids": [
+            "baan-4",
+            "baan-5",
+            "baan-6"
+          ]
+        }
+      ],
+      "distinctions": "与hofer-ordered-interiors相比由真实人物通行和外部树/路联系构成；与shore-urban-continuity相比更集中说明建筑与使用者的关系。只用于建筑/日常环境目的，不把宽景自动设为人物照片裁剪默认。",
+      "fit": {
+        "incompatible": [
+          "任务核心是人物亲密互动，建筑宽景使动作不可读。",
+          "空无一人的建筑原图却要靠后期补人文证据。"
+        ],
+        "required": [
+          "建筑如何被日常使用是目的，人物与通行路径在源图中存在。",
+          "愿意保留停放单车、树木等有意义的现场事实。"
+        ]
+      },
+      "id": "baan-lived-architecture",
+      "label": "建筑体量与真实日常通行",
+      "methods": [
+        {
+          "evidence_type": "project_hypothesis",
+          "id": "frame",
+          "limitation": "裁框只选择已有关系；不能改变拍摄视点、结构、人物位置或运动状态。",
+          "operation_ids": [],
+          "relation_ids": [
+            "inhabited-path"
+          ],
+          "source_refs": [],
+          "status": "reference_proposed",
+          "strategy": "composition_decision"
+        },
+        {
+          "evidence_type": "project_hypothesis",
+          "id": "tone",
+          "limitation": "先依据源图已有光向、表面和空间判断明暗关系；不是作者曲线或固定参数。",
+          "operation_ids": [
+            "acr.point_curve_rgb",
+            "acr.whites2012",
+            "acr.blacks2012",
+            "acr.shadows2012",
+            "acr.highlights2012"
+          ],
+          "relation_ids": [
+            "building-tree-daylight"
+          ],
+          "source_refs": [],
+          "status": "reference_proposed"
+        },
+        {
+          "evidence_type": "project_hypothesis",
+          "id": "separate-color",
+          "limitation": "项目已有白平衡/HSL/蒙版仅作为按缺口选择的能力；不推定作者方法，不全局染绿，不用统一去饱和替代材料分离。",
+          "operation_ids": [
+            "acr.temperature",
+            "acr.tint",
+            "acr.saturation_adjustment_orange",
+            "acr.saturation_adjustment_yellow",
+            "acr.saturation_adjustment_green",
+            "acr.brush_mask"
+          ],
+          "relation_ids": [
+            "building-tree-daylight"
+          ],
+          "source_refs": [
+            "https://helpx.adobe.com/uk/camera-raw/desktop/using/make-color-tonal-adjustments-camera.html",
+            "https://helpx.adobe.com/camera-raw/desktop/edit-and-enhance-images/masking-and-local-adjustments/masking.html"
+          ],
+          "status": "reference_proposed"
+        },
+        {
+          "evidence_type": "project_hypothesis",
+          "id": "regional",
+          "limitation": "只维护已有区域差别，须检查过渡与原生细节；不添加灯光、人物、结构或材料纹理。",
+          "operation_ids": [
+            "acr.brush_mask",
+            "acr.linear_gradient_mask"
+          ],
+          "relation_ids": [
+            "building-tree-daylight"
+          ],
+          "source_refs": [],
+          "status": "reference_proposed"
+        }
+      ],
+      "source_limits": "三幅为官网Dudok选集，准确身份靠序号和资产名。750×500预览中的人脸太小，不能建立肤质、皮肤颜色数值或表情细节标准。未以空中/无人图1–3支撑人的使用关系；未校准或迁移验证。",
+      "status": "reference_proposed",
+      "subject_ids": [
+        "city-architecture",
+        "documentary"
+      ],
+      "tag_ids": [
+        "daylight-color",
+        "spatial-color",
+        "human-scale"
+      ],
+      "works": [
+        {
+          "id": "baan-4",
+          "image_url": "https://iwan.com/wp-content/uploads/2022/03/04-Dudok-Hilversum-19-05-5345-750x0-c-default.jpg",
+          "observation": "前景骑车者正从砖路通过，车轮与身体轮廓可读；浅色塔楼在中后部升起，深绿树冠围住上缘。停放单车、入口和道路让建筑与使用方式相连。",
+          "resolution_limit": "public_display_reference_only; no native detail or calibrated print evidence bundled",
+          "rights": "Publicly viewable copyrighted photography; local research only. No redistribution licence inferred.",
+          "role": "primary",
+          "source_url": "https://iwan.com/portfolio/dudok/",
+          "title": "Dudok 官方选集图4（描述编号）"
+        },
+        {
+          "id": "baan-5",
+          "image_url": "https://iwan.com/wp-content/uploads/2022/03/05-Gemeentehuis-Dudok-2054-750x0-c-default.jpg",
+          "observation": "步行者位于靠左树干旁的浅路上，左右树干和浓暗树冠遮住部分浅建筑；横向窗列、绿篱和窄红花带仍连续可辨，人的行进没有被树影吞没。",
+          "resolution_limit": "public_display_reference_only; no native detail or calibrated print evidence bundled",
+          "rights": "Publicly viewable copyrighted photography; local research only. No redistribution licence inferred.",
+          "role": "primary",
+          "source_url": "https://iwan.com/portfolio/dudok/",
+          "title": "Dudok 官方选集图5（描述编号）"
+        },
+        {
+          "id": "baan-6",
+          "image_url": "https://iwan.com/wp-content/uploads/2022/03/06-Dudok-Hilversum-19-05-5360-750x0-c-default.jpg",
+          "observation": "塔楼在中央偏右，较低建筑横向伸开，两侧深树框住浅天空；右下小人物沿弯路走向建筑一侧，前景道路、草地和水景维持可用空间。",
+          "resolution_limit": "public_display_reference_only; no native detail or calibrated print evidence bundled",
+          "rights": "Publicly viewable copyrighted photography; local research only. No redistribution licence inferred.",
+          "role": "primary",
+          "source_url": "https://iwan.com/portfolio/dudok/",
+          "title": "Dudok 官方选集图6（描述编号）"
+        }
+      ]
+    },
+    {
+      "author": "Julius Shulman",
+      "core_relations": [
+        {
+          "capture_dependency": "机位、建筑开口、家具和远景的关系须已拍到，不能用后期补视点或另造景观。",
+          "description": "近处家具/使用空间、受光建筑与较暗远景形成可辨的观看连接。",
+          "failure_signal": "裁掉近处空间使建筑悬浮；整体提亮令远景与建筑粘平；套用其他同题作品构图。",
+          "id": "near-building-far",
+          "postprocess_intent": "仅以大结构诊断裁框、近远密度和必要连接，精修前需更合格参照与源图细节复核。",
+          "work_ids": [
+            "shulman-casestudy22",
+            "shulman-kaufmann"
+          ]
+        },
+        {
+          "capture_dependency": "已有现场灯光、暮色和阴影方向；本证据不支持重造光源或具体布灯。",
+          "description": "受光内部/建筑面与较暗檐架、地面或景观相衬，使块面和开口具有深度。",
+          "failure_signal": "凭空给平光建筑造戏剧灯光；把明暗压成硬剪影；以小图判断所有高光/黑位是否合格。",
+          "id": "light-fields-depth",
+          "postprocess_intent": "把大块亮暗联系作为观察目标；局部调整仅维护源图已有光域，不凭190px参照定精细曲线。",
+          "work_ids": [
+            "shulman-casestudy22",
+            "shulman-kaufmann"
+          ]
+        }
+      ],
+      "distinctions": "与hofer-ordered-interiors相比更依赖受光建筑与外部远景的深浅相接；与baan-lived-architecture相比以建筑光域和空间陈述为重点。Convair仅检验同作者作品并不都服从暮色住宅场景。",
+      "fit": {
+        "incompatible": [
+          "需要色彩、皮肤、颗粒、细小材质或高光滚降标准。",
+          "想把任意白昼建筑变成不存在的夜间灯光情境。"
+        ],
+        "required": [
+          "源图已有建筑内部/表面的光与外部较暗空间关系。",
+          "当前只做构图与大块光域讨论；精修级对标须先补充更大、可靠展示图。"
+        ]
+      },
+      "id": "shulman-lit-building-depth",
+      "label": "受光建筑与近处使用空间、远景的连接",
+      "methods": [
+        {
+          "evidence_type": "project_hypothesis",
+          "id": "frame",
+          "limitation": "裁框只选择已有关系；不能改变拍摄视点、结构、人物位置或运动状态。",
+          "operation_ids": [],
+          "relation_ids": [
+            "near-building-far"
+          ],
+          "source_refs": [],
+          "status": "reference_proposed",
+          "strategy": "composition_decision"
+        },
+        {
+          "evidence_type": "project_hypothesis",
+          "id": "tone",
+          "limitation": "先依据源图已有光向、表面和空间判断明暗关系；不是作者曲线或固定参数。本包全部参考宽190px，只可大结构诊断；暂不适合据此定精修目标。",
+          "operation_ids": [
+            "acr.point_curve_rgb",
+            "acr.whites2012",
+            "acr.blacks2012",
+            "acr.shadows2012",
+            "acr.highlights2012"
+          ],
+          "relation_ids": [
+            "light-fields-depth"
+          ],
+          "source_refs": [],
+          "status": "reference_proposed"
+        },
+        {
+          "evidence_type": "project_hypothesis",
+          "id": "regional",
+          "limitation": "只维护已有区域差别，须检查过渡与原生细节；不添加灯光、人物、结构或材料纹理。本包仅概念映射，190px参照不足以定区域边缘/质感验收标准。",
+          "operation_ids": [
+            "acr.brush_mask",
+            "acr.linear_gradient_mask"
+          ],
+          "relation_ids": [
+            "light-fields-depth"
+          ],
+          "source_refs": [],
+          "status": "reference_proposed"
+        }
+      ],
+      "source_limits": "全部三张均只有190px宽（238/152/239px高），并非只Convair低分辨率。全包暂不适合精修级对标，仅作为建筑/光域大结构研究提案；不得推定色彩、肤质、颗粒、锐度、精细高光或作者布灯/暗房参数。未校准、未独立读图、未迁移验证。",
+      "status": "reference_proposed",
+      "subject_ids": [
+        "city-architecture"
+      ],
+      "tag_ids": [
+        "monochrome",
+        "night-light"
+      ],
+      "works": [
+        {
+          "id": "shulman-casestudy22",
+          "image_url": "https://www.getty.edu/art/exhibitions/shulman/images/casestudy22.jpg",
+          "observation": "近处深色檐架斜向展开，较亮玻璃内的家具与人影集中在左中部，右侧远城灯点处于暗背景；前景浅家具把观看连到建筑边缘。",
+          "resolution_limit": "public_display_reference_only; no native detail or calibrated print evidence bundled",
+          "rights": "Publicly viewable copyrighted photography; local research only. No redistribution licence inferred.",
+          "role": "primary",
+          "source_url": "https://www.getty.edu/art/exhibitions/shulman/",
+          "title": "Case Study House #22, Los Angeles, 1960"
+        },
+        {
+          "id": "shulman-kaufmann",
+          "image_url": "https://www.getty.edu/art/exhibitions/shulman/images/kaufmann.jpg",
+          "observation": "前景浅色躺椅沿深地面向房屋延伸，中央室内开口较亮；远处山体成为上方深层，浅天、屋顶和建筑块面仍分离。左侧水面形成另一条较亮的横向区域。",
+          "resolution_limit": "public_display_reference_only; no native detail or calibrated print evidence bundled",
+          "rights": "Publicly viewable copyrighted photography; local research only. No redistribution licence inferred.",
+          "role": "primary",
+          "source_url": "https://www.getty.edu/art/exhibitions/shulman/",
+          "title": "Kaufmann House, Palm Springs, 1947"
+        },
+        {
+          "id": "shulman-convair",
+          "image_url": "https://www.getty.edu/art/exhibitions/shulman/images/convair.jpg",
+          "observation": "浅色悬空坡道在纵向背景前形成弯曲带和中心空处，小人影提供尺度；下部较暗的反射/重复结构延续弧线。这里是结构与尺度边界，不是暮色住宅范式。",
+          "resolution_limit": "public_display_reference_only; no native detail or calibrated print evidence bundled",
+          "rights": "Publicly viewable copyrighted photography; local research only. No redistribution licence inferred.",
+          "role": "boundary",
+          "source_url": "https://www.getty.edu/art/exhibitions/shulman/",
+          "title": "Convair Astronautics, San Diego, 1958"
+        }
+      ]
+    },
+    {
+      "alternatives": [
+        {
+          "package_id": "leiter-layered-street",
+          "tradeoff": "前景遮挡与较中性色面占主导时更合适；Haas本包允许反射颜色大面积成为主体。"
+        },
+        {
+          "package_id": "gruyaert-hardlight-color-echo",
+          "tradeoff": "若核心是实体颜色与硬影的现场呼应，选择Gruyaert，无须追求反射碎裂。"
+        }
+      ],
+      "author": "Ernst Haas",
+      "author_documented_practice": {
+        "note": "所引官方页面可靠定位作品/系列，但未给出这些作品的完整拍摄及显影过程；下述方法仅是本项目实现假设。",
+        "source_urls": [
+          "https://ernst-haas.com/color-new-york/"
+        ],
+        "status": "reference_proposed"
+      },
+      "core_relations": [
+        {
+          "capture_dependency": "源图须有真实湿地或玻璃反射；需有已成立的人体片段/动作，不能生成倒影。",
+          "description": "反射令城市形象分裂/重叠，而可辨的人体片段或动作作为现实支点。",
+          "failure_signal": "只剩炫彩纹理，人物片段消失或层次被全局锐化压平。",
+          "id": "reflection-and-anchor",
+          "postprocess_intent": "保留反射纹理和人体支点的常规裁框；分别控制重叠层密度。",
+          "work_ids": [
+            "SN-H01",
+            "SN-H02",
+            "SN-H04"
+          ]
+        },
+        {
+          "capture_dependency": "源图有颜色载体与可分区域，不能给普通灰路添加霓虹。",
+          "description": "颜色由反射载体、字牌或店内区域承担，明亮与深暗之间仍有具体形状。",
+          "failure_signal": "把反射变成全图橙红滤色，或为克制而删除有功能的色面。",
+          "id": "color-has-surface",
+          "postprocess_intent": "按实际载体调整局部明暗与色彩，保持红/黄/冷层互异。",
+          "work_ids": [
+            "SN-H01",
+            "SN-H02",
+            "SN-H04"
+          ]
+        }
+      ],
+      "craft_limits": "网页尺度只能支持整体和有限局部；用户原生细节、皮肤、噪声与边缘须另验。环境柔和不得作为破坏主体质量的豁免。",
+      "failure_examples": [
+        "只剩炫彩纹理，人物片段消失或层次被全局锐化压平。",
+        "把反射变成全图橙红滤色，或为克制而删除有功能的色面。"
+      ],
+      "fit": {
+        "incompatible": [
+          "要求完整清楚脸部的纪念合影",
+          "没有反射且只能靠合成产生重叠关系"
+        ],
+        "required": [
+          "已有湿地/玻璃反射和可辨人物片段的街头图",
+          "允许环境/色面承担较大面积，主体身份不依赖大脸"
+        ]
+      },
+      "id": "haas-reflected-city-fragments",
+      "label": "反射色面中的街头片段",
+      "methods": [
+        {
+          "evidence_type": "project_hypothesis",
+          "id": "frame",
+          "limitation": "裁剪只选择已有信息，不能补拍摄视点或改变对象位置。",
+          "operation_ids": [],
+          "relation_ids": [
+            "reflection-and-anchor"
+          ],
+          "source_refs": [],
+          "status": "reference_proposed",
+          "strategy": "composition_decision"
+        },
+        {
+          "evidence_type": "project_hypothesis",
+          "id": "layer-tone",
+          "limitation": "曲线不可重造景深；不给远景和近物强行同等清晰度。",
+          "operation_ids": [
+            "acr.point_curve_rgb",
+            "acr.shadows2012",
+            "acr.brush_mask"
+          ],
+          "relation_ids": [
+            "reflection-and-anchor"
+          ],
+          "source_refs": [
+            "https://helpx.adobe.com/uk/camera-raw/desktop/using/make-color-tonal-adjustments-camera.html",
+            "https://helpx.adobe.com/camera-raw/desktop/edit-and-enhance-images/masking-and-local-adjustments/masking.html"
+          ],
+          "status": "reference_proposed"
+        },
+        {
+          "evidence_type": "project_hypothesis",
+          "id": "separate-color",
+          "limitation": "本项目候选能力；先判断哪些颜色需改，非固定全部使用。手工蒙版须验边界；不是作者真实参数。",
+          "operation_ids": [
+            "acr.temperature",
+            "acr.tint",
+            "acr.saturation_adjustment_orange",
+            "acr.saturation_adjustment_yellow",
+            "acr.saturation_adjustment_green",
+            "acr.brush_mask"
+          ],
+          "relation_ids": [
+            "color-has-surface"
+          ],
+          "source_refs": [
+            "https://helpx.adobe.com/uk/camera-raw/desktop/using/make-color-tonal-adjustments-camera.html",
+            "https://helpx.adobe.com/camera-raw/desktop/edit-and-enhance-images/masking-and-local-adjustments/masking.html"
+          ],
+          "status": "reference_proposed"
+        }
+      ],
+      "source_scope": "仅本包固定作品及字节；不是作者全部作品风格，非国籍、城市或胶片预设。",
+      "status": "reference_proposed",
+      "subject_ids": [
+        "street",
+        "city-architecture",
+        "documentary"
+      ],
+      "tag_ids": [
+        "layered-view",
+        "dense-color"
+      ],
+      "unknowns": [
+        "来源JPEG无法分离拍摄光、光学/运动、媒介、扫描、印相与后期贡献。",
+        "未对用户素材作适配、显影、重放或独立评审；不能以本包名义宣称迁移成功。"
+      ],
+      "visible_acceptance": [
+        "所选核心关系须在当前照片的具体区域成立；主体姿态/形体与任务要求的清晰度保留。",
+        "材料和不同光源可辨，无蒙版光圈、失色皮肤或全幅涂抹。"
+      ],
+      "works": [
+        {
+          "id": "SN-H01",
+          "image_url": "https://ernst-haas.com/wp-content/uploads/color-newyork/ny_rain_reflection_1952.jpg",
+          "observation": "画面几乎被湿地反射填满；红橙与金黄沿地表起伏碎裂，横向纹理仍可辨。右侧步行者的腿与倒影构成连续深形，把抽象色面连接到街头动作；小块亮白反射与深黑并存。",
+          "resolution_limit": "public_display_reference_only; no native detail or calibrated print evidence bundled",
+          "rights": "©2023 Ernst Haas Estate (source-page notice). Copyrighted public display; local study only, no redistribution permission granted.",
+          "role": "primary",
+          "source_url": "https://ernst-haas.com/color-new-york/",
+          "title": "Rain Reflection, NY 1952"
+        },
+        {
+          "id": "SN-H02",
+          "image_url": "https://ernst-haas.com/wp-content/uploads/color-newyork/ny_times_square_reflection_1952.jpg",
+          "observation": "反写招牌、近处横带、远层建筑与中段行人重叠；人物头肩在窄带里仍有方向和间隔。上部较冷的天与蓝招牌、下部暖色店内和白字互相分层，并非整张只用一种色温。",
+          "resolution_limit": "public_display_reference_only; no native detail or calibrated print evidence bundled",
+          "rights": "©2023 Ernst Haas Estate (source-page notice). Copyrighted public display; local study only, no redistribution permission granted.",
+          "role": "primary",
+          "source_url": "https://ernst-haas.com/color-new-york/",
+          "title": "Times Square Reflection, NY 1952"
+        },
+        {
+          "id": "SN-H04",
+          "image_url": "https://ernst-haas.com/wp-content/uploads/color-newyork/ny_downtown_diner_1955.jpg",
+          "observation": "大面积红色与巨型反写白字叠在餐馆器物上，杯碟、饮料龙头和菜单还能辨认。右下深色人物背影与较亮矩形开口相连；暖色强烈，却由反射层与实体层分配。",
+          "resolution_limit": "public_display_reference_only; no native detail or calibrated print evidence bundled",
+          "rights": "©2023 Ernst Haas Estate (source-page notice). Copyrighted public display; local study only, no redistribution permission granted.",
+          "role": "primary",
+          "source_url": "https://ernst-haas.com/color-new-york/",
+          "title": "Downtown Diner, NY 1955"
+        }
+      ]
+    },
+    {
+      "alternatives": [
+        {
+          "package_id": "girard-neon-storefront-depth",
+          "tradeoff": "若招牌与店面相互照亮是主关系，选店面包，可保留更丰富多色。"
+        },
+        {
+          "package_id": "pinkhassov-night-light",
+          "tradeoff": "若重点是亮源到受光面再到暗空间的路径，Pinkhassov更少依赖广域色光。"
+        }
+      ],
+      "author": "Greg Girard",
+      "author_documented_practice": {
+        "note": "所引官方页面可靠定位作品/系列，但未给出这些作品的完整拍摄及显影过程；下述方法仅是本项目实现假设。",
+        "source_urls": [
+          "https://www.greggirard.com/"
+        ],
+        "status": "reference_proposed"
+      },
+      "core_relations": [
+        {
+          "capture_dependency": "源图已有混合人工色光及可读建筑/物体，不能用整图染绿代替照明条件。",
+          "description": "广泛冷青绿受光环境与有限暖色/中性亮点共同组织场景，结构仍分层。",
+          "failure_signal": "所有材质与皮肤一起青绿，灯芯压灰或暖色支点消失。",
+          "id": "colored-ambient-and-points",
+          "postprocess_intent": "先识别光源和受光面，保留暖色或红色点/带与冷环境区别，控制灯芯和周围过渡。",
+          "work_ids": [
+            "SN-G01",
+            "SN-G02"
+          ]
+        },
+        {
+          "capture_dependency": "源中须有站台/建筑/道路等线形；运动模糊只在原图已存在时保留，不新造或涂抹主体。",
+          "description": "重复的线形与亮暗节奏形成城市秩序，人物动作或车辆仍清楚落在其中。",
+          "failure_signal": "用全局模糊制造慢门感，使人物姿态或车辆轮廓消失。",
+          "id": "night-rhythm-and-subject",
+          "postprocess_intent": "以裁框与局部密度维护主体边界及已有线形节奏。",
+          "work_ids": [
+            "SN-G01",
+            "SN-G02"
+          ]
+        }
+      ],
+      "craft_limits": "网页尺度只能支持整体和有限局部；用户原生细节、皮肤、噪声与边缘须另验。环境柔和不得作为破坏主体质量的豁免。",
+      "failure_examples": [
+        "所有材质与皮肤一起青绿，灯芯压灰或暖色支点消失。",
+        "用全局模糊制造慢门感，使人物姿态或车辆轮廓消失。"
+      ],
+      "fit": {
+        "incompatible": [
+          "需要中性商品/肤色再现",
+          "无光源色差的灰天场景",
+          "原主体失焦却需要用后期补造细节"
+        ],
+        "required": [
+          "混合人工光主导的站台、夜街或黎明城市",
+          "主体形体已可用；大面积环境颜色是有依据的创作方向"
+        ]
+      },
+      "id": "girard-japan-colored-night",
+      "label": "人工色光中的城市节奏",
+      "methods": [
+        {
+          "evidence_type": "project_hypothesis",
+          "id": "material-color",
+          "limitation": "先看灯芯与材料的不同需要，再选择HSL或局部；并非要求把所有列出控制都改动。",
+          "operation_ids": [
+            "acr.temperature",
+            "acr.tint",
+            "acr.saturation_adjustment_orange",
+            "acr.saturation_adjustment_yellow",
+            "acr.saturation_adjustment_blue",
+            "acr.brush_mask"
+          ],
+          "relation_ids": [
+            "colored-ambient-and-points"
+          ],
+          "source_refs": [
+            "https://helpx.adobe.com/uk/camera-raw/desktop/using/make-color-tonal-adjustments-camera.html",
+            "https://helpx.adobe.com/camera-raw/desktop/edit-and-enhance-images/masking-and-local-adjustments/masking.html"
+          ],
+          "status": "reference_proposed"
+        },
+        {
+          "evidence_type": "project_hypothesis",
+          "id": "range-tone",
+          "limitation": "这些范围相互叠加；选择依据源图，不能把“深夜”翻译成统一降低曝光。",
+          "operation_ids": [
+            "acr.whites2012",
+            "acr.highlights2012",
+            "acr.blacks2012",
+            "acr.shadows2012",
+            "acr.point_curve_rgb"
+          ],
+          "relation_ids": [
+            "colored-ambient-and-points"
+          ],
+          "source_refs": [
+            "https://helpx.adobe.com/uk/camera-raw/desktop/using/make-color-tonal-adjustments-camera.html"
+          ],
+          "status": "reference_proposed"
+        },
+        {
+          "evidence_type": "project_hypothesis",
+          "id": "frame",
+          "limitation": "任何标准裁框均服从所选受光路径，无固定居中或强制宽幅。",
+          "operation_ids": [],
+          "relation_ids": [
+            "night-rhythm-and-subject"
+          ],
+          "source_refs": [],
+          "status": "reference_proposed",
+          "strategy": "composition_decision"
+        }
+      ],
+      "source_scope": "仅本包固定作品及字节；不是作者全部作品风格，非国籍、城市或胶片预设。",
+      "status": "reference_proposed",
+      "subject_ids": [
+        "street",
+        "city-architecture",
+        "documentary"
+      ],
+      "tag_ids": [
+        "night-light",
+        "spatial-color"
+      ],
+      "unknowns": [
+        "来源JPEG无法分离拍摄光、光学/运动、媒介、扫描、印相与后期贡献。",
+        "未对用户素材作适配、显影、重放或独立评审；不能以本包名义宣称迁移成功。"
+      ],
+      "visible_acceptance": [
+        "所选核心关系须在当前照片的具体区域成立；主体姿态/形体与任务要求的清晰度保留。",
+        "材料和不同光源可辨，无蒙版光圈、失色皮肤或全幅涂抹。"
+      ],
+      "works": [
+        {
+          "id": "SN-G01",
+          "image_url": "https://www.greggirard.com/wp-content/uploads/2022/08/001_Tokyo_1976_471C-scaled.jpg",
+          "observation": "站台人物帽形、白手套和举手动作可辨；后方车厢形成横向运动条带，顶部灯管保持稳定亮形。大部分环境偏青绿，列车红带与近黑制服不同层；脸暗但人物没有融进车厢。",
+          "resolution_limit": "public_display_reference_only; no native detail or calibrated print evidence bundled",
+          "rights": "Greg Girard official portfolio; work copyright retained by the photographer. No per-image license notice located in this page; public visibility does not grant redistribution.",
+          "role": "primary",
+          "source_url": "https://www.greggirard.com/",
+          "title": "Platform Conductor Tokyo 1976"
+        },
+        {
+          "id": "SN-G02",
+          "image_url": "https://www.greggirard.com/wp-content/uploads/2022/08/Tokyo_5-09AM_1979-scaled.jpg",
+          "observation": "宽幅暗青绿建筑与湿路构成连续环境，右上橙黄色时钟和车灯成为少量暖亮点；钟数字、墙面分格、电线和斑马线仍有秩序。车头与路面反光相接，暗天没有被抬成白昼。",
+          "resolution_limit": "public_display_reference_only; no native detail or calibrated print evidence bundled",
+          "rights": "Greg Girard official portfolio; work copyright retained by the photographer. No per-image license notice located in this page; public visibility does not grant redistribution.",
+          "role": "primary",
+          "source_url": "https://www.greggirard.com/",
+          "title": "Shinjuku, 05:09am, 1979"
+        }
+      ]
+    },
+    {
+      "alternatives": [
+        {
+          "package_id": "girard-japan-colored-night",
+          "tradeoff": "广域色光和建筑/道路节奏优先时选Japan包。"
+        },
+        {
+          "package_id": "jacrot-lamplit-snow-depth",
+          "tradeoff": "若可见风雪受光及天气造成的距离衰减是主角，选雪夜包。"
+        }
+      ],
+      "author": "Greg Girard",
+      "author_documented_practice": {
+        "note": "所引官方页面可靠定位作品/系列，但未给出这些作品的完整拍摄及显影过程；下述方法仅是本项目实现假设。",
+        "source_urls": [
+          "https://www.greggirard.com/"
+        ],
+        "status": "reference_proposed"
+      },
+      "core_relations": [
+        {
+          "capture_dependency": "源中有可辨灯牌或亮门及立面受光；无此光路不能新画灯。",
+          "description": "灯牌/门窗发光与相邻受光立面、较暗邻店形成连续空间。",
+          "failure_signal": "字牌漂浮在死黑背景，或整条街被抬亮成同密度。",
+          "id": "sign-to-building",
+          "postprocess_intent": "分别控制灯芯、字形、砖墙/窗框和邻店暗部；保留暗端重量。",
+          "work_ids": [
+            "SN-G03",
+            "SN-G04"
+          ]
+        },
+        {
+          "capture_dependency": "人物姿态或车辆本身须可读；人物可以小但不能因后期失去边界。",
+          "description": "人物或车与店面有尺度和行动关系，未被灯光效果吞没。",
+          "failure_signal": "只剩霓虹颜色，人物/车辆变成不明黑块或全图辉光破坏材料。",
+          "id": "street-scale",
+          "postprocess_intent": "保留进门/沿街活动的空间，分区检验暖门、冷街与身体/车辆过渡。",
+          "work_ids": [
+            "SN-G03",
+            "SN-G04"
+          ]
+        }
+      ],
+      "craft_limits": "网页尺度只能支持整体和有限局部；用户原生细节、皮肤、噪声与边缘须另验。环境柔和不得作为破坏主体质量的豁免。",
+      "failure_examples": [
+        "字牌漂浮在死黑背景，或整条街被抬亮成同密度。",
+        "只剩霓虹颜色，人物/车辆变成不明黑块或全图辉光破坏材料。"
+      ],
+      "fit": {
+        "incompatible": [
+          "没有店面空间的纯灯光抽象",
+          "要把无人物源图变成人情故事",
+          "脸部重点肖像但原面部曝光不可用"
+        ],
+        "required": [
+          "店铺、餐馆或商业街夜景，有真实灯牌和可读立面",
+          "小人物进出/沿街或车辆能提供尺度"
+        ]
+      },
+      "id": "girard-neon-storefront-depth",
+      "label": "灯牌、店面与街道人物",
+      "methods": [
+        {
+          "evidence_type": "project_hypothesis",
+          "id": "range-tone",
+          "limitation": "这些范围相互叠加；选择依据源图，不能把“深夜”翻译成统一降低曝光。",
+          "operation_ids": [
+            "acr.whites2012",
+            "acr.highlights2012",
+            "acr.blacks2012",
+            "acr.shadows2012",
+            "acr.point_curve_rgb"
+          ],
+          "relation_ids": [
+            "sign-to-building"
+          ],
+          "source_refs": [
+            "https://helpx.adobe.com/uk/camera-raw/desktop/using/make-color-tonal-adjustments-camera.html"
+          ],
+          "status": "reference_proposed"
+        },
+        {
+          "evidence_type": "project_hypothesis",
+          "id": "material-color",
+          "limitation": "先看灯芯与材料的不同需要，再选择HSL或局部；并非要求把所有列出控制都改动。",
+          "operation_ids": [
+            "acr.temperature",
+            "acr.tint",
+            "acr.saturation_adjustment_orange",
+            "acr.saturation_adjustment_yellow",
+            "acr.saturation_adjustment_blue",
+            "acr.brush_mask"
+          ],
+          "relation_ids": [
+            "sign-to-building"
+          ],
+          "source_refs": [
+            "https://helpx.adobe.com/uk/camera-raw/desktop/using/make-color-tonal-adjustments-camera.html",
+            "https://helpx.adobe.com/camera-raw/desktop/edit-and-enhance-images/masking-and-local-adjustments/masking.html"
+          ],
+          "status": "reference_proposed"
+        },
+        {
+          "evidence_type": "project_hypothesis",
+          "id": "local-light",
+          "limitation": "只加强真实光向；手工局部需检查边缘与颜色副作用，不添加光源或晕光。",
+          "operation_ids": [
+            "acr.brush_mask",
+            "acr.linear_gradient_mask",
+            "local.spatial_light"
+          ],
+          "relation_ids": [
+            "sign-to-building",
+            "street-scale"
+          ],
+          "source_refs": [
+            "https://helpx.adobe.com/camera-raw/desktop/edit-and-enhance-images/masking-and-local-adjustments/masking.html"
+          ],
+          "status": "reference_proposed"
+        },
+        {
+          "evidence_type": "project_hypothesis",
+          "id": "frame",
+          "limitation": "任何标准裁框均服从所选受光路径，无固定居中或强制宽幅。",
+          "operation_ids": [],
+          "relation_ids": [
+            "street-scale"
+          ],
+          "source_refs": [],
+          "status": "reference_proposed",
+          "strategy": "composition_decision"
+        }
+      ],
+      "source_scope": "仅本包固定作品及字节；不是作者全部作品风格，非国籍、城市或胶片预设。",
+      "status": "reference_proposed",
+      "subject_ids": [
+        "street",
+        "city-architecture",
+        "documentary"
+      ],
+      "tag_ids": [
+        "night-light",
+        "dense-color",
+        "human-scale"
+      ],
+      "unknowns": [
+        "来源JPEG无法分离拍摄光、光学/运动、媒介、扫描、印相与后期贡献。",
+        "未对用户素材作适配、显影、重放或独立评审；不能以本包名义宣称迁移成功。"
+      ],
+      "visible_acceptance": [
+        "所选核心关系须在当前照片的具体区域成立；主体姿态/形体与任务要求的清晰度保留。",
+        "材料和不同光源可辨，无蒙版光圈、失色皮肤或全幅涂抹。"
+      ],
+      "works": [
+        {
+          "id": "SN-G03",
+          "image_url": "https://www.greggirard.com/wp-content/uploads/2022/08/OVALTINE-FINAL-flat-scaled.jpg",
+          "observation": "霓虹字牌密集但颜色仍分为红、青蓝、黄与白，灯牌照亮相邻砖墙和窗框；立面按距离与受光程度有明暗差。底部车辆与小行人较暗，街道仍能被读出，灯光没有漂浮在纯黑上。",
+          "resolution_limit": "public_display_reference_only; no native detail or calibrated print evidence bundled",
+          "rights": "Greg Girard official portfolio; work copyright retained by the photographer. No per-image license notice located in this page; public visibility does not grant redistribution.",
+          "role": "primary",
+          "source_url": "https://www.greggirard.com/",
+          "title": "Ovaltine Cafe, 1975"
+        },
+        {
+          "id": "SN-G04",
+          "image_url": "https://www.greggirard.com/wp-content/uploads/2022/08/Silver_Grill_Cafe_1975-scaled.jpg",
+          "observation": "暖黄咖啡馆门与红色CAFE灯牌处于青冷雪街中，入门人的腿步与衣服体积可辨。邻店更暗，街灯向右后方延伸；雪亮却仍有脚印和细小明暗，门前温暖没有覆盖整条街。",
+          "resolution_limit": "public_display_reference_only; no native detail or calibrated print evidence bundled",
+          "rights": "Greg Girard official portfolio; work copyright retained by the photographer. No per-image license notice located in this page; public visibility does not grant redistribution.",
+          "role": "primary",
+          "source_url": "https://www.greggirard.com/",
+          "title": "Silver Grill Cafe, 1975"
+        }
+      ]
+    },
+    {
+      "alternatives": [
+        {
+          "package_id": "leiter-layered-street",
+          "tradeoff": "若近层遮挡、片段发现比实体硬光更关键，选Leiter。"
+        },
+        {
+          "package_id": "haas-reflected-city-fragments",
+          "tradeoff": "若玻璃/水面把颜色与人形拆分重组，选Haas。"
+        },
+        {
+          "package_id": "meyerowitz-cape-color",
+          "tradeoff": "若近物与开阔远景及自然照明更关键，可选Meyerowitz而不强化硬影。"
+        }
+      ],
+      "author": "Harry Gruyaert",
+      "author_documented_practice": {
+        "note": "所引官方页面可靠定位作品/系列，但未给出这些作品的完整拍摄及显影过程；下述方法仅是本项目实现假设。",
+        "source_urls": [
+          "https://store.magnumphotos.com/pages/harry-gruyaert-new-york"
+        ],
+        "status": "reference_proposed"
+      },
+      "core_relations": [
+        {
+          "capture_dependency": "衣物、车辆、标识或墙面已有颜色关系；不能换衣/造颜色载体。",
+          "description": "不同实物的颜色形成呼应或对照，人物衣物与街景颜色共同组织观看。",
+          "failure_signal": "颜色很浓却互不相关，或把主体衣服与环境关键色一起抹掉。",
+          "id": "material-color-echo",
+          "postprocess_intent": "先保护皮肤和材料差异，再控制主要色块密度与面积；不统一去黄或去红。",
+          "work_ids": [
+            "SN-R01",
+            "SN-R02"
+          ]
+        },
+        {
+          "capture_dependency": "原图已有硬光/投影与现场几何；不能把阴天画成太阳直射。",
+          "description": "硬光的明暗分割、前景切入与人物姿态共同形成清楚的实体空间。",
+          "failure_signal": "全局抬阴影抹平硬光，或强调色块时牺牲人体体积和衣料纹理。",
+          "id": "hardlight-layers",
+          "postprocess_intent": "保留影子与亮面的相对重量，裁框维持姿态和层间间隔。",
+          "work_ids": [
+            "SN-R01",
+            "SN-R02"
+          ]
+        }
+      ],
+      "craft_limits": "网页尺度只能支持整体和有限局部；用户原生细节、皮肤、噪声与边缘须另验。环境柔和不得作为破坏主体质量的豁免。",
+      "failure_examples": [
+        "颜色很浓却互不相关，或把主体衣服与环境关键色一起抹掉。",
+        "全局抬阴影抹平硬光，或强调色块时牺牲人体体积和衣料纹理。"
+      ],
+      "fit": {
+        "incompatible": [
+          "主要表达柔和暮色/窗光",
+          "原图颜色载体稀少或要求极克制中性色",
+          "把R03失焦人物当作人物质量豁免"
+        ],
+        "required": [
+          "实物色彩有明显重复/对照的日光街头",
+          "硬光和现场投影已存在，主体姿态和材质可辨"
+        ]
+      },
+      "id": "gruyaert-hardlight-color-echo",
+      "label": "硬光街头的颜色呼应与实体层次",
+      "methods": [
+        {
+          "evidence_type": "project_hypothesis",
+          "id": "separate-color",
+          "limitation": "本项目候选能力；先判断哪些颜色需改，非固定全部使用。手工蒙版须验边界；不是作者真实参数。",
+          "operation_ids": [
+            "acr.temperature",
+            "acr.tint",
+            "acr.saturation_adjustment_orange",
+            "acr.saturation_adjustment_yellow",
+            "acr.saturation_adjustment_green",
+            "acr.brush_mask"
+          ],
+          "relation_ids": [
+            "material-color-echo"
+          ],
+          "source_refs": [
+            "https://helpx.adobe.com/uk/camera-raw/desktop/using/make-color-tonal-adjustments-camera.html",
+            "https://helpx.adobe.com/camera-raw/desktop/edit-and-enhance-images/masking-and-local-adjustments/masking.html"
+          ],
+          "status": "reference_proposed"
+        },
+        {
+          "evidence_type": "project_hypothesis",
+          "id": "layer-tone",
+          "limitation": "曲线不可重造景深；不给远景和近物强行同等清晰度。",
+          "operation_ids": [
+            "acr.point_curve_rgb",
+            "acr.shadows2012",
+            "acr.brush_mask"
+          ],
+          "relation_ids": [
+            "hardlight-layers"
+          ],
+          "source_refs": [
+            "https://helpx.adobe.com/uk/camera-raw/desktop/using/make-color-tonal-adjustments-camera.html",
+            "https://helpx.adobe.com/camera-raw/desktop/edit-and-enhance-images/masking-and-local-adjustments/masking.html"
+          ],
+          "status": "reference_proposed"
+        },
+        {
+          "evidence_type": "project_hypothesis",
+          "id": "frame",
+          "limitation": "裁剪只选择已有信息，不能补拍摄视点或改变对象位置。",
+          "operation_ids": [],
+          "relation_ids": [
+            "hardlight-layers"
+          ],
+          "source_refs": [],
+          "status": "reference_proposed",
+          "strategy": "composition_decision"
+        }
+      ],
+      "source_scope": "仅本包固定作品及字节；不是作者全部作品风格，非国籍、城市或胶片预设。",
+      "status": "reference_proposed",
+      "subject_ids": [
+        "street",
+        "city-architecture",
+        "documentary"
+      ],
+      "tag_ids": [
+        "daylight-color",
+        "spatial-color",
+        "dense-color"
+      ],
+      "unknowns": [
+        "来源JPEG无法分离拍摄光、光学/运动、媒介、扫描、印相与后期贡献。",
+        "未对用户素材作适配、显影、重放或独立评审；不能以本包名义宣称迁移成功。"
+      ],
+      "visible_acceptance": [
+        "所选核心关系须在当前照片的具体区域成立；主体姿态/形体与任务要求的清晰度保留。",
+        "材料和不同光源可辨，无蒙版光圈、失色皮肤或全幅涂抹。"
+      ],
+      "works": [
+        {
+          "id": "SN-R01",
+          "image_url": "https://store.magnumphotos.com/cdn/shop/files/GRH1985019K012.jpg?v=1773930390&width=1920",
+          "observation": "黄裙与黄色出租车形成同色呼应，后方蓝色车辆与灰褐建筑把黄色分隔出来。近处人物头肩、站立女子、车辆和建筑层层排列；车身上的人物影子和衣裙褶皱保有形体。",
+          "resolution_limit": "public_display_reference_only; no native detail or calibrated print evidence bundled",
+          "rights": "Harry Gruyaert / Magnum Photos; source-gallery footer ©2026 Magnum Photos. Public display preview, not an open license; local study only.",
+          "role": "primary",
+          "source_url": "https://store.magnumphotos.com/pages/harry-gruyaert-new-york",
+          "title": "Manhattan, USA, 1985"
+        },
+        {
+          "id": "SN-R02",
+          "image_url": "https://store.magnumphotos.com/cdn/shop/files/GRH1985019K021.jpg?v=1773930206&width=1920",
+          "observation": "橙色棚、红橱窗、蓝衣和红鞋构成分区色块；路牌在近层切开画面，行人仍以姿态和颜色清楚落在其下方。硬日光把石墙、白牌与大片阴影区分，阴影不是灰雾。",
+          "resolution_limit": "public_display_reference_only; no native detail or calibrated print evidence bundled",
+          "rights": "Harry Gruyaert / Magnum Photos; source-gallery footer ©2026 Magnum Photos. Public display preview, not an open license; local study only.",
+          "role": "primary",
+          "source_url": "https://store.magnumphotos.com/pages/harry-gruyaert-new-york",
+          "title": "Street scene, Manhattan, 1985"
+        },
+        {
+          "id": "SN-R04",
+          "image_url": "https://store.magnumphotos.com/cdn/shop/files/GRH1985019K004.jpg?v=1773930144&width=1920",
+          "observation": "玻璃反射把室内小物、白斑马线、蓝车与褐车和远处红衣人物叠在一起。色彩比两幅硬光街景温和，砖、树和玻璃层仍分明；可作为硬反差非作者恒定规则的边界。",
+          "resolution_limit": "public_display_reference_only; no native detail or calibrated print evidence bundled",
+          "rights": "Harry Gruyaert / Magnum Photos; source-gallery footer ©2026 Magnum Photos. Public display preview, not an open license; local study only.",
+          "role": "boundary",
+          "source_url": "https://store.magnumphotos.com/pages/harry-gruyaert-new-york",
+          "title": "Brooklyn, 1985"
+        }
+      ]
+    },
+    {
+      "alternatives": [
+        {
+          "package_id": "jacrot-lamplit-snow-depth",
+          "tradeoff": "夜间光源照出雪幕和暖冷层次时改选雪夜包。"
+        },
+        {
+          "package_id": "kenna-line-space",
+          "tradeoff": "若人的动作与实景色差不重要、线形间隔才是主体，可选单色静默空间。"
+        },
+        {
+          "package_id": "leiter-layered-street",
+          "tradeoff": "隔玻璃观看雪街且前景遮挡/色面主导时选Leiter。"
+        }
+      ],
+      "author": "Christophe Jacrot",
+      "author_documented_practice": {
+        "note": "所引官方页面可靠定位作品/系列，但未给出这些作品的完整拍摄及显影过程；下述方法仅是本项目实现假设。",
+        "source_urls": [
+          "https://christophejacrot.com/en/portfolio/blizzard/"
+        ],
+        "status": "reference_proposed"
+      },
+      "core_relations": [
+        {
+          "capture_dependency": "源图已有可读行人/伞、积雪和路径关系；不能生成人物或移位。",
+          "description": "深色人物/伞与明亮雪路形成可读动作和尺度，路径连接近层结构与远景。",
+          "failure_signal": "提亮人物到失去剪影作用，或白雪剪切使路径与地形消失。",
+          "id": "dark-figure-light-route",
+          "postprocess_intent": "维持雪地明亮及人物深形，裁框保护行进方向与路径延伸。",
+          "work_ids": [
+            "SN-J01",
+            "SN-J02"
+          ]
+        },
+        {
+          "capture_dependency": "原图须有真实雪景及距离层次；不能造雪/造雾或全幅模糊。",
+          "description": "近处结构较明确，远处在真实降雪/天气中逐渐减弱，材料细分与少量颜色仍在。",
+          "failure_signal": "全局去清晰使人物与近枝一并糊掉，或为清透消除天气层次。",
+          "id": "weather-distance",
+          "postprocess_intent": "分区保持近树/栏杆、人物和远建筑的不同密度，不强行让远景同近景清楚。",
+          "work_ids": [
+            "SN-J01",
+            "SN-J02"
+          ]
+        }
+      ],
+      "craft_limits": "网页尺度只能支持整体和有限局部；用户原生细节、皮肤、噪声与边缘须另验。环境柔和不得作为破坏主体质量的豁免。",
+      "failure_examples": [
+        "提亮人物到失去剪影作用，或白雪剪切使路径与地形消失。",
+        "全局去清晰使人物与近枝一并糊掉，或为清透消除天气层次。"
+      ],
+      "fit": {
+        "incompatible": [
+          "无雪的普通阴天图",
+          "夜间灯光散射承担主表达",
+          "主体失焦需要新生成纹理"
+        ],
+        "required": [
+          "日光/阴天降雪场景，有行人和近远结构",
+          "白雪高光有可用信息，人物动作无需靠脸部特写"
+        ]
+      },
+      "id": "jacrot-daylight-snow-distance",
+      "label": "浅雪空间中的人物与天气距离",
+      "methods": [
+        {
+          "evidence_type": "project_hypothesis",
+          "id": "frame",
+          "limitation": "只选择已有比例与动作空间，不默认正方形。",
+          "operation_ids": [],
+          "relation_ids": [
+            "dark-figure-light-route"
+          ],
+          "source_refs": [],
+          "status": "reference_proposed",
+          "strategy": "composition_decision"
+        },
+        {
+          "evidence_type": "project_hypothesis",
+          "id": "luminous-tone",
+          "limitation": "明亮雪面不等于川内曝光；只使用已准入范围控制，保持当图雪地与浅天分开。",
+          "operation_ids": [
+            "acr.point_curve_rgb",
+            "acr.whites2012",
+            "acr.highlights2012",
+            "acr.blacks2012",
+            "acr.temperature",
+            "acr.tint"
+          ],
+          "relation_ids": [
+            "dark-figure-light-route",
+            "weather-distance"
+          ],
+          "source_refs": [],
+          "status": "reference_proposed"
+        },
+        {
+          "evidence_type": "project_hypothesis",
+          "id": "regional",
+          "limitation": "只维护既有区域差别，原生细节需另验。",
+          "operation_ids": [
+            "acr.brush_mask",
+            "acr.linear_gradient_mask"
+          ],
+          "relation_ids": [
+            "weather-distance"
+          ],
+          "source_refs": [],
+          "status": "reference_proposed"
+        }
+      ],
+      "source_scope": "仅本包固定作品及字节；不是作者全部作品风格，非国籍、城市或胶片预设。",
+      "status": "reference_proposed",
+      "subject_ids": [
+        "street",
+        "city-architecture",
+        "documentary"
+      ],
+      "tag_ids": [
+        "restrained-color",
+        "quiet-space",
+        "human-scale"
+      ],
+      "unknowns": [
+        "来源JPEG无法分离拍摄光、光学/运动、媒介、扫描、印相与后期贡献。",
+        "未对用户素材作适配、显影、重放或独立评审；不能以本包名义宣称迁移成功。"
+      ],
+      "visible_acceptance": [
+        "所选核心关系须在当前照片的具体区域成立；主体姿态/形体与任务要求的清晰度保留。",
+        "材料和不同光源可辨，无蒙版光圈、失色皮肤或全幅涂抹。"
+      ],
+      "works": [
+        {
+          "id": "SN-J01",
+          "image_url": "https://christophejacrot.com/wp-content/uploads/blizzard/43_cj2010parisneige030smal_v2.jpg",
+          "observation": "两位深衣蓝伞行人走在白雪桥面，姿态、伞缘和步幅可读；近灯柱与栏杆较实，后方建筑在雪中逐渐淡化。雪点贯穿各层而非均匀白雾，画面并非纯黑白。",
+          "resolution_limit": "public_display_reference_only; no native detail or calibrated print evidence bundled",
+          "rights": "© Christophe Jacrot. Source explicitly says All Rights Reserved / FREE USE FORBIDDEN. Local research reference only; publishing or distributing image bytes is not authorized.",
+          "role": "primary",
+          "source_url": "https://christophejacrot.com/en/portfolio/blizzard/",
+          "title": "Dansons sous la neige"
+        },
+        {
+          "id": "SN-J02",
+          "image_url": "https://christophejacrot.com/wp-content/uploads/blizzard/CJ_2009_PARISNEIGE_015_small.jpg",
+          "observation": "一位黑伞人物位于亮雪小径，树干与弯曲石栏从近处引向远方；右侧桥身退入浅灰天气。枝条和树皮保有暖褐与细分，白雪与浅天并非同一块无层次白。",
+          "resolution_limit": "public_display_reference_only; no native detail or calibrated print evidence bundled",
+          "rights": "© Christophe Jacrot. Source explicitly says All Rights Reserved / FREE USE FORBIDDEN. Local research reference only; publishing or distributing image bytes is not authorized.",
+          "role": "primary",
+          "source_url": "https://christophejacrot.com/en/portfolio/blizzard/",
+          "title": "Quai Blanc"
+        }
+      ]
+    },
+    {
+      "alternatives": [
+        {
+          "package_id": "girard-neon-storefront-depth",
+          "tradeoff": "若店铺字牌/受光立面主导且无需天气纵深，选Girard。"
+        },
+        {
+          "package_id": "pinkhassov-night-light",
+          "tradeoff": "湿路反射和受光面是主角、没有雪幕时选Pinkhassov。"
+        },
+        {
+          "package_id": "jacrot-daylight-snow-distance",
+          "tradeoff": "自然软日光与浅雪负空间主导时选白天雪景包。"
+        }
+      ],
+      "author": "Christophe Jacrot",
+      "author_documented_practice": {
+        "note": "所引官方页面可靠定位作品/系列，但未给出这些作品的完整拍摄及显影过程；下述方法仅是本项目实现假设。",
+        "source_urls": [
+          "https://christophejacrot.com/en/portfolio/blizzard/"
+        ],
+        "status": "reference_proposed"
+      },
+      "core_relations": [
+        {
+          "capture_dependency": "源图已有降雪被灯照亮与近远灯列/街道；无真实光幕不能添加烟雾或泛光。",
+          "description": "真实街灯照出风雪，重复光源和能见度衰减共同建立距离。",
+          "failure_signal": "只有整体橙色/朦胧，无可定位光源和远近层次。",
+          "id": "lit-weather-depth",
+          "postprocess_intent": "按灯源、雪幕、建筑和路面分别塑造密度，保持由近到远衰减而非统一压暗。",
+          "work_ids": [
+            "SN-J03",
+            "SN-J04"
+          ]
+        },
+        {
+          "capture_dependency": "人物姿态须已成立，积雪/车辙/脚印可用；不能修造人物或补走向。",
+          "description": "小行人的动作由较亮雪地托出，近墙/角落保持深暗支点，地面仍可读。",
+          "failure_signal": "风格效果吞掉人形、脚下接触或车辙；全局降噪/模糊涂平主体。",
+          "id": "figure-and-snow-ground",
+          "postprocess_intent": "保护人物轮廓与足下接触，保留雪地起伏及近暗框架，分离异色信号灯。",
+          "work_ids": [
+            "SN-J03",
+            "SN-J04"
+          ]
+        }
+      ],
+      "craft_limits": "网页尺度只能支持整体和有限局部；用户原生细节、皮肤、噪声与边缘须另验。环境柔和不得作为破坏主体质量的豁免。",
+      "failure_examples": [
+        "只有整体橙色/朦胧，无可定位光源和远近层次。",
+        "风格效果吞掉人形、脚下接触或车辙；全局降噪/模糊涂平主体。"
+      ],
+      "fit": {
+        "incompatible": [
+          "无降雪的普通夜景只能靠造雾达到",
+          "灯芯大面积不可逆剪切或主体动作无法辨认",
+          "要求中性雪色/产品色彩精确再现"
+        ],
+        "required": [
+          "有可见风雪、人工街灯和行人的冬夜街道",
+          "允许灯光染色的天气氛围，主体动作与场景仍是验收重点"
+        ]
+      },
+      "id": "jacrot-lamplit-snow-depth",
+      "label": "风雪里的灯光纵深与行人",
+      "methods": [
+        {
+          "evidence_type": "project_hypothesis",
+          "id": "range-tone",
+          "limitation": "这些范围相互叠加；选择依据源图，不能把“深夜”翻译成统一降低曝光。",
+          "operation_ids": [
+            "acr.whites2012",
+            "acr.highlights2012",
+            "acr.blacks2012",
+            "acr.shadows2012",
+            "acr.point_curve_rgb"
+          ],
+          "relation_ids": [
+            "lit-weather-depth",
+            "figure-and-snow-ground"
+          ],
+          "source_refs": [
+            "https://helpx.adobe.com/uk/camera-raw/desktop/using/make-color-tonal-adjustments-camera.html"
+          ],
+          "status": "reference_proposed"
+        },
+        {
+          "evidence_type": "project_hypothesis",
+          "id": "material-color",
+          "limitation": "先看灯芯与材料的不同需要，再选择HSL或局部；并非要求把所有列出控制都改动。",
+          "operation_ids": [
+            "acr.temperature",
+            "acr.tint",
+            "acr.saturation_adjustment_orange",
+            "acr.saturation_adjustment_yellow",
+            "acr.saturation_adjustment_blue",
+            "acr.brush_mask"
+          ],
+          "relation_ids": [
+            "lit-weather-depth"
+          ],
+          "source_refs": [
+            "https://helpx.adobe.com/uk/camera-raw/desktop/using/make-color-tonal-adjustments-camera.html",
+            "https://helpx.adobe.com/camera-raw/desktop/edit-and-enhance-images/masking-and-local-adjustments/masking.html"
+          ],
+          "status": "reference_proposed"
+        },
+        {
+          "evidence_type": "project_hypothesis",
+          "id": "local-light",
+          "limitation": "只维护已经存在的灯光与风雪密度；不得新造光晕、风雪、假雾。",
+          "operation_ids": [
+            "acr.brush_mask",
+            "acr.linear_gradient_mask",
+            "local.spatial_light"
+          ],
+          "relation_ids": [
+            "lit-weather-depth",
+            "figure-and-snow-ground"
+          ],
+          "source_refs": [
+            "https://helpx.adobe.com/camera-raw/desktop/edit-and-enhance-images/masking-and-local-adjustments/masking.html"
+          ],
+          "status": "reference_proposed"
+        },
+        {
+          "evidence_type": "project_hypothesis",
+          "id": "frame",
+          "limitation": "任何标准裁框均服从所选受光路径，无固定居中或强制宽幅。",
+          "operation_ids": [],
+          "relation_ids": [
+            "figure-and-snow-ground"
+          ],
+          "source_refs": [],
+          "status": "reference_proposed",
+          "strategy": "composition_decision"
+        }
+      ],
+      "source_scope": "仅本包固定作品及字节；不是作者全部作品风格，非国籍、城市或胶片预设。",
+      "status": "reference_proposed",
+      "subject_ids": [
+        "street",
+        "city-architecture",
+        "documentary"
+      ],
+      "tag_ids": [
+        "night-light",
+        "human-scale",
+        "spatial-color"
+      ],
+      "unknowns": [
+        "来源JPEG无法分离拍摄光、光学/运动、媒介、扫描、印相与后期贡献。",
+        "未对用户素材作适配、显影、重放或独立评审；不能以本包名义宣称迁移成功。"
+      ],
+      "visible_acceptance": [
+        "所选核心关系须在当前照片的具体区域成立；主体姿态/形体与任务要求的清晰度保留。",
+        "材料和不同光源可辨，无蒙版光圈、失色皮肤或全幅涂抹。"
+      ],
+      "works": [
+        {
+          "id": "SN-J03",
+          "image_url": "https://christophejacrot.com/wp-content/uploads/blizzard/CJ_2011_CHICAGO_084_SMALL-.jpg",
+          "observation": "暖黄街灯照出漂浮雪幕，青绿交通灯与红色竖排招牌在其中保持不同颜色。中央小行人跨步轮廓可辨，路面车辙连向远方逐渐消失的灯列；不是无来源的全幅暖色雾。",
+          "resolution_limit": "public_display_reference_only; no native detail or calibrated print evidence bundled",
+          "rights": "© Christophe Jacrot. Source explicitly says All Rights Reserved / FREE USE FORBIDDEN. Local research reference only; publishing or distributing image bytes is not authorized.",
+          "role": "primary",
+          "source_url": "https://christophejacrot.com/en/portfolio/blizzard/",
+          "title": "Goodman"
+        },
+        {
+          "id": "SN-J04",
+          "image_url": "https://christophejacrot.com/wp-content/uploads/blizzard/43_cj2011chicago081small.jpg",
+          "observation": "弯身前行的小人物由亮雪街托出，暖灯照亮风雪并向远巷排开；近侧墙面和顶角保留深暗框架。近地足迹/积雪起伏可辨，越远越软；500×750展示仅支持整体关系。",
+          "resolution_limit": "public_display_reference_only; no native detail or calibrated print evidence bundled",
+          "rights": "© Christophe Jacrot. Source explicitly says All Rights Reserved / FREE USE FORBIDDEN. Local research reference only; publishing or distributing image bytes is not authorized.",
+          "role": "primary",
+          "source_url": "https://christophejacrot.com/en/portfolio/blizzard/",
+          "title": "Blizzard (Chicago)"
+        }
+      ]
+    },
+    {
+      "author": "Philip-Lorca diCorcia",
+      "core_relations": [
+        {
+          "capture_dependency": "已有真实人物姿态、受光方向与光域差别；diCorcia拍摄时的布置/补光不能由后期凭空补造。",
+          "description": "定向受光把人物的脸、身体或相关动作从室内环境中分出，明暗仍沿着真实身体转折连续。",
+          "failure_signal": "人物与背景全部同亮；人物像发光贴片；脸身体失去体积/质感；对没有方向的平光场景强造舞台光。",
+          "id": "person-light-field",
+          "postprocess_intent": "根据本图已存在的主光，让人物脸与身体所需的体积更明确；保留阴影侧、衣褶和皮肤表面，不把整个人漂白或糊化。",
+          "work_ids": [
+            "dicorcia-mario",
+            "dicorcia-bruce-ronnie"
+          ]
+        },
+        {
+          "capture_dependency": "冰箱/打字机等具体物件只是这两幅的拍摄事实；迁移需要源图本身存在有意义的人物—物件/他人关系，而非复制道具。",
+          "description": "人物的朝向、手与日常物件构成观看支点，室内明暗与颜色分区支撑这一关系。",
+          "failure_signal": "为了更多房间而弱化人物动作；只截亮脸却切断手与物件；全局黄绿罩染平皮肤、墙与衣物；把无关杂物当必须保留的作者风格。",
+          "id": "gesture-object-room",
+          "postprocess_intent": "围绕实际行动与关系选择裁框，保留相关手、身体、物件及必要空间；按材料和光域维护颜色区别，选择性安排视觉轻重。",
+          "work_ids": [
+            "dicorcia-mario",
+            "dicorcia-bruce-ronnie"
+          ]
+        }
+      ],
+      "distinctions": "与soth-environmental-portrait相比，人物与环境的受光分区和主次更明显，柔光并非必要前提；与barney-room-ensemble相比，重点是一个人物的受光/动作支点与周围层次，不默认群体均衡。两幅都是真实可见的室内人物作品，但不是餐馆纪实样本；只借关系，不能把作者拍摄安排当后期配方。",
+      "fit": {
+        "incompatible": [
+          "平光、无人物动作或无有效身体信息，却要求后期造舞台布光。",
+          "将普通餐馆直接包装成diCorcia场景，或照搬冰箱/打字机等具体道具。",
+          "本图目标是均匀明亮、多人并重的群像，且无法接受主次光域。"
+        ],
+        "required": [
+          "室内人物已有可辨受光方向，且脸/身体或动作能形成主要观看支点。",
+          "人与日常物件、工作/生活行为或另一人物之间已有实际关系。"
+        ]
+      },
+      "id": "dicorcia-interior-person-light",
+      "label": "室内人物的定向光域与日常物件关系",
+      "methods": [
+        {
+          "evidence_type": "project_hypothesis",
+          "id": "frame",
+          "limitation": "只选择源图已有动作与空间，不生成布景、人物或视点。",
+          "operation_ids": [],
+          "relation_ids": [
+            "gesture-object-room"
+          ],
+          "source_refs": [],
+          "status": "reference_proposed",
+          "strategy": "composition_decision"
+        },
+        {
+          "evidence_type": "project_hypothesis",
+          "id": "tone",
+          "limitation": "按源图已有明暗端点、光向和身体转折制定本图目标；不是作者曲线，不能靠统一曲线造灯光。",
+          "operation_ids": [
+            "acr.point_curve_rgb",
+            "acr.whites2012",
+            "acr.blacks2012",
+            "acr.shadows2012",
+            "acr.highlights2012"
+          ],
+          "relation_ids": [
+            "person-light-field"
+          ],
+          "source_refs": [],
+          "status": "reference_proposed"
+        },
+        {
+          "evidence_type": "project_hypothesis",
+          "id": "regional",
+          "limitation": "区域调整可加强本来存在的受光差异，须检查脸/身体体积和蒙版边缘；不得凭空添加光源或替换场景。",
+          "operation_ids": [
+            "acr.brush_mask",
+            "acr.linear_gradient_mask"
+          ],
+          "relation_ids": [
+            "person-light-field",
+            "gesture-object-room"
+          ],
+          "source_refs": [],
+          "status": "reference_proposed"
+        },
+        {
+          "evidence_type": "project_hypothesis",
+          "id": "skin-scene-color",
+          "limitation": "只复用项目已有肤色与环境颜色分离能力；按材料/光域判断，不抹掉肤色层次，不统一黄绿染色，非diCorcia作者配方。",
+          "operation_ids": [
+            "acr.temperature",
+            "acr.tint",
+            "acr.brush_mask"
+          ],
+          "relation_ids": [
+            "person-light-field",
+            "gesture-object-room"
+          ],
+          "source_refs": [],
+          "status": "reference_proposed"
+        }
+      ],
+      "source_limits": "两幅MoMA网页展示版已实际看图，均约2000px宽；支持可见身体体积与中尺度表面，但不认证微观肤质、颗粒、原作颜色或作者工艺。作品有拍摄安排背景；舞台感的迁移仅限维护/加强源图已存在的光域。三网页本地下载均403，只有真实web读取记录和成功图片下载，不冒称HTML存档完整。此包未校准、未独立读图、未迁移验证。",
+      "status": "reference_proposed",
+      "subject_ids": [
+        "portrait"
+      ],
+      "tag_ids": [
+        "human-scale",
+        "spatial-color"
+      ],
+      "works": [
+        {
+          "id": "dicorcia-mario",
+          "image_url": "https://www.moma.org/media/W1siZiIsIjE4NjM2NyJdLFsicCIsImNvbnZlcnQiLCItcXVhbGl0eSA5MCAtcmVzaXplIDIwMDB4MjAwMFx1MDAzZSJdXQ.jpg?sha=2b72f97381b55d22",
+          "observation": "人物侧身朝向打开的冰箱，低头的脸、抬起的衣领和衣褶共同呈现姿态；冰箱内的较白亮面与脸相接，身体背侧和两边百叶门更深。厨房墙偏黄绿，衣物、皮肤与门的棕灰仍能区分，色彩并非平均覆盖所有表面。",
+          "resolution_limit": "public_display_reference_only; no native detail or calibrated print evidence bundled",
+          "rights": "Publicly viewable copyrighted photography; local private research only. No redistribution licence inferred.",
+          "role": "primary",
+          "source_url": "https://www.moma.org/collection/works/46273",
+          "title": "Mario, 1978"
+        },
+        {
+          "id": "dicorcia-bruce-ronnie",
+          "image_url": "https://www.moma.org/media/W1siZiIsIjM4NDE2MyJdLFsicCIsImNvbnZlcnQiLCItcXVhbGl0eSA5MCAtcmVzaXplIDIwMDB4MjAwMFx1MDAzZSJdXQ.jpg?sha=5363b7c53f1c3c16",
+          "observation": "前方人物的脸、肩胸和伸向打字机的手臂较清楚、较亮，肤色、锁骨起伏和身体表面信息仍在；后方躺着的蓝衣人物更暗、更软。灰砖墙、左侧暖灯罩、纸张和右侧衣物构成日常环境，前后两人没有被平均提到同样密度。",
+          "resolution_limit": "public_display_reference_only; no native detail or calibrated print evidence bundled",
+          "rights": "Publicly viewable copyrighted photography; local private research only. No redistribution licence inferred.",
+          "role": "primary",
+          "source_url": "https://www.moma.org/collection/works/57806",
+          "title": "Bruce and Ronnie, 1982"
+        }
+      ]
+    }
+  ],
+  "purpose": "Historical work-target research, retained for comparison; no personal calibration or execution evidence is included.",
+  "schema": "work-target-library/v1",
+  "status": "reference_proposed",
+  "style_tags": [
+    {
+      "id": "layered-view",
+      "label": "隔层观看"
+    },
+    {
+      "id": "restrained-color",
+      "label": "克制色面"
+    },
+    {
+      "id": "night-light",
+      "label": "夜间光色"
+    },
+    {
+      "id": "dense-color",
+      "label": "浓郁色光"
+    },
+    {
+      "id": "monochrome",
+      "label": "单色"
+    },
+    {
+      "id": "quiet-space",
+      "label": "静默空间"
+    },
+    {
+      "id": "daylight-color",
+      "label": "日常光色"
+    },
+    {
+      "id": "spatial-color",
+      "label": "色彩与空间"
+    },
+    {
+      "id": "soft-environment",
+      "label": "柔和环境人物"
+    },
+    {
+      "id": "luminous-daily",
+      "label": "日常光感"
+    },
+    {
+      "id": "human-scale",
+      "label": "人物尺度"
+    }
+  ],
+  "subjects": [
+    {
+      "id": "landscape-nature",
+      "label": "自然风光"
+    },
+    {
+      "id": "city-architecture",
+      "label": "城市与建筑"
+    },
+    {
+      "id": "street",
+      "label": "街头"
+    },
+    {
+      "id": "documentary",
+      "label": "人文纪实"
+    },
+    {
+      "id": "portrait",
+      "label": "人物"
+    },
+    {
+      "id": "everyday-still-life",
+      "label": "日常小品"
+    }
+  ],
+  "version": "0.2.0"
+}

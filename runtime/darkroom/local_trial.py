@@ -160,7 +160,11 @@ def dependency_files(root, values, theme, recipe):
              'registries/adobe-operation-registry-v1.json', 'registries/adobe-unit-registry-v1.json',
              'schemas/adobe-operation-registry-v1.schema.json', 'schemas/formula-dsl-v1.schema.json',
              'schemas/formula-lookup-table-v1.schema.json', 'schemas/technique-card-v1.schema.json',
-             f"knowledge/themes/{values['--theme']}.manifest.json"}
+             f"knowledge/themes/{values['--theme']}.manifest.json", 'darkroom/knowledge.py'}
+    files.add(theme['public_plan'])
+    from darkroom.knowledge import load as load_knowledge
+    manifest, _, _ = load_knowledge(root / 'knowledge/library')
+    files.update('knowledge/library/' + name for name in ['manifest.json', *manifest['files']])
     for card in theme['cards']:
         path = safe_path(root, 'knowledge/cards/' + card, 'knowledge', exists=True)
         need(path.is_relative_to(root / 'knowledge/cards'), 'card_path_outside_cards')
@@ -170,7 +174,7 @@ def dependency_files(root, values, theme, recipe):
     files.add('darkroom/acr_geometry.py')
     if values.get('--acr-geometry-plan'):
         files.add(values['--acr-geometry-plan'])
-    need(recipe is None, 'raster_recipes_not_in_public_alpha')
+    need(recipe is None, 'raster_recipes_not_in_public_runtime')
     if recipe:
         modules = {'local.harmonic_tone_balance': 'local_tone_balance.py', 'local.skin_control_field': 'local_skin_field.py',
                    'local.skin_texture_smoothing': 'local_skin_texture.py', 'local.sun_glow': 'local_sun_glow.py',
@@ -201,6 +205,7 @@ def compile_request(root, request, pipeline):
     theme_path = safe_path(root, f"knowledge/themes/{values['--theme']}.manifest.json", 'knowledge', True)
     theme = json.loads(theme_path.read_text())
     need(isinstance(theme.get('cards'), list) and len(theme['cards']) > 0, 'theme_cards_missing')
+    need(not theme.get('intents', {}).get(gid, {}).get('overrides'), 'public_plan_overrides_must_be_in_frozen_card')
     # Check card names before the existing compiler opens them.
     for name in theme['cards']:
         safe_path(root, 'knowledge/cards/' + name, 'knowledge', True)
@@ -214,9 +219,17 @@ def compile_request(root, request, pipeline):
         need(not (recipe or values.get('--preview-only') or values.get('--review-crop-plan')), 'native_geometry_requires_direct_full_raw_without_raster_or_jpeg_crop')
         geometry = validate_geometry_plan(json.loads(safe_path(root, values['--acr-geometry-plan'], 'runs', True).read_text()))
     orientation = read_raw_orientation(source) if geometry else None
+    from darkroom.knowledge import validate_receipt
+    need(len(theme['cards']) == 1, 'public_plan_requires_one_frozen_card')
+    receipt_path = safe_path(root, theme.get('public_plan', ''), 'runs', True)
+    receipt = json.loads(receipt_path.read_text())
+    raw_card = json.loads(safe_path(root, 'knowledge/cards/' + theme['cards'][0], 'knowledge', True).read_text())
+    validate_receipt(root, receipt, request['source']['sha256'], raw_card, geometry)
+    if receipt['role'] == 'edit':
+        need(theme['intents'][gid]['statement'] == receipt['knowledge_plan']['intent'], 'knowledge_intent_mismatch')
     params = merge_geometry(params, geometry, orientation)
     need(not (recipe and values.get('--preview-only')), 'local_recipe_requires_full_replay')
-    need(not values.get('--review-crop-plan'), 'jpeg_crop_not_in_public_alpha')
+    need(not values.get('--review-crop-plan'), 'jpeg_crop_not_in_public_runtime')
     crop = None
     if values.get('--review-crop-plan'):
         from darkroom.review_crop import validate_crop_plan

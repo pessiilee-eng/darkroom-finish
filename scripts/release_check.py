@@ -17,7 +17,7 @@ PATTERNS = {
     'personal-home': re.compile(r'/(?:Users|home)/[A-Za-z0-9_.-]+/'),
     'external-volume': re.compile(r'/' + r'Volumes/[^\s"\x27]+'),
     'private-site': re.compile(r'https?://[^\s/]+\.chatgpt\.site'),
-    'camera-filename': re.compile(r'\b(?:DSC_[0-9]{4}|L[0-9]{7})\b'),
+    'camera-filename': re.compile(r'(?<![A-Za-z0-9])(?:DSC_[0-9]{4}|L[0-9]{7}|R[0-9]{3}|G0(?:73|77|81))(?![A-Za-z0-9])'),
     'private-key': re.compile(r'^-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----', re.M),
     'api-token': re.compile(r'\b(?:gh[pousr]_[A-Za-z0-9]{30,}|sk-[A-Za-z0-9_-]{32,})\b'),
 }
@@ -58,6 +58,15 @@ def check(root=ROOT):
                 if not destination.is_relative_to(root.resolve()) or not destination.exists():
                     raise ValueError('Broken/outside documentation link in ' + name + ': ' + target)
         hashes[name] = hashlib.sha256(data).hexdigest()
+    manifest_path = root / 'knowledge/manifest.json'
+    if manifest_path.exists():
+        manifest = json.loads(manifest_path.read_text())
+        if manifest.get('schema') != 'darkroom-knowledge/1':
+            raise ValueError('Unknown bundled knowledge schema')
+        expected = {'knowledge/' + name: digest for name, digest in manifest['files'].items()}
+        actual_knowledge = {name: digest for name, digest in hashes.items() if name.startswith('knowledge/') and name != 'knowledge/manifest.json'}
+        if actual_knowledge != expected:
+            raise ValueError('Bundled knowledge does not match its version manifest')
     return hashes
 
 

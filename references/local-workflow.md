@@ -21,17 +21,20 @@ python3 -B scripts/darkroom.py ingest --workspace /path/to/new-workspace \
 ```bash
 python3 -B scripts/darkroom.py prepare --workspace /path/to/new-workspace \
   --source-id SOURCE_ID_FROM_INGEST --parameters examples/neutral.json \
-  --intent "建立同引擎基线，检查现场光线与颜色"
+  --role baseline --intent "建立同引擎基线，检查现场光线与颜色"
 python3 -B scripts/darkroom.py render --workspace /path/to/new-workspace \
   --plan PLAN_PATH_FROM_PREPARE
 ```
 
 `prepare` 验证并预留一次尝试，返回冻结计划；`render` 使用该确切计划。
+非基线修改必须先按 [知识调用](knowledge-workflow.md) 阅读资料并提供 `--knowledge-plan`。
+`--role baseline` 只接受完全中性的参数，不接受局部/裁剪；`--role probe` 只接受脚本生成的固定合成 DNG 哈希，不能用于用户照片。
+显式手工蒙版用 `--mask`，有限 DNG 裁剪用 `--geometry`；二者都需要知识计划绑定。
 每张 RAW 按哈希在当前工作区默认最多三次（基线也算一次），失败不退款。
 不能为检查可运行性反复 prepare；重复渲染一个已执行计划会被拒绝。
 不要换工作区避开次数或历史失败。用户明确新增尝试时，底层 `darkroom.local_trial
 authorize-window` 接口要求新授权原话、来源、同一源绑定和原因，每次仅加一次；
-未耗尽或复用旧授权会拒绝。首版便捷接口没有自动追加功能。
+未耗尽或复用旧授权会拒绝。便捷接口没有自动追加功能。
 
 出现失败先查看终端、`runs/` 与 Photoshop 实际状态；保留部分输出作为失败证据。
 不自动删除记录、不强制关闭已有文档、不修改 Camera Raw 全局默认值。
