@@ -2,6 +2,7 @@
   ".github/workflows/check.yml",
   ".gitignore",
   "LICENSE",
+  "README.en.md",
   "README.md",
   "SKILL.md",
   "THIRD_PARTY.md",
